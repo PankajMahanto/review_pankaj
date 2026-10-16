@@ -1,0 +1,76 @@
+{
+ "key": "adhya2024ginopic",
+ "source_id": "adhya2024ginopic",
+ "title": "GINopic: Topic Modeling with Graph Isomorphism Network",
+ "venue": "Proceedings of NAACL-HLT 2024 (long papers)",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.naacl-long.342",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "graph neural topic model",
+ "task": "Neural topic modelling that uses word-dependency graphs",
+ "problem": "Contextual topic models treat documents as word sequences and ignore explicit word correlations; earlier graph topic models are slow or limited to sliding windows.",
+ "architecture": "Each document becomes a word-similarity graph (edges between its words when embedding similarity exceeds a threshold); a Graph Isomorphism Network encodes the graph, used together with the bag-of-words representation as input to a neural topic model.",
+ "llm_or_encoder": "none (word embeddings for graph construction)",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "OCTIS preprocessed; k_gold 20"
+  },
+  {
+   "name": "BBC",
+   "details": "OCTIS preprocessed; k_gold 5"
+  },
+  {
+   "name": "SS",
+   "details": "SearchSnippets, 12270 documents, average length 13.104, 8 labels"
+  },
+  {
+   "name": "Bio",
+   "details": "Biomedicine, 18686 documents, 20 labels"
+  },
+  {
+   "name": "SO",
+   "details": "StackOverflow, 15696 documents, 20 labels"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "CV",
+  "IRBO",
+  "wI-M",
+  "wI-C",
+  "classification accuracy (linear SVM)"
+ ],
+ "baselines": [
+  "ECRTM",
+  "CombinedTM",
+  "ZeroShotTM",
+  "ProdLDA",
+  "NeuralLDA",
+  "ETM",
+  "LDA",
+  "LSI",
+  "NMF",
+  "GraphBTM",
+  "GNTM"
+ ],
+ "key_results": [
+  "Mean NPMI/CV: 20NG 0.102/0.647 and BBC 0.130/0.701 vs CombinedTM 0.086/0.617 and 0.042/0.637.",
+  "On SO, CombinedTM has higher NPMI (0.065 vs 0.059); ECRTM has the highest IRBO on all datasets.",
+  "Classification accuracy, e.g. BBC 0.888 vs GNTM 0.806; on 20NG GINopic is slightly below GNTM (0.441 vs 0.449)."
+ ],
+ "strengths": [
+  "Uses the provably most expressive message-passing GNN for document graphs; sensitivity analysis of graph threshold and GNN choice."
+ ],
+ "limitations": [
+  {
+   "text": "Only word-similarity graphs; dependency-parse or other graph constructions not explored.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/AdhyaSuman/GINopic",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/adhya2024ginopic.txt"
+}

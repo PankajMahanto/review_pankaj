@@ -60,7 +60,9 @@ def main():
                 if v not in flat_nums and v.replace(",", "") not in flat_nums:
                     problems.append(f"number {v!r} in dataset details of {name!r} not found")
         code = ev.get("code", "")
-        if code.startswith("http") and norm(code.rstrip("/").split("://")[1][:40]) not in flat_n:
+        url_key = norm(code.rstrip("/").split("://")[1][:40]) if code.startswith("http") else ""
+        # line-break hyphenation can drop or keep a '-' inside URLs, so compare without hyphens too
+        if url_key and url_key not in flat_n and url_key.replace("-", "") not in flat_n.replace("-", ""):
             problems.append(f"code url {code!r} not found")
         if problems:
             bad += 1

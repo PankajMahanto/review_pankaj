@@ -5,8 +5,8 @@
  "venue": "Scientometrics",
  "year": 2026,
  "doi": "10.1007/s11192-026-05643-9",
- "read_from": "open-access copy",
- "evidence_level": "full-text",
+ "read_from": "arXiv preprint 2510.16152 (published version: Scientometrics)",
+ "evidence_level": "full-text (preprint)",
  "category": "application",
  "subcategory": "science mapping with recursive clustering and LLM labelling",
  "task": "Mapping a journal's engineering literature into interpretable topics and cross-topic links",
@@ -61,5 +61,6 @@
  ],
  "code": "not found in paper",
  "notes": "Uses commercial OpenAI models.",
- "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/smetana2026mapping.txt"
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/smetana2026mapping.txt",
+ "arxiv_id": "2510.16152"
 }

@@ -1,0 +1,52 @@
+{
+ "key": "tsurumaki2025study",
+ "source_id": "tsurumaki2025study",
+ "title": "Study of Emotion Concept Formation by Integrating Vision, Physiology, and Word Information Using Multilayered Multimodal Latent Dirichlet Allocation",
+ "venue": "IEEE Transactions on Affective Computing",
+ "year": 2025,
+ "doi": "10.1109/taffc.2025.3585882",
+ "read_from": "arXiv preprint 2404.08295 (published version: IEEE Transactions on Affective Computing)",
+ "evidence_level": "full-text (preprint)",
+ "category": "multimodal",
+ "subcategory": "multilayered multimodal LDA for concept formation",
+ "task": "Modelling emotion-concept formation from interoceptive and exteroceptive signals",
+ "problem": "Constructed-emotion theory says emotion concepts integrate internal and external information, but computational models of this formation are lacking.",
+ "architecture": "Multilayered multimodal LDA (mMLDA) trained per subject with Gibbs sampling: an interoception module (EDA and heart-rate RRI signals discretised with pretrained VQ-VAE codebooks, K = 4) and exteroception modules (Inception-ResNet-v2 image features, K = 4; bag-of-words of the words subjects entered for each image, K = 34) integrated into a top concept layer (K = 28).",
+ "llm_or_encoder": "Inception-ResNet-v2; VQ-VAE for physiological signals",
+ "datasets": [
+  {
+   "name": "IAPS",
+   "details": "60 emotion-evoking images shown to 29 analysed subjects; 45 training and 15 test images for prediction"
+  }
+ ],
+ "metrics": [
+  "Rand index vs self-reported (SAM) categories",
+  "KL divergence of predicted vs actual modality distributions"
+ ],
+ "baselines": [
+  "LDA (EDA only)",
+  "LDA (RRI only)",
+  "MLDA (EDA + RRI)"
+ ],
+ "key_results": [
+  "Model categories match over 70% of subjects' self-reported categories, above the 0.56 chance level of the Rand index.",
+  "Unobserved physiology and word information predicted above chance; no significant difference between MLDA and mMLDA in similarity to reports."
+ ],
+ "strengths": [
+  "Applies hierarchical multimodal topic models to non-text signals together with words.",
+  "Per-subject models with statistical tests (Wilcoxon, Bonferroni)."
+ ],
+ "limitations": [
+  {
+   "text": "Category numbers set manually; only visual exteroception studied.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Small stimulus set (60 images) and 29 subjects.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Included as a multimodal LDA application; words form one modality.",
+ "fulltext_txt": "fulltext/txt/tsurumaki2025study.txt"
+}

@@ -1,0 +1,50 @@
+{
+ "key": "zve2025outliers",
+ "source_id": "zve2025outliers",
+ "title": "From Outliers to Topics in Language Models: Anticipating Trends in News Corpora",
+ "venue": "arXiv preprint",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2509.22030",
+ "read_from": "arXiv preprint 2509.22030v2",
+ "evidence_level": "full-text (preprint)",
+ "category": "dynamic",
+ "subcategory": "outliers as weak signals in cumulative BERTopic clustering",
+ "task": "Testing whether HDBSCAN outliers later become topics in news streams",
+ "problem": "Density-based topic models discard outliers as noise, although they might be early signals of emerging topics.",
+ "architecture": "Embeddings from nine pretrained language models (headline, body or full article), UMAP to 2-10 dimensions, cumulative BERTopic/HDBSCAN clustering over 20 monthly windows; outliers (label -1) tracked for conversion into clusters; configuration chosen by silhouette; inter-model agreement and lexical/stylistic analysis of converted vs non-converted outliers.",
+ "llm_or_encoder": "nine sentence-embedding models (e.g. multilingual-e5-large, paraphrase-multilingual-mpnet-base-v2, xlm-roberta-large, sentence-camembert-base)",
+ "datasets": [
+  {
+   "name": "TP",
+   "details": "102 French news articles on corporate social responsibility"
+  },
+  {
+   "name": "GHG",
+   "details": "312 English news articles on climate change"
+  }
+ ],
+ "metrics": [
+  "silhouette score",
+  "outlier-to-topic validation score",
+  "inter-model agreement",
+  "Kruskal-Wallis tests on TF-IDF and stylistic features"
+ ],
+ "baselines": [],
+ "key_results": [
+  "Average validation of the outlier-to-topic hypothesis 0.80 (French) and 0.81 (English); inter-model agreement 0.7002 and 0.6783.",
+  "Silhouette scores 0.61 (French) and 0.52 (English) for the chosen configurations."
+ ],
+ "strengths": [
+  "Reframes topic-model outliers as potential early signals; robust across nine models and two languages."
+ ],
+ "limitations": [
+  {
+   "text": "Pilot with small corpora (102 and 312 articles); generalisability limited; larger corpora left for future work.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/zve2025outliers.txt"
+}

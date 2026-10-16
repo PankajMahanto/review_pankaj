@@ -1,0 +1,45 @@
+{
+ "key": "wei2025provable",
+ "source_id": "wei2025provable",
+ "title": "Provable unlearning in topic modeling and downstream tasks",
+ "venue": "International Conference on Learning Representations (ICLR 2025)",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2411.12600",
+ "read_from": "arXiv preprint 2411.12600 (published version: ICLR 2025)",
+ "evidence_level": "full-text (preprint)",
+ "category": "algebraic",
+ "subcategory": "theory: machine unlearning for anchor-word topic models",
+ "task": "Provably removing training documents from topic models and fine-tuned heads",
+ "problem": "Unlearning guarantees exist mainly for supervised learning, not for the pre-train/fine-tune paradigm.",
+ "architecture": "Anchor-word (spectral) topic model learned from word co-occurrences; unlearning by updating co-occurrence statistics and a projected Newton step on topic recovery plus a Gaussian mechanism for indistinguishability; second algorithm unlearns from a linear head fine-tuned on topics without modifying the base model.",
+ "llm_or_encoder": "none",
+ "datasets": [],
+ "metrics": [
+  "deletion capacity (theory)",
+  "computational complexity"
+ ],
+ "baselines": [
+  "retraining from scratch (complexity comparison)"
+ ],
+ "key_results": [
+  "Unlearning cost is independent of the original dataset size (e.g. projected Newton step O(nr^2) vs recovering topics from anchors when retraining).",
+  "After fine-tuning, a larger number of documents can be unlearned without changing the base model; simpler downstream tasks allow more deletions."
+ ],
+ "strengths": [
+  "First provable unlearning guarantees in a pre-training/fine-tuning setting, using topic models as a tractable model."
+ ],
+ "limitations": [
+  {
+   "text": "Topic models cannot capture features of modern autoregressive language models; uses traditional differential-privacy-style unlearning definitions.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No empirical experiments on real corpora.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/wei2025provable.txt"
+}

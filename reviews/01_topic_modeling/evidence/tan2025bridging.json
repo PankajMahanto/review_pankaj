@@ -1,0 +1,60 @@
+{
+ "key": "tan2025bridging",
+ "source_id": "tan2025bridging",
+ "title": "Bridging the Evaluation Gap: Leveraging Large Language Models for Topic Model Evaluation",
+ "venue": "21st Conference on Information and Research Science Connecting to Digital and Library Science (IRCDL 2025); arXiv 2502.07352",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2502.07352",
+ "read_from": "arXiv preprint 2502.07352v1",
+ "evidence_level": "full-text (preprint)",
+ "category": "evaluation",
+ "subcategory": "LLM-as-judge topic evaluation",
+ "task": "Multi-dimensional automatic evaluation of topic models with open LLMs",
+ "problem": "Human evaluation is costly and statistical metrics are narrow; evolving topic taxonomies in digital libraries need scalable evaluation.",
+ "architecture": "Prompted LLM metrics for coherence (rating C_rate, outlier detection C_outlier), repetitiveness (R_rate, duplicate concepts R_duplicate), diversity (D_rate) and topic-document alignment (irrelevant topic words, missing themes); adversarial tests to check evaluator reliability; three open LLM judges.",
+ "llm_or_encoder": "Mistral-7B-Instruct-v0.3, Llama-3.1-8B-Instruct, Qwen2.5-14B-Instruct",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "OCTIS version, 11,415 train and 4,894 test documents"
+  },
+  {
+   "name": "AGRIS",
+   "details": "50,067 agricultural scholarly documents (45,060 train / 5,007 test), split into sentences"
+  }
+ ],
+ "metrics": [
+  "Cv",
+  "D_unique",
+  "LLM ratings and detection rates",
+  "adversarial-test success rate"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "CombinedTM",
+  "BERTopic (evaluated models, K = 50 and 100)"
+ ],
+ "key_results": [
+  "Adversarial outlier detection success: 77% (Mistral), 81% (Llama), 90% (Qwen) on 20NG; duplicate detection only 37% for Mistral vs 84% for Qwen.",
+  "BERTopic has the best Cv and LLM coherence rating (e.g. AGRIS K = 50: Cv 0.655, Qwen C_rate 2.878) but low repetitiveness scores, suggesting redundant top words inflate its coherence."
+ ],
+ "strengths": [
+  "Adds repetitiveness and topic-document alignment dimensions missing from Cv/TD.",
+  "Uses open models and tests evaluator reliability explicitly."
+ ],
+ "limitations": [
+  {
+   "text": "LLM evaluators disagree substantially (e.g. on outliers for BERTopic at K = 100), so several judges are needed.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "No human annotation to validate the LLM metrics directly.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/zhiyintan/topic-model-LLMjudgment",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/tan2025bridging.txt"
+}

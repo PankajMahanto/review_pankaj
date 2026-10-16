@@ -1,0 +1,49 @@
+{
+ "key": "xie2025comparison",
+ "source_id": "xie2025comparison",
+ "title": "A comparison of citation-based clustering and topic modeling for science mapping",
+ "venue": "Scientometrics",
+ "year": 2025,
+ "doi": "10.1007/s11192-025-05324-z",
+ "read_from": "arXiv preprint 2309.06160 (published version: Scientometrics)",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "scientometrics / science mapping",
+ "task": "Comparing LDA topics with citation-based clusters for mapping a research field",
+ "problem": "Topic modelling and citation-based clustering are both used for science maps, but how their results relate is poorly understood.",
+ "architecture": "LDA (Gensim) on titles and abstracts, topics visualised with PCA and labelled with expert input; citation-based clustering from the CWTS hierarchical classification (Waltman-van Eck, Leiden algorithm), 142 micro-level clusters with at least 10% cardiovascular publications, visualised with VOSviewer; cluster-to-topic and topic-to-cluster mappings.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Cardiovascular research (WoS)",
+   "details": "433,642 articles, reviews and letters, 2010-2020"
+  }
+ ],
+ "metrics": [
+  "document overlap between topics and clusters (mapping shares)",
+  "qualitative expert interpretation"
+ ],
+ "baselines": [
+  "citation-based clustering"
+ ],
+ "key_results": [
+  "Overlap between topics and clusters is generally weak; only in a few cases do more than one-third of a topic's documents fall in one cluster or vice versa.",
+  "Topic modelling captures societal-need themes (risk factors, guidelines) but mixes disease terms; citation clustering separates diseases and micro-communities."
+ ],
+ "strengths": [
+  "Large-scale, systematic comparison showing the two maps answer different questions."
+ ],
+ "limitations": [
+  {
+   "text": "Single field (cardiovascular research) and a single topic model (LDA).",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "No ground truth; highly similar LDA topics complicate interpretation.",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "https://github.com/Qianqian727/Preprocessing-procedure-and-LDA-traning.git",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/xie2025comparison.txt"
+}

@@ -1,0 +1,68 @@
+{
+ "key": "adhya2024evaluating",
+ "source_id": "adhya2024evaluating",
+ "title": "Evaluating Negative Sampling Approaches for Neural Topic Models",
+ "venue": "IEEE Transactions on Artificial Intelligence",
+ "year": 2024,
+ "doi": "10.1109/tai.2024.3432857",
+ "read_from": "arXiv preprint 2503.18167v2 (published version: IEEE Transactions on Artificial Intelligence)",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "negative sampling in VAE topic models",
+ "task": "Measuring the effect of decoder negative sampling on neural topic models",
+ "problem": "Negative sampling helps representation learning elsewhere, but its effect on unsupervised topic models was not studied comprehensively.",
+ "architecture": "Decoder negative sampling with a triplet loss (margin 1) added to seven VAE-based NTMs (CombinedTM, ZeroShotTM, ProdLDA, NeuralLDA, ETM, SCHOLAR, GSM); hyperparameters tuned with OCTIS Bayesian optimisation; compared with contrastive NTMs and an encoder-side variant.",
+ "llm_or_encoder": "paraphrase-distilroberta-base-v2 (SBERT) for CombinedTM/ZeroShotTM",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "16309 documents, average length 48.02"
+  },
+  {
+   "name": "GN",
+   "details": "Google News, 10920 short documents"
+  },
+  {
+   "name": "M10",
+   "details": "8355 scientific publications"
+  },
+  {
+   "name": "Wiki40B",
+   "details": "24774 Wikipedia documents, average length 541.08"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "CV",
+  "IRBO",
+  "classification accuracy",
+  "training time"
+ ],
+ "baselines": [
+  "vanilla NTMs",
+  "CLNTM",
+  "NQTM",
+  "BAT"
+ ],
+ "key_results": [
+  "ProdLDA NPMI on GN rises from 0.056 to 0.144 with negative sampling; CombinedTM from 0.081 to 0.142.",
+  "SCHOLAR-Neg gives the best 20NG and Wiki40B NPMI (0.180 and 0.181).",
+  "Negative sampling beats the vanilla model for every vocabulary size tested on Wiki40B (1,000-8,000 words)."
+ ],
+ "strengths": [
+  "Systematic study across seven NTMs, four datasets and eight topic counts; no extra trainable parameters."
+ ],
+ "limitations": [
+  {
+   "text": "Training time increases because negative samples must be computed; no theoretical explanation yet for why decoder-side sampling works better.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Improvements are small or absent for some model-dataset pairs (e.g. M10 CV for CombinedTM 0.466 to 0.462).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/AdhyaSuman/Eval_NegTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/adhya2024evaluating.txt"
+}

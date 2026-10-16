@@ -1,0 +1,57 @@
+{
+ "key": "aftar2024robert2vectm",
+ "source_id": "aftar2024robert2vectm",
+ "title": "RoBERT2VecTM: A Novel Approach for Topic Extraction in Islamic Studies",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-emnlp.534",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "application",
+ "subcategory": "Classical Arabic / religious texts",
+ "task": "Topic extraction from Hadith texts (Matn)",
+ "problem": "Arabic morphology and the dominance of English-centred tools make topic modelling of Classical Arabic religious texts difficult.",
+ "architecture": "Contextualized Topic Model with hybrid document embeddings combining an Arabic-fine-tuned XLM-RoBERTa with Doc2Vec (200-d); domain stopword list and lemmatisation; CTM with one 128-neuron ReLU layer and Adam; topics manually merged into Islamic domains.",
+ "llm_or_encoder": "xlm-roberta-base fine-tuned on Arabic; Doc2Vec",
+ "datasets": [
+  {
+   "name": "Hadith",
+   "details": "more than 14,940 Ahadith from Sahih Al-Bukhari and Sahih Muslim"
+  }
+ ],
+ "metrics": [
+  "CV",
+  "NPMI",
+  "Topic Diversity"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "EMB",
+  "ProdLDA",
+  "NVDM",
+  "BERTopic",
+  "CluWords",
+  "CombinedTM with single embeddings"
+ ],
+ "key_results": [
+  "With lemmatisation and stopword removal (50 topics): CV 0.61, TD 0.53, NPMI 0.060 vs BERTopic 0.55, 0.51, 0.053.",
+  "Without lemmatisation CV drops to 0.53, showing the effect of Arabic preprocessing."
+ ],
+ "strengths": [
+  "Applies contextual topic models to Classical Arabic with careful preprocessing analysis."
+ ],
+ "limitations": [
+  {
+   "text": "Only one dataset and one language; may not generalise to other non-Latin languages.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Absolute NPMI values are low for all models (at most 0.060).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/saniaaftar/RoBERTa2VecTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/aftar2024robert2vectm.txt"
+}

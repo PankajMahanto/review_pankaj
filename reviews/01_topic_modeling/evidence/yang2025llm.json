@@ -1,0 +1,66 @@
+{
+ "key": "yang2025llm",
+ "source_id": "yang2025llm",
+ "title": "LLM Reading Tea Leaves: Automatically Evaluating Topic Models with Large Language Models",
+ "venue": "Transactions of the Association for Computational Linguistics, vol. 13",
+ "year": 2025,
+ "doi": "10.1162/tacl_a_00744",
+ "read_from": "arXiv preprint 2406.09008 (published version: TACL)",
+ "evidence_level": "full-text (preprint)",
+ "category": "evaluation",
+ "subcategory": "joint LLM-based evaluation of topics and document representations",
+ "task": "Evaluating topic models jointly on topics and document representations",
+ "problem": "Existing metrics evaluate topics (e.g. NPMI) or document representations (e.g. classification) separately and these often disagree; perplexity is not comparable across model types.",
+ "architecture": "WALM: for each document, the topic model's document-word distribution (inference + generation) gives its top-10 'topical words'; an LLM (Llama-3-8B-Instruct, greedy decoding) generates keywords for the same document (plain or topic-aware prompting); agreement measured with overlap-based (exact, synset) and embedding-based (GloVe, optimal-assignment, optimal-transport) metrics.",
+ "llm_or_encoder": "Llama-3-8B-Instruct; GloVe",
+ "datasets": [
+  {
+   "name": "20Newsgroup",
+   "details": "long documents"
+  },
+  {
+   "name": "DBpedia",
+   "details": "short documents"
+  }
+ ],
+ "metrics": [
+  "WALM overlap and embedding scores",
+  "NPMI",
+  "TD",
+  "classification accuracy",
+  "KM-Purity",
+  "KM-NMI",
+  "document-completion perplexity",
+  "gap to human keywords"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "NVDM",
+  "ETM",
+  "SCHOLAR",
+  "NSTM",
+  "CLNTM (evaluated models)"
+ ],
+ "key_results": [
+  "WALM correlates only weakly with perplexity and moderately with document-representation metrics, so it adds a separate view.",
+  "Human keywords from three annotators on 200 test documents were used to measure the gap between LLM-based and human-based WALM scores."
+ ],
+ "strengths": [
+  "One metric that covers both topics and document representations and works across model types.",
+  "Code and processed datasets released."
+ ],
+ "limitations": [
+  {
+   "text": "Optimising for WALM alone may inherit LLM biases; should be used with other metrics.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Two datasets and one main LLM; human validation on 200 documents with one model (NVDM, K = 50).",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/Xiaohao-Yang/Topic_Model_Evaluation",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/yang2025llm.txt"
+}

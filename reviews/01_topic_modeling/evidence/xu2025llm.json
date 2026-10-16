@@ -1,0 +1,60 @@
+{
+ "key": "xu2025llm",
+ "source_id": "xu2025llm",
+ "title": "LLM as Attention-Informed NTM and Topic Modeling as long-input Generation: Interpretability and long-Context Capability",
+ "venue": "arXiv preprint",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2510.03174",
+ "read_from": "arXiv preprint 2510.03174",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "white-box attention structures and black-box long-context topic modelling",
+ "task": "Recovering topic structures from LLMs and topic modelling with long-context LLMs",
+ "problem": "It is unclear whether LLMs implicitly perform topic modelling and how black-box LLMs can give testable topic-document correspondences.",
+ "architecture": "White-box: aggregate top-K token attention of Qwen3-8B to fragment level to recover document-topic and topic-word distributions. Black-box: the whole corpus is given as one long input; each topic is generated with label, summary, keywords and representative titles; post-generation signal compensation assigns documents with hybrid lexical/dense retrieval (BGE-M3).",
+ "llm_or_encoder": "Qwen3-8B (white-box); DeepSeek-V3.1, Qwen3.5, Llama-4, GPT-5.3, Claude Sonnet 4, Gemini-3.1 (black-box); BGE-M3",
+ "datasets": [
+  {
+   "name": "NYT",
+   "details": "New York Times; 48 documents for the white-box study"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "diversity",
+  "LLM-rated coherence, conciseness, informativeness",
+  "assignment accuracy"
+ ],
+ "baselines": [
+  "ETM",
+  "DecTM",
+  "TSCTM",
+  "CombinedTM",
+  "NSTM",
+  "ECRTM",
+  "BERTopic",
+  "FASTopic"
+ ],
+ "key_results": [
+  "White-box: 26 of 48 documents correctly assigned (54.17%), with an upper bound of about 75% because 12 documents fit no topic.",
+  "Black-box assignment accuracy 69.7%-94.4% for long-context LLMs vs 19.2%-31.4% for NTMs and clustering models.",
+  "NPMI of LLM topics (0.1113-0.1886) is lower than ECRTM (0.6110) and DecTM (0.5542)."
+ ],
+ "strengths": [
+  "Connects LLM attention with NTM-style distributions; evaluates current long-context LLMs directly."
+ ],
+ "limitations": [
+  {
+   "text": "Attention dispersion bias for later-generated topics; white-box study limited to 4,000 tokens and 48 documents; retrieval adds cost; LLMs may not use long contexts fully.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic quality partly judged by LLMs, which may favour LLM-generated topics; single dataset.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/xu2025llm.txt"
+}

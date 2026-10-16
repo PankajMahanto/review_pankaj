@@ -1,0 +1,65 @@
+{
+ "key": "xu2025selfsupervised",
+ "source_id": "xu2025selfsupervised",
+ "title": "Self-supervised learning for neural topic models with variance-invariance-covariance regularization",
+ "venue": "Knowledge and Information Systems",
+ "year": 2025,
+ "doi": "10.1007/s10115-025-02367-9",
+ "read_from": "arXiv preprint 2502.09944 (published version: Knowledge and Information Systems)",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "self-supervised (VICReg) regularisation of NTMs",
+ "task": "Improving topic coherence of VAE-based NTMs",
+ "problem": "Contrastive NTMs can suffer representation collapse and rely on heuristic positive sampling.",
+ "architecture": "VICNTM: SCHOLAR-based NTM where latent topic representations of an anchor and its positive sample are regularised with variance, invariance and covariance terms (VICReg); variants with an expander to high-dimensional space and combinations with CLNTM; positive samples by tf-idf word replacement or a model-based adversarial augmentation.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20Newsgroups",
+   "details": "13k documents, 3k word types"
+  },
+  {
+   "name": "IMDb",
+   "details": "43k movie reviews, 5.7k word types"
+  },
+  {
+   "name": "Wikitext-103",
+   "details": "28.5k documents, 21k word types"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "TD",
+  "IRBO",
+  "perplexity"
+ ],
+ "baselines": [
+  "ProdLDA",
+  "ECRTM",
+  "TSCTM",
+  "UTopic",
+  "SCHOLAR",
+  "CLNTM"
+ ],
+ "key_results": [
+  "k = 50 NPMI: 0.3521 (20NG), 0.1602 (IMDb), 0.5143 (Wiki) vs CLNTM 0.3508, 0.1596, 0.5082.",
+  "k = 200 NPMI on 20NG: 0.3212 vs CLNTM 0.3187 and ECRTM 0.1811.",
+  "ECRTM has higher TD (e.g. IMDb 0.8812 vs 0.8448)."
+ ],
+ "strengths": [
+  "Brings collapse-preventing self-supervised regularisation to topic models; ten-seed evaluation."
+ ],
+ "limitations": [
+  {
+   "text": "tf-idf-based positive samples give limited diversity; adversarial augmentation is a simple first instance.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Gains over CLNTM are small (within one standard deviation in several cases).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/xu2025selfsupervised.txt"
+}
