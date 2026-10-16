@@ -28555,7 +28555,7 @@
    "crossref"
   ],
   "cid": "C01384",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Citation link prediction based on multi-relational neural topic model",
@@ -33062,7 +33062,7 @@
    "crossref"
   ],
   "cid": "C01602",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "City event detection from social media with neural embeddings and topic model visualization",
@@ -34958,7 +34958,7 @@
    "crossref"
   ],
   "cid": "C01692",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Correction to: A Semantic Embedding Enhanced Topic Model For User-Generated Textual Content Modeling In Social Ecosystems",
@@ -40433,7 +40433,7 @@
    "crossref"
   ],
   "cid": "C01949",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Author–Subject–Topic model for reviewer recommendation",
@@ -44295,7 +44295,7 @@
    "crossref"
   ],
   "cid": "C02129",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Dynamic hierarchical Dirichlet processes topic model using the power prior approach",
@@ -50444,7 +50444,7 @@
    "crossref"
   ],
   "cid": "C02416",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Research on the Construction of Topic Model in the Field of Digital Humanities Based on Sentence-BERT and LDA",
@@ -51534,7 +51534,7 @@
    "crossref"
   ],
   "cid": "C02465",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "MaTop: An Evaluative Topic Model for Marathi",
@@ -51835,7 +51835,7 @@
    "crossref"
   ],
   "cid": "C02479",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "A Sequential Topic Model for Mining Recurrent Activities from Long Term Video Logs",
@@ -54044,7 +54044,7 @@
    "crossref"
   ],
   "cid": "C02579",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Research on the Hotspots and Evolution of University Party Branch Construction Based on LDA Topic Model",
@@ -65073,7 +65073,7 @@
    "crossref"
   ],
   "cid": "C03120",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Multi-aspect Sentiment Analysis with Topic Models Modeling",
@@ -67858,7 +67858,7 @@
    "arxiv"
   ],
   "cid": "C03257",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "A Big-Data Analysis of Presidential Issue Ownership of two Prestigious Korean Newspapers : Focusing on LDA(latent Dirichlet allocation) Topic Modeling",
@@ -69139,7 +69139,7 @@
    "crossref"
   ],
   "cid": "C03319",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Online sentiment-based topic modeling for continuous data streams",
@@ -76984,7 +76984,7 @@
    "crossref"
   ],
   "cid": "C03700",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Generative AI in Computer Science Education: Insights from Topic Modeling and Text Network Analysis",
@@ -94890,7 +94890,7 @@
    "arxiv"
   ],
   "cid": "C04556",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Fashion Product Review Analysis of C2C Second-hand Trading Platforms Using Topic Modeling: Focusing on Bungaejangter",
@@ -97072,7 +97072,7 @@
    "arxiv"
   ],
   "cid": "C04659",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Co-occurrence of medical conditions: Exposing patterns through probabilistic topic modeling of snomed codes",
@@ -116762,7 +116762,7 @@
    "crossref"
   ],
   "cid": "C05599",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Cardiology record multi-label classification using latent Dirichlet allocation",
@@ -134000,7 +134000,7 @@
    "crossref"
   ],
   "cid": "C06383",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Neural Topic Modeling of Psychotherapy Sessions",
@@ -135991,7 +135991,7 @@
    "crossref"
   ],
   "cid": "C06474",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Topic Set Size Design with the Evaluation Measures for Short Text Conversation",
@@ -145457,7 +145457,7 @@
    "arxiv"
   ],
   "cid": "C06916",
-  "tier": "other"
+  "tier": "A*"
  },
  {
   "title": "Global Surveillance of COVID-19 by mining news media using a multi-source dynamic embedded topic model",
