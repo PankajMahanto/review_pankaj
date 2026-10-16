@@ -1,0 +1,67 @@
+{
+ "key": "noor2026evaluation",
+ "source_id": "noor2026evaluation",
+ "title": "Evaluation and Explainability of Unsupervised Scholarly Collaboration Recommendations",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "scholarly recommendation with topic-based researcher profiles",
+ "task": "Unsupervised content-based collaborator recommendation from titles and abstracts",
+ "problem": "Collaboration recommenders based on lexical overlap may not generalise when shared publications are absent; explainability is also needed.",
+ "architecture": "Compares TF-IDF profiles, topic-based researcher graphs (LDA and BERTopic with SciBERT encoder, plus 'clone' variants that split prolific researchers by local topic clusters; Jensen-Shannon similarity, Louvain communities), and SciBERT + Faiss retrieval; explanations via shared topics/word clouds or retrieved papers summarised by GPT-OSS-120B.",
+ "llm_or_encoder": "SciBERT; GPT-OSS-120B for explanations",
+ "datasets": [
+  {
+   "name": "MSU",
+   "details": "researchers of one institution"
+  },
+  {
+   "name": "WSU",
+   "details": "researchers of one institution"
+  },
+  {
+   "name": "CSU",
+   "details": "researchers of one institution"
+  },
+  {
+   "name": "MWC",
+   "details": "combined dataset"
+  }
+ ],
+ "metrics": [
+  "MRR",
+  "Hits@10 (historical co-authorship as proxy ground truth)"
+ ],
+ "baselines": [
+  "TF-IDF",
+  "LDA",
+  "Clone-LDA",
+  "BERTopic",
+  "Clone-BERTopic",
+  "SciBERT + Faiss"
+ ],
+ "key_results": [
+  "Full data: TF-IDF is best (MSU MRR 0.597 vs 0.430 for LDA).",
+  "50/50 holdout on MWC: Faiss MRR 0.272 and Clone-LDA 0.267 vs 0.207 for TF-IDF; BERTopic variants are weakest (e.g. MSU MRR 0.107)."
+ ],
+ "strengths": [
+  "Tests robustness when shared publication text is removed.",
+  "Compares intrinsic (topic) and post-hoc (LLM) explanations."
+ ],
+ "limitations": [
+  {
+   "text": "OpenAlex metadata may not fully represent researcher profiles.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Co-authorship is only a proxy for real collaboration potential; no human evaluation.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Application study from the author-curated corpus.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/noor2026evaluation.txt"
+}

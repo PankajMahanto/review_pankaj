@@ -1,0 +1,86 @@
+{
+ "key": "zheng2026model",
+ "source_id": "zheng2026model",
+ "title": "Model Directions, Not Words: Mechanistic Topic Models Using Sparse Autoencoders",
+ "venue": "Transactions of the Association for Computational Linguistics, vol. 14",
+ "year": 2026,
+ "doi": "10.1162/tacl.a.797",
+ "read_from": "published PDF",
+ "evidence_level": "full-text",
+ "category": "neural",
+ "subcategory": "topic models over sparse-autoencoder features of an LLM",
+ "task": "Topic modelling with abstract, feature-level topic descriptions and topic steering",
+ "problem": "Bag-of-words and word-list topics cannot express abstract concepts such as style or tone.",
+ "architecture": "Mechanistic Topic Models (mLDA, mETM, mBERTopic) replace words with interpretable SAE features of an LLM (GemmaScope 16k SAE, layer 10 of Gemma 2-9B) with descriptions from Neuronpedia; topics become distributions over features and can be turned into steering vectors for controllable generation; 'topic judge' evaluates models by LLM pairwise comparisons aggregated with a Bradley-Terry/Elo model.",
+ "llm_or_encoder": "Gemma 2-9B with GemmaScope SAEs; GPT-4.1 as judge",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "newsgroup posts"
+  },
+  {
+   "name": "Bills",
+   "details": "110-114th U.S. congress bill summaries"
+  },
+  {
+   "name": "Wiki",
+   "details": "Wikipedia 'good' articles"
+  },
+  {
+   "name": "GoEmotions",
+   "details": "short Reddit comments"
+  },
+  {
+   "name": "PoemSum",
+   "details": "poems"
+  },
+  {
+   "name": "AGNews",
+   "details": "news, four categories"
+  },
+  {
+   "name": "Yelp Polarity",
+   "details": "business reviews"
+  },
+  {
+   "name": "WritingPrompts",
+   "details": "creative stories"
+  }
+ ],
+ "metrics": [
+  "topic judge Elo (LLM pairwise)",
+  "human pairwise study",
+  "coherence ratings and intrusion",
+  "topical alignment",
+  "steering metrics"
+ ],
+ "baselines": [
+  "LDA",
+  "ETM",
+  "BERTopic",
+  "Dirichlet VAE",
+  "FASTopic"
+ ],
+ "key_results": [
+  "An MTM has the highest Elo in 14 of 16 dataset-representation rows; MTMs beat their word-based counterparts in 42 of 48 pairwise comparisons.",
+  "Human and LLM Elo agree strongly (Spearman 0.83 on Wiki and 0.95 on PoemSum with top-feature representations)."
+ ],
+ "strengths": [
+  "Feature-level topics capture abstract themes (tone, style) beyond word lists, with gains on short and abstract datasets.",
+  "Only topic model reported to enable controllable text generation via topic steering.",
+  "Proposes an evaluation that works across different vocabularies (words vs features)."
+ ],
+ "limitations": [
+  {
+   "text": "Depends on pretrained SAEs and external feature descriptions; SAEs have known weaknesses on downstream tasks.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not compared with prompting-based LLM topic models such as TopicGPT because of API cost.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "github.com/blei-lab/mechanistic-topic-models",
+ "notes": "K = 50 or 100; hyper-parameters tuned by Bayesian optimisation.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/zheng2026model.txt"
+}

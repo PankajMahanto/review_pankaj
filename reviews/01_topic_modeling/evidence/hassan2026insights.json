@@ -1,0 +1,46 @@
+{
+ "key": "hassan2026insights",
+ "source_id": "hassan2026insights",
+ "title": "Insights from GitHub Community on the Matter Standard: Developer Perspectives and Challenges",
+ "venue": "SDIoTSec workshop at NDSS 2026",
+ "year": 2026,
+ "doi": "10.14722/sdiotsec.2026.23046",
+ "read_from": "arXiv preprint 2607.01494",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "software engineering: LDA on GitHub issues",
+ "task": "Identifying developer challenges with the Matter IoT standard",
+ "problem": "Little is known about the practical problems developers face when implementing Matter.",
+ "architecture": "Issues (title + body) are cleaned (code blocks, logs removed) and modelled with Gensim LDA tuned by grid search over number of topics (5-95), passes and iterations; topics are grouped into categories and analysed qualitatively with resolution-time statistics.",
+ "llm_or_encoder": "none (LDA)",
+ "datasets": [
+  {
+   "name": "connectedhomeip",
+   "details": "13,008 issues from the official Project CHIP repository, 2020 - August 2025"
+  }
+ ],
+ "metrics": [
+  "topic prevalence",
+  "issue resolution statistics",
+  "qualitative coding"
+ ],
+ "baselines": [
+  "none (empirical study)"
+ ],
+ "key_results": [
+  "Four areas of concern: Testing, Interoperability, Development, Platform & Network; Testing covers 5,545 issues (42.63%).",
+  "725 issues (5.57%) contain security- or privacy-related keywords, 166 of them still open."
+ ],
+ "strengths": [
+  "Large real-world corpus with grid-searched LDA hyper-parameters and qualitative validation."
+ ],
+ "limitations": [
+  {
+   "text": "Repository data do not show how reports feed into standardisation decisions and only partly reflect end-user experience.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/project-chip/connectedhomeip",
+ "notes": "Workshop paper from the author-curated corpus; the code link is the analysed repository.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/hassan2026insights.txt"
+}

@@ -1,0 +1,73 @@
+{
+ "key": "li2026improving",
+ "source_id": "li2026improving",
+ "title": "Improving Topic Modeling by Distilling Soft Labels from Language Models",
+ "venue": "ICML 2026 (PMLR 306)",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint 2602.17907v3 (camera-ready header: ICML 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "distilling language-model soft labels into neural topic models",
+ "task": "Training neural topic models with contextual reconstruction targets",
+ "problem": "NTMs reconstruct sparse bag-of-words vectors, ignoring context and suffering from data sparsity; prompting-based LLM topic models are costly and do not give probabilistic topic distributions.",
+ "architecture": "DSL: a small language model is prompted to produce a one-word theme label for each document; its next-token probabilities are projected onto the topic vocabulary (temperature-scaled) to form a soft target; the topic model (ProdLDA, ECRTM or FASTopic backbone) takes the LM's last hidden state as input and is trained with a KL loss to reconstruct the soft target.",
+ "llm_or_encoder": "Llama3.1-8B-Instruct, Llama3.2-1B-Instruct, Phi-3-mini, Qwen-3.5-0.8B, ERNIE-4.5-0.3B; GTE-large-en-v1.5 for embedding baselines",
+ "datasets": [
+  {
+   "name": "20NewsGroup",
+   "details": "vocabulary 2000"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "short texts"
+  },
+  {
+   "name": "TweetTopic",
+   "details": "single-label tweets"
+  }
+ ],
+ "metrics": [
+  "C_V",
+  "LLM rating",
+  "I-RBO",
+  "Purity",
+  "retrieval precision@5/@10 (proposed)"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "CombinedTM",
+  "ZeroShotTM",
+  "ETM",
+  "BERTopic",
+  "ECRTM",
+  "FASTopic"
+ ],
+ "key_results": [
+  "Every backbone-LM combination with DSL significantly outperforms all baselines on Purity; FASTopic + DSL keeps I-RBO = 1.000 on all three datasets.",
+  "ProdLDA + DSL with ERNIE-4.5-0.3B: C_V .381, Purity .520 on 20NewsGroup and Purity .737 on StackOverflow; replacing soft targets by BoW drops StackOverflow Purity by .363."
+ ],
+ "strengths": [
+  "Works with sub-1B language models, so it is cheaper than prompting-based LLM topic modelling.",
+  "Keeps explicit, interpretable document-topic and topic-word distributions.",
+  "Introduces a retrieval-based evaluation of document-topic distributions."
+ ],
+ "limitations": [
+  {
+   "text": "Using the KL loss trades some C_V for higher diversity and Purity compared with NLL.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Vocabulary restricted to words that are single tokens under the LM tokenizer.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Only English datasets; prompting strategies beyond a single instruction left for future work.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Averaged over K = 25, 50, 75, 100 with five seeds.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/li2026improving.txt"
+}

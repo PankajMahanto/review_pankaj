@@ -1,0 +1,69 @@
+{
+ "key": "zhuang2026ngtm",
+ "source_id": "zhuang2026ngtm",
+ "title": "NGTM: Substructure-based Neural Graph Topic Model for Interpretable Graph Generation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i34.40164",
+ "read_from": "arXiv preprint 2507.13133 (published version: AAAI 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "topic modelling transferred to graphs (substructure topics)",
+ "task": "Interpretable and controllable graph generation",
+ "problem": "Graph generators are realistic but opaque about why structures are produced.",
+ "architecture": "Graphs are mixtures of latent topics, each a Gaussian over latent embeddings of substructures learned with a conditional VAE; a topic-proportion vector (softmax of a Gaussian) selects topics for W substructures, which are decoded and sequentially assembled under a global structural variable using GCN encoders and attention-based mapping matrices.",
+ "llm_or_encoder": "none (GCN encoders)",
+ "datasets": [
+  {
+   "name": "MUTAG",
+   "details": "188 nitro compounds, average 18 nodes"
+  },
+  {
+   "name": "Lobster",
+   "details": "100 synthetic tree graphs, average 52 nodes"
+  },
+  {
+   "name": "PTC",
+   "details": "344 chemical compounds, average 26 nodes"
+  },
+  {
+   "name": "Ogbg-molbbbp",
+   "details": "2039 molecular graphs, average 23 nodes"
+  }
+ ],
+ "metrics": [
+  "MMD of degree, clustering, orbit, spectral and diameter statistics",
+  "F1"
+ ],
+ "baselines": [
+  "GraphRNN",
+  "GRAN",
+  "BiGG",
+  "GraphVAE",
+  "GraphVAE-MM",
+  "DiGress",
+  "G2PT",
+  "ConStruct"
+ ],
+ "key_results": [
+  "MUTAG: average MMD 0.053 and F1 98.72, best among generators; Lobster F1 100.",
+  "Ogbg-molbbbp: lowest average MMD (0.032) but F1 96.38 vs 96.85 for G2PT."
+ ],
+ "strengths": [
+  "Brings topic-model interpretability (topic mixtures over substructures) to graph generation.",
+  "Topic-level control of graph properties (e.g. diameter, carcinogenicity class)."
+ ],
+ "limitations": [
+  {
+   "text": "Hyper-parameters (K = 10, W = 30) chosen to balance interpretability and quality rather than for best accuracy.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not best on all datasets/metrics (e.g. F1 on Ogbg-molbbbp).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Included as an example of topic modelling beyond text.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/zhuang2026ngtm.txt"
+}

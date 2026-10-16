@@ -1,0 +1,53 @@
+{
+ "key": "wang2026gentlemen",
+ "source_id": "wang2026gentlemen",
+ "title": "From Gentlemen to Frontiermen: Masculine Formations in English-Language Fiction (1771--1930)",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "digital humanities: structural topic model with covariates",
+ "task": "Measuring change in masculine character scripts in nineteenth-century fiction",
+ "problem": "Topic models of whole novels conflate masculine discourse with everything else; seeded vocabularies bias the result.",
+ "architecture": "BookNLP coreference groups character mentions and infers gender; novels are split into about 500-word windows and male-referent windows are kept; a Structural Topic Model (STM) is fitted with publication year and author gender as topic-prevalence covariates; character names removed by a data-driven document-specificity rule; K = 12 chosen on interpretive grounds after diagnostics for K = 2-15.",
+ "llm_or_encoder": "none (STM on bag-of-words); BookNLP for coreference",
+ "datasets": [
+  {
+   "name": "Novel450",
+   "details": "txtLAB English subset: 150 British and American novels, 1771-1930 (108 British, 42 American; 81 male-, 69 female-authored); 22,197 male-referent windows out of 35,434"
+  }
+ ],
+ "metrics": [
+  "held-out likelihood",
+  "residuals",
+  "exclusivity",
+  "semantic coherence (STM diagnostics)",
+  "covariate effects on topic prevalence"
+ ],
+ "baselines": [
+  "none (descriptive study)"
+ ],
+ "key_results": [
+  "Six masculine formations recovered without seed words: aristocratic-chivalric, Christian manhood, gentlemanly respectability, country squire, professional-commercial and imperial/adventure.",
+  "Formations of inherited rank and sacred authority decline while paid-work and adventure formations rise; imperial/adventure shows the largest increase."
+ ],
+ "strengths": [
+  "Character-level text selection makes topics interpretable as masculine scripts.",
+  "Covariate modelling (year, author gender) and robustness checks across topic numbers."
+ ],
+ "limitations": [
+  {
+   "text": "Female-dominant passages are excluded, so relational masculinities (fatherhood, courtship) are less visible.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No single K optimises all diagnostics; K = 12 is chosen for interpretability.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Application study from the author-curated corpus.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/wang2026gentlemen.txt"
+}

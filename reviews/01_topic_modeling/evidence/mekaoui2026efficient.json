@@ -1,0 +1,56 @@
+{
+ "key": "mekaoui2026efficient",
+ "source_id": "mekaoui2026efficient",
+ "title": "Efficient Topic Extraction via Graph-Based Labeling: A Lightweight Alternative to Deep Models",
+ "venue": "LREC 2026",
+ "year": 2026,
+ "doi": "10.63317/5q74w4fjj6sw",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "evaluation",
+ "subcategory": "automatic topic labelling with embeddings and a knowledge graph",
+ "task": "Assigning short labels to topic-word lists",
+ "problem": "Topic-word lists lack clear interpretability, and recent labelling methods rely on expensive LLMs.",
+ "architecture": "Topic words are concatenated into one sequence and embedded; Direct Similarity Labeling (DSL) picks the topic word whose embedding is closest to the topic embedding; Graph-Enhanced Labeling (GEL) expands the words through ConceptNet into a connected graph and picks the node most similar to the topic embedding; seven sub-400M sentence encoders compared.",
+ "llm_or_encoder": "all-MiniLM-L6/L12-v2, all-mpnet-base-v2, gtr-t5-large, GIST embeddings; ChatGPT-3.5 and BART-TL as comparisons",
+ "datasets": [
+  {
+   "name": "Topic_Bhatia",
+   "details": "228 topics with 19 candidate labels each; refined to 219 topics and 1,156 topic-label pairs"
+  },
+  {
+   "name": "20 Newsgroups",
+   "details": "20 topics, each with label and 10 representative words"
+  }
+ ],
+ "metrics": [
+  "BERTScore precision/recall/F1",
+  "cosine similarity to gold labels"
+ ],
+ "baselines": [
+  "Top2Label",
+  "BART-TL (ng and all)",
+  "ChatGPT-3.5"
+ ],
+ "key_results": [
+  "Topic_Bhatia: BERTScore F1 0.955 for DSL (all-MiniLM-L6-v2) and GEL (gtr-t5-large) vs 0.936 for Top2Label.",
+  "20 Newsgroups: GEL cosine 0.627 (GIST-all-MiniLM-L6-v2), 0.028 below ChatGPT-3.5 (0.655), vs 0.310 for BART-TL-all."
+ ],
+ "strengths": [
+  "Works only from topic words, without reprocessing the corpus, using small encoders.",
+  "Close to ChatGPT-3.5 quality at much lower cost."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluation relies on embedding-based similarity (BERTScore, cosine) rather than human judgement; multiple references inflate BERTScore.",
+   "source": "author-stated"
+  },
+  {
+   "text": "DSL can only return one of the input topic words; GEL depends on ConceptNet coverage.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/SalmaMekaoui/Enhancing_LLms_through_knowledge_graphs",
+ "notes": "Topic labelling (post-processing of topic models).",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/mekaoui2026efficient.txt"
+}

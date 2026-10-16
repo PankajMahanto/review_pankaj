@@ -1,0 +1,67 @@
+{
+ "key": "xuan2026llmxtm",
+ "source_id": "xuan2026llmxtm",
+ "title": "LLM-XTM: Enhancing Cross-Lingual Topic Models with Large Language Models",
+ "venue": "ACL 2026 (long)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-long.170",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "cross-lingual",
+ "subcategory": "black-box LLM refinement of cross-lingual topic models",
+ "task": "Improving coherence and alignment of cross-lingual topics",
+ "problem": "Cross-lingual topic models depend on sparse bilingual resources; earlier LLM refinements are costly, document-level, hallucination-prone and need white-box token probabilities.",
+ "architecture": "Post-hoc enhancement of a trained CLTM backbone (InfoCTM, NMTM or XTRA): every f epochs an LLM (e.g. Gemini via API) refines each topic's bilingual top-word pool, filtered by self-consistency uncertainty quantification; an MMD loss keeps original topic-word distributions close to the refined ones; a QA-style document alignment loss matches document-topic distributions to LLM-induced semantic targets.",
+ "llm_or_encoder": "Black-box LLM such as Gemini",
+ "datasets": [
+  {
+   "name": "EC News",
+   "details": "English-Chinese news, six domains"
+  },
+  {
+   "name": "Amazon Review",
+   "details": "English-Chinese reviews, binary rating"
+  },
+  {
+   "name": "Rakuten Amazon",
+   "details": "Japanese-English reviews, binary rating"
+  }
+ ],
+ "metrics": [
+  "CNPMI",
+  "TU",
+  "TQ",
+  "LLM ratings",
+  "intra- and cross-lingual classification"
+ ],
+ "baselines": [
+  "MCTA",
+  "MTAnchor",
+  "NMTM",
+  "InfoCTM",
+  "XTRA",
+  "u-SVD",
+  "SVD-LR"
+ ],
+ "key_results": [
+  "With XTRA as backbone: CNPMI +12.8% and TQ +10.5% on EC News; +35.8% coherence and +32.7% TQ on Amazon Review; TU drops by about 2%.",
+  "With InfoCTM as backbone, CNPMI rises 51.2% on EC News; on Rakuten Amazon NMTM + LLM-XTM reaches CNPMI 0.016 and TU 0.666 vs 0.012 and 0.633."
+ ],
+ "strengths": [
+  "Works with black-box LLM APIs and any VAE-based cross-lingual backbone.",
+  "Periodic refinement controls the number of LLM calls."
+ ],
+ "limitations": [
+  {
+   "text": "Cannot rescue a failed backbone: quality is bounded by the initial topics.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Multiple external API calls add latency, unsuitable for real-time or constrained settings.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/tienphat140205/LLM-XTM",
+ "notes": "Small reductions in topic uniqueness are explained by shared core words.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/xuan2026llmxtm.txt"
+}

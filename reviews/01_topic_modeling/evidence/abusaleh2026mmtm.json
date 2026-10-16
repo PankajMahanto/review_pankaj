@@ -1,0 +1,67 @@
+{
+ "key": "abusaleh2026mmtm",
+ "source_id": "abusaleh2026mmtm",
+ "title": "MMTM: Tri-Modal Topic Modeling for Long-Form Video via Similarity-Gated Fusion",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint 2605.29765",
+ "evidence_level": "full-text (preprint)",
+ "category": "multimodal",
+ "subcategory": "text-audio-visual fusion with BERTopic clustering",
+ "task": "Topic discovery in long-form video (broadcast news)",
+ "problem": "Most topic models use text only (or two modalities), ignoring acoustic and visual cues that help segment and interpret video discourse.",
+ "architecture": "Modular inference-only pipeline: Whisper transcription; audio embeddings (CLAP, Pyannote, MFCC); visual embeddings (OpenCLIP, SigLIP, a VLLM); deterministic similarity-gated fusion of the three modalities; BERTopic clustering of fused segment embeddings, optionally seed-guided; LLM-assisted topic labels (gemma3) for annotators.",
+ "llm_or_encoder": "Whisper, CLAP, OpenCLIP, SigLIP, gemma3 (labels only)",
+ "datasets": [
+  {
+   "name": "Tagesschau",
+   "details": "German broadcast news, about 54 hours, 1 January - 21 April 2026 (released)"
+  },
+  {
+   "name": "NBC News",
+   "details": "English, 2234 videos, about 20 hours"
+  }
+ ],
+ "metrics": [
+  "noise rate",
+  "transition rate",
+  "normalised entropy",
+  "Gini",
+  "number of topics",
+  "Calinski-Harabasz",
+  "Silhouette",
+  "Davies-Bouldin",
+  "NPMI",
+  "dual-annotator human evaluation"
+ ],
+ "baselines": [
+  "text-only BERTopic",
+  "text+audio and text+video concatenation"
+ ],
+ "key_results": [
+  "German: noise 0.273 -> 0.057, transition rate 0.699 -> 0.207, entropy 0.837 -> 0.923 (text-only vs MMTM).",
+  "NPMI rises from 0.77 to 0.86 on German but is essentially flat on the shorter NBC broadcasts; visual fusion is the main source of gain."
+ ],
+ "strengths": [
+  "Joint use of speech, audio and vision for topic discovery, with a released human-validated corpus.",
+  "Each module is replaceable; no training or fine-tuning needed."
+ ],
+ "limitations": [
+  {
+   "text": "Inherits ASR errors; fixed (non-learned) modality weights.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Seed-guided topics may bias discovery toward predefined concepts.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Only two languages and broadcast news; coherence gains are corpus-dependent; no prior tri-modal baseline to compare against.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Code and data promised on acceptance.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/abusaleh2026mmtm.txt"
+}

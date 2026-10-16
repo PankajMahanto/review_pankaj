@@ -20,6 +20,7 @@ def norm(s):
 
 def numbers(text):
     # decimals, percentages and integers with >= 2 digits (skip years and single digits)
+    text = re.sub(r"(?<![\d])\.(\d)", r"0.\1", text)  # ".381" -> "0.381"
     out = []
     for m in re.finditer(r"(?<![\w.])(\d+(?:,\d{3})*(?:\.\d+)?)(?!\w)", text):
         v = m.group(1)

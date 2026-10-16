@@ -1,0 +1,48 @@
+{
+ "key": "ghadafi2026finfluencers",
+ "source_id": "ghadafi2026finfluencers",
+ "title": "Finfluencers on TikTok: A Longitudinal Analysis of Content, Engagement, and Disclaimer Practices",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint 2607.05203",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "social media / finance: LDA themes of influencer videos",
+ "task": "Characterising UK financial-influencer content, engagement, disclaimers and networks",
+ "problem": "Financial advice from social-media influencers may be unreliable and poorly disclosed.",
+ "architecture": "LDA topic modelling of video transcripts/descriptions, sentiment analysis of comments, rule-based detection of explicit/weak disclaimers and risk language, and social network analysis of follower graphs.",
+ "llm_or_encoder": "none reported for topic modelling (LDA)",
+ "datasets": [
+  {
+   "name": "TikTok",
+   "details": "13,215 videos and 104,097 comments from 71 UK finfluencers (April-September 2024); follow-up 8,565 videos from 59 accounts (October 2025 - March 2026)"
+  }
+ ],
+ "metrics": [
+  "descriptive statistics (topic shares, sentiment, engagement, network measures)"
+ ],
+ "baselines": [
+  "none (descriptive study)"
+ ],
+ "key_results": [
+  "LDA yields four dominant themes: Entrepreneurship & Side Hustles, Property Investing, Active Trading, Saving & Budgeting.",
+  "Only two finfluencers had a profile disclaimer; disclaimers concentrate in trading-related content."
+ ],
+ "strengths": [
+  "Longitudinal design with two observation periods from the official TikTok Research API."
+ ],
+ "limitations": [
+  {
+   "text": "UK TikTok creators found by finance keywords only; may not generalise to other platforms or regions.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No quantitative topic-quality evaluation reported.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Raw data not redistributed due to API terms.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/ghadafi2026finfluencers.txt"
+}

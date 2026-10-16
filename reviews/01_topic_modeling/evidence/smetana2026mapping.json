@@ -1,0 +1,65 @@
+{
+ "key": "smetana2026mapping",
+ "source_id": "smetana2026mapping",
+ "title": "Mapping scientific literature with large language models and topic modeling",
+ "venue": "Scientometrics",
+ "year": 2026,
+ "doi": "10.1007/s11192-026-05643-9",
+ "read_from": "open-access copy",
+ "evidence_level": "full-text",
+ "category": "application",
+ "subcategory": "science mapping with recursive clustering and LLM labelling",
+ "task": "Mapping a journal's engineering literature into interpretable topics and cross-topic links",
+ "problem": "Keyword systems and bag-of-words topic models struggle to capture the fragmented, interdisciplinary structure of modern science.",
+ "architecture": "Abstracts embedded with text-embedding-3-small and clustered by K-means; GPT-4o-mini writes a label and description per cluster and re-classifies every abstract five times (3-of-5 consensus); clusters with agreement >= 0.60 are kept and the rest re-clustered recursively; a second full-text pass assigns secondary topics; a bipartite network links primary and secondary topics.",
+ "llm_or_encoder": "OpenAI text-embedding-3-small; GPT-4o-mini",
+ "datasets": [
+  {
+   "name": "PNAS",
+   "details": "engineering-related articles over 20 years; 1,493 validated research articles"
+  }
+ ],
+ "metrics": [
+  "C_V",
+  "UMass",
+  "topic diversity",
+  "Jaccard similarity",
+  "manual Top-1/Top-3 accuracy",
+  "precision/recall/lift against PNAS dual classification"
+ ],
+ "baselines": [
+  "BERTopic",
+  "TopicGPT",
+  "PDDP",
+  "Gensim LDA",
+  "MALLET LDA",
+  "Sklearn LDA",
+  "Gensim NMF",
+  "Sklearn NMF"
+ ],
+ "key_results": [
+  "Highest topic diversity (0.909) and lowest Jaccard overlap (6.15E-03) vs BERTopic 0.765 and 2.90E-02; MALLET LDA has the best C_V (0.540 vs 0.446).",
+  "Manual validation accuracy 75.9% on a 20% sample (303 abstracts); 16 topics plus an 'Other' category covering 9.8% of abstracts."
+ ],
+ "strengths": [
+  "Consensus re-classification reduces LLM stochasticity; an 'Other' category flags emerging or noisy content.",
+  "External validation against editorial dual-classifications."
+ ],
+ "limitations": [
+  {
+   "text": "The number of clusters per recursion step must be fixed or chosen heuristically.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Automated coherence metrics may not align with human judgement.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Coherence (C_V, UMass) is lower than several classical baselines.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Uses commercial OpenAI models.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/smetana2026mapping.txt"
+}

@@ -448,7 +448,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "zhang2025enhanced": {
@@ -456,7 +456,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "ranaweera2025bertdetect": {
@@ -470,7 +470,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "ma2025cast": {
@@ -512,7 +512,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "breuer2025elda": {
@@ -548,7 +548,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "azecka2025factor": {
@@ -562,7 +562,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "zve2025outliers": {
@@ -572,12 +572,10 @@
   "arxiv_id": "2509.22030"
  },
  "li2025fuzzy": {
-  "source": "",
-  "version": "not-retrieved",
-  "url": "",
-  "tried": [
-   "arxiv-title-search:HTTPError"
-  ]
+  "source": "oa-link",
+  "version": "open-access-copy",
+  "url": "https://assets-eu.researchsquare.com/files/rs-8241675/v1_covered_a958ce10-cfc0-4488-9edc-aef62e0e718d.pdf?c=1777305905",
+  "arxiv_id": ""
  },
  "nguyen2025glocom": {
   "source": "corpus-copy",
@@ -596,7 +594,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "lim2025interpreting": {
@@ -628,7 +626,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "wang2025mit": {
@@ -644,7 +642,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "granese2025merging": {
@@ -706,7 +704,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "nguyen2025outofvocabulary": {
@@ -816,7 +814,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "chen2025supervised": {
@@ -856,7 +854,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
-   "arxiv-title-search:HTTPError"
+   "arxiv-title-search:no-match"
   ]
  },
  "calvobartolome2025topic": {
@@ -1032,6 +1030,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
+   "oa-link:HTTPError",
    "arxiv-title-search:HTTPError"
   ]
  },
@@ -1068,12 +1067,10 @@
   "arxiv_id": ""
  },
  "nagda2024putting": {
-  "source": "",
-  "version": "not-retrieved",
-  "url": "",
-  "tried": [
-   "arxiv-title-search:HTTPError"
-  ]
+  "source": "oa-link",
+  "version": "open-access-copy",
+  "url": "https://www.ijcai.org/proceedings/2024/0710.pdf",
+  "arxiv_id": ""
  },
  "aftar2024robert2vectm": {
   "source": "acl-anthology",
@@ -1164,6 +1161,7 @@
   "version": "not-retrieved",
   "url": "",
   "tried": [
+   "oa-link:not-pdf",
    "arxiv-title-search:HTTPError"
   ]
  },
