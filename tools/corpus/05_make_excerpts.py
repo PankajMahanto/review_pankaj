@@ -22,7 +22,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 POOL = ROOT / "corpus_2025_2026" / "pool.json"
 SCREEN = ROOT / "corpus_2025_2026" / "screening.json"
 
-HEAD = r"^\s*(?:\d{1,2}(?:\.\d{1,2})?\.?|[IVX]{1,4}\.)?\s*{}\b[^\n]{{0,60}}$"
+HEAD = r"^\s*(?:\d{{1,2}}(?:\.\d{{1,2}})?\.?|[IVX]{{1,4}}\.)?\s*{}\b[^\n]{{0,60}}$"
 SECTIONS = [
     ("METHOD", ["Method", "Methodology", "Proposed Method", "Proposed Model", "Model", "Approach",
                 "Framework", "Our Approach", "Our Method", "Problem Formulation", "Preliminaries"], 420),

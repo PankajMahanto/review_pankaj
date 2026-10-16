@@ -1,0 +1,68 @@
+{
+ "key": "yang2025neural",
+ "source_id": "P0001",
+ "title": "Neural Topic Modeling with Large Language Models in the Loop",
+ "venue": "ACL 2025 (long)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.70",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-based",
+ "subcategory": "LLM-in-the-loop refinement of neural topic models",
+ "task": "Topic discovery on long and short document collections",
+ "problem": "Direct LLM topic discovery suffers from incomplete topic coverage, topic misalignment and inefficiency, while NTM topics are often hard to interpret.",
+ "architecture": "Plug-in framework (LLM-ITL) on top of an existing NTM: the NTM learns global topics and document-topic representations; an LLM prompted with each topic's top words (chain-of-thought prompt) returns a topic label and refined topic words; an Optimal Transport distance aligns the NTM topic-word distribution with the LLM-refined words; the alignment loss is weighted by the LLM's confidence (label token probability or word-intrusion confidence); refinement starts after a warm-up phase.",
+ "llm_or_encoder": "LLaMA3-8B-Instruct (main experiments); GloVe word embeddings build the OT cost matrix",
+ "datasets": [
+  {
+   "name": "20Newsgroup",
+   "details": "long documents, K = 50"
+  },
+  {
+   "name": "R8",
+   "details": "Reuters-21578 subset, long documents, K = 50"
+  },
+  {
+   "name": "DBpedia",
+   "details": "short documents, K = 25"
+  },
+  {
+   "name": "AGNews",
+   "details": "short documents, K = 25"
+  }
+ ],
+ "metrics": [
+  "C_V coherence",
+  "topic alignment PN = mean of Purity and NMI"
+ ],
+ "baselines": [
+  "8 NTMs as base models (e.g. NVDM, ProdLDA, SCHOLAR, ETM, NSTM, ECRTM)",
+  "LDA",
+  "BERTopic",
+  "TopicGPT"
+ ],
+ "key_results": [
+  "C_V improves for every base NTM, from +7.4% (NSTM on DBpedia) to +70.6% (ECRTM on 20News).",
+  "Topic alignment stays comparable to the base model, changing between -3.5% and +4.2%.",
+  "Example: ETM on 20News, C_V 0.491 -> 0.578 with LLM-ITL."
+ ],
+ "strengths": [
+  "Model-agnostic: works with many NTMs and LLMs.",
+  "LLM is queried at the word level, cheaper than document-level LLM topic modelling.",
+  "Keeps document-topic proportions, which TopicGPT does not provide.",
+  "Confidence weighting reduces the effect of LLM hallucination on hard topics."
+ ],
+ "limitations": [
+  {
+   "text": "Over-reliance on the LLM can inject out-of-corpus information or bias topics toward the LLM's pre-training knowledge, hurting alignment when the corpus differs from the LLM's training data.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Each trial takes a few hours on a single 80GB A100 GPU.",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "https://github.com/Xiaohao-Yang/LLM-ITL",
+ "notes": "Five runs with different seeds; mean and std reported.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0001.txt"
+}

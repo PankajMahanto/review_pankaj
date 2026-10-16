@@ -1,0 +1,76 @@
+{
+ "key": "vu2025topic",
+ "source_id": "P0010",
+ "title": "Topic Modeling for Short Texts via Optimal Transport-Based Clustering",
+ "venue": "Findings of ACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-acl.398",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "short-text",
+ "subcategory": "neural short-text topic model with optimal-transport clustering",
+ "task": "Short-text topic modelling (topics and document-topic proportions)",
+ "problem": "In short texts, document representations and topic embeddings are hard to separate, so inferred topic proportions are poor.",
+ "architecture": "EnCOT, a plug-in for NTMs (shown on GloCOM, ETM, ECRTM): documents are clustered with PLM embeddings into global clusters; two OT losses align document-topic vectors with the global cluster centroids and align cluster centroids with topic embeddings; topics are built from word and topic embeddings as in ECRTM.",
+ "llm_or_encoder": "Pre-trained sentence embeddings (sentence-transformers) for document clustering; ChatGPT for the LLMScore evaluation",
+ "datasets": [
+  {
+   "name": "GoogleNews",
+   "details": "short texts (from GloCOM)"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "short texts"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "short texts"
+  },
+  {
+   "name": "Biomedical",
+   "details": "short texts"
+  }
+ ],
+ "metrics": [
+  "C_V (top-15 words, Wikipedia reference)",
+  "Topic Diversity (TD)",
+  "Purity",
+  "NMI",
+  "LLMScore"
+ ],
+ "baselines": [
+  "ProdLDA",
+  "ETM",
+  "ECRTM",
+  "FASTopic",
+  "NQTM",
+  "TSCTM",
+  "kNNTM",
+  "GloCOM"
+ ],
+ "key_results": [
+  "GloCOM-EnCOT, K = 50: GoogleNews Purity 0.613 / NMI 0.848 vs 0.586 / 0.817 for GloCOM; TD 1.0 on all four datasets.",
+  "Adding EnCOT to ETM on StackOverflow (K = 50) raises Purity from 0.418 to 0.566 and NMI from 0.28 to 0.415."
+ ],
+ "strengths": [
+  "Plug-in loss that improves several different NTMs.",
+  "Large gains in document-topic quality (Purity, NMI) with maximal topic diversity."
+ ],
+ "limitations": [
+  {
+   "text": "Cluster centroids are not used at inference time.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not yet adapted to dynamic, online or streaming topic modelling.",
+   "source": "author-stated"
+  },
+  {
+   "text": "C_V of GloCOM-EnCOT on GoogleNews (0.45) is below GloCOM (0.475) at K = 50, so coherence does not always improve.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/manhdo249/EnCOT",
+ "notes": "G = 30 clusters in the main tables.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0010.txt"
+}

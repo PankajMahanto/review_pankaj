@@ -1,0 +1,9 @@
+{
+ "corpus": 87,
+ "acl_anthology": 477,
+ "crossref": 7255,
+ "arxiv": 875,
+ "identified_total": 8694,
+ "after_dedup": 7743,
+ "duplicates_removed": 951
+}

@@ -1,0 +1,68 @@
+{
+ "key": "reuter2025probabilistic",
+ "source_id": "P0007",
+ "title": "Probabilistic Topic Modeling With Transformer Representations",
+ "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+ "year": 2025,
+ "doi": "10.1109/tnnls.2025.3538262",
+ "read_from": "arXiv preprint 2403.03737v1 (published version: IEEE TNNLS 2025)",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "VAE-based probabilistic model with topics as Gaussians in transformer embedding space",
+ "task": "Topic discovery with calibrated document-topic and word-topic probabilities",
+ "problem": "Clustering-based models (BERTopic, Top2Vec) assign topics heuristically, while LDA-style models ignore transformer embedding spaces.",
+ "architecture": "TNTM: LDA-like generative process in which each topic is a multivariate normal distribution in a transformer word-embedding space (dimension reduced with UMAP); inference with a VAE whose encoder can take sentence embeddings; GMM clustering initialises topics for faster, more stable inference.",
+ "llm_or_encoder": "Transformer word embeddings; document embeddings from all-MiniLM-L6-v2; evaluation embeddings from paraphrase-MiniLM-L6-v2",
+ "datasets": [
+  {
+   "name": "20 Newsgroups",
+   "details": "evaluated with 20 and 200 topics"
+  },
+  {
+   "name": "Reuters",
+   "details": "evaluated with 90 and 200 topics"
+  }
+ ],
+ "metrics": [
+  "embedding coherence",
+  "NPMI",
+  "topic diversity (unique words in top-20)",
+  "embedding diversity"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "LSI",
+  "HDP",
+  "HTMM",
+  "Gaussian LDA",
+  "Top2Vec",
+  "BERTopic",
+  "ProdLDA",
+  "NeuralLDA",
+  "CTM",
+  "ETM"
+ ],
+ "key_results": [
+  "20 Newsgroups, 20 topics: embedding coherence 0.370 (TNTM with document embeddings) vs 0.341 for Top2Vec, the best baseline; topic diversity 1.00.",
+  "Topic diversity stays close to 1 even with 200 topics, whereas other models degrade as the number of topics grows."
+ ],
+ "strengths": [
+  "Fully probabilistic document-topic assignments instead of heuristic cluster labels.",
+  "Topics defined relative to an embedding model allow out-of-vocabulary enrichment and new-document inference.",
+  "Hyper-parameters of all baselines tuned with Bayesian optimisation (OCTIS)."
+ ],
+ "limitations": [
+  {
+   "text": "NPMI of TNTM (-0.071 and -0.083 on 20 Newsgroups, 20 topics) is lower than Top2Vec (0.164) and BERTopic (0.033); the authors argue PMI-based coherence is unreliable for neural models and use embedding coherence instead.",
+   "source": "reviewer observation from reported table"
+  },
+  {
+   "text": "Future work is needed for short and sparse texts.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/ArikReuter/TNTM",
+ "notes": "Numbers are from the arXiv version; the published TNNLS version may differ slightly.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0007.txt"
+}

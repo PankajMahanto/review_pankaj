@@ -1,0 +1,73 @@
+{
+ "key": "liu2026dvidtm",
+ "source_id": "P0006",
+ "title": "DVI-DTM: Dual-View Representation Learning for Interpretable Short Text Dynamic Topic Modeling",
+ "venue": "ACL 2026 (long)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-long.1318",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "dynamic",
+ "subcategory": "short-text dynamic topic model with LLM agents",
+ "task": "Dynamic (temporal) topic modelling of short texts with human-readable topic descriptions",
+ "problem": "Semantic ambiguity (sparse short texts, temporal semantic shift) and interpretation ambiguity (topics without human-understandable descriptions).",
+ "architecture": "Dual-View Representation Learning aligns a sentence view (trainable SBERT encoder) and a temporal-aware term view (frozen PLM term embeddings passed through a Temporal Term Encoder: multi-head self-attention with term and time positional encodings); a GEA Topic Refiner of three LLM agents (Generator, Evaluator, Assigner) writes topic descriptions and refines document-topic assignments; Dual-Factor Ranking (semantic relevance + temporal uniqueness) selects evolving topic terms.",
+ "llm_or_encoder": "all-mpnet-base-v2 SBERT; LLM agents: Qwen3-max, DeepSeek-R1, GPT-4o, GPT-5",
+ "datasets": [
+  {
+   "name": "StackOverflow",
+   "details": "19,796 question titles, 2008-2012"
+  },
+  {
+   "name": "NYT",
+   "details": "24,952 news headlines, 2001-2024"
+  },
+  {
+   "name": "Biomedical",
+   "details": "20,463 paper titles, 1980-2013"
+  }
+ ],
+ "metrics": [
+  "Purity",
+  "NMI",
+  "NPMI",
+  "C_V",
+  "Topic Diversity (TD)",
+  "Temporal Topic Coherence (TTC)",
+  "human evaluation"
+ ],
+ "baselines": [
+  "BERTopic",
+  "ANTM",
+  "DTM",
+  "DETM",
+  "DSNTM",
+  "CFDTM",
+  "kNNTM",
+  "GloCOM-EnCOT",
+  "TopicGPT",
+  "ECRTM+LLM-ITL"
+ ],
+ "key_results": [
+  "StackOverflow (GPT-5 agents): Purity 0.545, NMI 0.482, NPMI 0.290, C_V 0.620, TD 1.000, TTC 0.581.",
+  "Average gains over baselines: 5.5% Purity and 3.2% NMI; over dynamic baselines 3.0% NPMI, 7.0% C_V, 4.1% TD and 8.5% TTC."
+ ],
+ "strengths": [
+  "Addresses both sparsity and interpretability of short-text dynamic topics.",
+  "Ablation shows the model stays competitive without the LLM refiner.",
+  "Tested with four different LLMs."
+ ],
+ "limitations": [
+  {
+   "text": "Depends on large LLMs in the refiner; smaller open models (e.g. Llama-3-8B) may fail to generate discriminative topic descriptions.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Generated topics may reflect biases present in the real-world datasets.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "K = 20 topics, averages over five runs; T-test significance reported.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0006.txt"
+}

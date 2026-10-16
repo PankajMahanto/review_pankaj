@@ -1,0 +1,84 @@
+{
+ "key": "singaravadivelan2026cobwebtm",
+ "source_id": "P0009",
+ "title": "CobwebTM: Probabilistic Concept Formation for Lifelong and Hierarchical Topic Modeling",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1753",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "hierarchical",
+ "subcategory": "lifelong / streaming hierarchical topic model via incremental concept formation",
+ "task": "Lifelong (streaming) and hierarchical topic discovery without fixing the number of topics",
+ "problem": "Neural topic models need heavy tuning and suffer catastrophic forgetting in streaming settings; classical probabilistic models lack flexibility for streaming data.",
+ "architecture": "Adapts the Cobweb incremental probabilistic concept-formation algorithm to continuous document embeddings, building a concept hierarchy online; topic words per node via c-TF-IDF; only two user-set granularity parameters.",
+ "llm_or_encoder": "RoBERTa Large document embeddings (dimension 1,024)",
+ "datasets": [
+  {
+   "name": "TweetNER7",
+   "details": "temporally ordered stream (lifelong setting)"
+  },
+  {
+   "name": "Stack Overflow",
+   "details": "shuffled stream (lifelong) and hierarchical benchmark"
+  },
+  {
+   "name": "Spatiotemporal News",
+   "details": "temporally ordered stream (lifelong setting)"
+  },
+  {
+   "name": "20 Newsgroups",
+   "details": "hierarchical benchmark"
+  },
+  {
+   "name": "AG News",
+   "details": "hierarchical benchmark"
+  }
+ ],
+ "metrics": [
+  "C_V coherence",
+  "Adjusted Rand Index across batches (stability)",
+  "Topic Centroid Drift (TCD)",
+  "Intruder Similarity (ISIM)",
+  "hierarchical topic-modeling metrics"
+ ],
+ "baselines": [
+  "Online LDA",
+  "Lifelong NTM (DocNADE-based)",
+  "BERTopic with DBSTREAM",
+  "BERTopic with MiniBatchKMeans",
+  "BERTopic re-fit with HDBSCAN",
+  "BERTopic re-fit with KMeans",
+  "hierarchical topic models"
+ ],
+ "key_results": [
+  "TweetNER: final C_V 0.741 vs 0.673 for re-fit HDBSCAN; TCD 0.000.",
+  "Stack Overflow: final C_V 0.613, ARI 0.997; Spatiotemporal News: final C_V 0.796, ARI 0.984."
+ ],
+ "strengths": [
+  "No learnable parameters and no need to set the number of topics.",
+  "Supports dynamic topic creation and hierarchical organisation in one online procedure.",
+  "Stable topics across batches (near-zero centroid drift)."
+ ],
+ "limitations": [
+  {
+   "text": "Topic words are extracted post hoc from documents at each node rather than generated during hierarchy construction.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Hierarchy quality is bounded by the pretrained document encoder.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Sensitive to document arrival order in non-stationary streams; globally optimal hierarchies are not guaranteed.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Memory and computation grow with the hierarchy in long-running deployments.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/Teachable-AI-Lab/cobweb-language-embedding",
+ "notes": "Results averaged over three trials; initial batch 2,000 documents, then batches of 125.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0009.txt"
+}

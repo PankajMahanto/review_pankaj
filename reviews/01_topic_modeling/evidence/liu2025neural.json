@@ -1,0 +1,76 @@
+{
+ "key": "liu2025neural",
+ "source_id": "P0002",
+ "title": "Neural Topic Modeling via Contextual and Graph Information Fusion",
+ "venue": "EMNLP 2025 (main)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.emnlp-main.670",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "neural",
+ "subcategory": "VAE-based NTM with contextual (BERT) and word co-occurrence graph fusion",
+ "task": "Topic discovery with interpretable topic-word and document-topic distributions",
+ "problem": "Existing NTMs produce uninformative or incoherent topics; contextual (PLM) information is used in isolation or not combined well with TF-IDF/BoW information.",
+ "architecture": "CGTM: VAE framework with a Siamese encoder that yields a BoW/TF-IDF topic proportion and a BERT-based contextual topic proportion, fused with a Dirichlet-drawn weight; topic alignment and topic sharpening constraints; a BoW decoder plus a GraphDecoder that reconstructs a corpus-level word co-occurrence graph (graph information fusion).",
+ "llm_or_encoder": "BERT representations; LLM used only for label-alignment evaluation",
+ "datasets": [
+  {
+   "name": "20News",
+   "details": "11,314 train / 7,531 test, vocab 3,997, avg length 64.8, 20 labels"
+  },
+  {
+   "name": "NYT",
+   "details": "7,456 train / 5,233 test, vocab 8,174, avg length 272.2, 29 labels"
+  },
+  {
+   "name": "AGnews",
+   "details": "59,000 train / 3,800 test, vocab 4,422, avg length 19.1, 4 labels (short text)"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "C_V",
+  "Topic Uniqueness (TU)",
+  "document classification",
+  "human Word Intrusion Score (WIS)",
+  "human Topic Intrusion Score (TIS)",
+  "LLM-based label-topic alignment"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "CombinedTM",
+  "BERTopic",
+  "CWTM",
+  "FASTopic",
+  "GNTM",
+  "GINopic",
+  "ETM",
+  "ECRTM"
+ ],
+ "key_results": [
+  "Best NPMI on the three datasets; the strongest graph baseline (GINopic) obtains NPMI about 20% lower.",
+  "Human evaluation: WIS 0.750 vs 0.530 for GINopic (best baseline), a 31% gain; TIS 0.713, tied with GINopic."
+ ],
+ "strengths": [
+  "Combines TF-IDF and BERT information at the topic level rather than by simple concatenation.",
+  "Uses both automatic and human evaluation, plus LLM-based label alignment."
+ ],
+ "limitations": [
+  {
+   "text": "Directly enhancing topic interpretability remains hard; the authors suggest LLM-based approaches such as TopicGPT as future work.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic intrusion does not account for topic repetition and may inflate scores; it also needs time-consuming manual evaluation.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Time complexity could be reduced further.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/Liujyuan/CGTM",
+ "notes": "Statistical significance reported (p < 0.05) for improvements over best baseline.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0002.txt"
+}
