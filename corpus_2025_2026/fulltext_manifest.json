@@ -1,0 +1,1546 @@
+{
+ "P0001": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.70.pdf",
+  "arxiv_id": ""
+ },
+ "P0002": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.670.pdf",
+  "arxiv_id": ""
+ },
+ "P0003": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0004": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0005": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0006": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.1318.pdf",
+  "arxiv_id": ""
+ },
+ "P0007": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2403.03737",
+  "arxiv_id": "2403.03737"
+ },
+ "P0008": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0009": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1753.pdf",
+  "arxiv_id": ""
+ },
+ "P0010": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.398.pdf",
+  "arxiv_id": ""
+ },
+ "P0011": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0012": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0013": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0014": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.18043",
+  "arxiv_id": "2503.18043"
+ },
+ "P0015": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0016": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0017": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.298.pdf",
+  "arxiv_id": ""
+ },
+ "P0018": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-eacl.187.pdf",
+  "arxiv_id": ""
+ },
+ "P0019": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.51.pdf",
+  "arxiv_id": ""
+ },
+ "P0020": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.1107.pdf",
+  "arxiv_id": ""
+ },
+ "P0021": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0022": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0023": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.715.pdf",
+  "arxiv_id": ""
+ },
+ "P0024": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-naacl.44.pdf",
+  "arxiv_id": ""
+ },
+ "P0025": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0026": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0027": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0028": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0029": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2601.11872",
+  "arxiv_id": "2601.11872"
+ },
+ "P0030": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0031": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.964.pdf",
+  "arxiv_id": "2410.21054"
+ },
+ "P0032": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0033": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.1131.pdf",
+  "arxiv_id": "2507.12451"
+ },
+ "P0034": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.298.pdf",
+  "arxiv_id": ""
+ },
+ "P0035": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://vbn.aau.dk/ws/files/841550451/3774905.3794645.pdf",
+  "arxiv_id": ""
+ },
+ "P0036": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2406.09008",
+  "arxiv_id": "2406.09008"
+ },
+ "P0037": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "P0038": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0039": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0040": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0041": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0042": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.590.pdf",
+  "arxiv_id": ""
+ },
+ "P0043": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0044": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0045": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1802.pdf",
+  "arxiv_id": ""
+ },
+ "P0046": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.eacl-long.312.pdf",
+  "arxiv_id": ""
+ },
+ "P0047": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.326.pdf",
+  "arxiv_id": ""
+ },
+ "P0048": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0049": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0050": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2504.07711",
+  "arxiv_id": "2504.07711"
+ },
+ "P0051": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2411.12600",
+  "arxiv_id": "2411.12600"
+ },
+ "P0052": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0053": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0054": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.134.pdf",
+  "arxiv_id": ""
+ },
+ "P0055": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0056": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0057": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.660.pdf",
+  "arxiv_id": ""
+ },
+ "P0058": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0059": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0060": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.772.pdf",
+  "arxiv_id": "2507.00828"
+ },
+ "P0061": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0063": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2507.13133",
+  "arxiv_id": "2507.13133"
+ },
+ "P0064": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/001_Advanced_Topic_Modeling_Techniques_for_Categorizing_Software_Vulnerabi__2607.03887v1.pdf",
+  "arxiv_id": "2607.03887"
+ },
+ "P0065": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0066": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0067": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0068": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2412.03331",
+  "arxiv_id": "2412.03331"
+ },
+ "P0069": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0070": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0071": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0072": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.482.pdf",
+  "arxiv_id": ""
+ },
+ "P0073": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0074": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.291.pdf",
+  "arxiv_id": "2510.06747"
+ },
+ "P0075": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0076": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.170.pdf",
+  "arxiv_id": "2605.03299"
+ },
+ "P0077": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0078": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.241.pdf",
+  "arxiv_id": ""
+ },
+ "P0079": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0080": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0082": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0083": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.1283.pdf",
+  "arxiv_id": ""
+ },
+ "P0084": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1927.pdf",
+  "arxiv_id": ""
+ },
+ "P0086": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40810/44771",
+  "arxiv_id": ""
+ },
+ "P0087": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2601.11118",
+  "arxiv_id": "2601.11118"
+ },
+ "P0088": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.471.pdf",
+  "arxiv_id": ""
+ },
+ "P0089": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2511.17129",
+  "arxiv_id": "2511.17129"
+ },
+ "P0090": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1858.pdf",
+  "arxiv_id": ""
+ },
+ "P0091": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.1005.pdf",
+  "arxiv_id": ""
+ },
+ "P0092": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.553.pdf",
+  "arxiv_id": ""
+ },
+ "P0093": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/34816/36971",
+  "arxiv_id": ""
+ },
+ "P0094": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1662.pdf",
+  "arxiv_id": ""
+ },
+ "P0095": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-naacl.122.pdf",
+  "arxiv_id": ""
+ },
+ "P0096": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/34256/36411",
+  "arxiv_id": ""
+ },
+ "P0097": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0098": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40832/44793",
+  "arxiv_id": ""
+ },
+ "P0101": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.1015.pdf",
+  "arxiv_id": "2305.14299"
+ },
+ "P0102": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.743.pdf",
+  "arxiv_id": ""
+ },
+ "P0103": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2502.13595",
+  "arxiv_id": "2502.13595"
+ },
+ "P0104": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40572/44533",
+  "arxiv_id": ""
+ },
+ "P0105": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.244.pdf",
+  "arxiv_id": "2409.12887"
+ },
+ "P0107": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1135.pdf",
+  "arxiv_id": "2502.14862"
+ },
+ "P0108": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.179.pdf",
+  "arxiv_id": ""
+ },
+ "P0109": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.231.pdf",
+  "arxiv_id": ""
+ },
+ "P0112": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2410.02525",
+  "arxiv_id": "2410.02525"
+ },
+ "P0118": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.174.pdf",
+  "arxiv_id": ""
+ },
+ "P0119": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.154.pdf",
+  "arxiv_id": ""
+ },
+ "P0124": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2605.00597",
+  "arxiv_id": "2605.00597"
+ },
+ "P0125": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.641.pdf",
+  "arxiv_id": ""
+ },
+ "P0126": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0127": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2412.14867",
+  "arxiv_id": ""
+ },
+ "P0128": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2504.15640",
+  "arxiv_id": "2504.15640"
+ },
+ "P0129": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1129.pdf",
+  "arxiv_id": ""
+ },
+ "P0130": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1454.pdf",
+  "arxiv_id": "2605.01372"
+ },
+ "P0131": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1773.pdf",
+  "arxiv_id": ""
+ },
+ "P0132": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2410.03435",
+  "arxiv_id": "2410.03435"
+ },
+ "P0138": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0139": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1634.pdf",
+  "arxiv_id": "2507.01234"
+ },
+ "P0140": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0148": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.2114.pdf",
+  "arxiv_id": "2606.13647"
+ },
+ "P0149": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.eacl-long.130.pdf",
+  "arxiv_id": ""
+ },
+ "P0152": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.930.pdf",
+  "arxiv_id": ""
+ },
+ "P0157": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.50.pdf",
+  "arxiv_id": "2609.32684"
+ },
+ "P0166": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2603.15523",
+  "arxiv_id": "2603.15523"
+ },
+ "P0168": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.758.pdf",
+  "arxiv_id": ""
+ },
+ "P0172": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.727.pdf",
+  "arxiv_id": ""
+ },
+ "P0173": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.159.pdf",
+  "arxiv_id": ""
+ },
+ "P0182": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-srw.102.pdf",
+  "arxiv_id": ""
+ },
+ "P0200": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.540.pdf",
+  "arxiv_id": ""
+ },
+ "P0218": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0243": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.758.pdf",
+  "arxiv_id": ""
+ },
+ "P0245": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/002_Beyond_Looking_Up_Try_Looking_Around_Harmonizing_Global_Structure_and__2607.10548v1.pdf",
+  "arxiv_id": "2607.10548"
+ },
+ "P0246": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0249": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.213.pdf",
+  "arxiv_id": ""
+ },
+ "P0250": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.522.pdf",
+  "arxiv_id": ""
+ },
+ "P0254": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "openreview:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0255": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-eacl.86.pdf",
+  "arxiv_id": ""
+ },
+ "P0260": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0267": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0268": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2604.03180",
+  "arxiv_id": "2604.03180"
+ },
+ "P0269": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2507.06622",
+  "arxiv_id": "2507.06622"
+ },
+ "P0287": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2409.10907",
+  "arxiv_id": "2409.10907"
+ },
+ "P0291": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.314.pdf",
+  "arxiv_id": ""
+ },
+ "P0292": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.316.pdf",
+  "arxiv_id": ""
+ },
+ "P0293": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2502.11571",
+  "arxiv_id": "2502.11571"
+ },
+ "P0298": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0299": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2510.07720",
+  "arxiv_id": "2510.07720"
+ },
+ "P0300": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2508.15823",
+  "arxiv_id": "2508.15823"
+ },
+ "P0302": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0303": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.1923.pdf",
+  "arxiv_id": "2604.18199"
+ },
+ "P0304": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.2183.pdf",
+  "arxiv_id": ""
+ },
+ "P0307": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2504.21507",
+  "arxiv_id": "2504.21507"
+ },
+ "P0313": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/38619/42581",
+  "arxiv_id": "2502.09891"
+ },
+ "P0317": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0318": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/003_Understanding_Developer_Pain_Points_in_Federated_Learning_Insights_fro__2607.19621v1.pdf",
+  "arxiv_id": "2607.19621"
+ },
+ "P0319": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2412.13534",
+  "arxiv_id": "2412.13534"
+ },
+ "P0327": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0330": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.810.pdf",
+  "arxiv_id": ""
+ },
+ "P0331": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.2008.pdf",
+  "arxiv_id": ""
+ },
+ "P0338": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2511.13201",
+  "arxiv_id": "2511.13201"
+ },
+ "P0346": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0348": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2406.17378",
+  "arxiv_id": ""
+ },
+ "P0353": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-srw.14.pdf",
+  "arxiv_id": "2503.20715"
+ },
+ "P0355": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0370": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.940.pdf",
+  "arxiv_id": "2605.18769"
+ },
+ "P0383": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40073/44034",
+  "arxiv_id": ""
+ },
+ "P0388": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.17279",
+  "arxiv_id": "2503.17279"
+ },
+ "P0390": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0392": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1410.pdf",
+  "arxiv_id": ""
+ },
+ "P0405": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-industry.108.pdf",
+  "arxiv_id": ""
+ },
+ "P0406": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/004_Characterizing_the_Temporal_Emotional_and_Social_Patterns_of_Adolescen__2607.04566v1.pdf",
+  "arxiv_id": "2607.04566"
+ },
+ "P0407": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.252.pdf",
+  "arxiv_id": ""
+ },
+ "P0409": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.1330.pdf",
+  "arxiv_id": ""
+ },
+ "P0414": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-industry.113.pdf",
+  "arxiv_id": ""
+ },
+ "P0416": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.426.pdf",
+  "arxiv_id": "2510.17548"
+ },
+ "P0426": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0427": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0429": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0433": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.904.pdf",
+  "arxiv_id": ""
+ },
+ "P0435": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2510.09293",
+  "arxiv_id": "2510.09293"
+ },
+ "P0436": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0438": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2510.23896",
+  "arxiv_id": "2510.23896"
+ },
+ "P0439": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0440": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0452": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0459": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0460": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0461": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0466": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0467": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1343.pdf",
+  "arxiv_id": "2502.14734"
+ },
+ "P0468": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.1196.pdf",
+  "arxiv_id": ""
+ },
+ "P0471": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.1501.pdf",
+  "arxiv_id": "2509.00842"
+ },
+ "P0472": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0481": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0483": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2412.14533",
+  "arxiv_id": "2412.14533"
+ },
+ "P0535": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0537": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2508.01254",
+  "arxiv_id": "2508.01254"
+ },
+ "P0538": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40156/44117",
+  "arxiv_id": ""
+ },
+ "P0540": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0552": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2312.02901",
+  "arxiv_id": "2312.02901"
+ },
+ "P0554": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2411.11300",
+  "arxiv_id": "2411.11300"
+ },
+ "P0556": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0573": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/005_Letting_the_Data_Speak_Extracting_Keywords_from_Crowdsourced_Collectio__2607.09324v1.pdf",
+  "arxiv_id": "2607.09324"
+ },
+ "P0576": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0578": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:not-pdf",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0580": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0592": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2406.14335",
+  "arxiv_id": "2406.14335"
+ },
+ "P0600": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0607": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/006_A_Longitudinal_Analysis_of_Public_Discourse_on_AI_Ethics_in_Education__2607.12295v1.pdf",
+  "arxiv_id": "2607.12295"
+ },
+ "P0608": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/007_Insights_from_GitHub_Community_on_the_Matter_Standard_Developer_Perspe__2607.01494v1.pdf",
+  "arxiv_id": "2607.01494"
+ },
+ "P0609": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/008_Evaluation_and_Explainability_of_Unsupervised_Scholarly_Collaboration__2607.04529v2.pdf",
+  "arxiv_id": "2607.04529"
+ },
+ "P0648": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0649": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/010_Finfluencers_on_TikTok_A_Longitudinal_Analysis_of_Content_Engagement_a__2607.05203v1.pdf",
+  "arxiv_id": "2607.05203"
+ },
+ "P0651": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2607.24542",
+  "arxiv_id": "2607.24542"
+ },
+ "P0653": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0662": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0674": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/014_Synthetic_Consumer_Insight_Generation_with_Large_Language_Models__2607.05761v1.pdf",
+  "arxiv_id": "2607.05761"
+ },
+ "P0699": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "s2-open-access:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "P0700": {
+  "source": "s2-open-access",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2512.13054",
+  "arxiv_id": "2512.13054"
+ },
+ "P0707": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/017_From_Gentlemen_to_Frontiermen_Masculine_Formations_in_English_Language__2607.03323v1.pdf",
+  "arxiv_id": "2607.03323"
+ },
+ "P0742": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/020_SVD_RAG_Efficient_Tree_Organized_Retrieval_Augmented_Generation_via_Si__2607.10316v1.pdf",
+  "arxiv_id": "2607.10316"
+ },
+ "P0748": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2607.23507",
+  "arxiv_id": "2607.23507"
+ },
+ "P0749": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2607.04581",
+  "arxiv_id": "2607.04581"
+ },
+ "P0775": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2607.04071",
+  "arxiv_id": "2607.04071"
+ },
+ "P0849": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/109_emb_diversity_A_Tool_for_Embedding_Based_Measurement_of_Data_Diversity__2607.19848v1.pdf",
+  "arxiv_id": "2607.19848"
+ },
+ "P0876": {
+  "source": "local",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/137_Non_negative_matrix_factorization_using_the_textit_R_package_textsf_nn__2607.20084v1.pdf",
+  "arxiv_id": "2607.20084"
+ }
+}

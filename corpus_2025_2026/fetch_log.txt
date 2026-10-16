@@ -1,0 +1,227 @@
+225 papers to fetch
+P0001 published acl-anthology 
+P0002 published acl-anthology 
+P0003 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0004 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0005 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0006 published acl-anthology 
+P0007 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0008 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0009 published acl-anthology 
+P0010 published acl-anthology 
+P0011 not-retrieved  ['arxiv-title-search:no-match']
+P0012 not-retrieved  ['arxiv-title-search:no-match']
+P0013 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0014 arxiv-preprint arxiv 
+P0015 not-retrieved  ['arxiv-title-search:no-match']
+P0016 not-retrieved  ['arxiv-title-search:no-match']
+P0017 published acl-anthology 
+P0018 published acl-anthology 
+P0019 published acl-anthology 
+P0020 published acl-anthology 
+P0021 not-retrieved  ['arxiv-title-search:no-match']
+P0022 not-retrieved  ['arxiv-title-search:no-match']
+P0023 published acl-anthology 
+P0024 published acl-anthology 
+P0025 not-retrieved  ['arxiv-title-search:no-match']
+P0026 not-retrieved  ['arxiv-title-search:no-match']
+P0027 not-retrieved  ['arxiv-title-search:no-match']
+P0028 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0029 arxiv-preprint arxiv-title-search 
+P0030 not-retrieved  ['arxiv-title-search:no-match']
+P0031 published acl-anthology 
+P0032 not-retrieved  ['arxiv-title-search:no-match']
+P0033 published acl-anthology 
+P0034 published acl-anthology 
+P0035 open-access-copy s2-open-access 
+P0036 arxiv-preprint arxiv-title-search 
+P0037 not-retrieved  ['arxiv-title-search:no-match']
+P0038 not-retrieved  ['arxiv-title-search:no-match']
+P0039 not-retrieved  ['arxiv-title-search:no-match']
+P0040 not-retrieved  ['arxiv-title-search:no-match']
+P0041 not-retrieved  ['arxiv-title-search:no-match']
+P0042 published acl-anthology 
+P0043 not-retrieved  ['arxiv-title-search:no-match']
+P0044 not-retrieved  ['arxiv-title-search:no-match']
+P0045 published acl-anthology 
+P0046 published acl-anthology 
+P0047 published acl-anthology 
+P0048 not-retrieved  ['arxiv-title-search:no-match']
+P0049 not-retrieved  ['arxiv-title-search:no-match']
+P0050 open-access-copy s2-open-access 
+P0051 arxiv-preprint arxiv-title-search 
+P0052 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0053 not-retrieved  ['arxiv-title-search:no-match']
+P0054 published acl-anthology 
+P0055 not-retrieved  ['arxiv-title-search:no-match']
+P0056 not-retrieved  ['arxiv-title-search:no-match']
+P0057 published acl-anthology 
+P0058 not-retrieved  ['arxiv-title-search:no-match']
+P0059 not-retrieved  ['arxiv-title-search:no-match']
+P0060 published acl-anthology 
+P0061 not-retrieved  ['arxiv-title-search:no-match']
+P0063 arxiv-preprint arxiv-title-search 
+P0064 arxiv-preprint local 
+P0065 not-retrieved  ['arxiv-title-search:no-match']
+P0066 not-retrieved  ['arxiv-title-search:no-match']
+P0067 not-retrieved  ['arxiv-title-search:no-match']
+P0068 arxiv-preprint arxiv-title-search 
+P0069 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0070 not-retrieved  ['arxiv-title-search:no-match']
+P0071 not-retrieved  ['arxiv-title-search:no-match']
+P0072 published acl-anthology 
+P0073 not-retrieved  ['arxiv-title-search:no-match']
+P0074 published acl-anthology 
+P0075 not-retrieved  ['arxiv-title-search:no-match']
+P0076 published acl-anthology 
+P0077 not-retrieved  ['arxiv-title-search:no-match']
+P0078 published acl-anthology 
+P0079 not-retrieved  ['arxiv-title-search:no-match']
+P0080 not-retrieved  ['arxiv-title-search:no-match']
+P0082 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0083 published acl-anthology 
+P0084 published acl-anthology 
+P0086 not-retrieved  ['aaai-ojs:no-url', 's2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0087 arxiv-preprint arxiv-title-search 
+P0088 published acl-anthology 
+P0089 arxiv-preprint arxiv-title-search 
+P0090 published acl-anthology 
+P0091 published acl-anthology 
+P0092 published acl-anthology 
+P0093 open-access-copy s2-open-access 
+P0094 published acl-anthology 
+P0095 published acl-anthology 
+P0096 not-retrieved  ['aaai-ojs:no-url', 's2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0097 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0098 open-access-copy s2-open-access 
+P0101 published acl-anthology 
+P0102 published acl-anthology 
+P0103 arxiv-preprint arxiv-title-search 
+P0104 not-retrieved  ['aaai-ojs:no-url', 's2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0105 published acl-anthology 
+P0107 published acl-anthology 
+P0108 published acl-anthology 
+P0109 published acl-anthology 
+P0112 arxiv-preprint arxiv-title-search 
+P0118 published acl-anthology 
+P0119 published acl-anthology 
+P0124 arxiv-preprint arxiv 
+P0125 published acl-anthology 
+P0126 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0127 open-access-copy s2-open-access 
+P0128 arxiv-preprint arxiv 
+P0129 published acl-anthology 
+P0130 published acl-anthology 
+P0131 published acl-anthology 
+P0132 arxiv-preprint arxiv-title-search 
+P0138 not-retrieved  ['arxiv-title-search:no-match']
+P0139 published acl-anthology 
+P0140 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0148 published acl-anthology 
+P0149 published acl-anthology 
+P0152 published acl-anthology 
+P0157 published acl-anthology 
+P0166 arxiv-preprint arxiv-title-search 
+P0168 published acl-anthology 
+P0172 published acl-anthology 
+P0173 published acl-anthology 
+P0182 published acl-anthology 
+P0200 published acl-anthology 
+P0218 not-retrieved  ['arxiv-title-search:no-match']
+P0243 published acl-anthology 
+P0245 arxiv-preprint local 
+P0246 not-retrieved  ['arxiv-title-search:no-match']
+P0249 published acl-anthology 
+P0250 published acl-anthology 
+P0254 not-retrieved  ['openreview:HTTPError', 'arxiv-title-search:no-match']
+P0255 published acl-anthology 
+P0260 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0267 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0268 arxiv-preprint arxiv 
+P0269 arxiv-preprint arxiv-title-search 
+P0287 arxiv-preprint arxiv-title-search 
+P0291 published acl-anthology 
+P0292 published acl-anthology 
+P0293 arxiv-preprint arxiv-title-search 
+P0298 not-retrieved  ['arxiv-title-search:no-match']
+P0299 arxiv-preprint arxiv 
+P0300 arxiv-preprint arxiv 
+P0302 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0303 published acl-anthology 
+P0304 published acl-anthology 
+P0307 arxiv-preprint arxiv 
+P0313 open-access-copy s2-open-access 
+P0317 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0318 arxiv-preprint local 
+P0319 arxiv-preprint arxiv-title-search 
+P0327 not-retrieved  ['arxiv-title-search:no-match']
+P0330 published acl-anthology 
+P0331 published acl-anthology 
+P0338 arxiv-preprint arxiv-title-search 
+P0346 not-retrieved  ['arxiv-title-search:no-match']
+P0348 open-access-copy s2-open-access 
+P0353 published acl-anthology 
+P0355 not-retrieved  ['arxiv-title-search:no-match']
+P0370 published acl-anthology 
+P0383 not-retrieved  ['aaai-ojs:no-url', 's2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0388 arxiv-preprint arxiv-title-search 
+P0390 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0392 published acl-anthology 
+P0405 published acl-anthology 
+P0406 arxiv-preprint local 
+P0407 published acl-anthology 
+P0409 published acl-anthology 
+P0414 published acl-anthology 
+P0416 published acl-anthology 
+P0426 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0427 not-retrieved  ['arxiv-title-search:no-match']
+P0429 not-retrieved  ['arxiv-title-search:no-match']
+P0433 published acl-anthology 
+P0435 arxiv-preprint arxiv-title-search 
+P0436 not-retrieved  ['arxiv-title-search:no-match']
+P0438 arxiv-preprint arxiv-title-search 
+P0439 not-retrieved  ['arxiv-title-search:no-match']
+P0440 not-retrieved  ['arxiv-title-search:no-match']
+P0452 not-retrieved  ['arxiv-title-search:no-match']
+P0459 not-retrieved  ['arxiv-title-search:no-match']
+P0460 not-retrieved  ['arxiv-title-search:no-match']
+P0461 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0466 not-retrieved  ['arxiv-title-search:no-match']
+P0467 published acl-anthology 
+P0468 published acl-anthology 
+P0471 published acl-anthology 
+P0472 not-retrieved  ['arxiv-title-search:no-match']
+P0481 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0483 open-access-copy s2-open-access 
+P0535 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0537 arxiv-preprint arxiv-title-search 
+P0538 open-access-copy s2-open-access 
+P0540 not-retrieved  ['arxiv-title-search:HTTPError']
+P0552 open-access-copy s2-open-access 
+P0554 open-access-copy s2-open-access 
+P0556 not-retrieved  ['arxiv-title-search:no-match']
+P0573 arxiv-preprint local 
+P0576 not-retrieved  ['arxiv-title-search:no-match']
+P0578 not-retrieved  ['s2-open-access:not-pdf', 'arxiv-title-search:no-match']
+P0580 not-retrieved  ['arxiv-title-search:no-match']
+P0592 arxiv-preprint arxiv 
+P0600 not-retrieved  ['arxiv-title-search:no-match']
+P0607 arxiv-preprint local 
+P0608 arxiv-preprint local 
+P0609 arxiv-preprint local 
+P0648 not-retrieved  ['arxiv-title-search:no-match']
+P0649 arxiv-preprint local 
+P0651 arxiv-preprint arxiv 
+P0653 not-retrieved  ['arxiv-title-search:no-match']
+P0662 not-retrieved  ['arxiv-title-search:no-match']
+P0674 arxiv-preprint local 
+P0699 not-retrieved  ['s2-open-access:HTTPError', 'arxiv-title-search:no-match']
+P0700 open-access-copy s2-open-access 
+P0707 arxiv-preprint local 
+P0742 arxiv-preprint local 
+P0748 arxiv-preprint arxiv 
+P0749 arxiv-preprint arxiv 
+P0775 arxiv-preprint arxiv 
+P0849 arxiv-preprint local 
+P0876 arxiv-preprint local 
+full text retrieved: 135/225
