@@ -1,0 +1,76 @@
+{
+ "key": "luo2024graph",
+ "source_id": "luo2024graph",
+ "title": "Graph Contrastive Topic Model",
+ "venue": "Expert Systems with Applications, 255, 124631",
+ "year": 2024,
+ "doi": "10.1016/j.eswa.2024.124631",
+ "arxiv_id": "2307.02078",
+ "read_from": "arXiv preprint 2307.02078 (published version: Expert Systems with Applications)",
+ "evidence_level": "full-text (preprint)",
+ "category": "contrastive",
+ "subcategory": "graph contrastive neural topic model",
+ "task": "Document topic modelling",
+ "problem": "Contrastive neural topic models sample negatives by word frequency, producing false negatives that are semantically similar to the prototype (sample bias).",
+ "architecture": "GCTM: input document modelled as a document-word bipartite graph (DWBG); positive and negative word co-occurrence graphs encoded by GNNs; document-word information propagation (DWIP) perturbs DWBG edges to generate positive/negative samples; graph contrastive loss combined with the NTM (VAE) loss.",
+ "llm_or_encoder": "GCN encoders over word graphs",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "20 Newsgroups"
+  },
+  {
+   "name": "IMDB",
+   "details": "movie reviews, 2 classes"
+  },
+  {
+   "name": "NIPS",
+   "details": "NIPS papers"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "classification accuracy (Random Forest on document representations)",
+  "prototype-negative similarity"
+ ],
+ "baselines": [
+  "NTM",
+  "ProdLDA",
+  "W-LDA",
+  "BATM",
+  "SCHOLAR",
+  "SCHOLAR+BAT",
+  "CombinedTM",
+  "CLNTM",
+  "CLNTM+BERT"
+ ],
+ "key_results": [
+  "NPMI with 50 topics: 20NG 0.379 vs CLNTM+BERT 0.329, IMDB 0.202 vs 0.196, NIPS 0.410 vs 0.396.",
+  "NPMI with 200 topics: 20NG 0.338, IMDB 0.184, NIPS 0.387 (best in each case).",
+  "Classification accuracy (50 topics): 20NG 0.543 vs CLNTM+BERT 0.525; IMDB 0.874 vs 0.871.",
+  "Average prototype-negative similarity 0.108-0.109 for GCTM vs 0.935-0.962 for CLNTM."
+ ],
+ "strengths": [
+  {
+   "text": "Graph-based sampling yields negatives that are semantically far from the prototype, removing the false-negative problem of frequency-based sampling.",
+   "source": "reported in paper"
+  }
+ ],
+ "limitations": [
+  {
+   "text": "Only NPMI is reported for topic quality; no diversity metric.",
+   "source": "reviewer observation (from reported table)"
+  },
+  {
+   "text": "Performance drops sharply with three GCN layers, and the weight of negative samples needs tuning.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Whether the contrastive loss alone can replace the NTM loss is left for future work.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/zhehengluoK/GCTM",
+ "notes": "Queue DOI was the SSRN preprint (10.2139/ssrn.4725374); Crossref gives the ESWA article DOI 10.1016/j.eswa.2024.124631, used for citation.",
+ "fulltext_txt": "fulltext/txt/luo2024graph.txt"
+}

@@ -13,6 +13,8 @@ import re
 import sys
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[2]
+
 
 def norm(s):
     return re.sub(r"[^a-z0-9.%+-]", "", s.lower())
@@ -34,10 +36,17 @@ def main():
     rdir = Path(sys.argv[1])
     bad = 0
     files = sorted((rdir / "evidence").glob("*.json"))
+    qpath = rdir / "search" / "fulltext_queue.json"
+    queue_titles = {r["key"]: r["title"] for r in json.load(open(qpath))} if qpath.exists() else {}
     for f in files:
         ev = json.load(open(f))
         txt_path = ev.get("fulltext_txt")
-        if not txt_path or not Path(txt_path).exists():
+        # paths may be stored relative to the repo root or to the review folder
+        txt_path = next((str(c) for c in (Path(txt_path or "x"), ROOT / (txt_path or "x"), rdir / (txt_path or "x"))
+                         if txt_path and c.exists()), "")
+        if not txt_path:
+            print(f"{f.stem}: no full text attached")
+            bad += 1
             continue
         full = Path(txt_path).read_text(errors="ignore")
         flat = re.sub(r"-\n", "", full)
@@ -46,6 +55,9 @@ def main():
         # PDF extraction sometimes writes "83, 331" for "83,331"
         flat_nums |= set(numbers(re.sub(r"(\d), (\d{3})(?!\d)", r"\1,\2", flat)))
         problems = []
+        qt = queue_titles.get(ev.get("source_id")) or queue_titles.get(ev["key"])
+        if qt and re.sub(r"[^a-z0-9]", "", qt.lower()) != re.sub(r"[^a-z0-9]", "", ev.get("title", "").lower()):
+            problems.append(f"title differs from search record: {qt!r}")
         for res in ev.get("key_results", []):
             for v in numbers(res):
                 if v not in flat_nums and v.replace(",", "") not in flat_nums:

@@ -1,0 +1,75 @@
+{
+ "key": "liu2024unsupervised",
+ "source_id": "liu2024unsupervised",
+ "title": "Unsupervised Hierarchical Topic Modeling via Anchor Word Clustering and Path Guidance",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-emnlp.440",
+ "acl_url": "https://aclanthology.org/2024.findings-emnlp.440/",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text (published)",
+ "category": "hierarchical",
+ "subcategory": "VAE hierarchical topic model guided by anchor words",
+ "task": "Learning topic hierarchies without supervision",
+ "problem": "Neural hierarchical topic models give incoherent or redundant topics and weak parent-child relations because hierarchy construction is not guided by fine-grained word-level semantics.",
+ "architecture": "AP-HTM: Gaussian-mixture VAE encoder over bag-of-words with layer-wise topic distributions; anchor words obtained by clustering, four causal paths that guide the topic hierarchy, a word co-occurrence graph, and anchor-based contrastive learning.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20News",
+   "details": "benchmark; statistics in the paper's appendix"
+  },
+  {
+   "name": "NIPS",
+   "details": "benchmark"
+  },
+  {
+   "name": "Wikitext-103",
+   "details": "benchmark"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "CLNPMI (cross-level NPMI)",
+  "TU",
+  "TQ"
+ ],
+ "baselines": [
+  "SawETM",
+  "HyperMiner",
+  "nTSNTM",
+  "nFNTM",
+  "CluHTM",
+  "TraCo",
+  "NG-HTM"
+ ],
+ "key_results": [
+  "NPMI best on all three datasets: NIPS 0.162 vs NG-HTM 0.147, 20News 0.329 vs 0.307, Wikitext-103 0.295 vs 0.255.",
+  "TU best on all three (NIPS 0.786, 20News 0.857, Wikitext-103 0.825); TQ best on all three (0.128, 0.281, 0.243).",
+  "CLNPMI best only on 20News (0.174 vs CluHTM 0.164); TraCo higher on NIPS (0.054 vs 0.053) and nFNTM higher on Wikitext-103 (0.147 vs 0.145).",
+  "CluHTM did not converge within 48 hours on Wikitext-103."
+ ],
+ "strengths": [
+  {
+   "text": "Uses anchor words to give word-level guidance to hierarchy construction, improving both topic coherence and diversity across all three corpora.",
+   "source": "reported in paper"
+  }
+ ],
+ "limitations": [
+  {
+   "text": "External prior knowledge (e.g. ConceptNet) is not yet used to guide the anchor words.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Document metadata (author, tags, sentiment) is not combined with anchor words.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Cross-level coherence gains are not consistent: CLNPMI is second-best on two of three datasets.",
+   "source": "reviewer observation (from reported table)"
+  }
+ ],
+ "code": "",
+ "notes": "No code link found in the paper.",
+ "fulltext_txt": "fulltext/txt/liu2024unsupervised.txt"
+}

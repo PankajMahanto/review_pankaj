@@ -1,0 +1,64 @@
+{
+ "key": "masson2024evaluating",
+ "source_id": "masson2024evaluating",
+ "title": "Evaluating Topic Model on Asymmetric and Multi-Domain Financial Corpus",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/32aspv9wrvbw",
+ "acl_url": "https://aclanthology.org/2024.lrec-main.578/",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "domain application and evaluation metrics (finance)",
+ "task": "Unsupervised risk extraction from risk sections of annual reports",
+ "problem": "Topic models on corporate filings face sector imbalance and sector-specific vocabulary, which bias the extracted risk themes; standard metrics do not capture this.",
+ "architecture": "Comparison of NMF, LDA, prodLDA, s-Scholar and covariate c-Scholar (SCHOLAR with sector metadata); three corpus variants (balanced down-sampled DSB, stratified unbalanced DSU, complete C); two new metrics: coherence imbalance (CoIm) between sectors and ToCo for sensitivity to sector-specific language.",
+ "llm_or_encoder": "in-domain pre-trained word embeddings (SCHOLAR variants)",
+ "datasets": [
+  {
+   "name": "French Financial Corporate Annual Reports",
+   "details": "risk sections of 171 documents (Reference Documents 2011-2018, Universal Registering Documents 2019-2020); 4,780 paragraphs (1,335 Banks, 1,077 Insurance, 671 Financial Services); 8 documents annotated with 35 risk labels"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "Diversity",
+  "CoIm (coherence imbalance)",
+  "ToCo (sector-language sensitivity)",
+  "expert validation"
+ ],
+ "baselines": [
+  "NMF",
+  "LDA",
+  "prodLDA",
+  "s-Scholar"
+ ],
+ "key_results": [
+  "On the complete corpus, c-Scholar has the highest diversity (0.894) and lowest ToCo (0.019) but negative NPMI (-0.053); LDA ToCo is 0.293.",
+  "Down-sampling lowers coherence imbalance: CoIm drops from 0.020-0.043 (C) to 0.003-0.012 (DSB) across models.",
+  "Authors conclude down-sampling is currently the best correction for sector imbalance, and c-Scholar on the complete data best for diversity and resilience to sector vocabulary."
+ ],
+ "strengths": [
+  {
+   "text": "Introduces metrics for imbalance and domain-language sensitivity that standard coherence and diversity scores miss.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Validates extracted risks with experts and provides an analyst-facing interface.",
+   "source": "author-stated"
+  }
+ ],
+ "limitations": [
+  {
+   "text": "Corpus collected by the authors may carry selection bias.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Small single-language, single-industry corpus (171 documents); the best-diversity model has negative NPMI.",
+   "source": "reviewer observation (from reported table)"
+  }
+ ],
+ "code": "",
+ "notes": "Two further columns in Table 1 (Purity, I) are not defined in the text read, so they are not reported here.",
+ "fulltext_txt": "fulltext/txt/masson2024evaluating.txt"
+}

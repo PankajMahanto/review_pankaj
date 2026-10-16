@@ -1,0 +1,72 @@
+{
+ "key": "lu2024selfsupervised",
+ "source_id": "lu2024selfsupervised",
+ "title": "Self-supervised Topic Taxonomy Discovery in the Box Embedding Space",
+ "venue": "Transactions of the Association for Computational Linguistics, 12, 1401-1416",
+ "year": 2024,
+ "doi": "10.1162/tacl_a_00712",
+ "arxiv_id": "2408.15050",
+ "read_from": "arXiv preprint 2408.15050 (published version: TACL 2024)",
+ "evidence_level": "full-text (preprint)",
+ "category": "hierarchical",
+ "subcategory": "box-embedding hierarchical neural topic model",
+ "task": "Topic taxonomy discovery",
+ "problem": "Point and hyperbolic embeddings in hierarchical neural topic models use symmetric distances, so they cannot express the asymmetric parent-child relation between topics, and randomly initialised upper-level topics can collapse.",
+ "architecture": "BoxTM: VAE with logistic-normal prior encodes TF-IDF documents; words and topics are hyperrectangles (box embeddings) whose volume reflects semantic scope; topic-word distributions come from symmetric box affinities and hierarchy from an asymmetric box metric; upper-level topics are learned bottom-up by recursive Affinity Propagation clustering on topic boxes; two self-supervised tasks model the semantic scopes of words and topics.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20news",
+   "details": "20 Newsgroups"
+  },
+  {
+   "name": "NYT",
+   "details": "New York Times articles"
+  },
+  {
+   "name": "arXiv",
+   "details": "large corpus of arXiv abstracts"
+  }
+ ],
+ "metrics": [
+  "topic coherence C",
+  "topic diversity D",
+  "C*D",
+  "hierarchical coherence HC"
+ ],
+ "baselines": [
+  "nTSNTM",
+  "SawETM",
+  "HyperMiner",
+  "C-HNTM",
+  "TaxoGen"
+ ],
+ "key_results": [
+  "20news: C 0.301 vs HyperMiner 0.224, C*D 0.199 vs TaxoGen 0.159, HC 0.159 vs nTSNTM 0.134.",
+  "NYT: C 0.409, C*D 0.265, HC 0.177 (best); TaxoGen reaches higher diversity D (0.881 vs 0.648).",
+  "arXiv: C 0.257, C*D 0.173, HC 0.113 (best); TaxoGen D 0.681 vs BoxTM 0.672."
+ ],
+ "strengths": [
+  {
+   "text": "Box volumes give an explicit, asymmetric notion of topic generality, and clustering-based initialisation of upper levels alleviates topic collapse.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Learns a deep taxonomy on the large arXiv corpus where SawETM and HyperMiner fail to learn a deep taxonomy.",
+   "source": "reported in paper"
+  }
+ ],
+ "limitations": [
+  {
+   "text": "Topic diversity is lower than the clustering-based TaxoGen on all three datasets.",
+   "source": "reviewer observation (from reported table)"
+  },
+  {
+   "text": "Box embeddings make training more costly than point embeddings; the authors list more efficient box computation as future work.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/luyy9apples/BoxTM",
+ "notes": "Queue listed this as arXiv; Crossref confirms the TACL version (DOI 10.1162/tacl_a_00712), which is the version to cite.",
+ "fulltext_txt": "fulltext/txt/lu2024selfsupervised.txt"
+}
