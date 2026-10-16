@@ -1,0 +1,74 @@
+{
+ "key": "fujita2025topiclear",
+ "source_id": "fujita2025topiclear",
+ "title": "TopiCLEAR: Adaptive embedding clustering for interpretable topic discovery from short texts",
+ "venue": "Expert Systems with Applications",
+ "year": 2026,
+ "doi": "10.1016/j.eswa.2026.133996",
+ "read_from": "arXiv preprint 2512.06694 (published version: Expert Systems with Applications)",
+ "evidence_level": "full-text (preprint)",
+ "category": "short-text",
+ "subcategory": "embedding clustering with adaptive dimensionality reduction",
+ "task": "Topic discovery from short and informal texts",
+ "problem": "Embedding-clustering topic methods work well empirically but the link between embedding geometry and interpretable topics is unclear.",
+ "architecture": "SBERT document embeddings; PCA to D dimensions, normalisation, PCA to K-1 dimensions and GMM (or k-means) for initial clusters; iterative refinement by Adaptive Dimensionality Reduction: Fisher discriminant analysis on the current cluster labels gives a new (K-1)-dimensional space, re-clustered until assignments stop changing; K given by the user.",
+ "llm_or_encoder": "SBERT (all-MiniLM-L6-v2; e5-small-v2 compared)",
+ "datasets": [
+  {
+   "name": "20News",
+   "details": "18,806 articles, 20 categories, average 135 words"
+  },
+  {
+   "name": "AgNewsTitle",
+   "details": "119,794 news titles, 4 categories, average 5 words"
+  },
+  {
+   "name": "Reddit",
+   "details": "37,933 posts, 5 categories"
+  },
+  {
+   "name": "TweetTopic",
+   "details": "6,997 tweets, 6 categories (manual annotation)"
+  }
+ ],
+ "metrics": [
+  "AMI",
+  "ARI",
+  "CV (for choosing K)",
+  "runtime"
+ ],
+ "baselines": [
+  "LDA",
+  "BTM",
+  "ProdLDA",
+  "ETM",
+  "CTM",
+  "BERTopic (reference)"
+ ],
+ "key_results": [
+  "AMI: 0.588 (20News), 0.489 (AgNewsTitle), 0.462 (Reddit), 0.382 (TweetTopic) vs best baselines 0.462 (ETM), 0.372 (BTM), 0.284 (BTM), 0.234 (BERTopic).",
+  "LDA nearly fails on short texts (AgNewsTitle AMI 0.042, TweetTopic 0.037).",
+  "ProdLDA, ETM and CTM exceed the 7,200-second limit on 100,000 documents (CPU)."
+ ],
+ "strengths": [
+  "Simple, fast and strong on short informal texts.",
+  "Uses human labels plus qualitative sub-topic analysis instead of relying on coherence."
+ ],
+ "limitations": [
+  {
+   "text": "User must set K; CV tends to overestimate the number of topics, so it should not be used alone to choose K.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Benchmark labels may favour methods aligned with the annotation scheme.",
+   "source": "author-stated"
+  },
+  {
+   "text": "One topic per document (hard clustering); no word-level topic distributions.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "BERTopic comparison not controlled because it chooses K itself.",
+ "fulltext_txt": "fulltext/txt/fujita2025topiclear.txt"
+}

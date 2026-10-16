@@ -1,0 +1,75 @@
+{
+ "key": "wang2026humancentric",
+ "source_id": "wang2026humancentric",
+ "title": "Human-Centric Topic Modeling with Goal-Prompted Contrastive Learning and Optimal Transport",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2604.12663",
+ "read_from": "arXiv preprint 2604.12663v1",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "goal-guided neural topic model (LLM prompting + contrastive learning + optimal transport)",
+ "task": "Goal-oriented topic discovery from a free-text analytical goal",
+ "problem": "Coherence-driven topic models give redundant or off-target topics that ignore the analyst's question.",
+ "architecture": "GCTM-OT: an LLM extracts goal-related phrases per document (goal candidates); LLM text augmentation creates positive pairs; a transformer builds goal-weighted document representations; topic inference with Dirichlet prior matching; semantic-aware contrastive learning; optimal-transport alignment between topic and goal representations.",
+ "llm_or_encoder": "GPT-3.5-turbo (prompts); RoBERTa and other encoders compared",
+ "datasets": [
+  {
+   "name": "Bothering",
+   "details": "r/whatsbotheringyou posts; 1,483 documents, vocabulary 7,700, average length 56.48"
+  },
+  {
+   "name": "TeslaModel3",
+   "details": "1,991 documents, vocabulary 5,634"
+  },
+  {
+   "name": "AskAcademia",
+   "details": "3,348 documents, vocabulary 8,122"
+  }
+ ],
+ "metrics": [
+  "CP",
+  "CA",
+  "NPMI",
+  "UCI (Palmetto)",
+  "Unique Term (UT)",
+  "Goal Similarity (GS)",
+  "Goal-relevant Topic Rate (GTR)",
+  "Goal Coverage Rate (GCR)"
+ ],
+ "baselines": [
+  "LDA",
+  "BAT",
+  "CTMNeg",
+  "vONT",
+  "CWTM",
+  "DisCTM",
+  "HiCOT",
+  "CAST",
+  "LLM-TE",
+  "LLM-ITL"
+ ],
+ "key_results": [
+  "Goal Similarity: 0.4253 / 0.5100 / 0.4530 on Bothering / TeslaModel3 / AskAcademia, vs best baseline 0.3845 (CAST) / 0.4736 (LLM-ITL) / 0.4104 (LLM-ITL).",
+  "Average CP 0.3326 on Bothering vs 0.1214 for LDA; UT 0.9800 at 20 topics on Bothering.",
+  "Swapping the prompt LLM changes results (e.g. GPT-4o-mini CP 0.3802 vs DeepSeek-V2.5 0.3276 in the ablation setting)."
+ ],
+ "strengths": [
+  "Defines a goal-conditioned topic modelling task with goal-alignment metrics.",
+  "Large baseline set including recent LLM-assisted models."
+ ],
+ "limitations": [
+  {
+   "text": "Goal metrics use OpenAI embeddings and ground-truth goal candidates built by clustering plus human annotation, so they depend on that annotation.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Small Reddit corpora (1.5k-3.3k documents) and three goals only; NPMI and UCI stay low or negative for all models.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Future work: hierarchical Human-TM.",
+ "fulltext_txt": "fulltext/txt/wang2026humancentric.txt"
+}

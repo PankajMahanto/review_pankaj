@@ -1,0 +1,93 @@
+{
+ "key": "abaskohi2025cemtm",
+ "source_id": "abaskohi2025cemtm",
+ "title": "CEMTM: Contextual Embedding-based Multimodal Topic Modeling",
+ "venue": "Proceedings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.emnlp-main.590",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "multimodal",
+ "subcategory": "LVLM-embedding neural topic model",
+ "task": "Topic modelling of documents with text and multiple images",
+ "problem": "Multimodal topic models use separate encoders per modality, struggle with several images per document, and capture weak cross-modal interactions.",
+ "architecture": "Frozen VLM2Vec (fine-tuned LLaVA-Next-7B) encodes text tokens and image patches jointly; a learnable distributional importance network weights token contributions; encoder forward layer gives document-topic vector, decoder reconstructs the LVLM last-token document embedding (reconstruction loss); explicit word-topic and document-topic distributions retained.",
+ "llm_or_encoder": "VLM2Vec (LLaVA-Next-7B)",
+ "datasets": [
+  {
+   "name": "WikiWeb2M",
+   "details": "100,833 documents, 527 tokens and 4.1 images on average; gold topic labels"
+  },
+  {
+   "name": "SPIQA",
+   "details": "697 scientific documents; gold labels"
+  },
+  {
+   "name": "VIST",
+   "details": "50,000 narrative documents"
+  },
+  {
+   "name": "TQA",
+   "details": "410 educational documents"
+  },
+  {
+   "name": "MSCOCO",
+   "details": "30,000 image captions"
+  },
+  {
+   "name": "T4SA",
+   "details": "30,000 social media posts"
+  },
+  {
+   "name": "FHM",
+   "details": "10,000 memes (Facebook Hateful Memes)"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "WE",
+  "LLM score (1-3)",
+  "TD",
+  "I-RBO",
+  "Purity",
+  "ARI",
+  "NMI",
+  "METEOR",
+  "BERTScore-F1",
+  "accuracy",
+  "macro-F1"
+ ],
+ "baselines": [
+  "LDA",
+  "CombinedTM",
+  "ZeroshotTM",
+  "CWTM",
+  "TopicGPT",
+  "M3L-Contrast",
+  "Multimodal ZeroshotTM",
+  "LVLM ZeroshotTM",
+  "Multimodal TopicGPT"
+ ],
+ "key_results": [
+  "WikiWeb2M: NPMI .088, LLM 2.70, Purity .435 vs Multimodal TopicGPT .080, 2.67, .414 (averaged over K = 25-100).",
+  "SPIQA: Purity .444, ARI .251, NMI .359, best among all models.",
+  "Topic-based few-shot example selection: SPIQA METEOR 31.3 vs 28.7 (embedding-based) and TQA accuracy 87.31 vs 86.09."
+ ],
+ "strengths": [
+  "Handles multiple images per document without repeated encoding while keeping interpretable topic-word distributions.",
+  "Shows a downstream use of topic vectors for in-context example retrieval."
+ ],
+ "limitations": [
+  {
+   "text": "Relies on a 7B LVLM, needing large GPU resources; not suited to low-resource or real-time use.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topics are not guaranteed to be disentangled; English only; importance weights not validated against humans.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/AmirAbaskohi/CEMTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/abaskohi2025cemtm.txt"
+}

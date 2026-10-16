@@ -1,0 +1,62 @@
+{
+ "key": "james2026lexical",
+ "source_id": "james2026lexical",
+ "title": "When Lexical Change Misleads: Rethinking Dynamic Topic Model Evaluation with Traditional and LLM-Based Metrics",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2608.13835",
+ "read_from": "arXiv preprint 2608.13835v1",
+ "evidence_level": "full-text (preprint)",
+ "category": "evaluation",
+ "subcategory": "dynamic topic model evaluation",
+ "task": "Validating temporal coherence and LLM semantic similarity against human judgements",
+ "problem": "Temporal coherence penalises vocabulary change even when a topic's meaning persists over time.",
+ "architecture": "120 topic trajectories (20 per model-dataset pair) shown at three time points; three annotators answer five 5-point questions (1,800 judgements); traditional temporal topic coherence vs human coherence, and GPT-5.5 semantic similarity of beginning and ending themes vs human semantic similarity; topics stratified into Low, Medium and High lexical change; Spearman rho.",
+ "llm_or_encoder": "GPT-5.5 (evaluator)",
+ "datasets": [
+  {
+   "name": "NYT",
+   "details": "New York Times; time points 1987, 1997, 2007"
+  },
+  {
+   "name": "DBLP",
+   "details": "time points 2010, 2015, 2020"
+  },
+  {
+   "name": "arXiv",
+   "details": "time points 2012, 2018, 2024"
+  }
+ ],
+ "metrics": [
+  "Spearman rho between metric and human ratings",
+  "temporal topic coherence",
+  "LLM semantic similarity"
+ ],
+ "baselines": [
+  "CoNTM",
+  "DLDA (evaluated models)"
+ ],
+ "key_results": [
+  "Traditional temporal coherence vs humans ranges from rho = -0.256 (CoNTM, NYT) to 0.614 (DLDA, DBLP).",
+  "LLM semantic similarity agrees with humans for CoNTM (rho 0.609 NYT, 0.721 DBLP, 0.502 arXiv) but not for DLDA (-0.086 DBLP, -0.190 arXiv).",
+  "CoNTM-NYT, low lexical change: coherence rho = -0.786 while the LLM score gives 0.801."
+ ],
+ "strengths": [
+  "Shows that aggregate metric-human correlations hide opposite behaviour across lexical-change strata.",
+  "Recommends reporting lexical and semantic measures together."
+ ],
+ "limitations": [
+  {
+   "text": "Only 120 topics, two models, three English datasets; strata hold six or seven topics, so correlations are sensitive to outliers.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Single LLM configuration; the two metrics are validated against different human questions, so they cannot be ranked directly.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/james2026lexical.txt"
+}

@@ -1,0 +1,72 @@
+{
+ "key": "akash2025understanding",
+ "source_id": "akash2025understanding",
+ "title": "Understanding Cross-Domain Adaptation in Low-Resource Topic Modeling",
+ "venue": "Proceedings of ACL 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.298",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "domain adaptation for low-resource topic modelling",
+ "task": "Topic modelling of small target corpora with help from a large source corpus",
+ "problem": "Few target documents give unstable topics; naive transfer floods the target with irrelevant source topics.",
+ "architecture": "Finite-sample generalisation bound (source and target reconstruction, latent discrepancy, decoder consistency, KL regularisation). DALTA: shared VAE encoder for domain-invariant features, separate source/target decoders, adversarial domain discriminator to align latent distributions, KL regulariser.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "AG News",
+   "details": "high-resource source corpus"
+  },
+  {
+   "name": "20 Newsgroups",
+   "details": "Science and Religion subsets as targets, 1,000 documents each"
+  },
+  {
+   "name": "Drug Review",
+   "details": "Norethindrone and Norgestimate reviews, 1,000 each"
+  },
+  {
+   "name": "Yelp Reviews",
+   "details": "1,000 documents"
+  },
+  {
+   "name": "SMS Spam Collection",
+   "details": "1,000 messages"
+  }
+ ],
+ "metrics": [
+  "CV",
+  "TD",
+  "classification accuracy (SVC, LR)",
+  "Purity",
+  "NMI"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "ETM",
+  "CTM",
+  "ECRTM",
+  "DeTiME",
+  "Meta-CETM",
+  "FASTopic"
+ ],
+ "key_results": [
+  "Highest CV in every target and k (e.g. Norethindrone k = 10: 0.582 vs FASTopic 0.517).",
+  "TD is not always best (e.g. Norethindrone k = 20: 0.800 vs FASTopic 0.948)."
+ ],
+ "strengths": [
+  "Theory-guided design for low-resource topic modelling.",
+  "Evaluates coherence, diversity, classification and clustering."
+ ],
+ "limitations": [
+  {
+   "text": "No practical method to choose the best source domain; effect of different sources not studied; transfer can hurt when topic structures differ.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/akash2025understanding.txt"
+}

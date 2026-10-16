@@ -1,0 +1,67 @@
+{
+ "key": "breuer2025elda",
+ "source_id": "breuer2025elda",
+ "title": "E-LDA: Toward Interpretable LDA Topic Models with Strong Guarantees in Logarithmic Parallel Time",
+ "venue": "Proceedings of the 42nd International Conference on Machine Learning (ICML 2025), PMLR 267",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2506.07747",
+ "read_from": "arXiv preprint 2506.07747 (published version: ICML 2025, PMLR 267)",
+ "evidence_level": "full-text (preprint)",
+ "category": "probabilistic",
+ "subcategory": "combinatorial (submodular) LDA inference",
+ "task": "MAP inference of document-topic assignments in LDA with guarantees",
+ "problem": "No practical LDA algorithm has provable guarantees for document-topic assignment, which social-science and causal-inference uses depend on.",
+ "architecture": "Casts LDA MAP assignment under sparsity constraints as monotone submodular maximisation over topic-document links; fast serial greedy and parallel adaptive-sampling algorithms reach a near-optimal (1-1/e) solution in logarithmic parallel time; candidate topics generated from coherence functions (co-occurrence, exp-UMass) so each topic is tied to a keyword; out-of-sample objective preserves independence (SUTVA) for causal inference with topics as treatments.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Reuters",
+   "details": "news articles"
+  },
+  {
+   "name": "Congress",
+   "details": "US Congressional speeches"
+  },
+  {
+   "name": "NewsGroups",
+   "details": "political news discussion-board posts"
+  }
+ ],
+ "metrics": [
+  "log posterior of assignments",
+  "UMass coherence",
+  "runtime"
+ ],
+ "baselines": [
+  "MALLET Gibbs LDA (alpha = 1)",
+  "Gibbs-Bayes",
+  "Gibbs-Sparse",
+  "BERTopic",
+  "AVITM",
+  "ETM",
+  "FASTopic"
+ ],
+ "key_results": [
+  "Higher log posterior than Gibbs in all 90 runs with the same topics and sparsity (e.g. Congress -1.78 vs -2.05, x10^6; p < 10^-10).",
+  "Co-occurrence and exp-UMass E-LDA solutions give 2.53-4.20 and 1.18-1.67 times better mean coherence than Gibbs topics (5 top words).",
+  "Serial research code runs in 2-3 seconds."
+ ],
+ "strengths": [
+  "First practical LDA inference with approximation guarantees and logarithmic adaptivity.",
+  "Keyword-anchored, interpretable topics and validity for causal inference designs."
+ ],
+ "limitations": [
+  {
+   "text": "Topic quality judged mainly by UMass coherence (with candidate topics generated from coherence-type functions); no human evaluation.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Focuses on LDA with sparsity constraints; other variants are only argued to generalise.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/BreuerLabs/E-LDA",
+ "notes": "Authors report that a plain UMass generator performs relatively poorly, arguing coherence gains are not only an artefact.",
+ "fulltext_txt": "fulltext/txt/breuer2025elda.txt"
+}

@@ -1,0 +1,55 @@
+{
+ "key": "saed2026understanding",
+ "source_id": "saed2026understanding",
+ "title": "Understanding Developer Pain Points in Federated Learning: Insights from Stack Overflow and GitHub",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2607.19621",
+ "read_from": "arXiv preprint 2607.19621",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "software engineering mining",
+ "task": "Identifying federated-learning developer challenges from Q&A posts and issue trackers",
+ "problem": "Federated-learning frameworks are hard to set up and operate, but developer challenges were not systematically characterised across platforms.",
+ "architecture": "BERTopic with all-MiniLM-L6-v2 embeddings, UMAP and a bigram CountVectorizer; topics labelled by three authors from keywords and 10-30 sampled artifacts; difficulty measured by unresolved rate and median resolution time; question-intent (How/Why/What) analysis.",
+ "llm_or_encoder": "all-MiniLM-L6-v2",
+ "datasets": [
+  {
+   "name": "Stack Overflow",
+   "details": "495 FL-related posts (from 164 seed posts and co-occurring tags)"
+  },
+  {
+   "name": "GitHub",
+   "details": "9,116 issues and pull requests from 92 FL repositories"
+  }
+ ],
+ "metrics": [
+  "topic size",
+  "average views and score",
+  "share without accepted answer",
+  "median resolution time"
+ ],
+ "baselines": [],
+ "key_results": [
+  "9 Stack Overflow topics and 13 GitHub topics; largest SO topic 'TFF Implementation & Client' has 167 posts.",
+  "'TFF Installation & Environment Compatibility' has 82.22% of posts without an accepted answer; 'PySyft Setup & API Breakages' has the longest median time (99.19 h)."
+ ],
+ "strengths": [
+  "Cross-platform comparison with explicit difficulty indicators.",
+  "Replication package released."
+ ],
+ "limitations": [
+  {
+   "text": "Only public discussions and a subset of widely discussed frameworks; percentages for small topics are unstable.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic quality is not evaluated with coherence/diversity or against another topic model.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/sahandsaed/FL",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/saed2026understanding.txt"
+}

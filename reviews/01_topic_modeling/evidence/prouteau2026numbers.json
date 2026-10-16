@@ -1,0 +1,59 @@
+{
+ "key": "prouteau2026numbers",
+ "source_id": "prouteau2026numbers",
+ "title": "When Numbers Tell Half the Story: Human-Metric Alignment in Topic Model Evaluation",
+ "venue": "Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)",
+ "year": 2026,
+ "doi": "10.63317/387fiwstpipw",
+ "read_from": "arXiv preprint 2603.01945 (published version: LREC 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "evaluation",
+ "subcategory": "human evaluation: word intrusion and new Topic Word Mixing task",
+ "task": "Checking whether coherence/diversity metrics match human judgement in a specialised domain",
+ "problem": "Coherence and diversity metrics were validated mostly on general-domain corpora, and no human task existed for inter-topic distinctness.",
+ "architecture": "Topic Word Mixing (TWM): annotators see 8 words from one topic or from the two most similar topics (topic embeddings = mean of top-50 word vectors from stella_en_1.5B_v5) and decide whether one or two topics are present. Word intrusion (TWI): 4 top words + 1 frequency-matched intruder. 18 models (6 methods x about 10, 25, 50 topics), 10 trained annotators, nearly 4,000 annotations; intrusion accuracy adjusted for intruder-topic similarity.",
+ "llm_or_encoder": "stella_en_1.5B_v5 (for topic similarity)",
+ "datasets": [
+  {
+   "name": "Philosophy of science publications",
+   "details": "16,917 full-text articles from eight journals (1931-2017), about 65 million tokens"
+  }
+ ],
+ "metrics": [
+  "CV coherence",
+  "topic diversity",
+  "word-intrusion accuracy",
+  "TWM accuracy/F1",
+  "Fleiss' kappa"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "Top2Vec",
+  "BERTopic",
+  "CFMF",
+  "CFMF-emb"
+ ],
+ "key_results": [
+  "Top2Vec has the best CV (0.72-0.80) and diversity (0.98-1) but the lowest word-intrusion accuracy (0.693); BERTopic has low CV (0.52-0.62) but the highest intrusion accuracy (0.900).",
+  "Word intrusion agreement: 80.3%, Fleiss' kappa 0.688; TWM agreement 77.1%, kappa 0.270.",
+  "Intrusion accuracy correlates negatively with intruder-topic similarity (r = -0.145, p = 0.0079)."
+ ],
+ "strengths": [
+  "Introduces a human counterpart to topic-diversity metrics and releases about 4,000 annotations.",
+  "Shows that intruder selection needs semantic-similarity control in specialised domains."
+ ],
+ "limitations": [
+  {
+   "text": "Coherence and diversity capture only part of topic quality; coverage is not evaluated by humans.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Single domain-specific corpus; TWM agreement is only fair (kappa 0.270).",
+   "source": "reviewer observation from reported values"
+  }
+ ],
+ "code": "https://github.com/thibaultprouteau/LREC_2026_Prouteau_Human_Metrics_Topic_Models",
+ "notes": "DOI as recorded in the bibliographic metadata.",
+ "fulltext_txt": "fulltext/txt/prouteau2026numbers.txt"
+}

@@ -1,0 +1,79 @@
+{
+ "key": "chang2026large",
+ "source_id": "chang2026large",
+ "title": "A Large Language Model Guided Topic Refinement Mechanism for Short Text Modeling",
+ "venue": "Lecture Notes in Computer Science (Springer, 2026)",
+ "year": 2026,
+ "doi": "10.1007/978-981-95-3830-0_32",
+ "read_from": "arXiv preprint 2403.17706v2 (published version: LNCS 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "short-text",
+ "subcategory": "LLM post-hoc topic refinement",
+ "task": "Improving topics from any base model on short texts",
+ "problem": "Short texts give sparse co-occurrence, so mined topics contain semantically intruding words; LLM topic generators need whole documents and do not output bag-of-words topics.",
+ "architecture": "Model-agnostic post-processing: for each topic, each word is in turn treated as a possible intruder; GPT-3.5-turbo is asked whether it fits the topic of the other words and, if not, proposes 10 alternatives; replacements are chosen iteratively (prompt construction, LLM request/response, iterative refinement).",
+ "llm_or_encoder": "GPT-3.5-turbo (temperature 0); GloVe 840B 300-d for granularity metrics",
+ "datasets": [
+  {
+   "name": "Tweet",
+   "details": "2,133 documents, 89 labels, vocabulary 1,127, average length 5.550"
+  },
+  {
+   "name": "AGNews",
+   "details": "14,845 titles, 4 labels"
+  },
+  {
+   "name": "TagMyNews",
+   "details": "27,369 titles, 7 labels"
+  },
+  {
+   "name": "YahooAnswer",
+   "details": "12,258 question titles, 10 labels"
+  }
+ ],
+ "metrics": [
+  "CA",
+  "CP",
+  "CV",
+  "UCI",
+  "NPMI (Palmetto)",
+  "within-topic similarity S",
+  "between-topic distance D",
+  "accuracy",
+  "F1",
+  "token cost"
+ ],
+ "baselines": [
+  "LDA",
+  "BTM",
+  "Gaussian-BAT",
+  "CNTM",
+  "TSCTM",
+  "BERTopic",
+  "ECRTM",
+  "CWTM",
+  "LLM-TM"
+ ],
+ "key_results": [
+  "Coherence rises for almost all base models and datasets (e.g. Tweet LDA: CP +0.223, UCI +1.452, NPMI +0.086).",
+  "Text-classification accuracy improves for every base model (e.g. Tweet accuracy growth 9.70% to 23.19%).",
+  "1591.01 input and 274.90 output tokens per topic on Tweet vs 4958.73 and 1214.07 for LLM-TM; on TagMyNews LLM-TM needs 61872.93 input tokens."
+ ],
+ "strengths": [
+  "Works with any base model and keeps the bag-of-words topic format, so standard metrics still apply.",
+  "Token cost is independent of corpus size because only topic words are sent."
+ ],
+ "limitations": [
+  {
+   "text": "Final quality depends on the initial base topics.",
+   "source": "author-stated"
+  },
+  {
+   "text": "CV slightly decreases for some models (e.g. Tweet: G-BAT -0.012, LLM-TM -0.005); replacement words come from the LLM and may not occur in the corpus vocabulary.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Tested on eight base models plus LLM-TM; K = 20 and 50.",
+ "fulltext_txt": "fulltext/txt/chang2026large.txt"
+}

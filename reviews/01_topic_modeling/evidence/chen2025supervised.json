@@ -1,0 +1,65 @@
+{
+ "key": "chen2025supervised",
+ "source_id": "chen2025supervised",
+ "title": "Supervised Neural Topic Modeling with Label Alignment",
+ "venue": "Transactions of the Association for Computational Linguistics, vol. 13",
+ "year": 2025,
+ "doi": "10.1162/tacl_a_00738",
+ "read_from": "Published version (open access)",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "supervised neural topic model with optimal transport",
+ "task": "Learning topics explicitly aligned with document labels",
+ "problem": "Supervised NTMs use a label-free prior, so topics blend several labels and label-topic relations are not explicit.",
+ "architecture": "LANTM: chain-structured VAE graphical model with a label-conditioned prior; soft label-topic indicators obtained as the transport plan of an entropy-regularised optimal-transport problem between label and topic embeddings; reconstruction of label-specific pseudo-documents; plugs into ETM or ECRTM.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "20 labels; vocabulary 5,000"
+  },
+  {
+   "name": "IMDB",
+   "details": "2 labels (sentiment)"
+  },
+  {
+   "name": "Yahoo",
+   "details": "Yahoo! Answers, short texts, 10 labels"
+  }
+ ],
+ "metrics": [
+  "ARI",
+  "Purity",
+  "NMI (k-means and top-topic clustering)",
+  "TC",
+  "TD"
+ ],
+ "baselines": [
+  "sLDA",
+  "SCHOLAR",
+  "ETM",
+  "ECRTM"
+ ],
+ "key_results": [
+  "20NG, K = 50 (k-means): LANTM+ECRTM ARI 0.370, Purity 0.595, NMI 0.578 vs ECRTM 0.101, 0.423, 0.466 and SCHOLAR 0.040, 0.357, 0.391.",
+  "Yahoo, K = 50: LANTM+ECRTM ARI 0.178 vs ECRTM 0.083.",
+  "Topic quality maintained but with a coherence-diversity trade-off after adding LANTM."
+ ],
+ "strengths": [
+  "Explicit, inspectable label-topic relationships; plug-in for existing VAE-based NTMs.",
+  "Significance tests over 5 runs."
+ ],
+ "limitations": [
+  {
+   "text": "Coherence-diversity trade-off appears after applying LANTM; sLDA failed to converge on 20NG and Yahoo at K = 100.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Label dependencies are not modelled (future work).",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/Rio-Chan-0119/LANTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/chen2025supervised.txt"
+}

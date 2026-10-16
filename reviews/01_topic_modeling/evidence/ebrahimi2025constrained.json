@@ -1,0 +1,65 @@
+{
+ "key": "ebrahimi2025constrained",
+ "source_id": "ebrahimi2025constrained",
+ "title": "Constrained Non-negative Matrix Factorization for Guided Topic Modeling of Minority Topics",
+ "venue": "Proceedings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.emnlp-main.1802",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "algebraic",
+ "subcategory": "seed-guided constrained NMF",
+ "task": "Discovering low-prevalence (minority) topics such as mental-health discussion",
+ "problem": "Topic models miss low-prevalence themes; guided models need topic-specific seeds and over-fit to them.",
+ "architecture": "NMF minimising generalised KL divergence with inequality constraints: documents without seed words cannot have high minority-topic prevalence (on W) and minority topics must carry some seed-word mass (on H); one domain seed list, no per-topic seeds; KKT conditions give new multiplicative updates with Lagrange multipliers.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Finnish YouTube data",
+   "details": "5,578,289 raw comments from 20 YouTubers; 2,979,969 after filtering; average 7.04 words"
+  },
+  {
+   "name": "Synthetic",
+   "details": "500 documents with injected words from 18 mental-health topics"
+  }
+ ],
+ "metrics": [
+  "Purity (minority-focused)",
+  "NMI",
+  "Jensen-Shannon divergence"
+ ],
+ "baselines": [
+  "NMF",
+  "LDA",
+  "ProdLDA",
+  "Top2Vec",
+  "BERTopic",
+  "FASTopic",
+  "KeyATM",
+  "GuidedNMF",
+  "GuidedLDA",
+  "SeededLDA",
+  "CorEx"
+ ],
+ "key_results": [
+  "Synthetic data (20 topics, 7 minority): Purity 0.1765 and NMI 0.2453 vs best baselines 0.0969 (NMF) and 0.2247 (GuidedNMF).",
+  "Mean JSD 0.53783, close to KeyATM (0.53462) and NMF (0.54451)."
+ ],
+ "strengths": [
+  "Needs only one seed list for the whole domain and still splits it into data-driven subtopics.",
+  "Large real-world case study on non-English (Finnish) social media."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluating low-frequency topics is hard; real data has no annotated minority topics, so quantitative results are on synthetic data only.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Absolute purity values are low for all models (best 0.1765); KeyATM has a slightly lower mean JSD.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/seyedeh-mona-ebrahimi/Constrained-NMF-for-Minority-Topics",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/ebrahimi2025constrained.txt"
+}

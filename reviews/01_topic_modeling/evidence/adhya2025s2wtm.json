@@ -1,0 +1,90 @@
+{
+ "key": "adhya2025s2wtm",
+ "source_id": "adhya2025s2wtm",
+ "title": "S2WTM: Spherical Sliced-Wasserstein Autoencoder for Topic Modeling",
+ "venue": "Proceedings of ACL 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.1131",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "Wasserstein autoencoder on the hypersphere",
+ "task": "Neural topic modelling without posterior collapse",
+ "problem": "VAE topic models with von Mises-Fisher priors suffer posterior collapse because the KL term shrinks; Gaussian latents behave poorly in high dimensions.",
+ "architecture": "Deterministic encoder maps BoW to the unit hypersphere (L2 normalisation); the aggregated posterior is aligned with a spherical prior (vMF, mixture of vMF, or uniform, chosen as a hyperparameter) by the Spherical Sliced-Wasserstein distance; softmax decoder whose weights give the topic-word matrix; hyperparameters tuned with Bayesian optimisation in OCTIS.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "16309 documents, 20 labels"
+  },
+  {
+   "name": "BBC",
+   "details": "2225 documents, 5 labels"
+  },
+  {
+   "name": "M10",
+   "details": "8355 documents, 10 labels"
+  },
+  {
+   "name": "SS",
+   "details": "12295 documents, 8 labels"
+  },
+  {
+   "name": "Pascal",
+   "details": "4834 documents, 20 labels"
+  },
+  {
+   "name": "Bio",
+   "details": "19448 documents, 20 labels"
+  },
+  {
+   "name": "DBLP",
+   "details": "54595 documents, 4 labels"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "CV",
+  "IRBO",
+  "wI-C diversity",
+  "classification",
+  "LLM rating and intrusion (Stammbach et al.)"
+ ],
+ "baselines": [
+  "LDA",
+  "LSI",
+  "NMF",
+  "ETM",
+  "DVAE-TM",
+  "DVAE-RSVI-TM",
+  "ProdLDA",
+  "ZeroshotTM",
+  "CombinedTM",
+  "WTM",
+  "vONT",
+  "ECRTM"
+ ],
+ "key_results": [
+  "Highest NPMI on all seven datasets (e.g. BBC 0.252, SS 0.146, DBLP 0.133).",
+  "CV is highest except M10 (0.492 vs ECRTM 0.516) and 20NG (0.723 vs 0.750 for DVAE-RSVI-TM).",
+  "Highest wI-C diversity on all datasets; median of 5 runs with K equal to the number of labels."
+ ],
+ "strengths": [
+  "Avoids KL-driven posterior collapse while keeping hyperspherical geometry.",
+  "Broad evaluation: 12 baselines, 7 datasets, extrinsic, qualitative and LLM-based evaluation."
+ ],
+ "limitations": [
+  {
+   "text": "Spherical Radon transforms make SSW costly as the number of projections grows; LLM-based evaluation may be biased.",
+   "source": "author-stated"
+  },
+  {
+   "text": "K is fixed to the number of gold labels, so sensitivity to K is not covered in the main tables.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/AdhyaSuman/S2WTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/adhya2025s2wtm.txt"
+}

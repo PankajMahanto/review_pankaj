@@ -1,0 +1,35 @@
+{
+ "key": "xu2026modern",
+ "source_id": "xu2026modern",
+ "title": "Towards Modern Topic Models: A Survey of Taxonomies and Paradigm Shifts from Algorithm-Centric to LLM-Centered Topic Analysis",
+ "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.326",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "survey",
+ "subcategory": "survey of LLM-era topic modelling",
+ "task": "Survey and taxonomy",
+ "problem": "Earlier surveys do not organise the fast-growing LLM-driven topic modelling work.",
+ "architecture": "Three-way taxonomy: Classical Algorithm-Centric (probabilistic, embedding-based, neural, integrated, special scenarios); LLM-Assisted (data preprocessing, LLM-derived embeddings, post-hoc refinement, evaluation); LLM-Centric (Level 1 prompt-based one-round/two-round; Level 2 agentic and similar systems; interpretation of LLMs as topic models). Discusses expanded task scope, model-level to system-level shift and a roadmap.",
+ "llm_or_encoder": "n/a",
+ "datasets": [],
+ "metrics": [],
+ "baselines": [],
+ "key_results": [
+  "Positions TopicGPT and TopicGen as two-round prompt-based methods and LLooM and SPARK as agentic topic modelling.",
+  "Notes that one-round prompting can leave documents unassigned and topics incomplete, and that LLM evaluation can miss domain-specific topics."
+ ],
+ "strengths": [
+  "Most recent taxonomy focused on the role of LLMs; resource list maintained online."
+ ],
+ "limitations": [
+  {
+   "text": "Category boundaries rely on subjective judgement; coverage mostly limited to the past three years; may overestimate LLM impact relative to probabilistic foundations.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/Harrisonls2004/Towards-Modern-Topic-Models",
+ "notes": "Used in the related-surveys comparison.",
+ "fulltext_txt": "fulltext/txt/xu2026modern.txt"
+}

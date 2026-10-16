@@ -1,0 +1,56 @@
+{
+ "key": "chen2026understanding",
+ "source_id": "chen2026understanding",
+ "title": "Towards Understanding Professional AI Assistant Use: Human-in-the-Loop Topic Modeling of Multi-turn Conversations",
+ "venue": "Companion Proceedings of the ACM Web Conference 2026 (WWW Companion)",
+ "year": 2026,
+ "doi": "10.1145/3774905.3794645",
+ "read_from": "Published version (open access, CC BY 4.0)",
+ "evidence_level": "full-text (published)",
+ "category": "llm-based",
+ "subcategory": "LLM summarisation + density clustering + human in the loop",
+ "task": "Topic discovery over multi-turn user-assistant conversations",
+ "problem": "Word-based topic models do not capture the task behind multi-turn assistant conversations; topics must stay current as new data arrives.",
+ "architecture": "HILTON: conversation-turn extraction; few-shot LLM task summaries; all-mpnet-base-v2 embeddings, standardisation, UMAP to 50-d, HDBSCAN (min cluster size 150, min samples 5) with iterative noise re-clustering and constrained Voronoi reassignment of outliers; LLM cluster naming with contrastive samples, hierarchisation and deduplication; annotator review; KNN classifier for new data with probability threshold; max-min and stratified sampling to keep the embedding database compact.",
+ "llm_or_encoder": "GPT-4.1-Nano, GPT-4o-mini, Claude-haiku (summaries); all-mpnet-base-v2",
+ "datasets": [
+  {
+   "name": "Data provided by the company (AI-assistant conversations)",
+   "details": "about 50k task summaries; data and statistics not disclosed"
+  }
+ ],
+ "metrics": [
+  "BLEU-1/2 and ROUGE-1/L across LLMs",
+  "Silhouette",
+  "Davies-Bouldin",
+  "Calinski-Harabasz",
+  "standard deviation of cluster sizes",
+  "Krippendorff's alpha",
+  "average observed agreement",
+  "accuracy",
+  "weighted F1"
+ ],
+ "baselines": [],
+ "key_results": [
+  "GPT-4o-mini summaries agree most with other LLMs (e.g. BLEU-1 56.22 against GPT-nano).",
+  "Inter-annotator agreement: alpha 0.7348 for summary consistency, 0.4941 for sub-cluster names, 0.5298 for higher-level names.",
+  "Outlier reassignment stabilises after about five rounds (Silhouette 0.3344 at round 5)."
+ ],
+ "strengths": [
+  "End-to-end deployable pipeline: discovery, human curation, incremental updates and cheap classification of new conversations.",
+  "Operates on embeddings and summaries, which the authors argue is privacy-preserving."
+ ],
+ "limitations": [
+  {
+   "text": "Data cannot be disclosed, which limits reproducibility.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No comparison with other topic models; quality is reported through internal cluster indices and annotator agreement only.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/siebeniris/topic_modeling/",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/chen2026understanding.txt"
+}

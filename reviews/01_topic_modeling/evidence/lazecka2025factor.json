@@ -1,0 +1,72 @@
+{
+ "key": "lazecka2025factor",
+ "source_id": "azecka2025factor",
+ "title": "Factor Analysis with Correlated Topic Model for Multi-Modal Data",
+ "venue": "Proceedings of the 28th International Conference on Artificial Intelligence and Statistics (AISTATS 2025), PMLR 258",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2504.18914",
+ "read_from": "arXiv preprint 2504.18914 (published version: AISTATS 2025, PMLR 258)",
+ "evidence_level": "full-text (preprint)",
+ "category": "multimodal",
+ "subcategory": "Bayesian factor analysis joined with correlated topic model",
+ "task": "Integrating simple (vector) views with structured views such as text",
+ "problem": "Multimodal factor analysis cannot handle structured views (text, single-cell data) where each sample has many clustered data points.",
+ "architecture": "FACTM: multi-view Bayesian factor analysis with sparsity priors linked to a correlated topic model on structured views through sample-specific shifts of topic proportions; variational inference; supervised rotation of factors for interpretability.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "CMU-MOSI",
+   "details": "opinion video clips; transcripts as structured view"
+  },
+  {
+   "name": "CMU-MOSEI",
+   "details": "opinion video clips"
+  },
+  {
+   "name": "Mirex",
+   "details": "songs with acoustic, melody and text features; lyrics as structured view; 5 mood classes"
+  },
+  {
+   "name": "COVID-19",
+   "details": "long-COVID patient data (flow cytometry, CT scans and other modalities)"
+  }
+ ],
+ "metrics": [
+  "Spearman correlation with true factors (simulation)",
+  "ARI",
+  "ROC-AUC (random forest, 10-fold CV)"
+ ],
+ "baselines": [
+  "FA Oracle",
+  "FA+CTM",
+  "MOFA",
+  "muVI",
+  "PCA",
+  "Tucker",
+  "CTM",
+  "LDA",
+  "ProdLDA"
+ ],
+ "key_results": [
+  "Topic-based representations (ROC-AUC): Mirex 0.64 vs CTM 0.57 and LDA 0.62; Mosi 0.61 vs 0.57; but Mosei 0.63 vs LDA 0.66.",
+  "Factor-based representations differ little across models (e.g. Mosei 0.73 for FACTM, FA+CTM and MOFA)."
+ ],
+ "strengths": [
+  "Brings correlated topic modelling into multimodal factor analysis with an estimated topic covariance.",
+  "Supervised rotation improves factor interpretability."
+ ],
+ "limitations": [
+  {
+   "text": "Linear dependencies and conjugacy assumptions limit expressiveness; hyperparameters fixed rather than learned.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Gains on benchmarks are small or mixed (LDA is better on Mosei).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "github.com/szczurek-lab/FACTM",
+ "notes": "Key uses the first author's surname (Łazęcka).",
+ "fulltext_txt": "fulltext/txt/azecka2025factor.txt"
+}
