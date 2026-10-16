@@ -1,0 +1,1218 @@
+[
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.26309v1",
+  "id": "arxiv:2607.26309",
+  "title": "The Confounder Trap: Treatment-Encoding Representations in Causal Inference with Text",
+  "abstract": "Estimating causal effects of linguistic properties from observational text is difficult because the same document can contain both the treatment of interest and the non-treatment textual attributes needed for adjustment. Existing approaches often learn representations from the full text to capture latent confounding, but when treatment status is itself encoded by words in the text, these representations can directly encode treatment. This creates a confounder trap: richer representations can make treated and control documents separable, inducing overlap violations even when the underlying causal problem satisfies overlap. We study latent text treatments that are encoded through lexicons or other treatment-defining lexical information, and propose masking-based adjustment representations that remove this lexical treatment signal before representation learning. We formalize representation-induced overlap failure, prove that deletion masking preserves overlap for bag-of-words/topic-model representations, and characterize replacement masking as a natural relaxation for large language models that hides treatment-defining tokens while preserving word order and context. Across simulations, masking improves overlap diagnostics, stabilizes treatment effect estimates, and reduces bias relative to adjustment methods that learn from the unmasked text.",
+  "published": "2026-07-28T22:10:43Z",
+  "updated": "2026-07-28T22:10:43Z",
+  "authors": [
+   "Marie Neubrander",
+   "Graham Tierney",
+   "Alexander Volfovsky"
+  ],
+  "categories": [
+   "stat.ME",
+   "cs.CL",
+   "stat.AP",
+   "stat.ML"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.26309v1",
+  "abs_url": "http://arxiv.org/abs/2607.26309v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.19621v1",
+  "id": "arxiv:2607.19621",
+  "title": "Understanding Developer Pain Points in Federated Learning: Insights from Stack Overflow and GitHub",
+  "abstract": "Federated Learning (FL) enables collaborative model training without centralizing raw data, but building and operating FL systems remains difficult due to distributed execution, rapidly evolving frameworks, and privacy and governance requirements. In this paper, we present an empirical study of FL developer challenges by independently analyzing 495 Stack Overflow posts and 9,116 GitHub issues and pull requests from 92 FL-related projects. Using BERTopic-based topic modeling and difficulty indicators such as unresolved rates and median resolution time, we characterize recurring problem areas and compare how they manifest across the two support platforms, Stack Overflow and GitHub. Our analysis surfaces nine dominant Stack Overflow topics and thirteen GitHub topics, with persistent difficulties concentrated in environment setup and dependency compatibility, API breakages and migration, training instability under non-IID data, evaluation and metric correctness, and the integration of privacy-preserving mechanisms. We also categorize posts by question intent to understand the kinds of help developers seek; this intent analysis shows that \"How\"-type questions dominate, reflecting strong demand for procedural guidance. Several topics, such as \"TFF Installation and Environment Compatibility\" and \"Federated Feature Engineering and SecureBoost Issues,\" exhibit high unresolved rates and long resolution times, suggesting shortcomings in tooling, documentation, and debugging support. Based on these findings, we provide actionable implications for FL framework designers, documentation authors, and educators. Although our results are constrained to public discussions and a subset of widely discussed frameworks, the study offers a scalable method for continuously monitoring developer pain points and improving the usability, reliability, and deployability of FL systems.",
+  "published": "2026-07-21T23:06:00Z",
+  "updated": "2026-07-21T23:06:00Z",
+  "authors": [
+   "Sahand Saed",
+   "Khairul Alam",
+   "Banani Roy"
+  ],
+  "categories": [
+   "cs.SE",
+   "cs.AI"
+  ],
+  "comment": "44 pages",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.19621v1",
+  "abs_url": "http://arxiv.org/abs/2607.19621v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\"",
+   "abs:\"BERTopic\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.12295v1",
+  "id": "arxiv:2607.12295",
+  "title": "A Longitudinal Analysis of Public Discourse on AI Ethics in Education Using Twitter Data",
+  "abstract": "The rapid integration of artificial intelligence (AI) and generative AI (GenAI) into education presents significant opportunities to enhance teaching and learning, while raising ethical concerns about the responsible use of these technologies in educational settings. Understanding how the public perceives and debates these issues is increasingly important for educators, institutions, and policymakers seeking to integrate AI responsibly and equitably. Social media platforms, where such debates unfold frequently and at scale, offer a valuable lens for capturing large-scale, real-time public reactions to key developments as they emerge. In this study, we analyse five years (2019-2024) of discourse on Twitter (now X) to trace the evolving public conversation around AI ethics in education, paying particular attention to the release of ChatGPT as a pivotal moment that reshaped the nature and tone of that discourse. Using BERT-based topic modelling and SetFit sentiment analysis to identify dominant themes and track sentiment over time, we find that the discourse has been predominantly positive across the observation period, with negative sentiment concentrated around specific ethical controversies. More recently, anxieties about academic integrity and the broader implications of generative AI have come to dominate the conversation. Rather than reflecting a polarized debate, public discourse appears pragmatic and largely receptive to AI integration, though accompanied by growing calls for ethical oversight and institutional accountability. By providing a longitudinal account of public sentiment surrounding AI ethics in education, this study informs educators, institutions, and policymakers an empirically grounded understanding of public expectations, informing the development of responsible, transparent, and equitable approaches to AI integration across educational contexts.",
+  "published": "2026-07-14T03:08:47Z",
+  "updated": "2026-07-14T03:08:47Z",
+  "authors": [
+   "Akriti Bagale",
+   "Nafisa Mehjabin",
+   "Ali \u00dcnl\u00fc",
+   "Aditya Johri"
+  ],
+  "categories": [
+   "cs.CY",
+   "cs.AI"
+  ],
+  "comment": "Paper under review at Discover Education",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.12295v1",
+  "abs_url": "http://arxiv.org/abs/2607.12295v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.09324v1",
+  "id": "arxiv:2607.09324",
+  "title": "Letting the Data Speak: Extracting Keywords from Crowdsourced Collections with AI",
+  "abstract": "Identifying and assigning keywords at scale is a technical, practical, and ethical challenge for crowdsourced collections. This article reports the findings of the \"Extracting Keywords from Crowdsourced Collections\" project, which used the Their Finest Hour Online Archive, a crowdsourced Second World War digital collection hosted by the University of Oxford, as a case study. The project evaluated three Natural Language Processing approaches to automate keyword extraction: Named Entity Recognition, Keyword Extraction, and Topic Modelling. It tested these approaches across a range of artificial intelligence techniques, from traditional statistical methods to modern GenAI neural networks. Our quantitative and qualitative findings indicate that Natural Language Processing approaches offer real potential for keyword extraction at scale in crowdsourced collections, but that no single method offers a complete solution and that model choice significantly shapes results. We argue that in crowdsourced collections, where metadata is the direct product of engagement with living contributors, automated keyword extraction raises distinct stewardship responsibilities that must be addressed alongside technical performance. Open-weight, extractive models emerge from our evaluation as best placed to support responsible deployment, while generative AI, despite its abstractive potential, introduces accountability risks that anyone managing crowdsourced collections should weigh carefully.",
+  "published": "2026-07-10T12:06:18Z",
+  "updated": "2026-07-10T12:06:18Z",
+  "authors": [
+   "Miguel Arana-Catania",
+   "Catherine Conisbee",
+   "Matthew Kidd"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.DL",
+   "cs.IR",
+   "cs.LG"
+  ],
+  "comment": "45 pages, 6 tables",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.09324v1",
+  "abs_url": "http://arxiv.org/abs/2607.09324v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.05761v1",
+  "id": "arxiv:2607.05761",
+  "title": "Synthetic Consumer Insight Generation with Large Language Models",
+  "abstract": "Modern data-driven marketing relies on large amounts of consumer data, yet collecting such data can be costly, time-consuming, and difficult to scale. This research examines whether large language models (LLMs) can be used to generate synthetic consumer data for projective techniques, a set of methods designed to elicit consumer associations, emotions, wants, and needs. We test LLM-generated responses across multiple projective tasks, LLMs, prompting strategies, and temperature settings, and compare them with human responses from a primary research study on perceptions of city tourism destinations. Human and LLM responses were analyzed using linguistic measures, diversity and concentration metrics, topic models, and top-term analyses. The results show substantial overlap between human and LLM responses in broad topics and associations, but also important differences in style, linguistic structure, and the way diversity is generated. Recommendations are given on how to best utilize LLMs for generating synthetic consumer data, how model and prompt choices shape response quality, and on recognizing the limitations of LLM synthetic consumer data generation.",
+  "published": "2026-07-07T02:38:41Z",
+  "updated": "2026-07-07T02:38:41Z",
+  "authors": [
+   "Stephen L. France",
+   "Pia. A. Albinsson"
+  ],
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.05761v1",
+  "abs_url": "http://arxiv.org/abs/2607.05761v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.05203v1",
+  "id": "arxiv:2607.05203",
+  "title": "Finfluencers on TikTok: A Longitudinal Analysis of Content, Engagement, and Disclaimer Practices",
+  "abstract": "The rise of social media financial influencers (finfluencers) has transformed how financial information is disseminated to broad and often inexperienced audiences. While these creators may contribute to financial literacy, concerns remain regarding the reliability of their content and the adequacy of risk disclosures. Using data collected through TikTok's Research API, we analyze UK finfluencer content, engagement dynamics, disclaimer practices, audience sentiment, and network structure. The primary dataset comprises 13,215 videos and 104,097 comments posted by 71 UK-based finfluencers between April and September 2024, while a follow-up dataset covering October 2025 to March 2026 enables longitudinal analysis of disclaimer practices, engagement trends, and hashtag usage. Using topic modeling, we identify four dominant themes: Entrepreneurship \\&amp; Side Hustles, Property Investing, Active Trading, and Saving \\&amp; Budgeting. Sentiment analysis of audience comments reveals predominantly neutral-to-positive responses, while engagement analysis shows only a negligible association between video duration and engagement rate. Social network analysis indicates a collaborative ecosystem in which mid-tier finfluencers frequently act as bridges between creator groups. Explicit disclaimers and risk-related language remain relatively uncommon overall and are concentrated primarily in trading-related content. The findings highlight challenges related to financial transparency and disclosure practices within short-form financial content ecosystems. We discuss implications for consumer protection and the design of clearer and more standardized financial risk disclosures on social media platforms.",
+  "published": "2026-07-06T15:17:18Z",
+  "updated": "2026-07-06T15:17:18Z",
+  "authors": [
+   "Essam Ghadafi",
+   "Panagiotis Andriotis"
+  ],
+  "categories": [
+   "cs.SI",
+   "cs.CY"
+  ],
+  "comment": "Accepted for presentation at MSNDS 2026, an associated workshop of ASONAM 2026",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.05203v1",
+  "abs_url": "http://arxiv.org/abs/2607.05203v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.04566v1",
+  "id": "arxiv:2607.04566",
+  "title": "Characterizing the Temporal, Emotional, and Social Patterns of Adolescent Substance Use Discussions on Reddit",
+  "abstract": "Adolescence is a critical developmental period marked by heightened emotional sensitivity, social stress, and vulnerability to substance use. However, traditional research methods provide limited access to adolescents' authentic experiences, hindering efforts to develop evidence-based prevention and intervention strategies. Social media provides a unique opportunity to observe adolescents' naturally occurring discussions about substance use, offering valuable insights into their opinions, emotions, and lived experiences that can inform early prevention and intervention strategies. In this study, we analyze large-scale Reddit discussions related to substance use among adolescents between 2018 and 2023. Leveraging hour-by-day temporal analysis, sentiment and emotion classification, and transformer-based topic modeling (BERTopic), we examine the interaction between time, emotion, and semantic content in adolescent substance use discourse. Our findings reveal pronounced weekend and late-night peaks in substance-related discussions, a dominance of negative emotions such as sadness and fear, and distinct semantic topics centered on peer relationships, family conflict, emotional distress, and substance-specific experiences. These findings advance our understanding of adolescent substance use in naturalistic online settings and provide empirical evidence to support the development of more timely, targeted, and evidence-based prevention and intervention strategies.",
+  "published": "2026-07-06T00:33:02Z",
+  "updated": "2026-07-06T00:33:02Z",
+  "authors": [
+   "Leran Hong",
+   "Lei Jin",
+   "Jianfeng Zhu"
+  ],
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "18 pages, 4 figures, 1 table",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.04566v1",
+  "abs_url": "http://arxiv.org/abs/2607.04566v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\"",
+   "abs:\"BERTopic\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.03887v1",
+  "id": "arxiv:2607.03887",
+  "title": "Advanced Topic Modeling Techniques for Categorizing Software Vulnerabilities",
+  "abstract": "The increasing complexity and frequency of software vulnerabilities demand efficient methods to analyze and prioritize threats. Traditional approaches often fail to process the vast amount of unstructured textual data effectively, highlighting the need for advanced solutions. This study leverages state-of-the-art topic modeling techniques powered by large language models (LLMs) to extract meaningful insights from the 'Threat' feature of a software vulnerability dataset. Models such as BERTopic, Top2Vec, CombinedTM, Llama2 with BERTopic, and Mixtral are utilized, along with dimensionality reduction and clustering methods like UMAP, PCA, HDBSCAN, and DBSCAN. By uncovering latent patterns and generating interpretable clusters, this research enhances threat prioritization and decision-making in cybersecurity. The findings support scalable and automated solutions for vulnerability management, contributing to improved security practices.",
+  "published": "2026-07-04T14:09:14Z",
+  "updated": "2026-07-04T14:09:14Z",
+  "authors": [
+   "Utkarsh Tiwari",
+   "Spoorthi M",
+   "Anirudh S",
+   "Nidhin Prabhakar T."
+  ],
+  "categories": [
+   "cs.CR",
+   "cs.AI",
+   "cs.SE"
+  ],
+  "comment": "10 pages, 10 figures. Accepted at the 16th International Conference on Computing, Communication and Networking Technologies (ICCCNT 2025), July 6-11, 2025, IIT Indore, Madhya Pradesh, India. IEEE proceedings",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.03887v1",
+  "abs_url": "http://arxiv.org/abs/2607.03887v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\"",
+   "abs:\"BERTopic\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.03323v1",
+  "id": "arxiv:2607.03323",
+  "title": "From Gentlemen to Frontiermen: Masculine Formations in English-Language Fiction (1771--1930)",
+  "abstract": "Masculinity in nineteenth-century fiction is not a single ideal but a field of competing scripts. Drawing on 150 British and American canonical novels from the txtLAB Novel450 corpus, published between 1771 and 1930, this paper examines the changing relative prominence of competing models of masculine authority. To focus the analysis on masculine characterisation, the study extracts male-character-centred text windows by using coreference resolution to group names, nominal mentions, and pronouns into character-specific reference chains. It then fits an unsupervised structural topic model with publication year and author gender as topic-prevalence covariates. The model identifies six distinct masculine formations: aristocratic-chivalric, Christian manhood, gentlemanly respectability, country squire, professional-commercial, and imperial/adventure. Across the corpus, formations tied to inherited rank and sacred authority decline, while those organised around paid work and adventure rise. The largest increase occurs not in professional-commercial breadwinning but in imperial/adventure masculinity, particularly the frontier-wilderness register. The trajectory points to a reallocation from inherited and sacred status towards achieved, commercial, and expansionary forms of masculine authority. Adventurous and commercial formations are also more prevalent in novels by authors recorded as male. Because these formations emerge without a seeded vocabulary yet align with categories established in independent scholarship, the article offers a reproducible method for measuring the reorganisation of gendered authority across the long nineteenth century.",
+  "published": "2026-07-03T13:40:57Z",
+  "updated": "2026-07-03T13:40:57Z",
+  "authors": [
+   "Rong Wang"
+  ],
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.03323v1",
+  "abs_url": "http://arxiv.org/abs/2607.03323v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.01494v1",
+  "id": "arxiv:2607.01494",
+  "title": "Insights from GitHub Community on the Matter Standard: Developer Perspectives and Challenges",
+  "abstract": "Matter seeks to resolve longstanding interoperability problems in the Internet of Things (IoT), yet little is known about how developers experience the standard in day to day work. This paper examines over 13,000 issues from the official Project CHIP GitHub repository to understand the kinds of problems contributors report when implementing and integrating Matter. Using topic modeling and qualitative analysis, we identify four recurring areas of concern, Testing, Interoperability, Development, and Platform and Network, and describe how they manifest in the evolution of the codebase and tooling. The findings reveal systematic technical and integration challenges and point to concrete opportunities to refine Matter's test infrastructure, cross vendor guidance, and documentation as the standard continues to mature.",
+  "published": "2026-07-01T21:46:17Z",
+  "updated": "2026-07-01T21:46:17Z",
+  "authors": [
+   "Muhammad Hassan",
+   "Carl Gunter",
+   "Susan Landau",
+   "Masooda Bashir"
+  ],
+  "categories": [
+   "cs.SE",
+   "cs.ET",
+   "cs.HC",
+   "cs.SI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "10.14722/sdiotsec.2026.23046",
+  "pdf_url": "https://arxiv.org/pdf/2607.01494v1",
+  "abs_url": "http://arxiv.org/abs/2607.01494v1",
+  "matched_query": [
+   "abs:\"topic model\"",
+   "abs:\"topic modeling\"",
+   "abs:\"topic modelling\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.21932v1",
+  "id": "arxiv:2607.21932",
+  "title": "Generalized Neural Operator for Parametric and Boundary-Value Problems",
+  "abstract": "Developing foundational neural simulators for Partial Differential Equations (PDEs) requires robust generalization across diverse physical parameters and boundary conditions. However, current deep learning approaches largely face a structural trade-off between condition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agnostic deployment, physical rigor, and inference efficiency, we propose a \\textit{Generalized Neural Operator}. By formalizing the classical conditions for well-posedness within neural operators, our framework demonstrates the theoretical benefits of explicitly conditioning on PDE parameters and boundary conditions. To implement this synthesis without compromising computational speed, we introduce three novel architectural components: a parameter-gated mixture of kernels for efficient parameter generalization, a generalized boundary transfer operator that projects arbitrary boundary constraints into a unified latent Dirichlet representation, and a specialized training objective to ensure stability. Extensive experiments demonstrate that our theoretically grounded approach achieves superior generalization across heterogeneous physical regimes while maintaining strict inference efficiency comparable to conventional numerical baselines.",
+  "published": "2026-07-24T03:10:32Z",
+  "updated": "2026-07-24T03:10:32Z",
+  "authors": [
+   "Ruoyan Li",
+   "Yizhou Sun",
+   "Wei Wang"
+  ],
+  "categories": [
+   "cs.CE",
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.21932v1",
+  "abs_url": "http://arxiv.org/abs/2607.21932v1",
+  "matched_query": [
+   "abs:\"latent dirichlet\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.04529v2",
+  "id": "arxiv:2607.04529",
+  "title": "Evaluation and Explainability of Unsupervised Scholarly Collaboration Recommendations",
+  "abstract": "In this paper, we examine unsupervised, content-based collaboration recommendations using publication text in scholarly settings. We compare three families of methods: a TF-IDF baseline, topic-based models (LDA and BERTopic, including clone variants), and embedding-based retrieval using SciBERT with Faiss. To evaluate model behavior beyond simple lexical matching, we introduce a constrained setting where publication overlap between researchers is partially removed while still using historical co-authorship as proxy ground truth for post-hoc evaluation. Results show clear differences across methods. TF-IDF performs best under full information but drops significantly as overlap is reduced. In contrast, topic-based and embedding-based approaches show more stable performance, suggesting they capture broader distributional similarities, rather than relying only on direct lexical overlap. We also examine explainability through two perspectives: intrinsic topic-based explanations and post-hoc, retrieval-based explanations generated using language models. These provide complementary trade-offs between transparency and human readability.",
+  "published": "2026-07-05T22:23:50Z",
+  "updated": "2026-08-02T04:48:40Z",
+  "authors": [
+   "Md Asaduzzaman Noor",
+   "John W. Sheppard",
+   "Jason A. Clark"
+  ],
+  "categories": [
+   "cs.IR"
+  ],
+  "comment": "6 pages, 2 figures, Submitted to ICMLA 2026",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.04529v2",
+  "abs_url": "http://arxiv.org/abs/2607.04529v2",
+  "matched_query": [
+   "abs:\"BERTopic\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.10548v1",
+  "id": "arxiv:2607.10548",
+  "title": "Beyond Looking Up, Try Looking Around: Harmonizing Global Structure and Local Consistency in Optimal Transport for Short Text Clustering",
+  "abstract": "Pseudo-labeling based on Optimal Transport (OT) has become an effective mechanism for enhancing short text clustering. Existing OT methods are short in modeling semantic consistencies between samples, which may assign different pseudo-labels to semantically similar samples. These erroneous pseudo-labels can cause the model to produce inferior clusters. This paper proposes a novel short text clustering framework, which remedies the neglect of semantic consistency in existing OT methods, generating reliable pseudo-labels to facilitate clustering. Specifically, the proposed approach first designs an instance-level attention mechanism to capture semantic relationships between samples, which are then integrated into the OT formulation to endow the transport process with neighborhood semantic awareness. By solving the proposed OT formulation, reliable pseudo-labels are obtained that simultaneously account for sample-to-sample semantic consistency and sample-to-cluster global structure information. These pseudo-labels are then used as supervisory signals to guide the model to achieve accurate clustering. Extensive experiments demonstrate that the proposed approach outperforms state-of-the-art methods. The code is available at: \\href{https://github.com/YZH0905/CAOT-STC}{https://github.com/YZH0905/CAOT-STC}.",
+  "published": "2026-07-12T03:22:12Z",
+  "updated": "2026-07-12T03:22:12Z",
+  "authors": [
+   "Zhihao Yao",
+   "Yuxuan Gu",
+   "Jixuan Yin",
+   "Bo Li"
+  ],
+  "categories": [
+   "stat.ML",
+   "cs.LG"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.10548v1",
+  "abs_url": "http://arxiv.org/abs/2607.10548v1",
+  "matched_query": [
+   "abs:\"text clustering\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.28069v1",
+  "id": "arxiv:2607.28069",
+  "title": "SemPIC: Learning Semantic Position-Independent KV Caches",
+  "abstract": "Long-context retrieval and agentic workloads repeatedly reuse the same documents under changing instructions, histories, and document orders. Prefix caching cannot exploit this reuse, while position-independent caching (PIC) remains unreliable because independently compiled KV states lack the future context in which they will be consumed. Our diagnostics show that a learned boundary-conditioned baseline sharply reduces attention deviation near reusable-block boundaries but leaves interior and task-level residuals, motivating adaptation of the document representation itself. We present \\emph{SemPIC}, which trains a LoRA-enabled Writer to compile native per-layer document KVs through behavioral distillation while retaining the pretrained decoder as an unchanged Reader. Adaptation is confined to offline cache construction, preserving the standard KV interface and cache-hit decoding path. We further introduce KV Gradient Checkpointing, which reduces peak training memory without severing gradients through cached KVs. Across three models and four tasks, SemPIC raises mean micro-F1 over KV Packet from 0.53 to 0.60, approaching Full Recompute at 0.62.",
+  "published": "2026-07-30T11:45:24Z",
+  "updated": "2026-07-30T11:45:24Z",
+  "authors": [
+   "Hui Xie",
+   "Peng Xiao",
+   "Yutong Deng\\textsuperscript",
+   "Shuoran Dou",
+   "Jian Yang",
+   "Jinyang Guo"
+  ],
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.28069v1",
+  "abs_url": "http://arxiv.org/abs/2607.28069v1",
+  "matched_query": [
+   "abs:\"document representation\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.25129v1",
+  "id": "arxiv:2607.25129",
+  "title": "Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding",
+  "abstract": "Medical coding is the task of assigning a set of diagnosis and procedure codes for a hospitalization using recorded notes. It requires aggregating information from different parts of the text and focus to different sections for each individual code, making it a very difficult problem even for professional human coders. We model the task as a multi-label text classification problem. To overcome the mentioned difficulties, we propose a deep neural model consisting of a multi-layer temporal convolution network (TCN) followed by label-wise attention. While multi-layer TCN helps extract a global document representation with the ability to learn relations over very long sequences, label-specific attention mechanism allows the model to focus on different aspects of the same document for each individual label. Our method achieves significantly better F-1 scores (9% increase) compared to the previous state-of-the-art model, with a remarkable increase in recall score (28% increase), which we believe is the more important metric for a clinical decision support setting.",
+  "published": "2026-07-27T22:48:05Z",
+  "updated": "2026-07-27T22:48:05Z",
+  "authors": [
+   "Muhammed Yavuz Nuzumlal\u0131",
+   "Alexander Fabbri",
+   "Irene Li",
+   "Dragomir Radev"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.LG"
+  ],
+  "comment": "Work carried out in 2019; posted as a record of the work. Baselines and state of the art reflect the 2019 literature",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.25129v1",
+  "abs_url": "http://arxiv.org/abs/2607.25129v1",
+  "matched_query": [
+   "abs:\"document representation\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.18603v1",
+  "id": "arxiv:2607.18603",
+  "title": "AutoIndex: Learning Representation Programs for Retrieval",
+  "abstract": "We present AutoIndex, a framework for learning representation programs: executable transformations that map raw documents into the representations exposed to a retrieval system. Rather than tuning retrievers, rerankers, or a small set of preprocessing hyperparameters, AutoIndex searches over programs that slice, enrich, normalize, reweight, or reorganize documents before indexing. At each iteration, AutoIndex performs validation-guided program search, in which agents diagnose failures of the current program and synthesize candidate updates, retaining only updates that improve retrieval quality under the resulting index. We evaluate AutoIndex on CRUMB, a benchmark of heterogeneous retrieval tasks, with BM25 held fixed across all experiments. The learned programs improve recall over a static full-document BM25 baseline on all 8 tasks, with average gains of +8.4% in Recall@100 and +8.3% in nDCG@10, and largest gains of +30.5% in Recall@100 and +43.6% in nDCG@10. These results suggest that document representation should not be treated as a fixed preprocessing choice made before retrieval begins, but as an explicit optimization target. Code to reproduce our results is available at https://github.com/auto-index/autoindex.",
+  "published": "2026-07-21T00:32:55Z",
+  "updated": "2026-07-21T00:32:55Z",
+  "authors": [
+   "Sam O'Nuallain",
+   "Nithya Rajkumar",
+   "Ramya Narayanasamy",
+   "Hanna Jiang",
+   "Shreyas Chaudhari",
+   "Andrew Drozdov"
+  ],
+  "categories": [
+   "cs.IR",
+   "cs.AI",
+   "cs.CL"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.18603v1",
+  "abs_url": "http://arxiv.org/abs/2607.18603v1",
+  "matched_query": [
+   "abs:\"document representation\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.13311v1",
+  "id": "arxiv:2607.13311",
+  "title": "Finding the Right Tables and Columns: A Benchmark and Corpus-Adaptive Embeddings for SQL Schema Retrieval",
+  "abstract": "Retrieval in the SQL setting has largely been studied as the task of finding, within a large collection of SQL statements, the statement that answers a natural-language question. At scale, however, a more fundamental retrieval problem precedes generation: schema retrieval, identifying the tables and columns a question requires in a database that may contain thousands of them, far more than fit in a model's context. We argue that this step warrants first-class evaluation. To this end, we recast five text-to-SQL datasets (Spider, BIRD, BEAVER, and two LiveSQLBench variants) as retrieval tasks at both table and column granularity, covering realistic and enterprise-scale schemas under two document representations, and we show that off-the-shelf text and code embedders transfer poorly to this setting. We then propose corpus-adaptive fine-tuning: natural-language queries are synthesized directly from the target schema corpus, granularity-aware hard negatives are mined, and a 305M-parameter embedder is fine-tuned contrastively. This procedure raises average recall@10 from 60.4 to 75.6 (nDCG@10 from 51.9 to 68.0), making the 305M model the strongest retriever under one billion parameters and competitive with state-of-the-art embedders of 4-8B parameters, more than an order of magnitude larger. The same recipe improves an 8B state-of-the-art embedder from 77.8 to 78.4 recall@10, matching the best result on the benchmark and indicating that the adaptation is backbone-agnostic. Leave-one-corpus-out experiments and a leakage audit show that these gains reflect a transferable schema-retrieval ability rather than memorization of the evaluation data. Our results establish schema linking as a standalone retrieval task and lightweight, label-free corpus adaptation as a practical route to deploying it at enterprise scale.",
+  "published": "2026-07-14T22:31:55Z",
+  "updated": "2026-07-14T22:31:55Z",
+  "authors": [
+   "Qingcheng Zeng",
+   "Puxuan Yu",
+   "Aman Mehta",
+   "Fuheng Zhao",
+   "Rajhans Samdani"
+  ],
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.13311v1",
+  "abs_url": "http://arxiv.org/abs/2607.13311v1",
+  "matched_query": [
+   "abs:\"document representation\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.25626v1",
+  "id": "arxiv:2607.25626",
+  "title": "Joint Text-Audio Alignment for EEG-to-Text Decoding in Chinese Speech Production and Perception",
+  "abstract": "Decoding speech information directly from scalp electroencephalography (EEG) into text provides a potential non-invasive neural communication pathway for individuals with severe speech and motor impairments. Compared with invasive approaches such as electrocorticography, EEG is safer and more widely deployable, yet substantially more challenging to decode.This challenge is exacerbated for Chinese sentence decoding, which must handle a high-dimensional output space with thousands of characters, severe inter-subject variability, and low signal-to-noise ratios for text alignment.Existing methods commit to a single supervisory axis---either text semantics or audio acoustic features---yet neither can simultaneously satisfy the demands of sentence-level discriminability and fine-grained temporal resolution required for large-vocabulary Chinese decoding. We introduce EEGAlign, a novel parameter-efficient framework that jointly aligns EEG with two axes---text alignment with BGE-M3 text embeddings and audio alignment with wav2vec~2.0 speech features via contrastive learning followed by CTC character-sequence decoding. On ChineseEEG-2 data, EEGAlign yields state-of-the-art closed-set sentence classification performance, reaching up to 82.37% Top-1 accuracy on Reading Aloud EEG and 41.43% on Passive Listening EEG out of 101 candidates. Ablation studies show that the two alignment axes are highly complementary: combining them yields consistently better performance than either alone. To the best of our knowledge, this is the first study on decoding large-vocabulary Chinese sentences from non-invasive EEG during overt speech production, and achieving strong classification performance with relatively large closed-set candidate-sentence setting.",
+  "published": "2026-07-28T12:06:56Z",
+  "updated": "2026-07-28T12:06:56Z",
+  "authors": [
+   "Tian Zheng",
+   "Xurong Xie",
+   "Xinxin Zhu",
+   "Xiaolan Peng",
+   "Feng Tian"
+  ],
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.25626v1",
+  "abs_url": "http://arxiv.org/abs/2607.25626v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.26107v1",
+  "id": "arxiv:2607.26107",
+  "title": "TraceCLIP: Recovering Local Semantics from Patch-to-CLS Contributions",
+  "abstract": "Dense vision-language understanding, including object localization, region recognition, and open-vocabulary semantic segmentation, requires associating language concepts with spatially grounded visual regions. CLIP provides a strong foundation for these tasks by learning a shared image-text embedding space from large-scale contrastive pre-training. However, its image-level objective aligns text with a CLS-derived global representation, leaving local vision-language correspondence only indirectly constrained. Existing methods either introduce additional supervision, external models, or task-specific adaptation, while training-free approaches mainly recover dense responses from existing patch features without examining where local semantics become most accessible within CLIP. We introduce TraceCLIP, a training-free framework that recovers latent patch-level semantic evidence by isolating the patch-specific terms written into the CLS attention output. TraceCLIP further converts contribution-derived semantic responses into a semantic-geodesic topology gate that calibrates final-layer patch affinity for dense feature reconstruction. Diagnostic experiments show that these contribution features exhibit strong local semantic discrimination and text-conditioned spatial alignment. On eight zero-shot semantic segmentation benchmarks, TraceCLIP achieves gains of 1.3 to 4.5 points in average mIoU over the strongest prior training-free methods across both backbones and background settings, without additional training, external vision foundation models, or region-level supervision. More broadly, these findings suggest that spatially localized semantics may remain accessible within the internal construction of globally aligned representations.",
+  "published": "2026-07-28T11:25:27Z",
+  "updated": "2026-07-28T11:25:27Z",
+  "authors": [
+   "Xinran Liu",
+   "Shouqian Shi",
+   "Yutong Chen",
+   "Ge Wang",
+   "Xin-Wei Yao",
+   "Sheng Zhong"
+  ],
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ],
+  "comment": "9 pages, 3 figures, 4 tables",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.26107v1",
+  "abs_url": "http://arxiv.org/abs/2607.26107v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.23507v1",
+  "id": "arxiv:2607.23507",
+  "title": "Choosing a Text Embedding Model: A Practical Benchmarking and Decision Framework",
+  "abstract": "Choosing the right text embedding model is one of the most consequential -- and most frequently under-examined -- decisions in building a retrieval or search system, yet the model that tops a leaderboard is rarely the best choice for a given deployment. This report develops a practical, evidence-based framework for embedding model selection, built on a benchmarking study that evaluates T3EM (Text 3 Embedding Model), a commercial API-based embedding model, against a broad set of open-source alternatives on English-language retrieval tasks, and situates these findings within the wider Massive Text Embedding Benchmark (MTEB) landscape spanning classification, clustering, semantic similarity, reranking, pair classification, bitext mining, and summarization. Beyond raw benchmark scores, the report traces the full path from embedding model to retrieved result -- how embeddings are produced, how they are indexed and searched at scale, and how document chunking strategy shapes retrieval quality -- so that model choice can be reasoned about as one decision within a complete retrieval pipeline rather than in isolation. The result is a consolidated set of practical recommendations for selecting an embedding model according to task, latency, cost, and deployment constraints.",
+  "published": "2026-07-26T07:13:33Z",
+  "updated": "2026-07-26T07:13:33Z",
+  "authors": [
+   "Madhav S Baidya"
+  ],
+  "categories": [
+   "cs.IR",
+   "cs.AI"
+  ],
+  "comment": "33 pages, 1 figure, 20 tables. Technical report",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.23507v1",
+  "abs_url": "http://arxiv.org/abs/2607.23507v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.23052v1",
+  "id": "arxiv:2607.23052",
+  "title": "Similarity Is Not Logic: Factored Inference for Dual-Encoder Vision-Language Models",
+  "abstract": "Dual-encoder vision-language models (VLMs) expose a similarity interface that enables zero-shot retrieval but fails compositional constraints: queries like \"umbrella and no person\" retrieve images containing both, even when concept detection is reliable. We trace this to an interface-level Bag-of-Concepts effect, where similarity scores approximate mean pooling of concept evidence regardless of operators. Although operator-dependent signals exist in text embeddings, they are too weak or misaligned to affect rankings. Fine-tuning does not reliably resolve this failure because the dominant bottleneck is how similarity aggregates evidence rather than what encoders represent. We propose factored inference, which separates evidence extraction from constraint execution, and introduce LCSE (Logic-Constrained Score Editing), a training-free method that executes constraints externally using concept scores from frozen encoders. We also introduce FACTOR-Bench, where LCSE achieves 85.5% accuracy versus 73.2% for the best fine-tuned baseline, 90.7% when applied to SigLIP 2, and improves NegBench COCO MCQ accuracy from 27.2% to 65.2% while preserving retrieval performance.",
+  "published": "2026-07-25T05:39:51Z",
+  "updated": "2026-07-25T05:39:51Z",
+  "authors": [
+   "Sultan Alshehri",
+   "Zhantao Yang",
+   "Han Zhang",
+   "Marios Savvides"
+  ],
+  "categories": [
+   "cs.CV",
+   "cs.CL",
+   "cs.LG"
+  ],
+  "comment": "Accepted at ICML 2026. 18 pages, 8 figures. Project page: https://sultanmo.github.io/factored-vlm Code and benchmark: https://github.com/SultanMo/factored-vlm",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.23052v1",
+  "abs_url": "http://arxiv.org/abs/2607.23052v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.21371v1",
+  "id": "arxiv:2607.21371",
+  "title": "DINOde: Continuous Vision-Text Alignment for Open-Vocabulary Semantic Segmentation",
+  "abstract": "Open-vocabulary semantic segmentation (OVSS) leverages textual semantics to segment objects beyond predefined categories. While the self-supervised model DINOv3 provides strong structured visual representations, its lack of native textual alignment hinders its direct application to OVSS. To bridge this gap, we propose DINOde, an ODE-based framework that continuously aligns CLIP text embeddings with the DINO visual manifold. Our approach employs two complementary components: (i) Semantic Text Flow (STF), which evolves text embeddings toward the DINO manifold through a continuous ODE trajectory, and (ii) Global Context Flow (GCF), which progressively refines the holistic image representation carried by DINO's CLS token. To preserve the hyperspherical geometry of the feature space during this evolution, we further introduce Velocity Tangent Projection, which constrains the learned velocity field to the tangent space. By modeling alignment as a continuous trajectory, DINOde avoids the manifold entanglement inherent in discrete MLP projections and yields more robust cross-modal alignment. Extensive experiments demonstrate that DINOde consistently outperforms existing methods and achieves state-of-the-art performance across multiple OVSS benchmarks. The code is available at https://github.com/yoon307/DINOde.",
+  "published": "2026-07-23T14:37:27Z",
+  "updated": "2026-07-23T14:37:27Z",
+  "authors": [
+   "Sung-Hoon Yoon",
+   "Hoyong Kwon",
+   "Changgyoon Oh",
+   "Kuk-Jin Yoon"
+  ],
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ],
+  "comment": "Accepted to ECCV 2026. 27 pages, 8 figures, and 10 tables. Includes supplementary material",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.21371v1",
+  "abs_url": "http://arxiv.org/abs/2607.21371v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.18567v1",
+  "id": "arxiv:2607.18567",
+  "title": "Attacking Graph Foundation Models Through Their Shared Representation",
+  "abstract": "A graph foundation model generalizes across graph domains by mapping every input into one shared representation before any task reasoning. We call this map the alignment layer, the component that separates a graph foundation model from a graph neural network, and we show it is a distinct attack surface that prior work has not studied. We attack it at inference time, with no access to training, on six public models spanning spectral tokenizers, text embedding spaces, and a discrete codebook. A directed representation-space perturbation collapses every model, but at a budget comparable to the representation norm a plain graph network also needs, with one exception: OpenGraph, whose spectral tokenizer collapses at a fifth of that budget, an alignment-specific fragility a plain network does not share and which a same-representation control traces to the tokenizer rather than the decoder. A realizable input-space attack that edits edges, features, or text removes at least half the correct predictions on three of the six models at peak. How much of this fragility an input-access attacker realizes tracks how directly the decoder reads the representation, and not the clean accuracy a task leaves; we measure this carrier gain structurally from the decoder's local Lipschitz sensitivity, and report clean-accuracy headroom as a within-model ordering heuristic that does not survive on realizable attacks.",
+  "published": "2026-07-20T23:03:26Z",
+  "updated": "2026-07-20T23:03:26Z",
+  "authors": [
+   "Pankaj Kumar",
+   "Subhankar Mishra"
+  ],
+  "categories": [
+   "cs.AI",
+   "cs.CR",
+   "cs.LG"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.18567v1",
+  "abs_url": "http://arxiv.org/abs/2607.18567v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.16631v1",
+  "id": "arxiv:2607.16631",
+  "title": "A Research Prototype for Closed-Loop Generative Design of Customized Foot Orthoses via Semantic-Physics Alignment",
+  "abstract": "Translating unstructured clinical prescriptions into patient-specific foot orthoses (FOs) is hindered by a semantic-physical misalignment: high-level clinical intent is not mapped deterministically onto the 3D geometric parameters of the orthosis, and existing design workflows remain dependent on manual expertise with no instantaneous biomechanical validation. We present TANS-FO, a research prototype-a modular pipeline with closed-loop feedback for computational design automation of customized FOs, not a clinically validated therapeutic device. A Text-Aligned Neural Surrogate (TANS) uses cross-attention to project clinical-text embeddings onto a continuous lattice-density field, while a Graph Neural Network (GNN) surrogate predicts plantar stress in real time as a substitute for Finite Element Analysis (FEA). The framework is anchored on the open-access PicoFoot-5K anthropometric database (5,230 subjects; 30+ anatomical parameters). Under standardized quasi-static loading, the GNN surrogate agrees with an Abaqus reference solver (R^2 = 0.94), and the full pipeline synthesizes manufacturing-ready lattice insoles within minutes. On the Male 18-40 cohort, the proposed system attains a surrogate-predicted peak-pressure reduction of 34.7% over parametric CAD, with a fit error of 0.42 mm. Separately, an exploratory feasibility observation (n = 12; 2-week follow-up; no control group) using VAS pain reporting indicates short-term comfort improvement (VAS 6.4 -&gt; 2.1), but this data is explicitly classified as preliminary observational evidence only-not evidence of clinical efficacy.",
+  "published": "2026-07-18T04:20:51Z",
+  "updated": "2026-07-18T04:20:51Z",
+  "authors": [
+   "Rui Wang",
+   "Byungwon Min",
+   "Suxing Liu"
+  ],
+  "categories": [
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.16631v1",
+  "abs_url": "http://arxiv.org/abs/2607.16631v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.16305v1",
+  "id": "arxiv:2607.16305",
+  "title": "LookME: Lookup-Based Multimodal Embeddings for Layer Injection in Vision-Language Models",
+  "abstract": "Vision-Language Models (VLMs) have achieved strong progress in multimodal understanding. However, scaling dense or sparse Mixture-of-Experts (MoE) models to improve performance limits deployment in resource-constrained environments due to the trade-off between high memory usage from full loading and increased latency from on-demand loading. Recently, the Per-Layer Embedding (PLE) architecture addresses this by scaling models with large external embedding tables stored in ROM and performing lightweight lookup to retrieve relevant embeddings to enhance token representations. Nevertheless, existing PLE-style methods are primarily designed for text embeddings due to the convenience of ID-based retrieval, limiting their effectiveness in VLMs where multimodal embeddings contain richer information for visual tasks. In this paper, we propose LookME, the first framework that enables lookup-based enhancement for multimodal embeddings in VLMs while supporting partitioned storage and on-demand loading. To efficiently lookup arbitrary continuous multimodal embeddings from large-scale embedding tables, we propose a hierarchical two-level lookup method employing a coarse-to-fine strategy that performs lookups from the scene-level to the intra-scene primitive-level. Furthermore, we integrate the lookup method with a sparse injection strategy, which adaptively prioritizes critical embeddings over voluminous multimodal embeddings within layers, and facilitates embedding table reuse across neighboring layers, improving the trade-off among efficiency, model size, and performance. Experiments on multiple visual benchmarks show that LookME outperforms text-only PLE-style methods, validating the effectiveness of lookup-based multimodal embedding enhancement.",
+  "published": "2026-07-14T08:03:00Z",
+  "updated": "2026-07-14T08:03:00Z",
+  "authors": [
+   "Zeyu Xu",
+   "Xingzhong Hou",
+   "Pengkai Guo",
+   "Siling Lin",
+   "Xiao Xu",
+   "Menghua Zhai",
+   "Haoyu Chen",
+   "Yunke Zhang",
+   "Fei Huang"
+  ],
+  "categories": [
+   "cs.CV",
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.16305v1",
+  "abs_url": "http://arxiv.org/abs/2607.16305v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.10698v1",
+  "id": "arxiv:2607.10698",
+  "title": "On the modality gap and the contrastive loss in multi-modal representation learning",
+  "abstract": "We study the modality gap in CLIP-style dual-encoder contrastive learning, where image and text embeddings remain misaligned despite being trained in a shared space. We argue that the gap is induced by a failure of the InfoNCE formulation with independent encoders. We conduct a uni-modal experiment with two independent encoders and identical initialization conditions and find that InfoNCE actively generates a gap at low temperatures. We provide a theoretical analysis of this phenomenon and show that the modality gap is indeed a mode-failure of InfoNCE, but only at low temperatures. We propose a simple modification called xNCE, which uses intermodal as well as intra-modality negative contrastive pairs. xNCE matches retrieval performance on MS-COCO while consistently reducing the gap even at low temperatures. Notably, xNCE improves zero-shot classification over the InfoNCE baseline across all benchmarks, whereas high-temperature InfoNCE and regularized InfoNCE both fail to do so, demonstrating that xNCE reduces the modality gap without sacrificing the discriminative geometry needed for transfer.",
+  "published": "2026-07-12T10:41:52Z",
+  "updated": "2026-07-12T10:41:52Z",
+  "authors": [
+   "Fabian Mager",
+   "Hiba Nassar",
+   "Lars Kai Hansen"
+  ],
+  "categories": [
+   "cs.LG",
+   "cs.CV"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.10698v1",
+  "abs_url": "http://arxiv.org/abs/2607.10698v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.07141v1",
+  "id": "arxiv:2607.07141",
+  "title": "From Text to Parameters: Predicting Item Parameters from Embedding Regularization with Reliability and Design Ceilings",
+  "abstract": "Newly developed items must ordinarily be field tested before their psychometric properties are known, creating a cold start problem for item calibration. Predicting item parameters from features is a long standing measurement problem dating back to the Linear Logistic Test Model; modern text embeddings now automate the design matrices traditionally specified by hand. We propose an evaluation framework combining regularized regression on item text embeddings, repeated cross validated R squared reported with its resampling standard deviation, and two performance upper bounds: a reliability ceiling derived from parameter standard errors, and a design ceiling derived from simulation based power calibration. Applying this framework to a mathematics item bank (EEDI) and a medical licensure benchmark (BEA 2024), we find that item difficulty is highly predictable from text (repeated cross validated R squared = 0.53, or about 57% of its reliability ceiling), whereas discrimination and pseudo guessing appear less predictable. However, evaluating these results against our ceilings reveals that this apparent hierarchy stems from target reliability rather than text signal strength: text uniformly recovers 57 to 63% of the reliable variance across difficulty targets, whereas the 3PL pseudo guessing parameter has a reliability ceiling near zero, making it an unviable target at current precision. On BEA, embedding based regression matches leaderboard RMSE despite explaining almost no variance, highlighting the critical need for scale free metrics and explicit ceilings in benchmarking. Finally, we show that a single train and test split can inflate apparent accuracy by 0.1 to 0.15 in R squared, underscoring the necessity of repeated cross validation for calibration support applications and future benchmark construction.",
+  "published": "2026-07-08T08:34:46Z",
+  "updated": "2026-07-08T08:34:46Z",
+  "authors": [
+   "Shi-Ting Chen",
+   "Jinsong Chen"
+  ],
+  "categories": [
+   "cs.CL",
+   "stat.ME"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.07141v1",
+  "abs_url": "http://arxiv.org/abs/2607.07141v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.20517v1",
+  "id": "arxiv:2607.20517",
+  "title": "Multimodal CoLRAG-TF: Triple-Filtered Retrieval for Complex PDFs",
+  "abstract": "Retrieval-augmented generation (RAG) over heterogeneous PDF collections remains challenging due to multimodal content, domain-specific terminology, and the need for multi-hop reasoning across dispersed evidence. We present Multimodal CoLRAG-TF, a four-axis fusion architecture that integrates dense text embeddings, BM25 keyword matching, knowledge-graph triple filtering, and image-based similarity for robust retrieval over complex documents. Our system constructs a multimodal index of 2,403 blocks extracted from 43 Japanese disaster lesson PDFs, supported by a hybrid OCR pipeline and LLM-based caption generation. To enhance compositional reasoning, we extract 11,414 OpenIE triples and index them with FAISS, enabling sub-second triple lookup and hierarchical propagation of relevance signals. A HippoRAG2-inspired coarse-to-fine retriever (volume $\\to$ chapter $\\to$ block) narrows the search space before final fusion scoring. Bayesian optimization over fusion weights reveals that the triple axis must dominate ($\u03b1_\\text{triple} = 0.44$) to counteract lexical bias and sustain multi-hop retrieval quality. Evaluated on a 457-pair benchmark, Multimodal CoLRAG-TF achieves a Retrieval Recall of 0.9909 and a 71.6$\\%$ improvement in multi-hop answer similarity over single-hop queries. An image-to-lesson pipeline using a vision LLM further demonstrates the applicability of the approach to visual inputs. These results show that triple-filtered multimodal fusion is essential for structured reasoning over noisy, heterogeneous PDFs and provides a general framework applicable beyond the disaster domain.",
+  "published": "2026-07-07T23:00:52Z",
+  "updated": "2026-07-07T23:00:52Z",
+  "authors": [
+   "Takato Yasuno"
+  ],
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "18 pages, 8 tables, 9 figures",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.20517v1",
+  "abs_url": "http://arxiv.org/abs/2607.20517v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.05764v1",
+  "id": "arxiv:2607.05764",
+  "title": "Inject or Navigate? Token-Efficient Retrieval for LLM Analysis of Transactional Legal Documents",
+  "abstract": "Answering questions over a set of transactional legal documents is most simply done by injecting the whole corpus into the LLM's context window on every query. That baseline maximises retrieval recall, but its token footprint scales with the corpus rather than the question, and long-context degradation scales with it. We report what it took to replace full-corpus injection in a legal-document analysis system, comparing it against two structured retrieval modes over our proprietary structure-aware chunking: embedding retrieval (NAVEMBED) and LLM navigation over a compact structured index (NAVINDEX). On a 20-question benchmark with verified ground-truth answers, a position-bias-controlled, reference-anchored pairwise judge scored semantic retrieval with reranking tied with injection on 16 of 18 document-bound questions (injection preferred on 2) while attending to 17.3x fewer input tokens (a general-text-embedding (GTE) configuration reaches 29.9x at a lower tie rate); both modes were judged tied on the 2 out-of-scope controls. NAVINDEX was judged tied on all 18 at a 1.61x smaller total token footprint, a ~56x smaller answering context, and 25% lower dollar cost. We derive a closed-form caching-crossover rule: cached injection is cheaper in dollars only while the corpus stays below roughly ten times the retrieval payload. Scope and uncertainty are quantified in Section 8.",
+  "published": "2026-07-07T02:42:06Z",
+  "updated": "2026-07-07T02:42:06Z",
+  "authors": [
+   "Mahmoud Hany",
+   "Mourad ElSheraey",
+   "Mahmoud Said",
+   "Peter Naoum"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.IR"
+  ],
+  "comment": "17 pages, 2 figures, 8 tables",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.05764v1",
+  "abs_url": "http://arxiv.org/abs/2607.05764v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.05196v2",
+  "id": "arxiv:2607.05196",
+  "title": "Unified Audio Intelligence Without Regressing on Text Intelligence",
+  "abstract": "Audio intelligence involves understanding, reasoning about, and generating both audio and speech. In this work, we introduce Nemotron-Labs-Audex-30B-A3B (Audex), a unified audio-text LLM built on Nemotron-Cascade-2-30B-A3B, a strong text-only MoE LLM. Audex adopts a simple unified design with a single Transformer decoder: audio inputs are encoded and projected into the text embedding space, while text tokens and quantized audio output tokens are treated uniformly during generation. This architecture enables strong audio-text fusion, seamless multimodal generation, and compatibility with standard LLM training and inference infrastructure. For training, we meticulously curate audio-text datasets comprising 157.4B audio tokens and 320.5B text tokens. We apply multi-stage supervised training on these datasets, followed by text-only Cascade RL and multi-domain on-policy distillation. Audex delivers state-of-the-art audio understanding, speech recognition and translation, text-to-speech, audio generation, and speech-to-speech generation, while preserving very compelling reasoning, alignment, knowledge, long-context, and agentic capabilities of its text-only LLM backbone with marginal or no regression. We release the model checkpoints to facilitate open research.",
+  "published": "2026-07-06T15:11:57Z",
+  "updated": "2026-07-07T15:36:48Z",
+  "authors": [
+   "Zhifeng Kong",
+   "Sang-gil Lee",
+   "Jaehyeon Kim",
+   "Boxin Wang",
+   "Zihan Liu",
+   "Sungwon Kim",
+   "Yang Chen",
+   "Arushi Goel",
+   "Rajarshi Roy",
+   "Wenliang Dai",
+   "Zhuolin Yang",
+   "Yangyi Chen",
+   "Dongfu Jiang",
+   "Sreyan Ghosh",
+   "Tuomas Rintamaki",
+   "Andrew Tao",
+   "Jonathan Raiman",
+   "Mohammad Shoeybi",
+   "Bryan Catanzaro",
+   "Wei Ping"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG",
+   "cs.SD",
+   "eess.AS"
+  ],
+  "comment": "We release the Audex models at https://huggingface.co/collections/nvidia/nemotron-labs-audex",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.05196v2",
+  "abs_url": "http://arxiv.org/abs/2607.05196v2",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.04581v2",
+  "id": "arxiv:2607.04581",
+  "title": "MTEB-BR: A Text Embedding Benchmark for Brazilian Portuguese",
+  "abstract": "Text embeddings for Portuguese have no dedicated benchmark: evaluation rests on translated corpora such as English MS MARCO or on thin multilingual coverage, with native tasks scattered and unconsolidated. We introduce MTEB-BR, a benchmark of 22 native Brazilian-Portuguese tasks across seven categories (classification, multilabel classification, pair classification, semantic textual similarity, clustering, retrieval, and reranking), admitting only data created or found in Portuguese and excluding translations by construction. We evaluate 93 models spanning 23M to 27B parameters: 73 open-weight and 20 closed commercial APIs. Alongside the leaderboard we report a statistical layer for every headline comparison: per-task bootstrap confidence intervals, paired-bootstrap significance, a task- and instance-level discrimination analysis (how sharply each task separates models) adapted from Item Response Theory, and a cross-leaderboard correlation. Three findings stand out. The benchmark cleanly separates about a dozen tiers of models, though the top six are statistically too close to order. An openly licensed, self-hostable model reaches that leading tier, so strong Portuguese embedding quality does not require a commercial API. And a model's rank on the global multilingual leaderboard predicts its Portuguese rank only moderately (Spearman rho = 0.75 over 55 shared models; one model ranks 3rd there and 49th here), so a native benchmark measures something the multilingual boards do not. We release every task, our code, and a public leaderboard, so practitioners can choose Portuguese embedding models on native evidence.",
+  "published": "2026-07-06T01:19:30Z",
+  "updated": "2026-07-07T20:54:18Z",
+  "authors": [
+   "Tardelli Ronan Coelho Stekel"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.IR",
+   "cs.LG"
+  ],
+  "comment": "16 pages, 5 figures, 7 tables. Code (Apache-2.0): https://doi.org/10.5281/zenodo.21087216 . Results dataset (CC-BY-4.0): https://doi.org/10.57967/hf/9491 . Leaderboard: https://huggingface.co/spaces/MTEB-BR/leaderboard",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.04581v2",
+  "abs_url": "http://arxiv.org/abs/2607.04581v2",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.04071v2",
+  "id": "arxiv:2607.04071",
+  "title": "Beyond Multilingual Averages: MTEB-PT, a Benchmark for Portuguese Sentence Encoders",
+  "abstract": "Portuguese remains underrepresented in text embedding evaluation, despite being one of the most widely spoken languages in the world. As a result, embedding models are often selected based on English or multilingual metrics, while their effectiveness in Portuguese remains unclear. We present MTEB-PT, a Portuguese benchmark constructed from a subset of MMTEB, comprising 14 existing datasets across Semantic Textual Similarity (STS), classification, retrieval, and reranking. We use this benchmark to evaluate 17 open- and closed-source embedding models under a unified protocol. Our results show that Portuguese performance is strongly task-dependent: multilingual rankings do not reliably predict Portuguese-specific performance across task families, no single model dominates all settings, and models with stronger long-context capacity are particularly advantageous on longer-input tasks such as retrieval and reranking. The benchmark also shows that language-specific fine-tuning still improves model performance in Portuguese, especially on task types that match the adaptation data most closely. To examine this effect, we fine-tune three representative backbone models with Portuguese contrastive supervision and Matryoshka Representation Learning (MRL). These benchmark-informed baselines yield their strongest gains on STS, consistent with the predominantly symmetric supervision used during training, while also improving retrieval and remaining competitive under dimensional truncation. We release the MTEB-PT benchmark, the fine-tuned models, and the training and evaluation code.",
+  "published": "2026-07-05T01:06:29Z",
+  "updated": "2026-07-18T19:23:45Z",
+  "authors": [
+   "Lucas Hideki Takeuchi Okamura",
+   "Alexandre Alcoforado",
+   "Anna Helena Reali Costa"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ],
+  "comment": "Accepted at BRACIS 2026 - 36th Brazilian Conference on Intelligent Systems",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.04071v2",
+  "abs_url": "http://arxiv.org/abs/2607.04071v2",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.03806v1",
+  "id": "arxiv:2607.03806",
+  "title": "Probing Low-Level Acoustic Attribute Encoding in CLAP Audio Embeddings",
+  "abstract": "Audio foundation models are widely adopted as general-purpose feature extractors, yet the internal structure of their learned representations remains insufficiently understood. In this work, we analyze CLAP audio embeddings through a probing framework, studying the encoding of three fundamental perceptual dimensions: reverberation (RT60), loudness (LUFS), and spectral content, measured via spectral centroid (SC) and relative pitch (RP). Probes of increasing complexity are trained to predict each attribute from frozen embeddings across five datasets spanning noise, speech, monophonic musical notes, and music mixtures. Our primary finding is that all of these attributes are reliably recoverable from the CLAP embedding space across the examined datasets. Within this global picture, two encoding regimes emerge: RT60, LUFS, and RP are approximately linearly encoded, while SC requires non-linear probes. Both regimes generalize across eight additional audio foundation models, with the notable exception that amplitude-invariant architectures discard loudness entirely by construction. The identified linear feature directions are geometrically consistent across datasets for RT60 and LUFS, while highly domain-specific for RP. Finally, we provide a qualitative demonstration of cross-modal consistency, showing that text embeddings of acoustic descriptors align geometrically with the identified RT60 feature direction.",
+  "published": "2026-07-04T10:27:18Z",
+  "updated": "2026-07-04T10:27:18Z",
+  "authors": [
+   "H\u00e9ctor Martel",
+   "Joe Hennessy-Priest",
+   "Taemin Cho"
+  ],
+  "categories": [
+   "eess.AS",
+   "cs.AI",
+   "eess.SP"
+  ],
+  "comment": "Accepted to DAFx 2026",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.03806v1",
+  "abs_url": "http://arxiv.org/abs/2607.03806v1",
+  "matched_query": [
+   "abs:\"text embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.29188v1",
+  "id": "arxiv:2607.29188",
+  "title": "Detecting Experiential Intertextuality Across Migration Routes: Beyond Surface Similarity in French Narratives",
+  "abstract": "Migrants traversing geographically distinct routes such as the Trans-Saharan and Balkan corridors often recount strikingly parallel lived experiences: police violence, smuggler exploitation, dangerous crossings, and family separation. We introduce the task of experiential intertextuality detection: automatically identifying shared experiential echoes across migration narratives without requiring annotated training data. From 108 French migration narratives spanning both corridors, we automatically generate sentence pairs and score them using annotation-free methods: lexical baselines, sentence embeddings, POS-based structural features, a migration-specific theme lexicon, context-aware narrative features, and zero-shot LLM scoring with Qwen2.5-7B and Mistral-7B under three prompting strategies. We validate all methods against 816 expert-annotated intertextuality judgments (inter-annotator Krippendorff's $\u03b1= 0.27$). Our results reveal that all surface, structural, and embedding methods correlate only weakly with expert judgments ($r \\leq 0.30$); Qwen2.5-7B zero-shot achieves the best single-method correlation ($r = 0.38$); few-shot examples degrade Qwen but dramatically improve Mistral; narrative position significantly predicts intertextuality, with departure-phase pairs showing the highest experiential echoes; and a supervised hybrid combining all 31 features achieves $r = 0.45$, a 21% improvement over the best individual method.",
+  "published": "2026-07-31T09:07:07Z",
+  "updated": "2026-07-31T09:07:07Z",
+  "authors": [
+   "Sakayo Toadoum Sari",
+   "Nelly Robin",
+   "Michelle Auzanneau",
+   "Lakhdar Sais",
+   "Veronique Petit",
+   "Marie Veniard",
+   "Said Jabbour",
+   "Fabien Delorme"
+  ],
+  "categories": [
+   "cs.CL"
+  ],
+  "comment": "11 pages, 3 figures, 5 tables. Accepted at SIGDIAL 2026 (27th Annual Meeting of the Special Interest Group on Discourse and Dialogue)",
+  "journal_ref": "Proceedings of the 27th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2026), Association for Computational Linguistics, 2026",
+  "doi": "10.18653/v1/2026.sigdial-1.NN",
+  "pdf_url": "https://arxiv.org/pdf/2607.29188v1",
+  "abs_url": "http://arxiv.org/abs/2607.29188v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.29181v1",
+  "id": "arxiv:2607.29181",
+  "title": "SERUM: State Extraction and Refinement for User Modeling",
+  "abstract": "Agentic assistants capable of proactive, personalized interactions require structured models of user intent and workflow. However, building these models from raw, unstructured screen activity remains an open challenge. We present SERUM, a multi-pass framework that extracts finite-state behavioral models directly from unstructured egocentric video using hierarchical VLM annotation. Processing screen recordings through a sliding window, SERUM alternates between activity-recognition and intent-inference passes, with each pass refining labels using accumulated prior context to reduce hallucination and temporal conflation seen in single-pass annotation. Synonymous states are then merged via sentence embeddings and human-calibrated thresholds into a compact, coherent taxonomy. We evaluate behavioral structure by fitting first-order Markov models over the resulting label sequences (both actions and intents) and measuring predictive accuracy against frequency baselines. Across 61 egocentric videos in four domains (coding, cooking, physical activities, and daily life), we find: (1) iterative label refinement converges to a stable state vocabulary, which we term schematic equilibrium, after several passes; (2) normalized Markov models achieve substantially lower perplexity and higher action predictions than frequency baselines, with the largest gains on structured tasks like coding; and (3) human annotators rate final-pass labels as accurate and meaningfully improved over first-pass labels. To our knowledge, SERUM is the first system to produce interpretable process models from unstructured egocentric screen video without manual annotation, opening a scalable pathway for user modeling and behavioral understanding in the wild. Our demo, code, and results are publicly available",
+  "published": "2026-07-31T09:02:33Z",
+  "updated": "2026-07-31T09:02:33Z",
+  "authors": [
+   "Andy J. Phu",
+   "James Mooney",
+   "Karin de Langis",
+   "Khanh Chi Le",
+   "Dongyeop Kang"
+  ],
+  "categories": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CV"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.29181v1",
+  "abs_url": "http://arxiv.org/abs/2607.29181v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.28236v1",
+  "id": "arxiv:2607.28236",
+  "title": "CDAE: Enhancing Perturbation Robustness in Pretrained Language Models with Contrastive Denoising",
+  "abstract": "Pre-trained language models have significantly improved sentence representation learning, yet their embedding remain sensitive to semantic preserving textual perturbations such as synonym substitution, masking and word dropout. This work proposes a lightweight Contrastive Denoising Autoencoder (CDAE) that refines pre-trained BERT embedding by jointly optimizing contrastive and reconstruction objective to learn perturbation-invariant representation. We evaluate the proposed framework using multiple perturbation strategies with varying strengths and compare it against the original BERT embeddings and SimCSE. Experimental results show that CDAE consistently preserves higher embedding similarity under perturbations, with the improvements becoming more pronounced as framework effectively enhances representation stability while preserving semantic information, highlighting perturbation-invariant learning as a promising direction for improving sentence embeddings. The source code is publicly available at: https://github.com/ComputationIASBS/CDAE",
+  "published": "2026-07-30T14:04:08Z",
+  "updated": "2026-07-30T14:04:08Z",
+  "authors": [
+   "Sina Heydari",
+   "Amirreza Abbasi",
+   "Mohsen Hooshmand",
+   "Majid Ramezani"
+  ],
+  "categories": [
+   "cs.AI",
+   "cs.CL"
+  ],
+  "comment": "Submitted to 16th International Conference on Computer and Knowledge Engineering (ICCKE 2026)",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.28236v1",
+  "abs_url": "http://arxiv.org/abs/2607.28236v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.24542v1",
+  "id": "arxiv:2607.24542",
+  "title": "From transcription to semantic corpus analysis: unsupervised learning of sentence representations for ancient languages",
+  "abstract": "Automatic Text Recognition (ATR) now supplies digital humanities with large volumes of unstructured, heterogeneous, and often noisy text in ancient languages. Downstream semantic analysestext reuse identification, alignment, and semantic search-rely on sentence embeddings, yet existing methods transfer poorly to ancient languages: generic multilingual encoders underperform, specialized language models yield anisotropic representation spaces, and labeled similarity data is unavailable. We study two fully unsupervised strategies - TSDAE and contrastive sentence embedding (CSE) - that adapt a specialized token-level language model into a corpus-specific sentence encoder using only raw sentences. On the philologically central case of biblical reuse in patristic literature (2,935 expert-verified parallels in Latin and Ancient Greek, from Augustine, Jerome, and Athanasius), we decompose reuse identification into two separately evaluated tasks-binary detection and correspondence retrieval-and benchmark the adapted encoders against multilingual, specialized, distilled, and supervised fine-tuned baselines, as well as on artificially noised data simulating HTR artifacts and scribal abbreviations. The adapted encoders outperform all baselines on both tasks, with complementary profiles: TSDAE leads detection given a large in-domain corpus, while CSE leads retrieval, reaches its optimum with as few as 4-8k raw in-domain sentences-a few tens of seconds of training on a laptop GPU-and transfers across works and authors, including to noisy post-ATR text when retrained directly on it. UMAP atlases relate the geometric effect of each strategy to the measured gains, and the full pipeline-segmentation, fine-tuning, cross-corpus semantic search-is made available to non-specialists through the online tool Paraphrasis.",
+  "published": "2026-07-27T15:20:13Z",
+  "updated": "2026-07-27T15:20:13Z",
+  "authors": [
+   "Th{\u00e9}otime de la Selle"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.DL",
+   "cs.IR"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.24542v1",
+  "abs_url": "http://arxiv.org/abs/2607.24542v1",
+  "matched_query": [
+   "abs:\"sentence embedding\"",
+   "abs:\"corpus\" AND abs:\"unsupervised\" AND abs:\"semantic\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.17466v1",
+  "id": "arxiv:2607.17466",
+  "title": "Multilingual Sentence Embeddings for Linguistic-Integrated Reliability Audit",
+  "abstract": "Multilingual assessment systems commonly rely on translation for scoring and quality-control processes. We evaluate whether multilingual sentence embeddings can replace translated English input for Linguistic-Integrated Reliability Auditing (LiRA) across 11 PIRLS constructed-response items and three embedding models. Native-language embeddings reproduced translation-based reliability estimates closely while recovering responses excluded after translation failure, with no meaningful change in reliability.",
+  "published": "2026-07-20T01:35:42Z",
+  "updated": "2026-07-20T01:35:42Z",
+  "authors": [
+   "Ummugul Bezirhan",
+   "Ji Yoon Jung",
+   "Matthias von Davier"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.17466v1",
+  "abs_url": "http://arxiv.org/abs/2607.17466v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.12204v1",
+  "id": "arxiv:2607.12204",
+  "title": "Forgetful Attention: A Trainable Support-Vector Memory with Certified Selection and Exact Unlearning",
+  "abstract": "Attention can be viewed as an online learner over context, yet existing test-time memories cannot certify that dropping a token leaves outputs unchanged or delete its influence outright. We introduce Support Vector Attention (SV-Attention), a max-margin memory whose weights are support coefficients of a one-class SVM with fixed box parameter C. Its active-set partition gives reserve tokens exactly zero weight, certifying output-preserving eviction; a reversible incremental solver deletes a token to recover the state produced by retraining without it under the same C. In fp64 experiments, decrement and refit recover identical partitions whenever the optimum is unique, and their decision functions match to a median deviation of about 10^-9 (10^-13 on learned keys); the 10^-2 worst case is confined to ill-conditioned duplicates and remains below coefficient decay in every regime. The exact path reuses the maintained KKT inverse in a custom backward. Training uses a separate stabilized batched approximation and does not carry the exact-deletion certificate; it reaches 9,125 tokens/s on a 3.22M-parameter model, while remaining 35.8 times slower than an MPS softmax reference. At matched budgets, certified selection reaches 0.86 vs. 0.32 rare-item recall and retains 0.80 vs. 0.05 deterioration hours on real MIMIC-IV streams. We also demonstrate surgical forgetting, exact editing, patient-record deletion, and a forgettable retrieval memory over real sentence embeddings. On enwik8, the hybrid obtains 2.178 BPC vs. 2.383 for a matched-state sliding-window Transformer across seven seeds (8.6% paired improvement, p=0.001); a three-seed TinyStories result is directionally positive but not significant (p=0.057).",
+  "published": "2026-07-13T23:13:57Z",
+  "updated": "2026-07-13T23:13:57Z",
+  "authors": [
+   "Vishwajith Ramesh"
+  ],
+  "categories": [
+   "cs.LG"
+  ],
+  "comment": "21 pages, 6 figures, 10 tables. Code: https://github.com/vishrmsh/sv-attention",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.12204v1",
+  "abs_url": "http://arxiv.org/abs/2607.12204v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.10316v1",
+  "id": "arxiv:2607.10316",
+  "title": "SVD-RAG: Efficient Tree-Organized Retrieval-Augmented Generation via Singular Value Decomposition",
+  "abstract": "Retrieval-Augmented Generation (RAG) systems enhance large language models by retrieving relevant documents from external knowledge bases. Recent work by Sarthi et al. (2024) introduced RAPTOR, which organizes documents into hierarchical tree structures for efficient retrieval, but requires expensive LLM-based abstractive summarization at each internal node -- making large-scale deployment prohibitively costly. We present SVD-RAG, the first method to apply Singular Value Decomposition (SVD) on dense sentence embedding matrices for extractive summarization in hierarchical RAG. Unlike classical LSA which operates on sparse TF-IDF matrices, SVD-RAG exploits the rich semantic representations of modern embedding models, identifying the most informative sentences through their energy contribution in the principal components. Our approach is (1) deterministic -- unlike LLM-based summarization, SVD produces identical results for the same input; (2) cost-efficient -- tree construction requires no additional API calls beyond the initial embedding, reducing token consumption by ~85%; and (3) content-adaptive -- the energy-ratio threshold tau automatically adjusts compression based on content complexity. In a controlled head-to-head comparison using identical corpora, clustering, and beam search, SVD-RAG achieves retrieval quality within 1-5% of RAPTOR with LLM summarization (MRR 0.867 vs. 0.875, Recall@1 0.483 vs. 0.458) while building the tree 317x faster (0.1s vs. 31.7s). On a scaled multi-topic benchmark with 205 chunks and 100 queries across 20 topic variations, SVD-RAG achieves a 4.2x improvement in Recall@1 and 3.1x improvement in MRR over flat embedding retrieval. We provide a detailed cost analysis and parameter sensitivity study. Our implementation is released as an open-source Python package.",
+  "published": "2026-07-11T13:43:23Z",
+  "updated": "2026-07-11T13:43:23Z",
+  "authors": [
+   "Zhihui Sun"
+  ],
+  "categories": [
+   "cs.IR"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.10316v1",
+  "abs_url": "http://arxiv.org/abs/2607.10316v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.05276v1",
+  "id": "arxiv:2607.05276",
+  "title": "ProPS: Prompted Profile Synthesis for Natural Language-Conditioned Speaker Embedding Distributions",
+  "abstract": "Speaker embeddings, or x-vectors, are widely used to represent speaker identity and speaker-related attributes, but existing embedding extractors are typically descriptive rather than generative: they map an observed speech segment to an x-vector, which is then used for downstream applications. We introduce ProPS, Prompted Profile Synthesis, a framework for generating distributions of speaker embeddings conditioned on natural language prompts such as \"a thirties male speaker with an Indian accent\". ProPS converts human-written profile descriptions into sentence embeddings and uses a mixture density network trained on a large-scale dataset to predict a Gaussian mixture model in the x-vector space. The model is trained by maximizing the likelihood that real speaker embeddings match the requested profile, and its generated distributions are evaluated by negative log-likelihood on held-out x-vectors and by attribute classification accuracies on sampled synthetic x-vectors. Experiments show that ProPS produces profile-conditioned distributions and generates x-vectors that preserve requested speaker attributes such as age, gender, accent, and prosodic characteristics. This design enables controllable speaker-profile synthesis for speech generation systems like Text-To-Speech (TTS) or Voice Conversion (VC) while anchoring generated distributions in observed speaker-embedding structure.",
+  "published": "2026-07-06T16:21:34Z",
+  "updated": "2026-07-06T16:21:34Z",
+  "authors": [
+   "Thomas Thebaud",
+   "Junhyeok Lee",
+   "Laureano Moro-Velazquez",
+   "Jesus Villalba Lopez",
+   "Najim Dehak"
+  ],
+  "categories": [
+   "eess.AS",
+   "cs.AI"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.05276v1",
+  "abs_url": "http://arxiv.org/abs/2607.05276v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.02967v2",
+  "id": "arxiv:2607.02967",
+  "title": "Rank-Order N-of-M Codes for Sparse Distributed Memory: Disentangling Representation and Learning Effects in Noise Robustness Against Contemporary Neuromorphic Architectures",
+  "abstract": "Large language models remain limited as continual learning systems, motivating renewed interest in Sparse Distributed Memory (SDM) as an explicit online episodic memory. CALM (Nechesov and Ruponen, 2025) identifies its threshold-binary encoder as an open design question. This paper evaluates rank-order N-of-M encoding (Furber et al., 2007) as an alternative. We make three contributions. First, a faithful reimplementation validates the published architecture by confirming exact equivalence between WheelSDM and RankOrderSDM (cosine similarity 1.0000 across 10 seeds) and reproducing the documented divergence of RDLIF neurons under interference. Second, multi-seed capacity experiments show RankOrderSDM outperforming StandardSDM by 13.4 percentage points at saturation in the scaled configuration and by 0.8 percentage points at the published architecture scale. Third, BER robustness experiments disentangle representation and learning effects, showing that the large robustness gain arises primarily from the interaction of rank-order encoding with MAX-Hebbian learning, while the encoder alone provides only a small advantage under matched learning conditions. Experiments on GloVe-100 embeddings confirm this small but consistent encoding benefit on real structured data, whereas sentence embeddings exhibit a ceiling effect at low memory load. A secondary analysis shows that idealized rank-order encoding requires half the component-level encoding energy of SpikingMamba's SI-LIF neurons at four-bit precision, although decoder costs dominate overall system energy. These results identify which components of the original rank-order SDM architecture provide measurable benefits for contemporary memory-augmented AI systems, offering practical guidance for architectures such as CALM.",
+  "published": "2026-07-03T05:21:38Z",
+  "updated": "2026-07-07T14:20:15Z",
+  "authors": [
+   "Joy Bose"
+  ],
+  "categories": [
+   "cs.LG",
+   "cs.NE"
+  ],
+  "comment": "14 pages, 8 tables, 2 figures. Revisits rank-order sparse distributed memory for continual learning and memory-augmented AI. Includes comparisons with CALM and SpikingMamba, statistical evaluation, and real embedding experiments",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.02967v2",
+  "abs_url": "http://arxiv.org/abs/2607.02967v2",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.01018v1",
+  "id": "arxiv:2607.01018",
+  "title": "Reading Order Inference for Complex Document Layouts",
+  "abstract": "Reading order inference remains a critical bottleneck in the digitization of complex historical manuscripts, where pages contain multiple spatially interleaved reading streams, the canonical example being the Glossa Ordinaria layout, in which a central text is surrounded by commentaries that wrap around it in non-rectangular, non-convex regions. We present a training-free, graph-based framework: each OCR text line becomes a node in a directed candidate-transition graph, edges are scored by a weighted additive ensemble of two lightweight language-model signals (causal language model conditional likelihood and BERT next-sentence prediction, NSP; a third sentence-embedding signal was evaluated but did not improve reading order), and the global reading order is recovered as a degree-constrained directed path cover. To avoid the cascading \"edge-theft\" failures of greedy edge selection, we propose a max-regret inference rule that prioritizes commitments with high opportunity cost. We evaluate on synthetic Glossa Ordinaria grid layouts, on 23 ALTO page geometries (10 historical source pages plus mirrored and flipped variants), and on a 140-page multi-column English subset of OmniDocBench, comparing our method against the canonical recursive XY-cut (PaddleOCR PP-StructureV3) and two LayoutReader variants (layout-only and text+layout) on identical inputs. On wrap-around Glossa layouts our method recovers 95% of ground-truth successor edges on average vs. XY-cut's 50%; on the OmniDocBench multi-column subset it reaches 88% macro edge accuracy versus XY-cut's 75% and LayoutReader's 25%. The LayoutReader baselines transfer poorly due to a word-level vs. line-level granularity mismatch. We additionally verify mirror-invariance under horizontal and vertical page reflections: Our method changes by less than 1 percentage point, classical XY-cut by 2 points, and LayoutReader-T by up to 8 points.",
+  "published": "2026-07-01T14:52:00Z",
+  "updated": "2026-07-01T14:52:00Z",
+  "authors": [
+   "Iddo Hakim",
+   "Sharva Gogawale",
+   "Omer Ventura",
+   "Gal Grudka",
+   "Daria Vasyutinsky-Shapira",
+   "Berat Kurar-Barakat",
+   "Nachum Dershowitz"
+  ],
+  "categories": [
+   "cs.CL",
+   "cs.AI",
+   "cs.CV",
+   "cs.DL"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.01018v1",
+  "abs_url": "http://arxiv.org/abs/2607.01018v1",
+  "matched_query": [
+   "abs:\"sentence embedding\""
+  ]
+ },
+ {
+  "source": "arxiv",
+  "arxiv_id": "2607.20084v1",
+  "id": "arxiv:2607.20084",
+  "title": "Non--negative matrix factorization using the \\textit{R} package \\textsf{nnmf}",
+  "abstract": "Non--negative matrix factorization (NMF) has become an established dimensionality reduction technique for extracting latent structures from non--negative data and has found widespread applications in fields such as bioinformatics, text mining, image analysis, and recommender systems. As the popularity of NMF has increased, numerous \\textit{R} packages implementing different optimization strategies and computational frameworks have been developed. Despite their widespread availability, comprehensive evaluations of these implementations under real--world data conditions remain limited. Consequently, researchers often lack objective guidance when selecting an appropriate package for practical applications. This study introduces a new \\textit{R} package for NMF and offers asystematic performance comparison with two widely available \\textit{R} packages for NMF analysis. Rather than relying on simulated datasets, the evaluation is conducted using real--world data to better reflect the complexity, heterogeneity, and noise characteristics encountered in practical analytical settings. The packages are assessed using a consistent experimental framework, with emphasis on computational efficiency, convergence behavior, reconstruction accuracy, memory utilization, and the stability of the resulting matrix factorization.",
+  "published": "2026-07-22T12:35:52Z",
+  "updated": "2026-07-22T12:35:52Z",
+  "authors": [
+   "Volkan Sevin\u00e7",
+   "Nikolas Kontemeniotis",
+   "Theodoros Perdikis",
+   "Michail Tsagris"
+  ],
+  "categories": [
+   "stat.ML",
+   "cs.LG"
+  ],
+  "comment": "",
+  "journal_ref": "",
+  "doi": "",
+  "pdf_url": "https://arxiv.org/pdf/2607.20084v1",
+  "abs_url": "http://arxiv.org/abs/2607.20084v1",
+  "matched_query": [
+   "abs:\"text mining\""
+  ]
+ }
+]

@@ -1,0 +1,840 @@
+[
+ {
+  "title": "Neural Topic Modeling with Large Language Models in the Loop",
+  "authors": [
+   "Xiaohao Yang",
+   "He Zhao 0001",
+   "Weijie Xu",
+   "Yuanyuan Qi",
+   "Jueqing Lu",
+   "Dinh Phung 0001",
+   "Lan Du 0002"
+  ],
+  "year": 2025,
+  "abstract": "Topic modeling is a fundamental task in natural language processing, allowing the discovery of latent thematic structures in text corpora.While Large Language Models (LLMs) have demonstrated promising capabilities in topic discovery, their direct application to topic modeling suffers from issues such as incomplete topic coverage, misalignment of topics, and inefficiency.To address these limitations, we propose LLM-ITL, a novel LLM-in-theloop framework that integrates LLMs with Neural Topic Models (NTMs).In LLM-ITL, global topics and document representations are learned through the NTM.Meanwhile, an LLM refines these topics using an Optimal Transport (OT)-based alignment objective, where the refinement is dynamically adjusted based on the LLM's confidence in suggesting topical words for each set of input words.With the flexibility of being integrated into many existing NTMs, the proposed approach enhances the interpretability of topics while preserving the efficiency of NTMs in learning topics and document representations.Extensive experiments demonstrate that LLM-ITL helps NTMs significantly improve their topic interpretability while maintaining the quality of document representation.Our code and datasets are available at",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.acl-long.70",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.acl-long.70.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.acl-long.70",
+  "cited_by": 9,
+  "local_pdf": "",
+  "matched_query": [
+   "topic model",
+   "neural topic model",
+   "topic modeling",
+   "large language model topic"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 114.0,
+  "venue_weight": 30,
+  "score": 163.5,
+  "score_hits": [
+   "dataset",
+   "interpretab",
+   "large language model",
+   "llm",
+   "neural topic model",
+   "optimal transport",
+   "topic discovery",
+   "topic model",
+   "topic modeling"
+  ],
+  "bucket": "neural-topic-model"
+ },
+ {
+  "title": "Neural Topic Modeling via Contextual and Graph Information Fusion",
+  "authors": [
+   "Jiyuan Liu 0013",
+   "Jiaxing Yan",
+   "Chunjiang Zhu",
+   "Xingyu Liu",
+   "Li Qing",
+   "Yanghui Rao"
+  ],
+  "year": 2025,
+  "abstract": "Topic modeling is a powerful unsupervised tool for knowledge discovery.However, existing work struggles with generating limited-quality topics that are uninformative and incoherent, which hinders interpretable insights from managing textual data.In this paper, we improve the original variational autoencoder framework by incorporating contextual and graph information to address the above issues.First, the encoder utilizes topic fusion techniques to combine contextual and bag-of-words information well, and meanwhile exploits the constraints of topic alignment and topic sharpening to generate informative topics.Second, we develop a simple word co-occurrence graph information fusion strategy that efficiently increases topic coherence.On three benchmark datasets, our new framework generates more coherent and diverse topics compared to various baselines, and achieves strong performance on both automatic and manual evaluations.We make our code available for reproduction 1 .",
+  "venue": "EMNLP",
+  "venue_raw": "EMNLP",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.emnlp-main.670",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.emnlp-main.670.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.emnlp-main.670",
+  "cited_by": 1,
+  "local_pdf": "",
+  "matched_query": [
+   "neural topic model",
+   "topic modeling"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 116.0,
+  "venue_weight": 30,
+  "score": 161.5,
+  "score_hits": [
+   "benchmark",
+   "coherence",
+   "dataset",
+   "evaluation",
+   "interpretab",
+   "neural topic model",
+   "topic coherence",
+   "topic model",
+   "topic modeling",
+   "unsupervised"
+  ],
+  "bucket": "neural-topic-model"
+ },
+ {
+  "title": "MSW-NTM: A Spherical Wasserstein Autoencoder for Multimodal Neural Topic Modeling with LLM-Guided Topic Refinement",
+  "authors": [
+   "Dayu Guo",
+   "Zhiwen Luo",
+   "Nizar Bouguila",
+   "Wentao Fan 0001"
+  ],
+  "year": 2026,
+  "abstract": "Multimodal topic modeling aims to uncover interpretable semantic structures from documents containing both text and images, while also supporting downstream tasks such as multimodal retrieval. However, existing multimodal neural topic models, typically based on standard Variational Autoencoders (VAEs), often suffer from posterior collapse and fail to account for the directional nature of L2-normalized embeddings. To address these limitations, We propose MSW-NTM (Multimodal Spherical Wasserstein Neural Topic Model) which is built upon a Wasserstein Autoencoder that performs topic modeling on the unit hypersphere. It adopts a von Mises-Fisher mixture prior and aligns the aggregated posterior with the prior using the Spherical Sliced-Wasserstein distance, ensuring stable training and improved topic interpretability aligned with multimodal embedding geometry. Moreover, we incorporate an Large Language Model (LLM)-guided topic refinement module to further enhance topic coherence. Experimental results on standard multimodal benchmarks demonstrate that MSW-NTM delivers high-quality, interpretable topic representations, supporting retrieval-oriented semantic organization and exploration.",
+  "venue": "SIGIR",
+  "venue_raw": "SIGIR",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1145/3805712.3809878",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1145/3805712.3809878",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "topic model",
+   "neural topic model",
+   "topic modeling"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 113.0,
+  "venue_weight": 30,
+  "score": 161.0,
+  "score_hits": [
+   "benchmark",
+   "coherence",
+   "embedding",
+   "interpretab",
+   "large language model",
+   "llm",
+   "neural topic model",
+   "topic coherence",
+   "topic model",
+   "topic modeling"
+  ],
+  "bucket": "neural-topic-model"
+ },
+ {
+  "title": "LLM Reading Tea Leaves: Automatically Evaluating Topic Models with Large Language Models",
+  "authors": [
+   "Xiaohao Yang",
+   "He Zhao 0001",
+   "Dinh Q. Phung",
+   "Wray L. Buntine",
+   "Lan Du 0002"
+  ],
+  "year": 2025,
+  "abstract": "Abstract Topic modeling has been a widely used tool for unsupervised text analysis. However, comprehensive evaluations of a topic model remain challenging. Existing evaluation methods are either less comparable across different models (e.g., perplexity) or focus on only one specific aspect of a model (e.g., topic quality or document representation quality) at a time, which is insufficient to reflect the overall model performance. In this paper, we propose WALM (Word Agreement with Language Model), a new evaluation method for topic modeling that considers the semantic quality of document representations and topics in a joint manner, leveraging the power of Large Language Models (LLMs). With extensive experiments involving different types of topic models, WALM is shown to align with human judgment and can serve as a complementary evaluation method to the existing ones, bringing a new perspective to topic modeling. Our software package is available at https://github.com/Xiaohao-Yang/Topic_Model_Evaluation.",
+  "venue": "Trans. Assoc. Comput. Linguistics",
+  "venue_raw": "Trans. Assoc. Comput. Linguistics",
+  "subtrack": "",
+  "venue_tier": "J1",
+  "peer_reviewed": true,
+  "doi": "10.1162/tacl_a_00744",
+  "arxiv_id": "",
+  "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00744/2514623/tacl_a_00744.pdf",
+  "landing_url": "https://doi.org/10.1162/tacl_a_00744",
+  "cited_by": 7,
+  "local_pdf": "",
+  "matched_query": [
+   "topic model",
+   "large language model topic"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 62.0,
+  "venue_weight": 26,
+  "score": 106.5,
+  "score_hits": [
+   "evaluation",
+   "large language model",
+   "llm",
+   "topic model",
+   "topic modeling",
+   "topic quality",
+   "unsupervised"
+  ],
+  "bucket": "llm-for-text-mining"
+ },
+ {
+  "title": "MAST: A Multi-View Alignment Strategy for Optimal Transport-Based Contrastive Clustering of Short Text",
+  "authors": [
+   "Zijian Zheng 0001",
+   "Yonghe Lu"
+  ],
+  "year": 2026,
+  "abstract": "Short text clustering has gained significant prominence due to its ubiquity in real-world applications.Despite the recent success of contrastive clustering, existing paradigms still suffer from two bottlenecks: (1) conventional data augmentation provides limited semantic granularity and may introduce unintended noise; and (2) the absence of global optimization for cluster assignments often precipitates the accumulation of pseudo-label noise, thereby compromising semantic consistency.To bridge these gaps, we propose MAST, a Multi-view Alignment Strategy with Transport-based clustering.MAST constructs complementary structural views to capture multi-granularity semantic features and introduces a multi-view contrastive objective that jointly aligns original, augmented, and structure-enhanced embeddings.To mitigate representation oversmoothing, we incorporate structure-aware negative reweighting and intermediate-layer negative sampling.Furthermore, MAST employs high-confidence guided refinement and an optimal transport-based pseudo-label alignment mechanism to enforce semantic consistency across multiple views.Extensive experiments on several benchmark datasets demonstrate that MAST consistently outperforms state-of-theart methods, establishing a competitive baseline for short text clustering.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.findings-acl.660",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.findings-acl.660.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.findings-acl.660",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text clustering"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 46.0,
+  "venue_weight": 30,
+  "score": 94.0,
+  "score_hits": [
+   "benchmark",
+   "clustering",
+   "contrastive",
+   "dataset",
+   "embedding",
+   "optimal transport",
+   "short text",
+   "text clustering"
+  ],
+  "bucket": "short-text-clustering"
+ },
+ {
+  "title": "Reasoning-Based Refinement of Unsupervised Text Clusters with LLMs",
+  "authors": [
+   "Tunazzina Islam"
+  ],
+  "year": 2026,
+  "abstract": "Unsupervised methods are widely used to induce latent semantic structure from large text collections, yet their outputs often contain incoherent, redundant, or poorly grounded clusters that are difficult to validate without labeled data.We propose a reasoning-based refinement framework that leverages large language models (LLMs) not as embedding generators, but as semantic judges that validate and restructure the outputs of arbitrary unsupervised clustering algorithms.Our framework introduces three reasoning stages: (i) coherence verification, where LLMs assess whether cluster summaries are supported by their member texts; (ii) redundancy adjudication, where candidate clusters are merged or rejected based on semantic overlap; and (iii) label grounding, where clusters are assigned interpretable labels through a two-stage process that generates and consolidates semantically similar labels in a fully unsupervised manner.This design decouples representation learning from structural validation and mitigates the common failure modes of embedding-only approaches.We evaluate the framework in real-world social media corpora from two platforms with distinct interaction models, demonstrating consistent improvements in cluster coherence and humanaligned labeling quality over classical topic models and recent representation-based baselines.Human evaluation shows strong agreement with LLM-generated labels, despite the absence of gold-standard annotations.We further conduct robustness analysis under matched temporal and volume conditions to assess crossplatform stability.Beyond empirical gains, our results suggest that LLM-based reasoning can serve as a general mechanism for validating and refining unsupervised semantic structure, enabling more reliable and interpretable analysis of large text collections without supervision.Figure 1: Overview of our framework.Unsupervised clustering generates initial cluster proposals that are often noisy.We treat these clusters as hypotheses and use LLMs as semantic judges to (1) verify coherence, (2) adjudicate redundancy, and (3) generate interpretable labels via a two-stage grounding process, producing refined, coherent, and distinct clusters.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.findings-acl.482",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.findings-acl.482.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.findings-acl.482",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "unsupervised text"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 37.0,
+  "venue_weight": 30,
+  "score": 85.0,
+  "score_hits": [
+   "clustering",
+   "coherence",
+   "embedding",
+   "evaluation",
+   "interpretab",
+   "large language model",
+   "llm",
+   "topic model",
+   "unsupervised"
+  ],
+  "bucket": "llm-for-text-mining"
+ },
+ {
+  "title": "LLMs Enable Bag-of-Texts Representations for Short-Text Clustering",
+  "authors": [
+   "I-Fan Lin 0001",
+   "Faegheh Hasibi",
+   "Suzan Verberne"
+  ],
+  "year": 2026,
+  "abstract": "In this paper, we propose LeBoT (LLMenabled Bag-of-Texts), a training-free representation refinement method for unsupervised short text clustering that relies less on careful selection of embedders than other methods.In customer-facing chatbots, companies are dealing with large amounts of user utterances that need to be clustered according to their intent.In these settings, no labeled data is typically available, and the number of clusters is not known.Recent approaches to shorttext clustering in label-free settings incorporate LLM output to refine existing embeddings.While LLMs can identify similar texts effectively, the resulting similarities may not be directly represented by distances in the dense vector space, as they depend on the original embedding.We therefore propose a method for transforming LLM judgments directly into a bag-of-texts representation in which texts are initialized to be equidistant, without assuming any prior distance relationships.Our method achieves comparable or superior results to state-of-the-art methods, but without embeddings optimization or assuming prior knowledge of clusters or labels.Experiments on diverse datasets and smaller LLMs show that our method is model agnostic and can be applied to any embedder, with relatively small LLMs, and different clustering methods.We also show how our method scales to large datasets, reducing the computational cost of the LLM use.The flexibility and scalability of our method make it more aligned with real-world trainingfree scenarios than existing clustering methods.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.acl-long.291",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.acl-long.291.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.acl-long.291",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text clustering",
+   "llm clustering text"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 35.0,
+  "venue_weight": 30,
+  "score": 83.0,
+  "score_hits": [
+   "clustering",
+   "dataset",
+   "embedding",
+   "llm",
+   "short text",
+   "text clustering",
+   "unsupervised"
+  ],
+  "bucket": "short-text-clustering"
+ },
+ {
+  "title": "CIDC: Cluster Identification-Guided Dual Correction for Robust Short Text Clustering",
+  "authors": [
+   "Yuhua Zhao 0001",
+   "Zhixin Han",
+   "Xuan Li",
+   "Peiyu Xu",
+   "Hang Gao 0003",
+   "Mengting Hu 0002",
+   "Tiegang Gao"
+  ],
+  "year": 2026,
+  "abstract": "The rapid growth of online short texts has made specialized analysis essential, as these texts are sparse and information-limited. Short text clustering (STC) is critical for automatically grouping unlabeled texts into meaningful clusters, supporting applications such as sentiment analysis, spam filtering, and social media personalization. In the context of massive online content, deep clustering seeks to uncover semantic categories by measuring distances in the representation space. Consequently, aligning clustering pseudo-labels with the true category distribution is crucial for effective self-supervised training, particularly under class imbalance and distribution skew commonly observed in web data. To address this challenge, we propose the Cluster Identification-Guided Dual Correction (CIDC) framework, which generates reliable pseudo-labels to guide deep clustering. Specifically, given cluster partitions and model-estimated class distributions, we perform Cluster Category Identification (CCI) at each training epoch to determine the most probable category for each cluster. This identification provides the foundation for the Pseudo-Label Correction (PLC) and Prototype-Based Correction (PBC) modules, which jointly enhance pseudo-label reliability and representation learning. In the PLC module, samples whose model-estimated class distributions conflict with the assigned cluster category are corrected, thereby improving semantic alignment within clusters. In the PBC module, representative and reliable prototypes are selected according to cluster categories and model predictions to guide training, further strengthening representation discriminability. Extensive experiments demonstrate that CIDC consistently outperforms existing methods in terms of clustering accuracy and mutual information, particularly in unsupervised settings characterized by class imbalance and noisy data.",
+  "venue": "WWW",
+  "venue_raw": "WWW",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1145/3774904.3792578",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1145/3774904.3792578",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text clustering"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 33.0,
+  "venue_weight": 30,
+  "score": 81.0,
+  "score_hits": [
+   "clustering",
+   "short text",
+   "text clustering",
+   "unsupervised"
+  ],
+  "bucket": "short-text-clustering"
+ },
+ {
+  "title": "Advanced News Event Clustering via Topic Enhanced Modeling with Multi-Aspect Contrastive Learning",
+  "authors": [
+   "Hang Yang",
+   "Xiaoyan Yu",
+   "Dianbo Sui"
+  ],
+  "year": 2025,
+  "abstract": "News event clustering, a crucial task for discovering and comprehending real-world information, aims to aggregate news articles into fine-grained clusters based on specific key events. As the presence of topic-unrelated documents within clusters and redundant information within individual documents, it is challenging to learn a discriminative document representation. To address this issue, we introduce a novel method, TECL (Topic Enhanced modeling with Contrastive Learning), that leverages topic enhanced modeling with multi-aspect contrastive learning for news event clustering. The topic-enhanced modeling employs neural topic models to incorporate global and local semantics into document representations, while contrastive learning refines these representations from both inter-document and intra-document perspectives.Experiments conducted in both unsupervised and supervised scenarios indicate that the proposed method significantly improves performance, demonstrating its effectiveness.",
+  "venue": "CIKM",
+  "venue_raw": "CIKM",
+  "subtrack": "",
+  "venue_tier": "A",
+  "peer_reviewed": true,
+  "doi": "10.1145/3746252.3760792",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1145/3746252.3760792",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "topic modeling"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 43.0,
+  "venue_weight": 22,
+  "score": 80.0,
+  "score_hits": [
+   "clustering",
+   "contrastive",
+   "neural topic model",
+   "topic model",
+   "unsupervised"
+  ],
+  "bucket": "text-representation"
+ },
+ {
+  "title": "Graph Retrieval-Augmented Generation: A Survey",
+  "authors": [
+   "Boci Peng",
+   "Yun Zhu 0007",
+   "Yongchao Liu 0004",
+   "Xiaohe Bo",
+   "Haizhou Shi",
+   "Chuntao Hong",
+   "Yan Zhang 0117",
+   "Siliang Tang"
+  ],
+  "year": 2026,
+  "abstract": "Recently, Retrieval-Augmented Generation (RAG) has achieved remarkable success in addressing the challenges of Large Language Models (LLMs) without necessitating retraining. By referencing an external knowledge base, RAG refines LLM outputs, effectively mitigating issues such as \u201challucination,\u201d lack of domain-specific knowledge, and outdated information. However, the complex structure of relationships among different entities in databases presents challenges for RAG systems. In response, GraphRAG leverages structural information across entities to enable more precise and comprehensive retrieval, capturing relational knowledge and facilitating more accurate, context-aware responses. Given the novelty and potential of GraphRAG, a systematic review of current technologies is imperative. This article provides the first comprehensive overview of GraphRAG methodologies. We formalize the GraphRAG workflow, encompassing Graph-Based Indexing, Graph-Guided Retrieval, and Graph-Enhanced Generation. We then outline the core technologies and training methods at each stage. Additionally, we examine downstream tasks, application domains, evaluation methodologies, and industrial use cases of GraphRAG. Finally, we explore future research directions to inspire further inquiries and advance progress in the field. In order to track recent progress, we set up a repository at https://github.com/pengboci/GraphRAG-Survey .",
+  "venue": "ACM Trans. Inf. Syst.",
+  "venue_raw": "ACM Trans. Inf. Syst.",
+  "subtrack": "",
+  "venue_tier": "J1",
+  "peer_reviewed": true,
+  "doi": "10.1145/3777378",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1145/3777378",
+  "cited_by": 70,
+  "local_pdf": "",
+  "matched_query": [
+   "retrieval augmented"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 16.0,
+  "venue_weight": 26,
+  "score": 80.0,
+  "score_hits": [
+   "evaluation",
+   "large language model",
+   "llm",
+   "survey"
+  ],
+  "bucket": "evaluation-benchmark"
+ },
+ {
+  "title": "Uncertainty-Aware Contrastive Sentence Embedding With Local Context Representation for Text Classification",
+  "authors": [
+   "Han Liu 0002",
+   "Jiaqing Zhan",
+   "Zhichao Chen",
+   "Qin Zhang 0011"
+  ],
+  "year": 2026,
+  "abstract": "In real-world applications of natural language processing, it is essential to effectively adapt a pre-trained model to a downstream task.While text classification is undertaken as a downstream task, it is crucial to produce meaningful sentence embedding that is adaptive to the task.In this paper, we explore how to effectively adapt a pre-trained model for extracting meaningful context representations from sentences, and propose an uncertainty-aware contrastive sentence embedding approach that involves addressing language ambiguity and inter-class separability for a text classification task.Specifically, we design an end-to-end strategy for driving the process of learning to transform a word embedding matrix into a contextualized sentence vector and to quantify the representation uncertainty of the sentence, while the word embedding matrix is produced by a pre-trained model without fine-tuning, and a label-wise contrastive learning strategy is designed to enhance intra-class compactness and inter-class separability.The results on public data sets show that a considerable improvement of text classification accuracy is achieved by adopting the proposed approach in comparison with using those state-of-the-art methods 1 .",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.findings-acl.1927",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.findings-acl.1927.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.findings-acl.1927",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "sentence embedding",
+   "text embedding",
+   "contrastive text representation"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 28.0,
+  "venue_weight": 30,
+  "score": 76.0,
+  "score_hits": [
+   "contrastive",
+   "embedding",
+   "sentence embedding",
+   "text representation"
+  ],
+  "bucket": "text-representation"
+ },
+ {
+  "title": "TR-MTEB: A Comprehensive Benchmark and Embedding Model Suite for Turkish Sentence Representations",
+  "authors": [
+   "Mehmet Selman Baysan",
+   "Tunga Gungor"
+  ],
+  "year": 2025,
+  "abstract": "We introduce TR-MTEB, the first large-scale, task-diverse benchmark designed to evaluate sentence embedding models for Turkish.Covering six core tasks as classification, clustering, pair classification, retrieval, bitext mining, and semantic textual similarity, TR-MTEB incorporates 26 high-quality datasets, including native and translated resources.To complement this benchmark, we construct a corpus of 34.2 million weakly supervised Turkish sentence pairs and train two Turkish-specific embedding models using contrastive pretraining and supervised fine-tuning.Evaluation results show that our models, despite being trained on limited resources, achieve competitive performance across most tasks and significantly improve upon baseline monolingual models.All datasets, models, and evaluation pipelines are publicly released 1 to facilitate further research in Turkish natural language processing and low-resource benchmarking.",
+  "venue": "EMNLP",
+  "venue_raw": "EMNLP",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.findings-emnlp.471",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.findings-emnlp.471.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.findings-emnlp.471",
+  "cited_by": 1,
+  "local_pdf": "",
+  "matched_query": [
+   "sentence embedding"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 29.0,
+  "venue_weight": 30,
+  "score": 74.5,
+  "score_hits": [
+   "benchmark",
+   "clustering",
+   "contrastive",
+   "corpus",
+   "dataset",
+   "embedding",
+   "evaluation",
+   "sentence embedding",
+   "text mining"
+  ],
+  "bucket": "evaluation-benchmark"
+ },
+ {
+  "title": "Learning to Compress: Unlocking the Potential of Large Language Models for Text Representation",
+  "authors": [
+   "Yeqin Zhang",
+   "Yizheng Zhao",
+   "Chen Hu",
+   "Binxing Jiao",
+   "Daxin Jiang",
+   "Ruihang Miao",
+   "Cam-Tu Nguyen"
+  ],
+  "year": 2026,
+  "abstract": "Text representation plays a critical role in tasks like clustering, retrieval, and other downstream applications. With the emergence of large language models (LLMs), there is increasing interest in harnessing their capabilities for this purpose. However, most of the LLMs are inherently causal and optimized for next-token prediction, making them suboptimal for producing holistic representations. To address this, recent studies introduced pretext tasks to adapt LLMs for text representation. Most of these tasks, however, rely on token-level prediction objectives, such as the masked next-token prediction (MNTP) used in LLM2Vec. In this work, we explore the untapped potential of context compression as a pretext task for unsupervised adaptation of LLMs. During compression pre-training, the model learns to generate compact memory tokens, which substitute the whole context for downstream sequence prediction. Experiments demonstrate that a well-designed compression objective can significantly enhance LLM-based text representations, outperforming models trained with token-level pretext tasks. Further improvements through contrastive learning produce a strong representation model (LLM2Comp) that outperforms contemporary LLM-based text encoders on a wide range of tasks while being more sample-efficient, requiring significantly less training data.",
+  "venue": "AAAI",
+  "venue_raw": "AAAI",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1609/aaai.v40i34.40075",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1609/aaai.v40i34.40075",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text representation learning"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 26.0,
+  "venue_weight": 30,
+  "score": 74.0,
+  "score_hits": [
+   "clustering",
+   "contrastive",
+   "large language model",
+   "llm",
+   "text representation",
+   "unsupervised"
+  ],
+  "bucket": "text-representation"
+ },
+ {
+  "title": "Unsupervised Corpus Poisoning Attacks in Continuous Space for Dense Retrieval",
+  "authors": [
+   "Yongkang Li 0002",
+   "Panagiotis Eustratiadis",
+   "Simon Lupart",
+   "Evangelos Kanoulas"
+  ],
+  "year": 2025,
+  "abstract": "This paper concerns corpus poisoning attacks in dense information retrieval, where an adversary attempts to compromise the ranking performance of a search algorithm by injecting a small number of maliciously generated documents into the corpus.Our work addresses two limitations in the current literature.First, attacks that perform adversarial gradient-based word substitution search do so in the discrete lexical space, while retrieval itself happens in the continuous embedding space.We thus propose an optimization method that operates in the embedding space directly.Specifically, we train a perturbation model with the objective of maintaining the geometric distance between the original and adversarial document embeddings, while also maximizing the token-level dissimilarity between the original and adversarial documents.Second, it is common for related work to have a strong assumption that the adversary has prior knowledge about the queries.In this paper, we focus on a more challenging variant of the problem where the adversary assumes no prior knowledge about the query distribution (hence, unsupervised).Our core contribution is an adversarial corpus attack that is fast and effective.We present comprehensive experimental results on both in-and out-of-domain datasets, focusing on two related tasks: a top-1 attack and a corpus poisoning attack.We consider attacks under both a white-box and a black-box setting.Notably, our method can generate successful adversarial examples in under two minutes per target document; four times faster compared to the fastest gradientbased word substitution methods in the literature with the same hardware.Furthermore, our adversarial generation method generates text that is more likely to occur under the distribution of natural text (low perplexity), and is therefore more difficult to detect.",
+  "venue": "SIGIR",
+  "venue_raw": "SIGIR",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1145/3726302.3730110",
+  "arxiv_id": "",
+  "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3726302.3730110",
+  "landing_url": "https://doi.org/10.1145/3726302.3730110",
+  "cited_by": 3,
+  "local_pdf": "",
+  "matched_query": [
+   "dense retrieval"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 25.0,
+  "venue_weight": 30,
+  "score": 71.5,
+  "score_hits": [
+   "corpus",
+   "dataset",
+   "dense retrieval",
+   "document embedding",
+   "embedding",
+   "unsupervised"
+  ],
+  "bucket": "retrieval-rag"
+ },
+ {
+  "title": "Driving with Regulation: Trustworthy and Interpretable Decision-Making for Autonomous Driving with Retrieval-Augmented Reasoning",
+  "authors": [
+   "Tianhui Cai",
+   "Yifan Liu",
+   "Zewei Zhou",
+   "Haoxuan Ma",
+   "Seth Z. Zhao",
+   "Zhiwen Wu",
+   "Xu Han 0014",
+   "Zhiyu Huang",
+   "Jiaqi Ma 0003"
+  ],
+  "year": 2026,
+  "abstract": "Understanding and adhering to traffic regulations is essential for autonomous vehicles to ensure safety and trustworthiness. However, traffic regulations are complex, context-dependent, and differ between regions, posing a major challenge to conventional rule-based decision-making approaches. We present an interpretable, regulation-aware decision-making framework, DriveReg, which enables autonomous vehicles to understand and adhere to region-specific traffic laws and safety guidelines. The framework integrates a Retrieval Augmented Generation (RAG)-based Traffic Regulation Retrieval Agent, which retrieves relevant rules from regulatory documents based on the current situation, and a Large Language Model (LLM)-powered Reasoning Agent that evaluates actions for legal compliance and safety. Our design emphasizes interpretability to enhance transparency and trustworthiness. To support systematic evaluation, we introduce DriveReg Scenarios Dataset, a comprehensive dataset of driving scenarios across Boston, Singapore, and Los Angeles, with both hypothesized text-based cases and real-world driving data, specifically constructed and annotated to evaluate models\u2019 capacity for regulation understanding and reasoning. We validate our framework on the DriveReg Scenarios Dataset and real-world deployment, demonstrating strong performance and robustness across diverse environments.",
+  "venue": "AAAI",
+  "venue_raw": "AAAI",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1609/aaai.v40i45.41168",
+  "arxiv_id": "",
+  "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41168/45129",
+  "landing_url": "https://doi.org/10.1609/aaai.v40i45.41168",
+  "cited_by": 1,
+  "local_pdf": "",
+  "matched_query": [
+   "retrieval augmented"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 23.0,
+  "venue_weight": 30,
+  "score": 71.5,
+  "score_hits": [
+   "dataset",
+   "evaluation",
+   "interpretab",
+   "large language model",
+   "llm",
+   "retrieval augmented"
+  ],
+  "bucket": "retrieval-rag"
+ },
+ {
+  "title": "PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths",
+  "authors": [
+   "Boyu Chen",
+   "Zirui Guo",
+   "Zidan Yang",
+   "Yuluo Chen",
+   "Junze Chen",
+   "Zhenghao Liu 0001",
+   "Chuan Shi 0001",
+   "Cheng Yang 0002"
+  ],
+  "year": 2026,
+  "abstract": "Retrieval-augmented generation (RAG) improves the response quality of large language models (LLMs) by retrieving knowledge from external databases. Typical RAG approaches split the text database into chunks, organizing them in a flat structure for efficient searches. To better capture the inherent dependencies and structured relationships across the text database, researchers propose to organize textual information into an indexing graph, known as graph-based RAG. However, we argue that the limitation of current graph-based RAG methods lies in the redundancy of the retrieved information, rather than its insufficiency. Moreover, previous methods use a flat structure to organize retrieved information within the prompts, leading to suboptimal performance. To overcome these limitations, we propose PathRAG, which retrieves key relational paths from the indexing graph, and converts these paths into textual form for prompting LLMs. Specifically, PathRAG effectively reduces redundant information with flow-based pruning, while guiding LLMs to generate more logical and coherent responses with path-based prompting. Experimental results show that PathRAG consistently outperforms state-of-the-art baselines across six datasets and five evaluation dimensions.",
+  "venue": "AAAI",
+  "venue_raw": "AAAI",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1609/aaai.v40i36.40268",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1609/aaai.v40i36.40268",
+  "cited_by": 8,
+  "local_pdf": "",
+  "matched_query": [
+   "retrieval augmented"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 16.0,
+  "venue_weight": 30,
+  "score": 68.0,
+  "score_hits": [
+   "dataset",
+   "evaluation",
+   "large language model",
+   "llm",
+   "retrieval augmented"
+  ],
+  "bucket": "retrieval-rag"
+ },
+ {
+  "title": "MUDY: Multi-Granular Dynamic Candidate Contextualization for Unsupervised Keyphrase Extraction",
+  "authors": [
+   "Hyeongu Kang",
+   "Susik Yoon"
+  ],
+  "year": 2026,
+  "abstract": "Keyphrase extraction aims to automatically identify concise phrases that effectively represent the content of a document. While recent methods leveraging pre-trained language models (PLMs) have significantly improved the extraction of keyphrases with strong global semantic relevance, they often fall short in capturing the local contextual importance of keyphrases tied to specific subtopics dispersed in a document. In this paper, we propose a novel context-centric framework, MUDY, that effectively captures multi-granular contextual salience of candidate keyphrases. MUDY employs two complementary components: (1) a prompt-based scoring that estimates the generation likelihood of each candidate keyphrase, augmented with candidate-aware weighting to better reflect its local contextual importance, and (2) a self-attention-based scoring that utilizes multi-granular attention patterns from PLMs to assess candidate significance at both the document-wide and segment-specific levels. Evaluations on four real-world datasets demonstrate that MUDY outperforms state-of-the-art baselines in top-k accuracy at various cutoff thresholds. In-depth quantitative and qualitative analyses further highlight the efficacy of context-centric keyphrase extraction with multi-granular saliency. For reproducibility, the source code of MUDY is available at https://github.com/HgKang1/MUDY.",
+  "venue": "SIGIR",
+  "venue_raw": "SIGIR",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.1145/3805712.3809682",
+  "arxiv_id": "",
+  "pdf_url": "",
+  "landing_url": "https://doi.org/10.1145/3805712.3809682",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "keyphrase extraction"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 19.0,
+  "venue_weight": 30,
+  "score": 67.0,
+  "score_hits": [
+   "dataset",
+   "evaluation",
+   "keyphrase",
+   "unsupervised"
+  ],
+  "bucket": "keyphrase-aspect"
+ },
+ {
+  "title": "Enhancing the Comprehensibility of Text Explanations via Unsupervised Concept Discovery",
+  "authors": [
+   "Yifan Sun 0012",
+   "Danding Wang",
+   "Qiang Sheng 0001",
+   "Juan Cao 0001",
+   "Jintao Li 0001"
+  ],
+  "year": 2025,
+  "abstract": "Concept-based explainable approaches have emerged as a promising method in explainable AI because they can interpret models in a way that aligns with human reasoning.However, their adaption in the text domain remains limited.Most existing methods rely on predefined concept annotations and cannot discover unseen concepts, while other methods that extract concepts without supervision often produce explanations that are not intuitively comprehensible to humans, potentially diminishing user trust.These methods fall short of discovering comprehensible concepts automatically.To address this issue, we propose ECO-Concept, an intrinsically interpretable framework to discover comprehensible concepts with no concept annotations.ECO-Concept first utilizes an object-centric architecture to extract semantic concepts automatically.Then the comprehensibility of the extracted concepts is evaluated by large language models.Finally, the evaluation result guides the subsequent model fine-tuning to obtain more understandable explanations.Experiments show that our method achieves superior performance across diverse tasks.Further concept evaluations validate that the concepts learned by ECO-Concept surpassed current counterparts in comprehensibility.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.findings-acl.758",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.findings-acl.758.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.findings-acl.758",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "concept discovery text",
+   "unsupervised text"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 13.0,
+  "venue_weight": 30,
+  "score": 58.0,
+  "score_hits": [
+   "evaluation",
+   "interpretab",
+   "large language model",
+   "unsupervised"
+  ],
+  "bucket": "keyphrase-aspect"
+ },
+ {
+  "title": "CheckRLM: Effective Knowledge-Thought Coherence Checking in Retrieval-Augmented Reasoning",
+  "authors": [
+   "Dingling Xu",
+   "Ruobing Wang",
+   "Qingfei Zhao",
+   "Yukun Yan",
+   "Zhichun Wang",
+   "Daren Zha",
+   "Shi Yu 0001",
+   "Zhenghao Liu 0001",
+   "Shuo Wang 0013",
+   "Xu Han 0007",
+   "Maosong Sun 0001"
+  ],
+  "year": 2026,
+  "abstract": "Dingling Xu, Ruobing Wang, Qingfei Zhao, Yukun Yan, Zhichun Wang, Daren Zha, Shi Yu, Zhenghao Liu, Shuo Wang, Xu Han, Maosong Sun. Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2026.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.acl-long.1780",
+  "arxiv_id": "2607.02262v1",
+  "pdf_url": "https://aclanthology.org/2026.acl-long.1780.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.acl-long.1780",
+  "cited_by": 0,
+  "local_pdf": "085_CheckRLM_Effective_Knowledge_Thought_Coherence_Checking_in_Retrieval_A__2607.02262v1.pdf",
+  "matched_query": [
+   "retrieval augmented",
+   "sweep:cs.CL"
+  ],
+  "sources": [
+   "arxiv",
+   "dblp"
+  ],
+  "topic_score": 8.0,
+  "venue_weight": 30,
+  "score": 56.0,
+  "score_hits": [
+   "coherence"
+  ],
+  "bucket": "other"
+ },
+ {
+  "title": "CLERC: A Dataset for U. S. Legal Case Retrieval and Retrieval-Augmented Analysis Generation",
+  "authors": [
+   "Abe Bohan Hou",
+   "Orion Weller",
+   "Guanghui Qin",
+   "Eugene Yang 0001",
+   "Dawn J. Lawrie",
+   "Nils Holzenberger",
+   "Andrew Blair-Stanek",
+   "Benjamin Van Durme"
+  ],
+  "year": 2025,
+  "abstract": "Abe Bohan Hou, Orion Weller, Guanghui Qin, Eugene Yang, Dawn Lawrie, Nils Holzenberger, Andrew Blair-Stanek, Benjamin Van Durme. Findings of the Association for Computational Linguistics: NAACL 2025. 2025.",
+  "venue": "NAACL",
+  "venue_raw": "NAACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.findings-naacl.441",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.findings-naacl.441.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.findings-naacl.441",
+  "cited_by": 11,
+  "local_pdf": "",
+  "matched_query": [
+   "retrieval augmented"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 4.0,
+  "venue_weight": 30,
+  "score": 54.5,
+  "score_hits": [
+   "dataset"
+  ],
+  "bucket": "other"
+ }
+]

@@ -1,0 +1,237 @@
+[
+ {
+  "title": "Neural Topic Modeling with Large Language Models in the Loop",
+  "authors": [
+   "Xiaohao Yang",
+   "He Zhao 0001",
+   "Weijie Xu",
+   "Yuanyuan Qi",
+   "Jueqing Lu",
+   "Dinh Phung 0001",
+   "Lan Du 0002"
+  ],
+  "year": 2025,
+  "abstract": "Topic modeling is a fundamental task in natural language processing, allowing the discovery of latent thematic structures in text corpora.While Large Language Models (LLMs) have demonstrated promising capabilities in topic discovery, their direct application to topic modeling suffers from issues such as incomplete topic coverage, misalignment of topics, and inefficiency.To address these limitations, we propose LLM-ITL, a novel LLM-in-theloop framework that integrates LLMs with Neural Topic Models (NTMs).In LLM-ITL, global topics and document representations are learned through the NTM.Meanwhile, an LLM refines these topics using an Optimal Transport (OT)-based alignment objective, where the refinement is dynamically adjusted based on the LLM's confidence in suggesting topical words for each set of input words.With the flexibility of being integrated into many existing NTMs, the proposed approach enhances the interpretability of topics while preserving the efficiency of NTMs in learning topics and document representations.Extensive experiments demonstrate that LLM-ITL helps NTMs significantly improve their topic interpretability while maintaining the quality of document representation.Our code and datasets are available at",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.acl-long.70",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.acl-long.70.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.acl-long.70",
+  "cited_by": 9,
+  "local_pdf": "",
+  "matched_query": [
+   "topic model",
+   "neural topic model",
+   "topic modeling",
+   "large language model topic"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 114.0,
+  "venue_weight": 30,
+  "score": 163.5,
+  "score_hits": [
+   "dataset",
+   "interpretab",
+   "large language model",
+   "llm",
+   "neural topic model",
+   "optimal transport",
+   "topic discovery",
+   "topic model",
+   "topic modeling"
+  ],
+  "bucket": "neural-topic-model",
+  "pdf_file": "01_Neural_Topic_Modeling_with_Large_Language_Models_in_the_Loop.pdf",
+  "download": "cached",
+  "downloaded_from": "https://aclanthology.org/2025.acl-long.70.pdf"
+ },
+ {
+  "title": "Neural Topic Modeling via Contextual and Graph Information Fusion",
+  "authors": [
+   "Jiyuan Liu 0013",
+   "Jiaxing Yan",
+   "Chunjiang Zhu",
+   "Xingyu Liu",
+   "Li Qing",
+   "Yanghui Rao"
+  ],
+  "year": 2025,
+  "abstract": "Topic modeling is a powerful unsupervised tool for knowledge discovery.However, existing work struggles with generating limited-quality topics that are uninformative and incoherent, which hinders interpretable insights from managing textual data.In this paper, we improve the original variational autoencoder framework by incorporating contextual and graph information to address the above issues.First, the encoder utilizes topic fusion techniques to combine contextual and bag-of-words information well, and meanwhile exploits the constraints of topic alignment and topic sharpening to generate informative topics.Second, we develop a simple word co-occurrence graph information fusion strategy that efficiently increases topic coherence.On three benchmark datasets, our new framework generates more coherent and diverse topics compared to various baselines, and achieves strong performance on both automatic and manual evaluations.We make our code available for reproduction 1 .",
+  "venue": "EMNLP",
+  "venue_raw": "EMNLP",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2025.emnlp-main.670",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2025.emnlp-main.670.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2025.emnlp-main.670",
+  "cited_by": 1,
+  "local_pdf": "",
+  "matched_query": [
+   "neural topic model",
+   "topic modeling"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 116.0,
+  "venue_weight": 30,
+  "score": 161.5,
+  "score_hits": [
+   "benchmark",
+   "coherence",
+   "dataset",
+   "evaluation",
+   "interpretab",
+   "neural topic model",
+   "topic coherence",
+   "topic model",
+   "topic modeling",
+   "unsupervised"
+  ],
+  "bucket": "neural-topic-model",
+  "pdf_file": "02_Neural_Topic_Modeling_via_Contextual_and_Graph_Information_Fusion.pdf",
+  "download": "ok",
+  "downloaded_from": "https://aclanthology.org/2025.emnlp-main.670.pdf"
+ },
+ {
+  "title": "MAST: A Multi-View Alignment Strategy for Optimal Transport-Based Contrastive Clustering of Short Text",
+  "authors": [
+   "Zijian Zheng 0001",
+   "Yonghe Lu"
+  ],
+  "year": 2026,
+  "abstract": "Short text clustering has gained significant prominence due to its ubiquity in real-world applications.Despite the recent success of contrastive clustering, existing paradigms still suffer from two bottlenecks: (1) conventional data augmentation provides limited semantic granularity and may introduce unintended noise; and (2) the absence of global optimization for cluster assignments often precipitates the accumulation of pseudo-label noise, thereby compromising semantic consistency.To bridge these gaps, we propose MAST, a Multi-view Alignment Strategy with Transport-based clustering.MAST constructs complementary structural views to capture multi-granularity semantic features and introduces a multi-view contrastive objective that jointly aligns original, augmented, and structure-enhanced embeddings.To mitigate representation oversmoothing, we incorporate structure-aware negative reweighting and intermediate-layer negative sampling.Furthermore, MAST employs high-confidence guided refinement and an optimal transport-based pseudo-label alignment mechanism to enforce semantic consistency across multiple views.Extensive experiments on several benchmark datasets demonstrate that MAST consistently outperforms state-of-theart methods, establishing a competitive baseline for short text clustering.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.findings-acl.660",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.findings-acl.660.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.findings-acl.660",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text clustering"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 46.0,
+  "venue_weight": 30,
+  "score": 94.0,
+  "score_hits": [
+   "benchmark",
+   "clustering",
+   "contrastive",
+   "dataset",
+   "embedding",
+   "optimal transport",
+   "short text",
+   "text clustering"
+  ],
+  "bucket": "short-text-clustering",
+  "pdf_file": "03_MAST_A_Multi_View_Alignment_Strategy_for_Optimal_Transport_Based_Contr.pdf",
+  "download": "cached",
+  "downloaded_from": "https://aclanthology.org/2026.findings-acl.660.pdf"
+ },
+ {
+  "title": "LLMs Enable Bag-of-Texts Representations for Short-Text Clustering",
+  "authors": [
+   "I-Fan Lin 0001",
+   "Faegheh Hasibi",
+   "Suzan Verberne"
+  ],
+  "year": 2026,
+  "abstract": "In this paper, we propose LeBoT (LLMenabled Bag-of-Texts), a training-free representation refinement method for unsupervised short text clustering that relies less on careful selection of embedders than other methods.In customer-facing chatbots, companies are dealing with large amounts of user utterances that need to be clustered according to their intent.In these settings, no labeled data is typically available, and the number of clusters is not known.Recent approaches to shorttext clustering in label-free settings incorporate LLM output to refine existing embeddings.While LLMs can identify similar texts effectively, the resulting similarities may not be directly represented by distances in the dense vector space, as they depend on the original embedding.We therefore propose a method for transforming LLM judgments directly into a bag-of-texts representation in which texts are initialized to be equidistant, without assuming any prior distance relationships.Our method achieves comparable or superior results to state-of-the-art methods, but without embeddings optimization or assuming prior knowledge of clusters or labels.Experiments on diverse datasets and smaller LLMs show that our method is model agnostic and can be applied to any embedder, with relatively small LLMs, and different clustering methods.We also show how our method scales to large datasets, reducing the computational cost of the LLM use.The flexibility and scalability of our method make it more aligned with real-world trainingfree scenarios than existing clustering methods.",
+  "venue": "ACL",
+  "venue_raw": "ACL",
+  "subtrack": "",
+  "venue_tier": "A*",
+  "peer_reviewed": true,
+  "doi": "10.18653/v1/2026.acl-long.291",
+  "arxiv_id": "",
+  "pdf_url": "https://aclanthology.org/2026.acl-long.291.pdf",
+  "landing_url": "https://doi.org/10.18653/v1/2026.acl-long.291",
+  "cited_by": 0,
+  "local_pdf": "",
+  "matched_query": [
+   "text clustering",
+   "llm clustering text"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 35.0,
+  "venue_weight": 30,
+  "score": 83.0,
+  "score_hits": [
+   "clustering",
+   "dataset",
+   "embedding",
+   "llm",
+   "short text",
+   "text clustering",
+   "unsupervised"
+  ],
+  "bucket": "short-text-clustering",
+  "pdf_file": "04_LLMs_Enable_Bag_of_Texts_Representations_for_Short_Text_Clustering.pdf",
+  "download": "cached",
+  "downloaded_from": "https://aclanthology.org/2026.acl-long.291.pdf"
+ },
+ {
+  "title": "LLM Reading Tea Leaves: Automatically Evaluating Topic Models with Large Language Models",
+  "authors": [
+   "Xiaohao Yang",
+   "He Zhao 0001",
+   "Dinh Q. Phung",
+   "Wray L. Buntine",
+   "Lan Du 0002"
+  ],
+  "year": 2025,
+  "abstract": "Abstract Topic modeling has been a widely used tool for unsupervised text analysis. However, comprehensive evaluations of a topic model remain challenging. Existing evaluation methods are either less comparable across different models (e.g., perplexity) or focus on only one specific aspect of a model (e.g., topic quality or document representation quality) at a time, which is insufficient to reflect the overall model performance. In this paper, we propose WALM (Word Agreement with Language Model), a new evaluation method for topic modeling that considers the semantic quality of document representations and topics in a joint manner, leveraging the power of Large Language Models (LLMs). With extensive experiments involving different types of topic models, WALM is shown to align with human judgment and can serve as a complementary evaluation method to the existing ones, bringing a new perspective to topic modeling. Our software package is available at https://github.com/Xiaohao-Yang/Topic_Model_Evaluation.",
+  "venue": "Trans. Assoc. Comput. Linguistics",
+  "venue_raw": "Trans. Assoc. Comput. Linguistics",
+  "subtrack": "",
+  "venue_tier": "J1",
+  "peer_reviewed": true,
+  "doi": "10.1162/tacl_a_00744",
+  "arxiv_id": "2406.09008v2",
+  "pdf_url": "https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl_a_00744/2514623/tacl_a_00744.pdf",
+  "landing_url": "https://doi.org/10.1162/tacl_a_00744",
+  "cited_by": 7,
+  "local_pdf": "",
+  "matched_query": [
+   "topic model",
+   "large language model topic"
+  ],
+  "sources": [
+   "dblp"
+  ],
+  "topic_score": 62.0,
+  "venue_weight": 26,
+  "score": 106.5,
+  "score_hits": [
+   "evaluation",
+   "large language model",
+   "llm",
+   "topic model",
+   "topic modeling",
+   "topic quality",
+   "unsupervised"
+  ],
+  "bucket": "llm-for-text-mining",
+  "pdf_file": "05_LLM_Reading_Tea_Leaves_Automatically_Evaluating_Topic_Models_with_Larg.pdf",
+  "download": "cached",
+  "downloaded_from": "https://arxiv.org/pdf/2406.09008v2"
+ }
+]
