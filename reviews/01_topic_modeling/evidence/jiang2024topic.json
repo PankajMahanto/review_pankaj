@@ -1,0 +1,58 @@
+{
+ "key": "jiang2024topic",
+ "source_id": "jiang2024topic",
+ "title": "Topic Detection and Tracking with Time-Aware Document Embeddings",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/2oomt4xeb542",
+ "read_from": "arXiv preprint 2112.06166 (earlier version; published version: LREC-COLING 2024)",
+ "evidence_level": "full-text (preprint)",
+ "category": "dynamic",
+ "subcategory": "topic detection and tracking (event clustering) with time-aware embeddings",
+ "task": "Retrospective and online clustering of news stories into events",
+ "problem": "Time metadata is central to topic detection and tracking, but earlier systems do not capture how time interacts with event semantics (short-lived vs long-running events).",
+ "architecture": "T-E-BERT: entity-aware BERT text encoder fused with a sinusoidal position embedding of the document timestamp (daily granularity) via concatenation + multi-head attention + mean pooling, fine-tuned with batch-hard triplet loss; embeddings clustered with HDBSCAN or group-average agglomerative clustering (retrospective) or plugged into an online TDT pipeline.",
+ "llm_or_encoder": "BERT / entity-aware BERT",
+ "datasets": [
+  {
+   "name": "News2013",
+   "details": "train 12,233 documents / 593 events; test 8,726 / 222"
+  },
+  {
+   "name": "TDT-1",
+   "details": "train 899 / 13 events; test 654 / 12"
+  }
+ ],
+ "metrics": [
+  "B-Cubed precision, recall, F1",
+  "number of predicted clusters"
+ ],
+ "baselines": [
+  "TF-IDF + K-Means/GAC/HDBSCAN",
+  "BERT",
+  "E-BERT",
+  "Date2Vec and learned position embeddings"
+ ],
+ "key_results": [
+  "News2013, HDBSCAN: B-Cubed F1 90.04 with SinPE-E-BERT vs 75.79 for E-BERT and 70.48 for TF-IDF.",
+  "TDT-1: TF-IDF + HDBSCAN is best (F1 91.16 vs 88.83).",
+  "Daily granularity works best on News2013 (F1 90.04 vs 77.20 monthly)."
+ ],
+ "strengths": [
+  "Simple fusion of time and text that helps with recurring events; ablations on time encoding, fusion and granularity."
+ ],
+ "limitations": [
+  {
+   "text": "Does not beat TF-IDF on the small TDT-1 dataset; English news only.",
+   "source": "reviewer observation from reported table"
+  },
+  {
+   "text": "Event-level clustering rather than probabilistic topic mixtures; time granularity must be tuned per dataset.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Included as event-level topic detection related to dynamic topic modelling.",
+ "fulltext_txt": "fulltext/txt/jiang2024topic.txt",
+ "arxiv_id": "2112.06166"
+}

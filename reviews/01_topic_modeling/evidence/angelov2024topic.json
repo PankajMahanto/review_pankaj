@@ -1,0 +1,65 @@
+{
+ "key": "angelov2024topic",
+ "source_id": "angelov2024topic",
+ "title": "Topic Modeling: Contextual Token Embeddings Are All You Need",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-emnlp.790",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "embedding-clustering",
+ "subcategory": "multi-vector contextual Top2Vec",
+ "task": "Topic discovery with phrase labels, hierarchy and topic spans",
+ "problem": "Existing models do not jointly solve choosing the number of topics, labelling topics, segmenting documents by topic and evaluating topic-document representativeness.",
+ "architecture": "Contextual-Top2Vec: contextual token embeddings from an SBERT model are mean-pooled in sliding windows to give multiple vectors per document; UMAP + HDBSCAN find dense areas whose centroids are topic vectors; hierarchical topic reduction merges smallest topics; token-level topic assignment gives topic spans; topics labelled with phrases. BERTScore recall/precision proposed for evaluation.",
+ "llm_or_encoder": "all-mpnet-base-v2 (SBERT); deberta-xlarge-mnli for BERTScore",
+ "datasets": [
+  {
+   "name": "20newsgroups",
+   "details": "18,846 documents, 20 labels"
+  },
+  {
+   "name": "Yahoo! Answers",
+   "details": "stratified sample of 50,000 documents, 10 labels"
+  }
+ ],
+ "metrics": [
+  "CNPMI",
+  "CV",
+  "CWE",
+  "CSBERT",
+  "ARI",
+  "AMI",
+  "BERTScore recall/precision/F1",
+  "run time"
+ ],
+ "baselines": [
+  "LDA",
+  "ETM",
+  "CTM",
+  "BERTopic",
+  "Top2Vec"
+ ],
+ "key_results": [
+  "20newsgroups: CNPMI 0.138 and CV 0.684 vs CTM 0.032 and 0.615.",
+  "Topic assignment: AMI 0.582 / ARI 0.442 vs Top2Vec 0.574 / 0.437 (20newsgroups).",
+  "BERTScore F1 0.409 vs 0.351 for Top2Vec; run time 4 min vs 1 min for LDA and BERTopic."
+ ],
+ "strengths": [
+  "Handles multi-topic documents via segments and gives phrase labels.",
+  "Proposes an evaluation of how representative topics are of their documents."
+ ],
+ "limitations": [
+  {
+   "text": "Pretrained embeddings may miss corpus nuances and introduce external bias; metrics cannot capture all nuances.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Top2Vec is better on CWE (0.126 vs 0.116 on 20newsgroups); topic assignment gains over Top2Vec are within standard deviation.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/angelov2024topic.txt"
+}

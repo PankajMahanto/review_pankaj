@@ -1,0 +1,57 @@
+{
+ "key": "li2024improving",
+ "source_id": "li2024improving",
+ "title": "Improving the TENOR of Labeling: Re-evaluating Topic Models for Content Analysis",
+ "venue": "Proceedings of EACL 2024 (long papers)",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.eacl-long.51",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "task-based (interactive labelling) evaluation",
+ "task": "Evaluating topic models by how well they help people build label sets",
+ "problem": "Coherence-based evaluation may not reflect how useful topic models are for real content analysis.",
+ "architecture": "TENOR: topic models combined with an active-learning classifier in an annotation interface; simulated labelling experiments, a 60-person user study (15 per group) on Bills and an expert pilot; label sets scored against gold labels with purity, ARI and adjusted NMI.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Bills",
+   "details": "U.S. congressional bills"
+  },
+  {
+   "name": "20newsgroup",
+   "details": "used in simulations"
+  }
+ ],
+ "metrics": [
+  "purity",
+  "ARI",
+  "ANMI",
+  "NPMI",
+  "subjective user ratings"
+ ],
+ "baselines": [
+  "no topic model (NONE)",
+  "LDA",
+  "sLDA",
+  "CTM",
+  "ETM",
+  "BERTopic"
+ ],
+ "key_results": [
+  "BERTopic has the highest NPMI (0.15 on Bills, 0.10 on 20newsgroup) and ETM the second highest, yet in simulated labelling CTM is best and ETM worst.",
+  "LDA and sLDA are better than or competitive with ETM and BERTopic in the labelling task; CTM is also best in the user study."
+ ],
+ "strengths": [
+  "Ties evaluation to a realistic content-analysis workflow with real users and experts."
+ ],
+ "limitations": [
+  {
+   "text": "Focuses on one narrow task; English data only.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/zli12321/TENOR.git",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/li2024improving.txt"
+}

@@ -1,0 +1,70 @@
+{
+ "key": "fang2024cwtm",
+ "source_id": "fang2024cwtm",
+ "title": "CWTM: Leveraging Contextualized Word Embeddings from BERT for Neural Topic Modeling",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/2s43a2fibaz5",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "BoW-free neural topic model on contextual word embeddings",
+ "task": "Topic modelling directly from BERT contextual word embeddings",
+ "problem": "Bag-of-words topic models ignore word order and cannot handle out-of-vocabulary words in new documents.",
+ "architecture": "Each BERT contextualised word embedding is mapped to a word-topic vector; an importance network weights words; document-topic vectors are weighted averages of word-topic vectors; trained with mutual-information, masked-language-model and reconstruction losses plus MMD distribution matching at document and topic levels; no BoW input.",
+ "llm_or_encoder": "BERT",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "13192 train / 5654 valid, average length 187.4, 20 classes"
+  },
+  {
+   "name": "TagMyNews",
+   "details": "22822 / 9782, average length 33.1, 7 classes"
+  },
+  {
+   "name": "Twitter",
+   "details": "TweetEval emotion, 3257 / 1421, 3 classes"
+  },
+  {
+   "name": "DBpedia",
+   "details": "560000 / 70000, 14 classes"
+  },
+  {
+   "name": "AGNews",
+   "details": "120000 / 7600, 4 classes"
+  }
+ ],
+ "metrics": [
+  "CV (Palmetto, Wikipedia)",
+  "embedding-centroid diversity",
+  "classification accuracy",
+  "OOV robustness (accuracy gap between test sets)"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "WLDA",
+  "CTM"
+ ],
+ "key_results": [
+  "50 topics: coherence 0.600 (20NG), 0.626 (TagMyNews), 0.633 (AGNews) vs LDA 0.550, 0.586, 0.578; on DBpedia LDA is slightly higher (0.571 vs 0.569).",
+  "OOV test (AGNews): accuracy 0.871 vs 0.85 on low-overlap documents (difference 0.021) vs LDA 0.826 vs 0.732."
+ ],
+ "strengths": [
+  "Removes the BoW dependence and gives word-level topic vectors usable for downstream tasks (e.g. NER)."
+ ],
+ "limitations": [
+  {
+   "text": "Human evaluation not yet done.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Compared against only four baselines, none of them recent embedding-clustering or LLM methods.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Authors state code will be shared on acceptance.",
+ "fulltext_txt": "fulltext/txt/fang2024cwtm.txt"
+}

@@ -1,0 +1,51 @@
+{
+ "key": "ecker2024labeling",
+ "source_id": "ecker2024labeling",
+ "title": "Labeling Results of Topic Models: Word Sense Disambiguation as Key Method for Automatic Topic Labeling with GermaNet",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/2n66ugmf7j2z",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "automatic topic labelling via word sense disambiguation",
+ "task": "Disambiguating polysemous topic words as the first step of GermaNet-based topic labelling",
+ "problem": "The top-ranked topic word is often a poor label; word nets can label topics but polysemous topic words must first be disambiguated, and glosses are often missing.",
+ "architecture": "Top2Vec (doc2vec, deep-learn) on German newspaper articles; topic words looked up in GermaNet; polysemous words disambiguated using the monosemous words of the same topic as context, with a Jiang-Conrath similarity or a vector similarity comparing mean German word2vec vectors of each sense's hypernyms/hyponyms with the topic words.",
+ "llm_or_encoder": "German word2vec (static)",
+ "datasets": [
+  {
+   "name": "Mannheimer Morgen",
+   "details": "M20 volume of DeReKo, 44 383 newspaper articles; Top2Vec found 348 topics"
+  }
+ ],
+ "metrics": [
+  "accuracy",
+  "precision",
+  "recall",
+  "F1 (weighted)"
+ ],
+ "baselines": [
+  "random sense baseline",
+  "Jiang-Conrath similarity"
+ ],
+ "key_results": [
+  "Vector similarity: accuracy 0.84, F1 0.83 vs JC similarity 0.74 / 0.74 and random baseline 0.58 / 0.59 on 1 105 labelled polysemous topic words."
+ ],
+ "strengths": [
+  "Works without glosses by using topic words as context; uses semantic relations in the word net."
+ ],
+ "limitations": [
+  {
+   "text": "Gold standard annotated by a single author without inter-annotator agreement; the final label-generation step was not yet tested.",
+   "source": "author-stated"
+  },
+  {
+   "text": "German only and static embeddings.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/jecker94/WSD_TM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/ecker2024labeling.txt"
+}

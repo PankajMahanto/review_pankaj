@@ -1,0 +1,61 @@
+{
+ "key": "koo2024platforminvariant",
+ "source_id": "koo2024platforminvariant",
+ "title": "Platform-Invariant Topic Modeling via Contrastive Learning to Mitigate Platform-Induced Bias",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-emnlp.650",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "contrastive, source-invariant topic model",
+ "task": "Topic modelling over posts aggregated from several social platforms",
+ "problem": "Platform-specific style and jargon bias topic models when documents from several platforms are pooled.",
+ "architecture": "PITopic: a fixed pretrained language-model backbone encodes posts; a shallow network maps them to K-dimensional topic embeddings; platform-invariant contrastive learning pulls together semantically similar posts across platforms; platform-specific jargon word sets are removed before topic-word extraction.",
+ "llm_or_encoder": "fixed pretrained backbone (e.g. BERT)",
+ "datasets": [
+  {
+   "name": "Real-world data (X, Reddit, YouTube)",
+   "details": "250,000 English posts per platform, December 2022 - March 2023 (1.5 million collected)"
+  },
+  {
+   "name": "Synthetic data (20NewsGroup, BBC, NYT)",
+   "details": "20NewsGroup, BBC and The New York Times as sources"
+  }
+ ],
+ "metrics": [
+  "mutual information between topics and platforms (lower is better)",
+  "topic diversity",
+  "NPMI",
+  "UCI"
+ ],
+ "baselines": [
+  "LDA",
+  "AVITM",
+  "Top2Vec",
+  "ClusterTM",
+  "CTM",
+  "BERTopic",
+  "UTopic"
+ ],
+ "key_results": [
+  "Real data: mutual information with platform 0.032 vs 0.073 for BERTopic and 0.097 for LDA; average NPMI 0.529 vs 0.339 for BERTopic.",
+  "A RoBERTa classifier identifies the platform of a post with 96% accuracy, showing strong platform signatures."
+ ],
+ "strengths": [
+  "Explicitly measures and reduces platform bias; tested on real and synthetic multi-source data."
+ ],
+ "limitations": [
+  {
+   "text": "No rule of thumb for the size of the jargon list; fixed backbone; one real-world keyword case study.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topics independent of platforms may miss platform-specific opinions.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/kde9867/Platform-Invariant-Topic-Modeling",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/koo2024platforminvariant.txt"
+}

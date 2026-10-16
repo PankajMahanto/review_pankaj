@@ -1,0 +1,66 @@
+{
+ "key": "lin2024combating",
+ "source_id": "lin2024combating",
+ "title": "Combating Label Sparsity in Short Text Topic Modeling via Nearest Neighbor Augmentation",
+ "venue": "Findings of the Association for Computational Linguistics: ACL 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-acl.817",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "short-text",
+ "subcategory": "kNN label completion for neural short-text topic models",
+ "task": "Short-text topic modelling",
+ "problem": "Short documents miss semantically relevant words, so the reconstruction target is incomplete (label sparsity) and the ELBO is biased.",
+ "architecture": "kNNTM: VAE-based neural topic model whose reconstruction target is augmented with words from the k nearest documents; neighbours found with a fused multi-view distance combining optimal-transport word-level similarity and global topic semantics.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "GoogleNews",
+   "details": "short news titles"
+  },
+  {
+   "name": "Snippet",
+   "details": "web search snippets"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "question titles"
+  }
+ ],
+ "metrics": [
+  "CV (Palmetto, Wikipedia)",
+  "TU",
+  "TQ = CV x TU",
+  "top-Purity",
+  "top-NMI"
+ ],
+ "baselines": [
+  "ProdLDA",
+  "WLDA",
+  "ECRTM",
+  "NQTM",
+  "MCTM",
+  "TSCTM"
+ ],
+ "key_results": [
+  "Snippet K = 50: TQ 0.365 vs TSCTM 0.346; top-NMI 0.427 vs 0.381.",
+  "GoogleNews K = 100: top-Purity 0.786 and top-NMI 0.868 vs TSCTM 0.766 and 0.842.",
+  "MCTM has the highest CV in most settings but much lower TU (e.g. 0.556 on GoogleNews K = 50)."
+ ],
+ "strengths": [
+  "Identifies and addresses the label-sparsity problem; strong clustering gains."
+ ],
+ "limitations": [
+  {
+   "text": "Optimal-transport distances between all document pairs are costly for very large datasets.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic coherence gains are small; on StackOverflow K = 100, CV is below several baselines (0.264).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/lin2024combating.txt"
+}

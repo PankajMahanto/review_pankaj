@@ -1,0 +1,74 @@
+{
+ "key": "gonzalezpizarro2024neural",
+ "source_id": "gonzalezpizarro2024neural",
+ "title": "Neural Multimodal Topic Modeling: A Comprehensive Evaluation",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/4bbxu76hf35b",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "multimodal",
+ "subcategory": "image-text neural topic models and image-based metrics",
+ "task": "Systematic evaluation of topic models for documents with text and images",
+ "problem": "Neural topic models handle text only; multimodal topic models were tested on few homogeneous datasets and lacked image-side metrics.",
+ "architecture": "Multimodal-ZeroShotTM: ZeroShotTM extended so CLIP text and image embeddings feed the encoder and both BoW and image features are reconstructed. Multimodal-Contrast: M3L-Contrast without the second-language branch (contrastive mapping of text and images to a shared topic space). New metrics: Image Embedding-based Coherence (IEC) and Image Embedding-based Pairwise Similarity (IEPS).",
+ "llm_or_encoder": "CLIP clip-ViT-B-32",
+ "datasets": [
+  {
+   "name": "MS COCO",
+   "details": "30,000 documents, average length 10.46"
+  },
+  {
+   "name": "VIST",
+   "details": "30,000, visual storytelling"
+  },
+  {
+   "name": "T4SA",
+   "details": "30,000 tweets"
+  },
+  {
+   "name": "MMHS150K",
+   "details": "30,000 tweets (hateful content)"
+  },
+  {
+   "name": "HC-4chan",
+   "details": "17,866 posts"
+  },
+  {
+   "name": "MEWA",
+   "details": "18,592 Wikipedia documents, average length 2,424.83"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "Cv",
+  "WE",
+  "IEC",
+  "TD",
+  "I-RBO",
+  "IEPS",
+  "human rating"
+ ],
+ "baselines": [
+  "LDA",
+  "CombinedTM",
+  "ZeroShotTM"
+ ],
+ "key_results": [
+  "Averaged over datasets, text coherence is similar for multimodal and text-only neural models (NPMI .03-.04, Cv .50-.52); LDA is lowest (NPMI -0.14).",
+  "Image coherence IEC .67 for Multimodal-Contrast vs .56 for Multimodal-ZeroShotTM; image diversity IEPS .41 vs .44.",
+  "Neither multimodal model wins on all dataset-metric combinations."
+ ],
+ "strengths": [
+  "First broad benchmark (six diverse datasets) and first image-side coherence/diversity metrics, checked in a small user study."
+ ],
+ "limitations": [
+  {
+   "text": "English-only datasets; only coherence and diversity evaluated (no coverage or comprehensiveness); hyperparameter effects not explored.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/gonzalezf/multimodal_neural_topic_modeling",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/gonzalezpizarro2024neural.txt"
+}

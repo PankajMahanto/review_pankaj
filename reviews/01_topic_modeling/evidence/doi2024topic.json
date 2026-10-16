@@ -1,0 +1,62 @@
+{
+ "key": "doi2024topic",
+ "source_id": "doi2024topic",
+ "title": "Topic Modeling for Short Texts with Large Language Models",
+ "venue": "Proceedings of ACL 2024 (Volume 4: Student Research Workshop)",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.acl-srw.3",
+ "read_from": "ACL Anthology PDF; extended version arXiv 2406.00697 also read",
+ "evidence_level": "full-text (published)",
+ "category": "llm-based",
+ "subcategory": "parallel and sequential prompting",
+ "task": "Short-text topic modelling with prompted LLMs",
+ "problem": "Short texts lack co-occurrence for conventional topic models, and LLM context limits prevent processing a whole corpus at once.",
+ "architecture": "Documents are split into equal subsets below the context limit. Parallel prompting: topics per subset, then an LLM merges them. Sequential prompting: each subset is processed with the topics found so far. New metrics: document coverage (share of documents covered by the topics) and factuality (share of topic words present in the documents).",
+ "llm_or_encoder": "gpt-3.5-turbo-0125, gpt-4-0125-preview",
+ "datasets": [
+  {
+   "name": "Tweet",
+   "details": "2000 documents, average length 5.47"
+  },
+  {
+   "name": "GoogleNewsT",
+   "details": "11000 documents, average length 5.25"
+  },
+  {
+   "name": "StackOverFlow",
+   "details": "19000 documents, average length 4.71"
+  }
+ ],
+ "metrics": [
+  "Cv",
+  "TU",
+  "document coverage (DC)",
+  "factuality (Fa)"
+ ],
+ "baselines": [
+  "LDA",
+  "TSCTM",
+  "BERTopic (with and without data augmentation)"
+ ],
+ "key_results": [
+  "GPT-4 gives the best Cv, e.g. GoogleNewsT K = 5: 0.618 vs BERTopic 0.439.",
+  "Lower document coverage than baselines, e.g. StackOverFlow K = 15: GPT-4 0.754 vs LDA 0.842, indicating shortcuts.",
+  "Factuality stays high (e.g. GPT-4Seq 0.951 on GoogleNewsT K = 15); most non-existent topic words are synonyms or derivatives of document words."
+ ],
+ "strengths": [
+  "Handles corpora larger than the context window; introduces reusable coverage and factuality metrics."
+ ],
+ "limitations": [
+  {
+   "text": "Only closed GPT models; training-data contamination cannot be ruled out; Llama 2 did not follow the output format; no per-document topic assignment yet.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Evaluated on 1000-document subsets per prompting run; no human evaluation.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Extended version: Doi, Isonuma, Yanaka, 'Comprehensive Evaluation of Large Language Models for Topic Modeling', arXiv 2406.00697 (logged as FT2 duplicate version). The extended version adds a controllability test: category-specific prompts raise coverage of the target category (computer 0.925 vs 0.621 with the base prompt) but stay below an oracle (0.968) and lower factuality.",
+ "fulltext_txt": "fulltext/txt/doi2024topic.txt"
+}

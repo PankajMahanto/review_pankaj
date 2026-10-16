@@ -1,0 +1,70 @@
+{
+ "key": "kumar2024foto",
+ "source_id": "kumar2024foto",
+ "title": "FoTo: Targeted Visual Topic Modeling for Focused Analysis of Short Texts",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/4osxr28kbpw7",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "short-text",
+ "subcategory": "targeted topic model with joint 2-D visualisation",
+ "task": "Finding and visualising topics relevant to user keywords in short texts",
+ "problem": "Short-text sparsity yields weak topics, and full-corpus topic models do not focus on the aspects a user cares about.",
+ "architecture": "Generative model in which topics and documents get coordinates in a visualisation space (topic coordinates from topic embeddings; word distributions softmax over word embeddings); documents draw topics from distance-based probabilities; user aspects are embedded as points, and a pairwise document-ranking likelihood keeps documents relevant to an aspect closer to it; skip-gram word embeddings reduce sparsity.",
+ "llm_or_encoder": "skip-gram word embeddings",
+ "datasets": [
+  {
+   "name": "BBC",
+   "details": "2,095 news articles, 5 classes"
+  },
+  {
+   "name": "SEARCHSNIPPET",
+   "details": "12,076 web snippets, 8 domains"
+  },
+  {
+   "name": "YAHOOANSWERS",
+   "details": "40,802 question titles and contents, 10 classes"
+  },
+  {
+   "name": "NEWSCATEGORY",
+   "details": "145,304 HuffPost headlines and descriptions, 15 categories"
+  }
+ ],
+ "metrics": [
+  "sum of averaged cosine similarity to query keywords (SOAC)",
+  "AUCPR of relevant documents",
+  "k-NN accuracy of the visualisation"
+ ],
+ "baselines": [
+  "TTM",
+  "QDTM",
+  "BERTopic",
+  "ProdLDA",
+  "ETM",
+  "ASTM",
+  "TSCTM",
+  "PLSV",
+  "WTM"
+ ],
+ "key_results": [
+  "Authors report FoTo 'consistently achieves the highest SOAC value in most settings' (Figure 4), while targeted models TTM and QDTM perform comparably to non-targeted ones.",
+  "Four queries per dataset mixing popular and rare aspects (e.g. SEARCHSNIPPET Q3 = sporting, athlete, racing)."
+ ],
+ "strengths": [
+  "Unifies targeted topic modelling and document visualisation in one generative model."
+ ],
+ "limitations": [
+  {
+   "text": "Designed for short texts; extension to general texts left for future work.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Results are reported in figures only, so exact values are not available for comparison.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/sanujsriv/FoTo",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/kumar2024foto.txt"
+}

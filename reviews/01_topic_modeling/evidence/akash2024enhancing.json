@@ -1,0 +1,69 @@
+{
+ "key": "akash2024enhancing",
+ "source_id": "akash2024enhancing",
+ "title": "Enhancing Short-Text Topic Modeling with LLM-Driven Context Expansion and Prefix-Tuned VAEs",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.findings-emnlp.917",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "short-text",
+ "subcategory": "LLM context expansion + prefix-tuned VAE",
+ "task": "Topic modelling of very short texts",
+ "problem": "Short texts lack word co-occurrence; expanding them with an LLM helps but can shift meaning and is slow at inference.",
+ "architecture": "Step 1: LLAMA2 expands each short text into a longer text. Step 2: PVTM, a smaller language model trained with prefix tuning and coupled with a VAE, infers topics from the short text and is trained to reconstruct the LLM-expanded text, so expanded texts are needed only for training.",
+ "llm_or_encoder": "LLAMA2 (expansion); smaller prefix-tuned LM",
+ "datasets": [
+  {
+   "name": "TagMyNews Titles",
+   "details": "5000 documents, average length 5.78, 7 labels"
+  },
+  {
+   "name": "Google News",
+   "details": "11108 documents, average length 6.11, 152 labels"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "19899 question titles, average length 4.49, 20 labels"
+  }
+ ],
+ "metrics": [
+  "CV",
+  "IRBO",
+  "classification accuracy (SVM, LR; 5-fold)"
+ ],
+ "baselines": [
+  "LDA",
+  "ProdLDA",
+  "NMF",
+  "BERTopic",
+  "NQTM",
+  "CTM",
+  "CLNTM",
+  "TSCTM",
+  "vONTSS",
+  "DeTiME"
+ ],
+ "key_results": [
+  "Running LDA on LLM-expanded texts raises CV from 0.399 to 0.523.",
+  "TagMyNews, K = 20: PVTM CV 0.632 vs CTM 0.618.",
+  "Classification on StackOverflow, K = 50 (SVM): 0.825 vs CTM 0.814 on short texts; CTM drops to 0.656 on expanded texts, showing topic drift."
+ ],
+ "strengths": [
+  "Uses LLM knowledge without needing the LLM at inference time.",
+  "Separates topic quality from topic faithfulness via classification."
+ ],
+ "limitations": [
+  {
+   "text": "LLM generation can be noisy and out-of-domain; PVTM does not fully solve extreme sparsity (TagMyNews).",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not best everywhere: e.g. Google News K = 20 LR accuracy 0.569 vs TSCTM on expanded texts 0.699.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/pritomsaha/PVTM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/akash2024enhancing.txt"
+}

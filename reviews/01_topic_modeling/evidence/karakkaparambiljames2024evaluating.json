@@ -1,0 +1,60 @@
+{
+ "key": "karakkaparambiljames2024evaluating",
+ "source_id": "karakkaparambiljames2024evaluating",
+ "title": "Evaluating Dynamic Topic Models",
+ "venue": "Proceedings of ACL 2024 (long papers)",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.acl-long.11",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "temporal evaluation measures for dynamic topic models",
+ "task": "Measuring the quality of topic evolution in dynamic topic models",
+ "problem": "Existing measures score each time slice separately and do not evaluate how topics change over time.",
+ "architecture": "Temporal Topic Coherence (NPMI over word pairs across consecutive timestamps of a topic), Temporal Topic Smoothness (inverse diversity of a topic over a time window), their product Temporal Topic Quality, and Dynamic Topic Quality combining year-wise and temporal quality; validated with synthetic noise, temporal word intrusion and human ratings (18 annotators).",
+ "llm_or_encoder": "none (evaluates D-LDA, D-ETM and an LLM-based baseline)",
+ "datasets": [
+  {
+   "name": "NeurIPS",
+   "details": "papers over time"
+  },
+  {
+   "name": "NYT",
+   "details": "news over time"
+  },
+  {
+   "name": "UN",
+   "details": "UN debates over time"
+  }
+ ],
+ "metrics": [
+  "TTC",
+  "TTS",
+  "TTQ",
+  "DTQ",
+  "Spearman correlation with intrusion and human ratings"
+ ],
+ "baselines": [
+  "year-wise topic coherence and diversity baselines (B-TC, B-TS)"
+ ],
+ "key_results": [
+  "Spearman correlation with temporal word intrusion: 0.87-0.98 (D-LDA) and 0.88-0.98 (D-ETM) across measures and datasets.",
+  "Human ratings: TTC rho 0.57 / 0.63 / 0.51 vs baseline coherence 0.21 / 0.17 / -0.02 on NeurIPS / NYT / UN."
+ ],
+ "strengths": [
+  "First measures dedicated to temporal topic quality, validated by humans."
+ ],
+ "limitations": [
+  {
+   "text": "Non-expert annotators; results depend on the reference corpus, which may be thin for some time steps.",
+   "source": "author-stated"
+  },
+  {
+   "text": "TTS is not better than the baseline smoothness on NYT and UN (0.82 vs 0.83, 0.79 vs 0.81).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/karakkaparambiljames2024evaluating.txt"
+}

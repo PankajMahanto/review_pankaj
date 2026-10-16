@@ -3,5 +3,10 @@
   "key": "sevinc2026nonnegative",
   "code": "FT1",
   "reason": "R-package NMF benchmark on 26 non-text UCI/Kaggle tables; no text or topic-modelling use (read in full)."
+ },
+ {
+  "key": "doi2024comprehensive",
+  "code": "FT2",
+  "reason": "Extended arXiv version (2406.00697) of the included peer-reviewed study doi2024topic (ACL SRW 2024); same core experiments and tables, plus a controllability experiment that is summarised in the doi2024topic record. Read in full."
  }
 ]

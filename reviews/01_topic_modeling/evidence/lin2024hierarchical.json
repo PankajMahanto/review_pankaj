@@ -1,0 +1,65 @@
+{
+ "key": "lin2024hierarchical",
+ "source_id": "lin2024hierarchical",
+ "title": "Hierarchical Topic Modeling via Contrastive Learning and Hyperbolic Embedding",
+ "venue": "Proceedings of LREC-COLING 2024",
+ "year": 2024,
+ "doi": "10.63317/3gmp44rwznqd",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "hierarchical",
+ "subcategory": "GAN-based hierarchical topic model in hyperbolic space",
+ "task": "Learning topic hierarchies",
+ "problem": "Euclidean hierarchical topic models lose tree-like semantics, and GAN topic models suffer mode collapse from latent discontinuity.",
+ "architecture": "hHTM: encoder with MoCo-style contrastive learning on TF-IDF documents (masked-word augmentation), generator/decoder and discriminator (GAN); topic embeddings projected into hyperbolic space; multi-head self-attention learns parent-child topic structure under DAG constraints.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "NIPS",
+   "details": "1,350 train / 149 test, vocabulary 3,531"
+  },
+  {
+   "name": "20News",
+   "details": "11,314 / 7,531, vocabulary 3,997"
+  },
+  {
+   "name": "Wikitext-103",
+   "details": "28,472 / 120, vocabulary 20,000"
+  }
+ ],
+ "metrics": [
+  "NPMI",
+  "CLNPMI (parent-child)",
+  "TU",
+  "TQ",
+  "topic specialization"
+ ],
+ "baselines": [
+  "SawETM",
+  "HyperMiner",
+  "nTSNTM",
+  "nFNTM",
+  "CluHTM",
+  "NSEM-GMHTM"
+ ],
+ "key_results": [
+  "Best CLNPMI on all datasets (e.g. 20News 0.215 vs 0.164) and best TU (Wikitext-103 0.912 vs 0.797).",
+  "NPMI best only on Wikitext-103 (0.274); NSEM-GMHTM higher on NIPS (0.147) and 20News (0.307)."
+ ],
+ "strengths": [
+  "Combines hyperbolic geometry with contrastive learning for more reasonable parent-child topics."
+ ],
+ "limitations": [
+  {
+   "text": "Future work needs external prior knowledge to guide contrastive learning.",
+   "source": "author-stated"
+  },
+  {
+   "text": "GAN training adds complexity; all models fixed at 200 topics.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/Adrian-LZC/hHTM",
+ "notes": "CluHTM did not converge within 48 hours on Wikitext-103.",
+ "fulltext_txt": "fulltext/txt/lin2024hierarchical.txt"
+}

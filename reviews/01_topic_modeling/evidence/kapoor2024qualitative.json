@@ -1,0 +1,53 @@
+{
+ "key": "kapoor2024qualitative",
+ "source_id": "kapoor2024qualitative",
+ "title": "Qualitative Insights Tool (QualIT): LLM Enhanced Topic Modeling",
+ "venue": "arXiv preprint",
+ "year": 2024,
+ "doi": "",
+ "arxiv_id": "2409.15626",
+ "read_from": "arXiv preprint 2409.15626",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "LLM key-phrase extraction + clustering",
+ "task": "Topic and sub-topic discovery for qualitative research (talent management)",
+ "problem": "LDA misses nuanced semantics and BERTopic assumes one topic per document.",
+ "architecture": "Claude-2.1 extracts key phrases per document; a hallucination check removes phrases whose embedding cosine similarity to the document (Amazon Titan embeddings) is below 10%; two-level K-Means clustering of key phrases gives topics and sub-topics.",
+ "llm_or_encoder": "Claude-2.1; Amazon Titan embeddings",
+ "datasets": [
+  {
+   "name": "20 NewsGroups",
+   "details": "about 20,000 articles, 20 categories"
+  }
+ ],
+ "metrics": [
+  "topic coherence (NPMI)",
+  "topic diversity",
+  "human agreement with ground-truth categories"
+ ],
+ "baselines": [
+  "LDA",
+  "BERTopic"
+ ],
+ "key_results": [
+  "At 20 topics: coherence 70.0% and diversity 95.5% vs BERTopic 65.0% / 85.0% and LDA 57.0% / 72.0%.",
+  "Averaged over 10-50 topics: coherence 64.4% vs BERTopic 61.0%; at 40-50 topics BERTopic is slightly better on coherence.",
+  "At least 2 of 4 evaluators agreed on 80% of QualIT topics vs 45% for BERTopic."
+ ],
+ "strengths": [
+  "Handles multiple topics per document via key phrases and filters hallucinated phrases."
+ ],
+ "limitations": [
+  {
+   "text": "Runtime of 2-3 hours vs about 30 minutes for BERTopic; K-Means less effective than HDBSCAN in preliminary comparisons.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Single benchmark dataset and only two baselines; proprietary LLM.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/kapoor2024qualitative.txt"
+}

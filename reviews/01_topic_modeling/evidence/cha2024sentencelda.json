@@ -1,0 +1,63 @@
+{
+ "key": "cha2024sentencelda",
+ "source_id": "cha2024sentencelda",
+ "title": "SentenceLDA: Discriminative and Robust Document Representation with Sentence Level Topic Model",
+ "venue": "Proceedings of EACL 2024 (long papers)",
+ "year": 2024,
+ "doi": "10.18653/v1/2024.eacl-long.31",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "probabilistic",
+ "subcategory": "sentence-level Gaussian LDA",
+ "task": "Discriminative, paraphrase-robust document representations",
+ "problem": "Word-level topic models rely on spelling, so lexically similar documents with different topics are confused and paraphrases are not recognised.",
+ "architecture": "Gaussian LDA where the observed unit is a SentenceBERT sentence embedding: topics are Gaussians (Normal-Inverse-Wishart priors) in embedding space, each sentence draws a topic from the document's Dirichlet topic proportions; Gibbs sampling; topic sentences decoded for interpretation.",
+ "llm_or_encoder": "SentenceBERT (all-mpnet-base-v2)",
+ "datasets": [
+  {
+   "name": "20News",
+   "details": "18,846 documents (18,327 non-empty), 6 coarse and 20 fine classes"
+  },
+  {
+   "name": "NYT",
+   "details": "11,744 documents, 5 coarse and 26 fine classes"
+  },
+  {
+   "name": "DebateSum",
+   "details": "argumentative corpus for opinion mining"
+  }
+ ],
+ "metrics": [
+  "classification accuracy and F1 (logistic regression, random forest)",
+  "robustness to paraphrase (D_sum, Kendall tau)",
+  "BERTScore"
+ ],
+ "baselines": [
+  "LDA",
+  "GaussianLDA",
+  "ContextualTM (CTM)",
+  "SenClu"
+ ],
+ "key_results": [
+  "20News, 20 topics, all classes: accuracy 42.73% vs SenClu 40.91% and LDA 37.99%.",
+  "NYT, 20 topics, Arts: 95.81% vs SenClu 85.91%.",
+  "NYT, 20 topics, all classes: LDA is better (82.98% vs 65.65%)."
+ ],
+ "strengths": [
+  "Keeps LDA's probabilistic interpretation while working at sentence level.",
+  "Explicit robustness test with paraphrased texts."
+ ],
+ "limitations": [
+  {
+   "text": "Very slow: 20 sampling iterations on NYT with 20 topics take nearly a day; coherence/diversity metrics for sentence-level topics are lacking; generated topic sentences may be non-factual.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Word-level LDA beats SentenceLDA on several NYT settings (e.g. all 26 classes, sports).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/cth127/sentencelda",
+ "notes": "SenClu trained on merged train/test data, which may favour it.",
+ "fulltext_txt": "fulltext/txt/cha2024sentencelda.txt"
+}
