@@ -1,0 +1,86 @@
+{
+ "key": "deng2026enabling",
+ "category": "multimodal",
+ "subcategory": "unified retriever-generator MLLM with collaborative parametric knowledge calibration for KB-VQA",
+ "task": "Knowledge-based visual question answering",
+ "problem": "Retriever and answer generator in retrieval-augmented KB-VQA are trained as separate modules with limited interaction, preventing bi-directional knowledge sharing.",
+ "architecture": "UniRVQA: one MLLM (BLIP2 or InstructBLIP with Q-Former + Flan-T5-XL) serves as both retriever and generator; jointly trained on ColBERT-style late-interaction knowledge retrieval, retrieval-augmented answer generation and a reflective-answering task that teaches the model to judge its own knowledge boundary; DoRA fine-tuning.",
+ "retriever": "late-interaction (ColBERT-style) retrieval with the shared MLLM encoder",
+ "generator": "BLIP2-Flan-T5-XL or InstructBLIP-Flan-T5-XL",
+ "knowledge_source": "Google Search Corpus (OK-VQA) and Wikipedia (InfoSeek)",
+ "llm_or_encoder": "BLIP2 / InstructBLIP (Flan-T5-XL)",
+ "datasets": [
+  {
+   "name": "OK-VQA",
+   "details": "over 10k questions on MSCOCO images; Google Search Corpus of 166,389 passages"
+  },
+  {
+   "name": "InfoSeek",
+   "details": "down-sampled subset; Wikipedia knowledge base"
+  }
+ ],
+ "metrics": [
+  "Exact Match",
+  "VQA Score",
+  "Pseudo Relevance Recall (PRR@5, PRR@10)"
+ ],
+ "baselines": [
+  "KAT",
+  "TRiG",
+  "MAVEx",
+  "RA-VQA",
+  "FLMR",
+  "PreFLMR",
+  "PICa",
+  "Prophet",
+  "REVIVE",
+  "PALI",
+  "Flamingo",
+  "PaLM-E",
+  "DPR",
+  "CLIP + FiD"
+ ],
+ "key_results": [
+  "OK-VQA EM 66.79%, a 4.78% improvement over the best reported system.",
+  "InfoSeek accuracy 22.06 (all) vs 20.9 for CLIP + FiD and 20.4 for CLIP + PaLM.",
+  "Retrieval PRR@5: 68.51 on InfoSeek vs 59.60 for PreFLMR; 90.47 on OK-VQA vs 89.32 for FLMR.",
+  "Training takes about 3 GPU hours for 3,000 steps."
+ ],
+ "strengths": [
+  "Single shared network for retrieval and generation reduces model size; ablations show joint calibration beats separate or sequential training.",
+  "Results averaged over 3 seeds; reflective answering improves EM."
+ ],
+ "limitations": [
+  {
+   "text": "InfoSeek experiments use a down-sampled subset.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Gains in OK-VQA retrieval over prior models are small (about 1%).",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Evaluated with ~3B Flan-T5-XL-based MLLMs only.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "",
+ "notes": "Read from the arXiv copy (published version in Knowledge-Based Systems).",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "deng2026enabling",
+ "cid": "C00310",
+ "corpus_id": "P0774",
+ "title": "Enabling collaborative parametric knowledge calibration for retrieval-augmented Vision Question Answering",
+ "venue": "Knowl. Based Syst. 2026",
+ "year": 2026,
+ "doi": "10.1016/j.knosys.2026.116157",
+ "read_from": "open-access copy (https://arxiv.org/pdf/2504.04065)",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/deng2026enabling.txt"
+}

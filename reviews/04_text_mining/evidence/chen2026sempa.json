@@ -1,0 +1,72 @@
+{
+ "key": "chen2026sempa",
+ "source_id": "C00017",
+ "title": "SemPA: Improving Sentence Embeddings of Large Language Models through Semantic Preference Alignment",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1858",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-embedding",
+ "subcategory": "preference optimisation (sentence-level DPO) of decoder LLMs for embeddings",
+ "task": "Sentence embeddings (STS) while preserving generation ability",
+ "problem": "Prompt-based LLM embeddings are not optimised, while architecture changes (bidirectional attention, contrastive fine-tuning) damage the LLM's generative ability.",
+ "architecture": "Sentence-level Direct Preference Optimization on a paraphrase-generation task built from NLI triplets (entailment = preferred, contradiction = rejected) with LoRA; embedding read from the last token of a PromptEOL-style template; theoretical link between DPO and contrastive learning under the Plackett-Luce model.",
+ "llm_or_encoder": "LLaMA2-7B, LLaMA3-8B",
+ "datasets": [
+  {
+   "name": "NLI (SimCSE NLI triplets)",
+   "details": "275K triplets, 40-80K used"
+  },
+  {
+   "name": "STS12-16 / STS-B / SICK-R",
+   "details": "evaluation, Spearman"
+  }
+ ],
+ "metrics": [
+  "Spearman correlation",
+  "uniformity",
+  "isotropy",
+  "general LLM benchmarks"
+ ],
+ "baselines": [
+  "BERT-avg",
+  "Sentence-T5-avg",
+  "PromptBERT",
+  "SBERT",
+  "LLM2Vec",
+  "Echo Embedding",
+  "PromptEOL",
+  "Contrastive Prompting",
+  "Token Prepending"
+ ],
+ "key_results": [
+  "Average STS Spearman 78.10 with LLaMA3-8B vs 75.34 for Token Prepending and 71.90 for PromptEOL.",
+  "With LLaMA2-7B: 77.69 vs 77.19 for Token Prepending."
+ ],
+ "compare": [
+  {
+   "benchmark": "STS avg (7)",
+   "setting": "LLaMA3-8B",
+   "value": "78.10"
+  }
+ ],
+ "strengths": [
+  "Keeps generative capability of the LLM (evaluated on general LLM benchmarks).",
+  "Formal connection between DPO and contrastive learning."
+ ],
+ "limitations": [
+  {
+   "text": "Preliminary, lightweight experiments; dataset quantity/quality and prompt optimisation not explored.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Pairwise DPO uses only binary comparisons; listwise preference optimisation could exploit more ranking information.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/szu-tera/SemPA",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/chen2026sempa.txt"
+}

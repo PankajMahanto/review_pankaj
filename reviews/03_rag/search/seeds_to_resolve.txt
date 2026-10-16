@@ -1,0 +1,91 @@
+Retrieval-Augmented Generation for Large Language Models: A Survey
+HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering
+Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection
+Natural Questions: A Benchmark for Question Answering Research
+Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps
+Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension
+From Local to Global: A Graph RAG Approach to Query-Focused Summarization
+Unsupervised Dense Information Retrieval with Contrastive Learning
+When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories
+MuSiQue: Multihop Questions via Single-hop Question Composition
+A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions
+DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
+HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models
+Improving Language Models by Retrieving from Trillions of Tokens
+Lost in the Middle: How Language Models Use Long Contexts
+The Probabilistic Relevance Framework: BM25 and Beyond
+LoRA: Low-Rank Adaptation of Large Language Models
+Llama 2: Open Foundation and Fine-Tuned Chat Models
+Text Embeddings by Weakly-Supervised Contrastive Pre-training
+ReAct: Synergizing Reasoning and Acting in Language Models
+Graph Retrieval-Augmented Generation: A Survey
+Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning
+Precise Zero-Shot Dense Retrieval without Relevance Labels
+ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT
+RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval
+DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
+MS MARCO: A Human Generated MAchine Reading COmprehension Dataset
+Direct Preference Optimization: Your Language Model is Secretly a Reward Model
+Measuring and Narrowing the Compositionality Gap in Language Models
+From RAG to Memory: Non-Parametric Continual Learning for Large Language Models
+Semantic Parsing on Freebase from Question-Answer Pairs
+Reasoning on Graphs: Faithful and Interpretable Large Language Model Reasoning
+R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning
+RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation
+Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph
+Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents
+The Power of Noise: Redefining Retrieval for RAG Systems
+Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
+ColPali: Efficient Document Retrieval with Vision Language Models
+Wizard of Wikipedia: Knowledge-Powered Conversational Agents
+ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction
+ASQA: Factoid Questions Meet Long-Form Answers
+Large Language Models Can Be Easily Distracted by Irrelevant Context
+FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+C-Pack: Packaged Resources To Advance General Chinese Embedding
+Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models
+Trusting Your Evidence: Hallucinate Less with Context-aware Decoding
+FEVER: a Large-scale Dataset for Fact Extraction and VERification
+Toolformer: Language Models Can Teach Themselves to Use Tools
+GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning
+The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation
+M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation
+RAFT: Adapting Language Model to Domain Specific RAG
+Proximal Policy Optimization Algorithms
+Enabling Large Language Models to Generate Text with Citations
+Billion-scale similarity search with GPUs
+Knowledge Conflicts for LLMs: A Survey
+Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts
+Large Language Models Struggle to Learn Long-Tail Knowledge
+Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+WebGPT: Browser-assisted question-answering with human feedback
+LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression
+Retrieval meets Long Context Large Language Models
+Certifiably Robust RAG against Retrieval Corruption
+StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization
+Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?
+OK-VQA: A Visual Question Answering Benchmark Requiring External Knowledge
+Generalization through Memorization: Nearest Neighbor Language Models
+End-to-End Training of Multi-Document Reader and Retriever for Open-Domain Question Answering
+Did Aristotle Use a Laptop? A Question Answering Benchmark with Implicit Reasoning Strategies
+ZeroSearch: Incentivize the Search Capability of LLMs without Searching
+WebThinker: Empowering Large Reasoning Models with Deep Research Capability
+Query Rewriting for Retrieval-Augmented Large Language Models
+LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models
+Retrieval-Augmented Multimodal Language Modeling
+M3DocRAG: Multi-modal Retrieval is What You Need for Multi-page Multi-document Understanding
+Generate rather than Retrieve: Large Language Models are Strong Context Generators
+Entity-Based Knowledge Conflicts in Question Answering
+Phantom: General Trigger Attacks on Retrieval Augmented Language Generation
+Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval
+Reading Wikipedia to Answer Open-Domain Questions
+BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models
+ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning
+Query2doc: Query Expansion with Large Language Models
+ChatQA: Surpassing GPT-4 on Conversational QA and RAG
+Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG
+Poisoning Retrieval Corpora by Injecting Adversarial Passages
+Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP
+Dense X Retrieval: What Retrieval Granularity Should We Use?
+Encyclopedic VQA: Visual Questions About Detailed Properties of Fine-Grained Categories

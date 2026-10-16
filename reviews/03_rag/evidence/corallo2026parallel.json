@@ -1,0 +1,81 @@
+{
+ "key": "corallo2026parallel",
+ "category": "efficiency",
+ "subcategory": "parallel per-document KV caches aggregated at decoding time (retrieval-aware contrastive decoding)",
+ "task": "Multi-document RAG, in-context learning and long-context QA",
+ "problem": "Concatenating retrieved documents creates prefill bottlenecks, while encoding document KV caches separately is fast but breaks cross-document reasoning.",
+ "architecture": "PCED: each retrieved document is an 'expert' with its own cached KV state; at every token step expert logits are calibrated against a no-context 'amateur' (context-aware decoding) and weighted by a retrieval prior (log relevance score); the best-supported token is chosen across experts and appended to all histories, stitching evidence across documents without shared attention.",
+ "retriever": "benchmark passages re-ranked with bge-reranker-v2-m3 (top-90); relevance priors from bge-m3 sparse, dense or ColBERT scores",
+ "generator": "Mistral-NeMo-13B-Instruct, Llama-3.1-8B-Instruct, Qwen3-8B (128k with YaRN)",
+ "knowledge_source": "LOFT and LongBench document collections",
+ "llm_or_encoder": "Mistral-NeMo-13B, Llama-3.1-8B, Qwen3-8B",
+ "datasets": [
+  {
+   "name": "LOFT",
+   "details": "HotpotQA, MuSiQue, NQ, QAMPARI, QUEST (RAG) and ICL tasks"
+  },
+  {
+   "name": "LongBench",
+   "details": "query-focused subsets with distractors"
+  }
+ ],
+ "metrics": [
+  "Subspan Exact Match",
+  "Exact Match",
+  "LongBench official metrics",
+  "time-to-first-token"
+ ],
+ "baselines": [
+  "APE (KV cache merging)",
+  "MapReduce agentic aggregation",
+  "Corpus in Ctx (single / all)",
+  "entropy-based ensembles (CLeHe, LeEns)"
+ ],
+ "key_results": [
+  "Llama-3.1-8B on LOFT QAMPARI: 77 (PCED-Sparse) vs 7 for APE KV merging.",
+  "Mistral-NeMo-13B on NQ: 81.0 (PCED-Dense) vs 76.0 with all documents in context and 38.0 for APE.",
+  "PCED-Dense outperforms full concatenation in 10/16 settings and gives over 180x speedup in time-to-first-token.",
+  "With 64 candidates on HotpotQA, PCED-Dense keeps 64 while entropy-based ensembles drop to 14-15."
+ ],
+ "strengths": [
+  "Training-free; recovers cross-document reasoning at decode time with large latency gains.",
+  "Paired randomisation tests and analysis of robustness to large candidate pools."
+ ],
+ "limitations": [
+  {
+   "text": "Requires full access to per-step logits, so it cannot be used with closed or API-only models.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Depends on retrieval quality and static relevance scores, which may become stale in iterative pipelines.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Precomputed KV caches impose large storage (about 11.04 GB for the LOFT HotpotQA corpus with Llama-3.1-8B).",
+   "source": "author-stated"
+  },
+  {
+   "text": "On Llama-3.1-8B, full-context concatenation is still better on several RAG tasks (e.g. HotpotQA 73 vs 64).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/giulio98/pced",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "corallo2026parallel",
+ "cid": "C00110",
+ "corpus_id": "P0340",
+ "title": "Parallel Context-of-Experts Decoding for Retrieval Augmented Generation",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1635",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/corallo2026parallel.txt"
+}

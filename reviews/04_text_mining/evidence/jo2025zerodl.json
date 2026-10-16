@@ -1,0 +1,76 @@
+{
+ "key": "jo2025zerodl",
+ "source_id": "C00018",
+ "title": "ZeroDL: Zero-shot Distribution Learning for Text Clustering via Large Language Models",
+ "venue": "Findings of ACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-acl.1005",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "text-to-text clustering via aggregated zero-shot inferences (generated class descriptions)",
+ "task": "Text clustering of classification datasets with an LLM",
+ "problem": "When a task cannot be fully described in a prompt (no ground-truth labels), LLMs cannot perform it; few-shot prompts overfit to demonstrations.",
+ "architecture": "Three stages: open-ended zero-shot inference on the whole dataset, aggregation of the outputs into meta-level class descriptions, and final prompting with the aggregated class information to assign each text to a cluster.",
+ "llm_or_encoder": "mistral-7b-instruct-v0.2 (main), Qwen-2.5, Gemma-2, Llama-3.1, HyperCLOVA X SEED",
+ "datasets": [
+  {
+   "name": "IMDB",
+   "details": "sentiment"
+  },
+  {
+   "name": "SST-2 / SST-5",
+   "details": "sentiment"
+  },
+  {
+   "name": "YelpReviews",
+   "details": "sentiment"
+  },
+  {
+   "name": "AGNews",
+   "details": "topic"
+  },
+  {
+   "name": "DBpedia",
+   "details": "topic"
+  },
+  {
+   "name": "YahooAnswers",
+   "details": "topic"
+  }
+ ],
+ "metrics": [
+  "accuracy (best label mapping)"
+ ],
+ "baselines": [
+  "IDAS",
+  "llm2vec + K-Means",
+  "Gold class labels in the prompt"
+ ],
+ "key_results": [
+  "ZeroDL surpasses prompting with gold class labels on several datasets and outperforms IDAS especially on datasets with more than two classes.",
+  "Generated labels reveal unseen categories such as 'Ambiguous Sentiment' and 'Mixed Sentiment' on SST-5."
+ ],
+ "strengths": [
+  "Allows perspective-specific clustering (e.g. by sentiment vs topic) through text.",
+  "Produces interpretable class descriptions."
+ ],
+ "limitations": [
+  {
+   "text": "Relies on carefully designed prompts that may introduce bias.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not state-of-the-art accuracy; computationally expensive inference over the whole dataset.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Limited range of LLMs tested; commercial models not evaluated.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "Evaluated on classification datasets used as clustering benchmarks; averaged over 5 runs.",
+ "fulltext_txt": "fulltext/txt/jo2025zerodl.txt"
+}

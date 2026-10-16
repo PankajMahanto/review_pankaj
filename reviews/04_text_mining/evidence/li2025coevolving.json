@@ -1,0 +1,75 @@
+{
+ "key": "li2025coevolving",
+ "source_id": "C00008",
+ "title": "Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering",
+ "venue": "EMNLP 2025 (main)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.emnlp-main.241",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "bidirectional LLM-embedder co-training (preference optimisation + contrastive learning)",
+ "task": "Text clustering across topic, emotion, type, domain and intent discovery",
+ "problem": "Existing LLM-assisted clustering treats LLMs as static pseudo-oracles or augmenters and never transfers dataset-specific distribution knowledge back into the LLM.",
+ "architecture": "DG-CoE: task-aware prompts make the LLM generate interpretations of each text; interpretations are embedded and those in high-density regions are chosen as preferred samples for preference optimisation of the LLM; the embedding model is trained contrastively (plus DEC loss) on the interpretations; iterated co-training, k-means for final clusters.",
+ "llm_or_encoder": "Qwen2.5-7B-Instruct (also Meta-Llama-3-8B-Instruct) + e5-large",
+ "datasets": [
+  {
+   "name": "ArxivS2S / Reddit / StackEx",
+   "details": "MTEB topic-mining clustering sets"
+  },
+  {
+   "name": "GoEmo",
+   "details": "emotion"
+  },
+  {
+   "name": "FewEvent / FewNerd / FewRel",
+   "details": "type discovery"
+  },
+  {
+   "name": "CLINC / Massive / MTOP",
+   "details": "domain (D) and intent (I) discovery variants"
+  },
+  {
+   "name": "Bank77",
+   "details": "intent discovery"
+  }
+ ],
+ "metrics": [
+  "ACC",
+  "NMI"
+ ],
+ "baselines": [
+  "E5-KMeans",
+  "SCCL",
+  "Label-Gen",
+  "ClusterLLM",
+  "Keyphrase (few-shot clustering)"
+ ],
+ "key_results": [
+  "Average over 14 datasets after two iterations: ACC 55.14 / NMI 66.31 vs 52.69 / 64.90 for Keyphrase and 50.64 / 63.45 for ClusterLLM.",
+  "E5-KMeans baseline averages ACC 49.32 / NMI 62.00."
+ ],
+ "strengths": [
+  "First to fine-tune the LLM with feedback from the embedding model's density.",
+  "Baselines re-run with the same open LLM for a fair comparison."
+ ],
+ "limitations": [
+  {
+   "text": "Requires the number of clusters to be known.",
+   "source": "author-stated"
+  },
+  {
+   "text": "LLM is used in training and inference, adding cost.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Preferred interpretations can be low-confidence and degrade results on some datasets (e.g. Bank77 with Qwen).",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "Follows ClusterLLM's 14-dataset protocol.",
+ "fulltext_txt": "fulltext/txt/li2025coevolving.txt"
+}

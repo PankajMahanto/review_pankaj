@@ -1,0 +1,61 @@
+{
+ "key": "brinner2025semcse",
+ "source_id": "C00021",
+ "title": "SemCSE: Semantic Contrastive Sentence Embeddings Using LLM-Generated Summaries For Scientific Abstracts",
+ "venue": "EMNLP 2025 (main)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.emnlp-main.1662",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-embedding",
+ "subcategory": "LLM-generated summaries as positives for domain (scientific) embeddings",
+ "task": "Semantic embeddings of scientific abstracts",
+ "problem": "Citation-based supervision (SPECTER-style) does not necessarily reflect semantic similarity of scientific texts.",
+ "architecture": "Contrastive training that pulls together LLM-generated summaries of the same abstract; new semantic benchmark (title-abstract, abstract-segment and query matching, semantic clustering) plus SciRepEval evaluation.",
+ "llm_or_encoder": "small sentence-transformer encoder; LLM for summary generation",
+ "datasets": [
+  {
+   "name": "SciRepEval",
+   "details": "scientific document representation benchmark"
+  },
+  {
+   "name": "semantic embedding benchmark (proposed)",
+   "details": "matching and semantic clustering tasks"
+  }
+ ],
+ "metrics": [
+  "average rank (matching)",
+  "clustering score",
+  "SciRepEval metrics"
+ ],
+ "baselines": [
+  "SPECTER2",
+  "SciNCL",
+  "Jina-v2",
+  "Jina-v3",
+  "MiniLM",
+  "NvEmbed-V2"
+ ],
+ "key_results": [
+  "Semantic clustering score 0.739 vs 0.730 for MiniLM and 0.721 for NvEmbed.",
+  "Query matching average rank 1.23 (Jina-v3 1.01, NvEmbed 1.02)."
+ ],
+ "strengths": [
+  "State of the art on SciRepEval among models of its size.",
+  "Questions citation-based supervision for scientific embeddings."
+ ],
+ "limitations": [
+  {
+   "text": "Reliance on LLM-generated summaries can introduce systemic biases and hallucinated content into the embeddings.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Interpretability of the embeddings remains a challenge.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/brinner2025semcse.txt"
+}

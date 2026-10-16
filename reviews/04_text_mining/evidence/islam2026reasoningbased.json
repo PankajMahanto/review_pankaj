@@ -1,0 +1,71 @@
+{
+ "key": "islam2026reasoningbased",
+ "source_id": "C00006",
+ "title": "Reasoning-Based Refinement of Unsupervised Text Clusters with LLMs",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.482",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "LLM as semantic judge for post-hoc cluster refinement and labelling",
+ "task": "Refinement and labelling of unsupervised text clusters (social media discourse)",
+ "problem": "Unsupervised clustering outputs contain incoherent, redundant or poorly grounded clusters that are hard to validate without labels.",
+ "architecture": "TF-IDF + HDBSCAN cluster proposals refined by GPT-4o in three reasoning stages: coherence verification of cluster summaries, pairwise redundancy adjudication (merge/reject), and two-stage label grounding (generate then consolidate labels).",
+ "llm_or_encoder": "GPT-4o (also Llama 3.2 and Mistral Large 2 for assignment); SBERT for the baseline refinement",
+ "datasets": [
+  {
+   "name": "X (Twitter)",
+   "details": "vegan discourse; 20000 tweets from 275 users sampled from 330464 tweets"
+  },
+  {
+   "name": "Bluesky",
+   "details": "vegan discourse; 13032 English posts"
+  }
+ ],
+ "metrics": [
+  "Silhouette",
+  "Davies-Bouldin index",
+  "intra-cluster cosine similarity",
+  "human assignment accuracy",
+  "Cohen's kappa"
+ ],
+ "baselines": [
+  "HDBSCAN without refinement",
+  "SBERT-based refinement",
+  "LDA",
+  "BERTopic",
+  "SBERT assignment",
+  "TopicGPT"
+ ],
+ "key_results": [
+  "Silhouette rises from 0.122 (HDBSCAN) to 0.674 on X and from -0.017 to 0.979 on Bluesky after LLM refinement.",
+  "Human-judged assignment accuracy with GPT-4o: 78.4% (X) and 89.8% (Bluesky) vs 72.8 / 68.4 for TopicGPT and 38.7 / 42.4 for BERTopic; inter-annotator agreement 0.82."
+ ],
+ "strengths": [
+  "Clustering-algorithm agnostic post-hoc layer.",
+  "Human evaluation and statistical testing in a label-free setting."
+ ],
+ "limitations": [
+  {
+   "text": "English social-media data from one discourse domain (veganism).",
+   "source": "author-stated"
+  },
+  {
+   "text": "LLM judgements may carry human biases; no fine-tuning of LLMs.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Initial clusters use TF-IDF; dense encoders not tested as proposal generators.",
+   "source": "author-stated"
+  },
+  {
+   "text": "SBERT refinement achieves better separation (DBi) on X than LLM refinement.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "public_data": false,
+ "notes": "Cross-platform robustness analysis under matched temporal/volume conditions.",
+ "fulltext_txt": "fulltext/txt/islam2026reasoningbased.txt"
+}

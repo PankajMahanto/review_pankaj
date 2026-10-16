@@ -1,0 +1,94 @@
+{
+ "key": "fan2026segmemrag",
+ "category": "adaptive",
+ "subcategory": "memory-augmented, self-guided routing across multiple unlabeled corpora",
+ "task": "Multi-corpus question answering (open-domain, financial, biomedical)",
+ "problem": "RAG systems assume a static, well-organised corpus with fixed retrieval logic, whereas real environments contain many heterogeneous, unlabeled sources and the system must learn which source to query.",
+ "architecture": "SegMem-RAG: a Segment Planner (inspired by event segmentation theory) splits reasoning into localised decision segments (source selection, subquery); a Feedback Evaluator self-assesses each retrieval outcome in natural language; a Memory Controller keeps procedural, semantic and episodic symbolic memory of source utility; a cold-start explorer probes unfamiliar corpora. No retraining or supervision.",
+ "retriever": "multilingual-e5-large per-corpus indexes, top-5 knowledge and memory entries",
+ "generator": "Qwen2.5-7B-Instruct (Qwen2.5-32B-Instruct as judge)",
+ "knowledge_source": "pool of heterogeneous corpora (BEIR collections, MedRAG corpora, OmniEval, DBpedia, legal corpora, Wikipedia)",
+ "llm_or_encoder": "Qwen2.5-7B-Instruct; multilingual-e5-large",
+ "datasets": [
+  {
+   "name": "Natural Questions",
+   "details": "500 sampled QA pairs"
+  },
+  {
+   "name": "TriviaQA",
+   "details": "500 sampled QA pairs"
+  },
+  {
+   "name": "PopQA",
+   "details": "500 sampled QA pairs"
+  },
+  {
+   "name": "HotpotQA",
+   "details": "500 sampled QA pairs"
+  },
+  {
+   "name": "2WikiMultiHopQA",
+   "details": "500 sampled QA pairs"
+  },
+  {
+   "name": "OmniEval",
+   "details": "Chinese financial QA, four tasks"
+  },
+  {
+   "name": "BioASQ",
+   "details": "biomedical factoid/summary QA"
+  }
+ ],
+ "metrics": [
+  "token-level F1",
+  "fact-level F1 (LLM-judged)"
+ ],
+ "baselines": [
+  "Prompting",
+  "BlindRAG",
+  "ResLLM",
+  "ReAct",
+  "Reflexion",
+  "DRAFT",
+  "EnumRAG (oracle)",
+  "Gold-RAG (oracle)"
+ ],
+ "key_results": [
+  "Open-domain average token F1 47.5 vs 45.8 for EnumRAG (retrieve from all corpora) and 42.1 for DRAFT.",
+  "Financial QA average fact-level F1 34.1 vs 32.5 for DRAFT; BioASQ 44.0 vs 42.0 for Reflexion.",
+  "Random corpus selection (BlindRAG) averages only 15.7 on open-domain QA."
+ ],
+ "strengths": [
+  "Addresses a realistic multi-source setting where sources are unlabeled and imbalanced.",
+  "Learns from experience without supervision; compared against oracle corpus-selection strategies."
+ ],
+ "limitations": [
+  {
+   "text": "Up to 32 reasoning segments per query imply many LLM calls; cost and latency are not reported in the main results.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Evaluation on 500 sampled questions per dataset with a 7B reasoning model; financial and biomedical scores rely on an LLM judge.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "N"
+ },
+ "source_id": "fan2026segmemrag",
+ "cid": "C00153",
+ "corpus_id": "P0421",
+ "title": "SegMem-RAG: Adaptive Memory for Retrieval-Augmented Generation in Open-Ended Knowledge Environments",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40320",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/fan2026segmemrag.txt"
+}

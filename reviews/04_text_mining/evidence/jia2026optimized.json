@@ -1,0 +1,69 @@
+{
+ "key": "jia2026optimized",
+ "source_id": "C00014",
+ "title": "Optimized Algorithms for Text Clustering with LLM-Generated Constraints",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i27.39379",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "LLM-generated must-link/cannot-link constraint sets + constrained k-means with penalties",
+ "task": "Semi-supervised (constrained) short text clustering",
+ "problem": "LLM-generated pairwise constraints are expensive to query and can be wrong; constrained clustering algorithms are not designed for noisy LLM constraints.",
+ "architecture": "Constraint generation as sets (must-link sets via a coreset-inspired sampler, cannot-link sets via a skeleton structure) queried to an LLM; LSCK/LSCK-HC local-search constrained k-means with hard/soft must-link handling, confidence threshold and penalties for violated constraints.",
+ "llm_or_encoder": "LLM constraint generator (DeepSeek R1 and V3 compared); Instructor-large and E5 embeddings",
+ "datasets": [
+  {
+   "name": "Tweet",
+   "details": "short texts"
+  },
+  {
+   "name": "Banking77",
+   "details": "intents"
+  },
+  {
+   "name": "CLINC (I) / CLINC (D)",
+   "details": "intent and domain"
+  },
+  {
+   "name": "GoEmo",
+   "details": "emotions"
+  }
+ ],
+ "metrics": [
+  "ACC",
+  "NMI",
+  "Rand Index of constraints",
+  "number of LLM queries"
+ ],
+ "baselines": [
+  "PCK",
+  "BH-KM",
+  "CKM++",
+  "COP-KMeans",
+  "few-shot clustering constraint generation (Viswanathan et al.)"
+ ],
+ "key_results": [
+  "Tweet must-link constraints at the smallest ratio: Rand Index 100.00 with 99 queries vs 50.00 with 13070 queries for the pairwise baseline.",
+  "Clustering accuracy improves by more than 2% at a 40% constraint ratio on Tweet and CLINC (D)."
+ ],
+ "strengths": [
+  "More than 20x fewer LLM queries with equal or better constraint quality.",
+  "Complexity analysis of the algorithms (O(nk^2) for must-link handling)."
+ ],
+ "limitations": [
+  {
+   "text": "As the number of constraints grows, the share of erroneous LLM constraints also rises; best results at about a 20% constraint ratio.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Constraint quality depends on the chosen LLM.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/weihong-wu/LSCK-HC",
+ "public_data": true,
+ "notes": "Averages over 10 runs.",
+ "fulltext_txt": "fulltext/txt/jia2026optimized.txt"
+}

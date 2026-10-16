@@ -1,0 +1,75 @@
+{
+ "key": "ashkenazi2025d2cs",
+ "source_id": "C00010",
+ "title": "D2CS - Documents Graph Clustering using LLM supervision",
+ "venue": "Findings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.1283",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "graph-based document clustering with iterative LLM feedback on edge weights",
+ "task": "Document clustering with per-cluster summarisation",
+ "problem": "Embedding-based clustering does not guarantee thematic consistency of clusters, and there is no combined evaluation of clustering plus summarisation.",
+ "architecture": "Each document is a bag of sentence embeddings (KDE filtering of very rare/frequent sentences); energy distance between bags defines a kNN graph clustered with Leiden; an LLM summarises each cluster, a second LLM refines the summary, and LLM-judged 'success rate' scores update edge weights iteratively; optional user-supplied prior edges (e.g. shared authors).",
+ "llm_or_encoder": "sentence embedding model + pairs of commercial/open LLMs (Cohere, Llama and others; 16 two-LLM combinations tested)",
+ "datasets": [
+  {
+   "name": "Newsgroups (20 Newsgroups)",
+   "details": "purity comparison"
+  },
+  {
+   "name": "Reuters",
+   "details": "large dataset"
+  },
+  {
+   "name": "Wikipedia tarballs",
+   "details": "first paragraph of each page"
+  },
+  {
+   "name": "abstracts (keyword-based sets)",
+   "details": "8 sets of 100 abstracts with different keywords"
+  }
+ ],
+ "metrics": [
+  "clustering success rate (LLM-judged)",
+  "relevancy",
+  "coherence",
+  "consistency",
+  "fluency",
+  "purity"
+ ],
+ "baselines": [
+  "hierarchical clustering"
+ ],
+ "key_results": [
+  "Purity on Newsgroups 0.44 for D2CS vs 0.06 for hierarchical clustering.",
+  "Cluster consistency across LLM combinations: average max Jaccard index 0.81 (range 0.5-1); clustering typically converges after 2 iterations."
+ ],
+ "strengths": [
+  "Couples clustering with an LLM-based coherence check and summarisation.",
+  "Can absorb prior knowledge as extra graph edges."
+ ],
+ "limitations": [
+  {
+   "text": "LLM biases can propagate to the clustering.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Very large corpora (tens of thousands of texts) remain challenging because of LLM cost and context limits.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No standard benchmark for combined clustering and summarisation, so no benchmark comparison was performed.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Density filtering helps small sets but reduced accuracy on Reuters.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/D2CS-sub/D2CS",
+ "public_data": true,
+ "notes": "Evaluation relies largely on LLM-judged scores.",
+ "fulltext_txt": "fulltext/txt/ashkenazi2025d2cs.txt"
+}

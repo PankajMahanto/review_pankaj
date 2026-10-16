@@ -1,0 +1,81 @@
+{
+ "key": "bergeron2026halluguard",
+ "category": "trustworthiness",
+ "subcategory": "hallucination detection guardrail for RAG (small reasoning model)",
+ "task": "Classify document-claim pairs as grounded or hallucinated and justify the decision",
+ "problem": "RAG pipelines still hallucinate; large LLM judges are costly, while compact detectors rarely give evidence-grounded justifications.",
+ "architecture": "HalluGuard: Qwen3-4B small reasoning model fine-tuned with LoRA and ORPO on synthetic preference data. Data pipeline: FineWeb documents curated and stylistically reformed by Qwen3-235B-A22B, synthetic grounded / intrinsic / extrinsic hallucinated claims, preference pairs from a large (chosen) vs small (rejected) generator, filtered by model agreement and LLM consensus.",
+ "retriever": "not applicable (post-hoc verifier of RAG outputs against supplied documents)",
+ "generator": "Qwen3-4B (detector); Qwen3-235B-A22B / Qwen3-0.6B used for data generation",
+ "knowledge_source": "documents supplied with each claim (closed-book document-grounded setting)",
+ "llm_or_encoder": "Qwen3-4B fine-tuned with LoRA + ORPO",
+ "datasets": [
+  {
+   "name": "LLM-AggreFact",
+   "details": "11 human-annotated grounding datasets, binary grounded vs hallucinated"
+  },
+  {
+   "name": "RAGTruth",
+   "details": "RAG subset of LLM-AggreFact"
+  },
+  {
+   "name": "FineWeb",
+   "details": "training source; 300,000 sampled documents reduced to 104,966 after curation"
+  }
+ ],
+ "metrics": [
+  "balanced accuracy (BAcc)",
+  "G-Eval justification quality",
+  "human preference"
+ ],
+ "baselines": [
+  "Bespoke-MiniCheck-7B",
+  "Granite Guardian 3.3 (8B)",
+  "GPT-4o",
+  "Claude-3.5 Sonnet",
+  "Mistral-Large 2",
+  "Qwen3-4B backbone"
+ ],
+ "key_results": [
+  "RAGTruth BAcc 84.4% vs 84.0 (MiniCheck 7B) and 82.2 (Granite Guardian 3.3, 8B).",
+  "Average LLM-AggreFact BAcc 77.1 vs 75.9 for GPT-4o and 75.7 for the Qwen3-4B backbone; MiniCheck averages 77.4.",
+  "Paired permutation test reports a significant advantage over MiniCheck in expected BAcc (+0.81, p < 0.001)."
+ ],
+ "strengths": [
+  "4B detector competitive with 7-8B specialised detectors and much larger general LLMs; produces justifications.",
+  "Training data built without human annotation; datasets and model released."
+ ],
+ "limitations": [
+  {
+   "text": "Synthetic claims may not capture the complexity of real-world hallucinations, limiting generalisation.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Only a three-label taxonomy (grounded, intrinsic, extrinsic) is used.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Trained and evaluated only on English; legal or financial domains untested.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://hf.co/collections/lrsbrgrn/halluguard",
+ "notes": "Gain on RAGTruth over the backbone is modest (84.4 vs 84.0).",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "bergeron2026halluguard",
+ "cid": "C00058",
+ "corpus_id": "P0231",
+ "title": "HalluGuard: Evidence-Grounded Small Reasoning Models to Mitigate Hallucinations in Retrieval-Augmented Generation",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.835",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/bergeron2026halluguard.txt"
+}

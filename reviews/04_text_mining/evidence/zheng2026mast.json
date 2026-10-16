@@ -1,0 +1,104 @@
+{
+ "key": "zheng2026mast",
+ "source_id": "C00004",
+ "title": "MAST: A Multi-View Alignment Strategy for Optimal Transport-Based Contrastive Clustering of Short Text",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.660",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-deep",
+ "subcategory": "contrastive short-text clustering with graph views and optimal-transport pseudo-labels",
+ "task": "Unsupervised short text clustering",
+ "problem": "Contrastive clustering relies on augmentations of limited semantic granularity and lacks global optimisation of cluster assignments, so pseudo-label noise accumulates on short, sparse texts.",
+ "architecture": "SBERT encoder; sentence-level and cluster-level graphs (two-layer GCN) give structure-enhanced views aligned with original and augmented embeddings by a multi-view contrastive loss with structure-aware negative reweighting and intermediate-layer negatives; Student-t soft assignments with high-confidence guidance; optimal-transport pseudo-label alignment; final k-means on learned embeddings.",
+ "llm_or_encoder": "SBERT backbone (no LLM)",
+ "datasets": [
+  {
+   "name": "AgNews",
+   "details": "short news texts"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "search snippets"
+  },
+  {
+   "name": "GoogleNews-TS / GoogleNews-T / GoogleNews-S",
+   "details": "news titles/snippets; G-T and G-S highly imbalanced"
+  },
+  {
+   "name": "Tweet",
+   "details": "social media, very short texts"
+  }
+ ],
+ "metrics": [
+  "ACC",
+  "NMI"
+ ],
+ "baselines": [
+  "BOW",
+  "TF-IDF",
+  "Self-Train",
+  "STCC",
+  "SBERT k-means",
+  "BGE-M3",
+  "RSTC",
+  "Multi-MCCR",
+  "SCCL",
+  "ProPos",
+  "CLSESSP",
+  "FNSCC"
+ ],
+ "key_results": [
+  "Best ACC/NMI on all six datasets, e.g. AgNews ACC 88.34 / NMI 68.39 vs 87.85 / 66.70 for FNSCC; Tweet ACC 90.41 / NMI 93.87 vs 83.62 / 90.38 for FNSCC.",
+  "On GoogleNews-T ACC 80.14 vs 72.72 (FNSCC); improvements significant under a paired t-test (p < 0.005)."
+ ],
+ "compare": [
+  {
+   "benchmark": "AgNews",
+   "metric": "ACC/NMI",
+   "value": "88.34 / 68.39"
+  },
+  {
+   "benchmark": "SearchSnippets",
+   "metric": "ACC/NMI",
+   "value": "84.98 / 69.94"
+  },
+  {
+   "benchmark": "GoogleNews-TS",
+   "metric": "ACC/NMI",
+   "value": "88.34 / 94.57"
+  },
+  {
+   "benchmark": "Tweet",
+   "metric": "ACC/NMI",
+   "value": "90.41 / 93.87"
+  }
+ ],
+ "strengths": [
+  "Couples representation learning and assignment refinement in one objective.",
+  "Larger gains on the most imbalanced and sparsest datasets."
+ ],
+ "limitations": [
+  {
+   "text": "Multi-view structural modelling adds computational overhead over instance-level contrastive methods.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Relies on fixed hyperparameters to balance contrastive and clustering objectives.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Structural views built from cosine similarity and soft assignments capture only coarse relations.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Number of clusters K is given to the model (k-means and K learnable centres).",
+   "source": "reviewer-observed"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "Five runs averaged.",
+ "fulltext_txt": "fulltext/txt/zheng2026mast.txt"
+}

@@ -1,0 +1,89 @@
+{
+ "key": "lin2026llms",
+ "source_id": "C00007",
+ "title": "LLMs Enable Bag-of-Texts Representations for Short-Text Clustering",
+ "venue": "ACL 2026 (long)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-long.291",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-llm",
+ "subcategory": "training-free LLM-derived representation (bag-of-texts) for clustering",
+ "task": "Label-free short-text (intent, emotion, question) clustering",
+ "problem": "LLM similarity judgements used to refine dense embeddings remain tied to the original embedding geometry; existing methods need fine-tuning, known K or proprietary LLMs.",
+ "architecture": "LeBoT: an embedder retrieves candidate texts for each target; an LLM selects candidates with the same intent; selections are encoded as a bag-of-texts vector over d representative texts (texts initialised equidistant), then clustered with k-means; no embedding optimisation.",
+ "llm_or_encoder": "gemma-2-9b-it (main); embedders TF-IDF, bert-base, all-MiniLM-L6-v2, e5-large",
+ "datasets": [
+  {
+   "name": "Bank77",
+   "details": "77 clusters, 3,080 test texts"
+  },
+  {
+   "name": "CLINC150",
+   "details": "150 clusters, 4,500 test texts"
+  },
+  {
+   "name": "MTOP",
+   "details": "102 clusters, 4,386 texts, imbalanced"
+  },
+  {
+   "name": "MASSIVE",
+   "details": "59 clusters, 2,974 texts"
+  },
+  {
+   "name": "GoEmo",
+   "details": "27 clusters, 5,940 texts"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "20 clusters (GCD scenario)"
+  }
+ ],
+ "metrics": [
+  "NMI",
+  "ACC"
+ ],
+ "baselines": [
+  "IDAS",
+  "ClusterLLM",
+  "IntentGPT",
+  "ALUP",
+  "LOOP",
+  "SPILL",
+  "DG-CoE",
+  "Glean"
+ ],
+ "key_results": [
+  "With e5-large, LeBoT averages NMI 70.87 / ACC 59.30 over five benchmarks vs 70.53 / 56.99 for DG-CoE (which fine-tunes).",
+  "Bank77 with e5-large: NMI 85.34, ACC 73.86."
+ ],
+ "compare": [
+  {
+   "benchmark": "Bank77",
+   "metric": "NMI/ACC",
+   "value": "85.34 / 73.86"
+  }
+ ],
+ "strengths": [
+  "Training-free and label-free; does not need K for the representation step.",
+  "Works with relatively small open LLMs and different embedders/clustering methods."
+ ],
+ "limitations": [
+  {
+   "text": "Only English utterance datasets.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Effectiveness depends on the LLM; specialised domains may need in-context examples.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Still uses the embedder to retrieve candidates, so a very weak embedder degrades the vectors.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/tom192180/BoT_vector",
+ "public_data": true,
+ "notes": "Evaluated under k-means; scalability analysis for large datasets.",
+ "fulltext_txt": "fulltext/txt/lin2026llms.txt"
+}

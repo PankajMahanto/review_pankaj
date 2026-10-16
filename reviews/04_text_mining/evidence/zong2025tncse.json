@@ -1,0 +1,74 @@
+{
+ "key": "zong2025tncse",
+ "source_id": "C00020",
+ "title": "TNCSE: Tensor Norm Constraints for Unsupervised Contrastive Learning of Sentence Embeddings",
+ "venue": "AAAI 2025",
+ "year": 2025,
+ "doi": "10.1609/aaai.v39i24.34816",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "category": "contrastive-sentence",
+ "subcategory": "unsupervised contrastive learning with norm constraints and ensembling",
+ "task": "Unsupervised sentence embeddings (STS, MTEB zero-shot)",
+ "problem": "InfoNCE with cosine similarity constrains only the direction of embeddings and ignores their norms.",
+ "architecture": "Two encoders (one pre-trained with round-trip-translation augmentation, one with unsupervised SimCSE) trained jointly with InfoNCE plus a tensor-norm constraint between positive pairs on the pooler output; ensemble at inference.",
+ "llm_or_encoder": "BERT-base / RoBERTa-base",
+ "datasets": [
+  {
+   "name": "Wiki1M",
+   "details": "1M Wikipedia sentences for training"
+  },
+  {
+   "name": "STS12-16 / STS-B / SICK-R",
+   "details": "SentEval evaluation"
+  },
+  {
+   "name": "MTEB",
+   "details": "zero-shot: STS17, STS22, 30 classification, 30 retrieval and reranking tasks"
+  }
+ ],
+ "metrics": [
+  "Spearman correlation",
+  "MTEB task metrics"
+ ],
+ "baselines": [
+  "SimCSE",
+  "DiffCSE",
+  "ESimCSE",
+  "ArcCSE",
+  "InfoCSE",
+  "PromptBERT",
+  "SNCSE",
+  "WhitenedCSE",
+  "EDFSE",
+  "RankCSE"
+ ],
+ "key_results": [
+  "BERT-base average over seven STS tasks 79.58 vs 79.04 for EDFSE and 76.25 for SimCSE."
+ ],
+ "compare": [
+  {
+   "benchmark": "STS avg (7)",
+   "setting": "unsup. BERT-base",
+   "value": "79.58"
+  }
+ ],
+ "strengths": [
+  "Identifies norm information as an ignored signal in contrastive sentence learning.",
+  "Zero-shot evaluation on MTEB in addition to STS."
+ ],
+ "limitations": [
+  {
+   "text": "Norm constraints cannot be applied to the last hidden state because LayerNorm removes norm information; removing LayerNorms hurt training.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Uses an ensemble of two encoders, which increases inference cost compared with a single encoder.",
+   "source": "reviewer-observed"
+  }
+ ],
+ "code": "https://github.com/tianyuzong/TNCSE",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/zong2025tncse.txt"
+}

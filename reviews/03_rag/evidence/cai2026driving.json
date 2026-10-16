@@ -1,0 +1,75 @@
+{
+ "key": "cai2026driving",
+ "category": "application",
+ "subcategory": "autonomous driving: regulation retrieval + LLM reasoning agent",
+ "task": "Action-level traffic-rule compliance and safety assessment for autonomous vehicles",
+ "problem": "Traffic regulations are complex, context-dependent and region-specific; rule-based systems and LLMs relying on pre-trained knowledge miss local rules or hallucinate them.",
+ "architecture": "DriveReg: a VLM performs chain-of-thought environment analysis of multi-view images and generates a retrieval query; a Traffic Regulation Retrieval agent fetches rules from regional regulation documents (FAISS, top-5); an LLM reasoning agent assesses each candidate action for compliance and safety with CoT.",
+ "retriever": "text-embedding-ada-002 and paraphrase-MiniLM-L6-v2 embeddings with FAISS similarity search (K = 5)",
+ "generator": "GPT-4o (reasoning agent); VLM for scene analysis",
+ "knowledge_source": "traffic regulation documents and safety guidelines of Boston, Singapore and Los Angeles",
+ "llm_or_encoder": "GPT-4o; text-embedding-ada-002",
+ "datasets": [
+  {
+   "name": "DriveReg Scenarios Dataset",
+   "details": "500 hypothesized and real-world driving scenarios from Boston, Singapore and Los Angeles, labelled for compliance and safety"
+  }
+ ],
+ "metrics": [
+  "compliance accuracy",
+  "safety accuracy",
+  "F1",
+  "retrieval accuracy",
+  "inference time"
+ ],
+ "baselines": [
+  "DeepSeek-V3",
+  "DeepSeek-R1",
+  "Llama3.3-70b",
+  "Qwen2.5-72b",
+  "GPT-4o",
+  "Agent-Driver",
+  "BM25",
+  "QLM",
+  "LLaDA TRE"
+ ],
+ "key_results": [
+  "Hypothesized normal scenarios: 98% compliance and 98% safety accuracy; hard scenarios: 99% compliance and 94% safety.",
+  "On hard cases compliance improves from 86% (GPT-4o) to 99% with retrieval and the reasoning agent.",
+  "Regulation retrieval accuracy on 20 Boston-hard scenarios (top-5): 1.00 vs 0.60 for BM25.",
+  "Detailed reasoning takes about 2 seconds per decision with GPT-4o."
+ ],
+ "strengths": [
+  "Region-specific rule grounding with interpretable reasoning; includes a real-vehicle deployment test.",
+  "New benchmark annotated at the action level across three cities; results over 5 random seeds."
+ ],
+ "limitations": [
+  {
+   "text": "Some failures come from perception errors, e.g. misidentifying solid lane markings as broken.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "The action space is a small predefined set of high-level manoeuvres; retrieval comparison uses only 20 scenarios.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/Vickycth/driving-with-regulation",
+ "notes": "Real-world test with a human driver in control, system running in parallel.",
+ "quality": {
+  "q1": "Y",
+  "q2": "P",
+  "q3": "Y",
+  "q4": "P",
+  "q5": "P"
+ },
+ "source_id": "cai2026driving",
+ "cid": "C00002",
+ "corpus_id": "P0100",
+ "title": "Driving with Regulation: Trustworthy and Interpretable Decision-Making for Autonomous Driving with Retrieval-Augmented Reasoning",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i45.41168",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/cai2026driving.txt"
+}

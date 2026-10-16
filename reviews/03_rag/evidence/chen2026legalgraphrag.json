@@ -1,0 +1,84 @@
+{
+ "key": "chen2026legalgraphrag",
+ "category": "application",
+ "subcategory": "legal: hierarchical legal graph + Researcher-Auditor-Adjudicator multi-agent GraphRAG",
+ "task": "Legal judgment prediction (charge, article, term of penalty)",
+ "problem": "Flat GraphRAG cannot separate facts, rules and principles in heterogeneous legal corpora, and retrieve-then-generate pipelines pass unverified, noisy context to the LLM; adding 6 irrelevant documents drops charge accuracy from 42.8 to 29.8.",
+ "architecture": "LegalGraphRAG: HierarGraph organises legal sources into fact, rule and ontology graphs; a Researcher agent retrieves candidate cases and articles, an Auditor verifies each article against case facts using diagnostic checklists and judicial interpretations, and an Adjudicator synthesises the verified evidence into a cited judgment.",
+ "retriever": "graph retrieval over HierarGraph with BGE-m3 embeddings",
+ "generator": "Qwen3-8B (default); GPT-4o-mini for graph construction",
+ "knowledge_source": "Chinese criminal case datasets, statutes and judicial interpretations",
+ "llm_or_encoder": "Qwen3-8B; BGE-m3; GPT-4o-mini",
+ "datasets": [
+  {
+   "name": "CAIL2018",
+   "details": "Chinese legal judgment prediction"
+  },
+  {
+   "name": "CMDL",
+   "details": "Chinese legal judgment prediction"
+  }
+ ],
+ "metrics": [
+  "accuracy",
+  "Micro-F1",
+  "MAE (term of penalty)"
+ ],
+ "baselines": [
+  "Qwen-2.5-7B",
+  "Qwen-3-8B",
+  "InternLM3-8B",
+  "GLM-4-9B",
+  "GPT-4o-mini",
+  "DeepSeek-V3.1",
+  "DISC-LawLLM",
+  "ADAPT",
+  "Legal Delta",
+  "Naive RAG",
+  "G-retriever",
+  "LightRAG",
+  "RAPTOR",
+  "HippoRAG2"
+ ],
+ "key_results": [
+  "Average accuracy over CAIL and CMDL sub-fields 49.5 vs 43.1 for RAPTOR and HippoRAG2, 42.8 for DeepSeek-V3.1 and 33.3 for Naive RAG (Qwen3-8B backbone).",
+  "On CMDL Public Safety: 65.5 ACC / 66.5 F1 vs 53.8 / 62.6 for RAPTOR."
+ ],
+ "strengths": [
+  "Explicit verification step against statutes yields citable, transparent reasoning chains.",
+  "Broad baselines spanning general LLMs, legal LLMs and graph-RAG methods."
+ ],
+ "limitations": [
+  {
+   "text": "Limited to textual inputs; non-textual evidence (photos, video, audio) must be transcribed, losing nuance.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Historical judgment data may carry regional or gender biases.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Only Chinese criminal law benchmarks are evaluated.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/XMUDeepLIT/LegalGraphRAG",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "chen2026legalgraphrag",
+ "cid": "C00187",
+ "corpus_id": "P0504",
+ "title": "LegalGraphRAG: Multi-Agent Graph Retrieval-Augmented Generation for Reliable Legal Reasoning",
+ "venue": "ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-long.1738",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/chen2026legalgraphrag.txt"
+}

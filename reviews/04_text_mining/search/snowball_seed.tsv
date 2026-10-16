@@ -1,0 +1,79 @@
+# title	doi	arxiv_id	venue	landing_url	year
+Distributed Representations of Words and Phrases and their Compositionality		1310.4546	Advances in Neural Information Processing Systems 26 (NeurIPS 2013)	https://proceedings.neurips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html	2013
+GloVe: Global Vectors for Word Representation	10.3115/v1/D14-1162				
+Enriching Word Vectors with Subword Information	10.1162/tacl_a_00051	1607.04606			
+Distributed Representations of Sentences and Documents		1405.4053	Proceedings of the 31st International Conference on Machine Learning (ICML 2014), PMLR 32	https://proceedings.mlr.press/v32/le14.html	2014
+Skip-Thought Vectors		1506.06726	Advances in Neural Information Processing Systems 28 (NeurIPS 2015)	https://proceedings.neurips.cc/paper/2015/hash/f442d33fa06832082290ad8544a8da27-Abstract.html	2015
+Supervised Learning of Universal Sentence Representations from Natural Language Inference Data	10.18653/v1/D17-1070				
+Universal Sentence Encoder for English	10.18653/v1/D18-2029				
+Deep Contextualized Word Representations	10.18653/v1/N18-1202				
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding	10.18653/v1/N19-1423				
+Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks	10.18653/v1/D19-1410				
+Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation	10.18653/v1/2020.emnlp-main.365				
+On the Sentence Embeddings from Pre-trained Language Models	10.18653/v1/2020.emnlp-main.733				
+Whitening Sentence Representations for Better Semantics and Faster Retrieval		2103.15316			
+SimCSE: Simple Contrastive Learning of Sentence Embeddings	10.18653/v1/2021.emnlp-main.552				
+ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer	10.18653/v1/2021.acl-long.393				
+DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings	10.18653/v1/2022.naacl-main.311				
+PromptBERT: Improving BERT Sentence Embeddings with Prompts	10.18653/v1/2022.emnlp-main.603				
+Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models	10.18653/v1/2022.findings-acl.146				
+Language-agnostic BERT Sentence Embedding	10.18653/v1/2022.acl-long.62				
+Text and Code Embeddings by Contrastive Pre-Training		2201.10005			
+Matryoshka Representation Learning		2205.13147	Advances in Neural Information Processing Systems 35 (NeurIPS 2022)	https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html	2022
+MTEB: Massive Text Embedding Benchmark	10.18653/v1/2023.eacl-main.148				
+Text Embeddings by Weakly-Supervised Contrastive Pre-training		2212.03533			
+Towards General Text Embeddings with Multi-stage Contrastive Learning		2308.03281			
+One Embedder, Any Task: Instruction-Finetuned Text Embeddings	10.18653/v1/2023.findings-acl.71				
+SGPT: GPT Sentence Embeddings for Semantic Search		2202.08904			
+SentEval: An Evaluation Toolkit for Universal Sentence Representations			Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)	https://aclanthology.org/L18-1269/	2018
+SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation	10.18653/v1/S17-2001				
+A SICK cure for the evaluation of compositional distributional semantic models			Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC 2014)	https://aclanthology.org/L14-1314/	2014
+BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models		2104.08663	Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks 1 (NeurIPS 2021)	https://openreview.net/forum?id=wCu6T5xFjeJ	2021
+Unsupervised Deep Embedding for Clustering Analysis		1511.06335	Proceedings of the 33rd International Conference on Machine Learning (ICML 2016), PMLR 48	https://proceedings.mlr.press/v48/xieb16.html	2016
+Improved Deep Embedded Clustering with Local Structure Preservation	10.24963/ijcai.2017/243				
+Self-Taught convolutional neural networks for short text clustering	10.1016/j.neunet.2016.12.008	1701.00185			
+Supporting Clustering with Contrastive Learning	10.18653/v1/2021.naacl-main.427				
+A Dirichlet multinomial mixture model-based approach for short text clustering	10.1145/2623330.2623715				
+Discovering New Intents with Deep Aligned Clustering	10.1609/aaai.v35i16.17689				
+New Intent Discovery with Pre-training and Contrastive Learning	10.18653/v1/2022.acl-long.21				
+How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings	10.18653/v1/D19-1006				
+Improving Text Embeddings with Large Language Models	10.18653/v1/2024.acl-long.642				
+LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders		2404.05961	First Conference on Language Modeling (COLM 2024)	https://openreview.net/forum?id=IW1PR7vEBf	2024
+Repetition Improves Language Model Embeddings		2402.15449	The Thirteenth International Conference on Learning Representations (ICLR 2025)	https://openreview.net/forum?id=Ahlrf2HGJR	2025
+NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models		2405.17428	The Thirteenth International Conference on Learning Representations (ICLR 2025)	https://openreview.net/forum?id=lgsyLSsDRe	2025
+Generative Representational Instruction Tuning		2402.09906	The Thirteenth International Conference on Learning Representations (ICLR 2025)	https://openreview.net/forum?id=BC4lIvfSzv	2025
+Scaling Sentence Embeddings with Large Language Models	10.18653/v1/2024.findings-emnlp.181				
+Meta-Task Prompting Elicits Embeddings from Large Language Models	10.18653/v1/2024.acl-long.546				
+BeLLM: Backward Dependency Enhanced Large Language Model for Sentence Embeddings	10.18653/v1/2024.naacl-long.45				
+AoE: Angle-optimized Embeddings for Semantic Textual Similarity	10.18653/v1/2024.acl-long.101				
+Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free		2410.10814	The Thirteenth International Conference on Learning Representations (ICLR 2025)	https://openreview.net/forum?id=eFGQ97z5Cd	2025
+Contrastive Learning of Sentence Embeddings from Scratch	10.18653/v1/2023.emnlp-main.238				
+Improving Contrastive Learning of Sentence Embeddings from AI Feedback	10.18653/v1/2023.findings-acl.707				
+RankCSE: Unsupervised Sentence Representations Learning via Learning to Rank	10.18653/v1/2023.acl-long.771				
+C-Pack: Packed Resources For General Chinese Embeddings	10.1145/3626772.3657878	2309.07597			
+M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation	10.18653/v1/2024.findings-acl.137				
+Multilingual E5 Text Embeddings: A Technical Report		2402.05672			
+Nomic Embed: Training a Reproducible Long Context Text Embedder		2402.01613			
+Jina Embeddings 2: 8192-Token General-Purpose Text Embeddings for Long Documents		2310.19923			
+Arctic-Embed: Scalable, Efficient, and Accurate Text Embedding Models		2405.05374			
+Gecko: Versatile Text Embeddings Distilled from Large Language Models		2403.20327			
+Gemini Embedding: Generalizable Embeddings from Gemini		2503.07891			
+Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models		2506.05176			
+KaLM-Embedding: Superior Training Data Brings A Stronger Embedding Model		2501.01028			
+Making Text Embedders Few-Shot Learners		2409.15700	The Thirteenth International Conference on Learning Representations (ICLR 2025)		2025
+Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference	10.18653/v1/2025.acl-long.127				
+ClusterLLM: Large Language Models as a Guide for Text Clustering	10.18653/v1/2023.emnlp-main.858				
+Large Language Models Enable Few-Shot Clustering	10.1162/tacl_a_00648				
+Goal-Driven Explainable Clustering via Language Descriptions	10.18653/v1/2023.emnlp-main.657				
+TnT-LLM: Text Mining at Scale with Large Language Models	10.1145/3637528.3671647				
+A Comprehensive Survey of Sentence Representations: From the BERT Epoch to the ChatGPT Era and Beyond	10.18653/v1/2024.eacl-long.104				
+When Text Embedding Meets Large Language Model: A Comprehensive Survey		2412.09165			
+Recent advances in universal text embeddings: A Comprehensive Review of Top-Performing Methods on the MTEB Benchmark		2406.01607			
+LLMs are Also Effective Embedding Models: An In-depth Overview		2412.12591			
+Evolution of Semantic Similarity - A Survey	10.1145/3440755				
+Crafting Interpretable Embeddings by Asking LLMs Questions		2405.16714	Advances in Neural Information Processing Systems 37 (NeurIPS 2024)		2024
+SPECTER: Document-level Representation Learning using Citation-informed Transformers	10.18653/v1/2020.acl-main.207				
+Little Giants: Synthesizing High-Quality Embedding Data at Scale	10.18653/v1/2025.naacl-long.64				
+Length-Induced Embedding Collapse in PLM-based Models	10.18653/v1/2025.acl-long.1396				
+Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings	10.18653/v1/2025.acl-long.124				
+Matryoshka-Adaptor: Unsupervised and Supervised Tuning for Smaller Embedding Dimensions	10.18653/v1/2024.emnlp-main.576				

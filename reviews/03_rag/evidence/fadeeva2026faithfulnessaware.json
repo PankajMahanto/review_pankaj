@@ -1,0 +1,79 @@
+{
+ "key": "fadeeva2026faithfulnessaware",
+ "category": "trustworthiness",
+ "subcategory": "uncertainty quantification for fact-checking RAG outputs, conditioned on faithfulness",
+ "task": "Claim-level hallucination (factual error) detection in RAG answers",
+ "problem": "Hallucination detectors for RAG conflate factuality with faithfulness to retrieved evidence, labelling correct but unsupported statements as hallucinations.",
+ "architecture": "FRANQ: estimates the probability that a claim is faithful to the retrieved context (AlignScore) and mixes two uncertainty estimators - one for faithful claims (Max Claim Probability for long-form, Semantic Entropy for short-form) and one for unfaithful claims (Parametric Knowledge likelihood without retrieval for long-form, Sum of Eigenvalues for short-form); optional isotonic calibration and condition-calibration.",
+ "retriever": "standard RAG retrieval of the evaluated QA systems",
+ "generator": "Llama 3B/8B Instruct, Falcon 3B Base, Gemma 4B/12B Instruct",
+ "knowledge_source": "retrieved Wikipedia/web passages of the QA datasets",
+ "llm_or_encoder": "Llama 3B/8B, Falcon 3B, Gemma 4B/12B; AlignScore",
+ "datasets": [
+  {
+   "name": "long-form QA dataset annotated for factuality and faithfulness",
+   "details": "new dataset; automatic labelling with manual validation"
+  },
+  {
+   "name": "Natural Questions",
+   "details": "short-form QA"
+  }
+ ],
+ "metrics": [
+  "PR-AUC",
+  "Prediction Rejection Ratio (PRR)",
+  "runtime overhead"
+ ],
+ "baselines": [
+  "Max Sequence/Claim Prob.",
+  "Perplexity",
+  "Mean/Max Token Entropy",
+  "CCP",
+  "Lexical Similarity",
+  "Degree Matrix",
+  "Sum of Eigenvalues",
+  "Semantic Entropy",
+  "SentenceSAR",
+  "AlignScore",
+  "Parametric Knowledge",
+  "XGBoost"
+ ],
+ "key_results": [
+  "Short-form QA (mean of four datasets): condition-calibrated FRANQ PR-AUC 0.711 with Falcon 3B vs 0.705 for XGBoost over all UQ features; PRR 0.541 with Llama 3B vs 0.525 for Semantic Entropy.",
+  "Long-form QA with Gemma 4B: calibrated FRANQ PRR 0.401 vs 0.216 for CCP, the best general baseline.",
+  "Condition-calibrated FRANQ needs about 300 labelled instances on long-form and about 120 on short-form QA to saturate."
+ ],
+ "strengths": [
+  "Separates factuality from faithfulness, matching the practical goal of catching false statements.",
+  "Broad comparison with general, RAG-specific and supervised UQ methods across several LLMs; low overhead."
+ ],
+ "limitations": [
+  {
+   "text": "Does not guarantee correct factuality estimates for ambiguous claims, limited evidence or highly uncertain generations; depends on quality of the underlying signals.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Best variant differs across models and settings; absolute PR-AUC on long-form QA remains low (around 0.1-0.17).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/stat-ml/rag_uncertainty",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "fadeeva2026faithfulnessaware",
+ "cid": "C00188",
+ "corpus_id": "P0505",
+ "title": "Faithfulness-Aware Uncertainty Quantification for Fact-Checking the Output of Retrieval-Augmented Generation",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.338",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/fadeeva2026faithfulnessaware.txt"
+}

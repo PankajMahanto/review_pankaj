@@ -1,0 +1,77 @@
+{
+ "key": "anupam2026llm",
+ "category": "application",
+ "subcategory": "code: retrieval-augmented beam search for program optimisation",
+ "task": "LLM-based program optimisation (C++ and Python)",
+ "problem": "LLMs struggle to optimise programs out of the box; the best black-box adaptation (dynamic retrieval of slow-fast program pairs by code embedding) makes end-to-end edits and retrieves on surface code similarity.",
+ "architecture": "Retrieval Augmented Search (RAS): beam search over candidate optimisations; at each step k=8 in-context slow-fast examples are retrieved by 'contextual retrieval' over LLM-generated natural-language descriptions rather than raw code. AEGIS decomposes training pairs into incremental 'atomic edits' with descriptions to make edits smaller and interpretable.",
+ "retriever": "embedding retrieval (text-embedding-3-large) over LLM-generated descriptions of programs",
+ "generator": "GPT-4o, Qwen3-Coder, DeepSeek 3.2; Qwen2.5-7B-Instruct on Mercury",
+ "knowledge_source": "training set of slow-fast program pairs (PIE) and derived atomic-edit database",
+ "llm_or_encoder": "GPT-4o / Qwen3-Coder / DeepSeek 3.2 / Qwen2.5-7B-Instruct",
+ "datasets": [
+  {
+   "name": "PIE",
+   "details": "slow-fast C++ program pairs from CodeNet, run in the gem5 simulator"
+  },
+  {
+   "name": "Mercury",
+   "details": "LeetCode problems with Python solutions"
+  }
+ ],
+ "metrics": [
+  "mean best speedup",
+  "% optimized",
+  "Beyond@1",
+  "Pass@1",
+  "character-level edit distance"
+ ],
+ "baselines": [
+  "Dynamic retrieval (PIE)",
+  "No Contextual ablation",
+  "Instruct Only",
+  "human solutions"
+ ],
+ "key_results": [
+  "On PIE with Qwen3-Coder, RAS reaches 8.70x mean best speedup vs 4.23x for dynamic retrieval; 9.18x with DeepSeek 3.2.",
+  "AEGIS reaches 6.08x with GPT-4o while reducing average edit size by 17% relative to RAS.",
+  "On Mercury (Qwen2.5-7B-Instruct) RAS obtains Beyond@1 87.85 vs 69.26 (No Contextual) and 58.66 for the unoptimised base."
+ ],
+ "strengths": [
+  "Shows that retrieving on LLM-generated descriptions beats retrieving on code; ablations isolate search and contextual retrieval.",
+  "Correctness checked by test cases and, for a subset, by the CBMC model checker."
+ ],
+ "limitations": [
+  {
+   "text": "Beam search makes both methods computationally more expensive; AEGIS needs extra training-time compute to build the atomic-edit dataset.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Scaling to complex, object-oriented codebases with many components is expected to be challenging.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Formal equivalence checking covers only 10 programs.",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "",
+ "notes": "Black-box adaptation; no fine-tuning.",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "P",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "anupam2026llm",
+ "cid": "C00005",
+ "corpus_id": "P0116",
+ "title": "LLM Program Optimization via Retrieval Augmented Search",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.2092",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/anupam2026llm.txt"
+}

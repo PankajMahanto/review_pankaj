@@ -1,0 +1,80 @@
+{
+ "key": "bhathena2026mmbizrag",
+ "category": "multimodal",
+ "subcategory": "structure-aware multimodal document RAG for enterprise Q&A",
+ "task": "Question answering over heterogeneous enterprise documents (reports, slide decks, PDFs, HTML)",
+ "problem": "Vision-centric MM-RAG (page-image embeddings such as ColPali/VisRAG) neglects explicit document structure and degrades on text-dense, table-rich report-style documents.",
+ "architecture": "MM-BizRAG: document-structure-aware split routing vertical documents (reports) to layout-aware parsing (Docling) and horizontal ones (slides) to holistic page-level representations; LLM-driven artifact transformation with placeholder-based positional alignment; inference-time multimodal assembly that decouples retrieval representations from generation context; FastRAGEval single-call LLM-judge metric.",
+ "retriever": "OpenAI text-embedding-3-large; cohere-embed-v4 and nomic-multimodal-embed-3b multimodal embeddings",
+ "generator": "GPT-4.1 family",
+ "knowledge_source": "enterprise documents (PDF, DOCX, HTML, PPTX) and public benchmark documents",
+ "llm_or_encoder": "GPT-4.1; text-embedding-3-large; cohere-embed-v4; nomic-multimodal-embed-3b",
+ "datasets": [
+  {
+   "name": "SlideVQA",
+   "details": "slide-deck QA, token recall"
+  },
+  {
+   "name": "FinRAGBench-V",
+   "details": "subset of 213 English PDFs processed"
+  },
+  {
+   "name": "internal enterprise dataset",
+   "details": "1908 questions over 1048 documents and 20429 pages, 30 business domains"
+  }
+ ],
+ "metrics": [
+  "RAGChecker recall",
+  "FastRAGEval recall",
+  "token recall",
+  "LLM-as-a-judge accuracy",
+  "faithfulness"
+ ],
+ "baselines": [
+  "text-only RAG",
+  "ColPali",
+  "VisRAG"
+ ],
+ "key_results": [
+  "On SlideVQA, FRE-Recall gains of 3.6-6.3% over ColPali and 8.4-11.1% over VisRAG.",
+  "On FinRAGBench-V the variants exceed ColPali and VisRAG by more than 25% (up to 32% points for the best variant).",
+  "The production variant TCTE reaches recall within 1-3% points of the best configuration at roughly half the latency for vertical documents."
+ ],
+ "strengths": [
+  "Shows that explicit layout parsing still matters for report-style documents where page-image retrieval degrades.",
+  "Controlled variant study isolates ingestion and embedding choices with a fixed inference stack; no fine-tuning needed."
+ ],
+ "limitations": [
+  {
+   "text": "Public evaluation limited to two datasets; SlideVQA slides are relatively simple compared with industry presentations.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Only 213 of the >1,100 FinRAGBench-V documents processed; multilingual capability not evaluated.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Only two open-source baselines (ColPali, VisRAG); the proprietary enterprise dataset is not released.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "notes": "Industry track paper (JPMorgan).",
+ "quality": {
+  "q1": "Y",
+  "q2": "P",
+  "q3": "P",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "bhathena2026mmbizrag",
+ "cid": "C00186",
+ "corpus_id": "P0503",
+ "title": "MM-BizRAG: Rethinking Multimodal Retrieval-Augmented Generation for General Purpose Enterprise Q&A",
+ "venue": "ACL 2026 (Industry Track)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-industry.134",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/bhathena2026mmbizrag.txt"
+}

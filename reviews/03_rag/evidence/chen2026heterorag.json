@@ -1,0 +1,123 @@
+{
+ "key": "chen2026heterorag",
+ "category": "multimodal",
+ "subcategory": "medical multimodal RAG over heterogeneous report and text corpora with preference alignment",
+ "task": "Medical VQA and medical report generation (radiology, ophthalmology, pathology)",
+ "problem": "Medical multimodal RAG cannot retrieve effectively across heterogeneous sources: irrelevant retrieved reports hurt factuality and insufficient knowledge hurts clinical credibility.",
+ "architecture": "HeteroRAG on the MedAtlas knowledge base: Modality-specific CLIPs (initialised from BiomedCLIP, trained on 1.10M radiology, 0.11M ophthalmology and 1.51M pathology image-text pairs) for report retrieval; a Multi-corpora Query Generator that writes corpus-specific queries for book, guideline, research, wiki and graph corpora; Heterogeneous Knowledge Preference Tuning aligning the Med-LVLM across modalities and sources.",
+ "retriever": "ModCLIPs for image-to-report retrieval; MedCPT retriever and reranker for text corpora; one-hop graph lookup",
+ "generator": "Lingshu-7B (main); also LLaVA-Med-7B and HuatuoGPT-V-7B",
+ "knowledge_source": "MedAtlas: multimodal report repositories plus textbook, guideline, research, Wikipedia and graph corpora",
+ "llm_or_encoder": "Lingshu-7B Med-LVLM; BiomedCLIP-based retrievers; MedCPT",
+ "datasets": [
+  {
+   "name": "VQA-RAD",
+   "details": "radiology VQA"
+  },
+  {
+   "name": "SLAKE",
+   "details": "radiology VQA"
+  },
+  {
+   "name": "OMVQA-Rad",
+   "details": "out-of-distribution radiology VQA"
+  },
+  {
+   "name": "DME-VQA",
+   "details": "ophthalmology VQA"
+  },
+  {
+   "name": "OMVQA-Oph",
+   "details": "out-of-distribution ophthalmology VQA"
+  },
+  {
+   "name": "PathMMU",
+   "details": "pathology"
+  },
+  {
+   "name": "PathVQA",
+   "details": "pathology VQA"
+  },
+  {
+   "name": "Quilt-VQA",
+   "details": "out-of-distribution pathology VQA"
+  },
+  {
+   "name": "MIMIC-CXR",
+   "details": "radiology report generation"
+  },
+  {
+   "name": "IU-Xray",
+   "details": "radiology report generation"
+  },
+  {
+   "name": "Harvard-FairVLMed",
+   "details": "ophthalmology report generation"
+  }
+ ],
+ "metrics": [
+  "accuracy",
+  "BLEU",
+  "ROUGE-L",
+  "RaTEScore",
+  "METEOR",
+  "image-to-text recall@5"
+ ],
+ "baselines": [
+  "Beam Search",
+  "DoLa",
+  "VCD",
+  "AVISC",
+  "M3ID",
+  "MedDr",
+  "FactMM-RAG",
+  "RULE",
+  "MMed-RAG",
+  "MKGF",
+  "K-LLaVA",
+  "MIRA"
+ ],
+ "key_results": [
+  "With Lingshu-7B, VQA-RAD accuracy 81.99 vs 72.79 (no retrieval) and 76.84 (MIRA); SLAKE 87.50 vs 86.06 (MMed-RAG).",
+  "Out-of-distribution OMVQA-Oph 86.00 vs 83.75 (K-LLaVA) and Quilt-VQA 72.89 vs 69.68 (FactMM-RAG).",
+  "On PathVQA, MIRA (92.10) and FactMM-RAG (91.98) remain above HeteroRAG (90.83).",
+  "Applied to LLaVA-Med-7B, OMVQA-Oph accuracy rises from 56.83 to 68.42."
+ ],
+ "strengths": [
+  "Large retrieval corpora and scaled modality-specific retrievers; leakage between retrieval base and test sets removed by perceptual hashing.",
+  "Evaluated on 11 datasets in 3 modalities, including out-of-distribution sets, and transferred to three Med-LVLMs."
+ ],
+ "limitations": [
+  {
+   "text": "One-step retrieval only; multi-round tool use and reasoning left for future work.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Fairness, privacy and safety aspects of deployment are not studied.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Not the best on every dataset (e.g. PathVQA).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/Jack-ZC8/HeteroRAG-Med",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "chen2026heterorag",
+ "cid": "C00164",
+ "corpus_id": "P0448",
+ "title": "HeteroRAG: A Heterogeneous Retrieval-Augmented Generation Framework for Medical Vision Language Tasks",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.176",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/chen2026heterorag.txt"
+}

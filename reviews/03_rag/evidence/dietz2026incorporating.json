@@ -1,0 +1,68 @@
+{
+ "key": "dietz2026incorporating",
+ "category": "generation",
+ "subcategory": "nugget-augmented generation with citation provenance for report generation",
+ "task": "Citation-supported report generation over multilingual collections (TREC NeuCLIR)",
+ "problem": "Long-form RAG reports repeat information and lose citation provenance when content is clustered or summarised; nugget-based ideas are used for evaluation but not to drive generation.",
+ "architecture": "Crucible: builds a bank of top-20 Q&A nuggets per request from retrieved documents (with paraphrase-based quality ranking), scans document chunks for passages answering each nugget and extracts one self-contained sentence with confidence, optionally verifies coverage and citation support with AutoArgue-style LLM prompts, and assembles a report where every sentence cites exactly one document.",
+ "retriever": "PLAID-X multilingual dense retriever (also Qwen3 embeddings and MILCO)",
+ "generator": "LLaMA-3.3-70B-Instruct",
+ "knowledge_source": "TREC NeuCLIR 2024 multilingual news collection (machine-translated to English)",
+ "llm_or_encoder": "LLaMA-3.3-70B-Instruct; PLAID-X",
+ "datasets": [
+  {
+   "name": "TREC NeuCLIR 2024 Report Generation Pilot",
+   "details": "topic-focused report requests with gold nugget banks"
+  }
+ ],
+ "metrics": [
+  "nugget recall",
+  "nugget density",
+  "sentence novelty",
+  "relevant sentences",
+  "citation support"
+ ],
+ "baselines": [
+  "Ginger",
+  "Ginger-LLaMA",
+  "GptResearcher",
+  "BulletPoints"
+ ],
+ "key_results": [
+  "Crucible-Base nugget recall 0.584 vs 0.230 for Ginger and 0.177 for GptResearcher.",
+  "Verification raises citation support from 0.595 to 0.932 and nugget density from 0.392 to 0.495."
+ ],
+ "strengths": [
+  "Shows how evaluation units (nuggets) can control redundancy and keep per-sentence provenance.",
+  "Reports variants with and without the verification step to expose evaluator leakage."
+ ],
+ "limitations": [
+  {
+   "text": "Developed with organisers of NeuCLIR and AutoArgue; the verification step is circular with the AutoArgue evaluator and may inflate citation support.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Designed for quality, not speed: LLM calls scale quadratically for paraphrase detection and with nuggets x documents for scanning.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/hltcoe/ecir26-crucible-system-appendix/",
+ "notes": "Read from the arXiv copy of the ECIR 2026 paper.",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "dietz2026incorporating",
+ "cid": "C00238",
+ "corpus_id": "P0613",
+ "title": "Incorporating Q&A Nuggets Into Retrieval-Augmented Generation",
+ "venue": "ECIR 2026",
+ "year": 2026,
+ "doi": "10.1007/978-3-032-21300-6_20",
+ "read_from": "arXiv preprint 2601.13222 (open-access copy; citation uses the published version)",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/dietz2026incorporating.txt"
+}

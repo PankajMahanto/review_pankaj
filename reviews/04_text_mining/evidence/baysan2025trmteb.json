@@ -1,0 +1,62 @@
+{
+ "key": "baysan2025trmteb",
+ "source_id": "C00015",
+ "title": "TR-MTEB: A Comprehensive Benchmark and Embedding Model Suite for Turkish Sentence Representations",
+ "venue": "Findings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.471",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "evaluation",
+ "subcategory": "language-specific MTEB benchmark + monolingual embedding models",
+ "task": "Benchmarking Turkish sentence embeddings across six task types",
+ "problem": "Turkish is barely covered by multilingual MTEB, so Turkish embedding models cannot be evaluated or developed reliably.",
+ "architecture": "TR-MTEB with 26 native and translated datasets (classification, clustering, pair classification, retrieval, bitext mining, STS; translated retrieval sets checked by an LLM evaluator); 34.2M weakly supervised Turkish pairs; bert-base-turkish-uncased trained with cached MNRL contrastive loss then supervised fine-tuning.",
+ "llm_or_encoder": "BERT-base Turkish encoder; LLM only as translation quality evaluator",
+ "datasets": [
+  {
+   "name": "TR-MTEB",
+   "details": "26 datasets, six task types"
+  },
+  {
+   "name": "Turkish sentence pairs (weakly supervised)",
+   "details": "34.2 million pairs from over 50 public datasets"
+  }
+ ],
+ "metrics": [
+  "MTEB task metrics: accuracy, V-measure, AP, nDCG@10, F1, Spearman"
+ ],
+ "baselines": [
+  "multilingual-e5 (small/base/large/large-instruct)",
+  "gte-multilingual-base",
+  "text-embedding-3-small",
+  "LaBSE",
+  "paraphrase-multilingual mpnet/MiniLM",
+  "FastText",
+  "GloVe",
+  "all-MiniLM",
+  "all-mpnet"
+ ],
+ "key_results": [
+  "multilingual-e5-large leads with Mean(Task) 66.82; the fine-tuned Turkish model reaches 63.42 (up from 59.84 for the contrastive-only model and 49.54 for bert-base-turkish-uncased).",
+  "Monolingual models trail on bitext mining (37.7 and 86.88) vs LaBSE 99.53."
+ ],
+ "strengths": [
+  "Public benchmark, data and models for a morphologically rich, under-served language.",
+  "Includes static-vector baselines to quantify the contextual gap."
+ ],
+ "limitations": [
+  {
+   "text": "Monolingual models lack cross-lingual pairs and underperform on bitext mining.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Part of the benchmark is translated, which may not capture native phenomena.",
+   "source": "reviewer-observed"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "LLM evaluator for translation reached 85.2% agreement with humans.",
+ "fulltext_txt": "fulltext/txt/baysan2025trmteb.txt"
+}

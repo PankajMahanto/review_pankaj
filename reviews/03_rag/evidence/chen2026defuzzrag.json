@@ -1,0 +1,78 @@
+{
+ "key": "chen2026defuzzrag",
+ "category": "retrieval",
+ "subcategory": "post-retrieval temporal alignment filtering for fuzzy time expressions",
+ "task": "Time-sensitive question answering / retrieval with fuzzy temporal expressions",
+ "problem": "Dense retrievers rank by semantic similarity and return topically relevant but temporally misaligned documents, especially when queries or documents use vague expressions such as 'a few years later'.",
+ "architecture": "DeFuzzRAG: (1) a small LM extracts the query's temporal intent as a structured interval; (2) query-aware temporal metadata are generated on the fly for the top-K retrieved documents; (3) temporal alignment filtering re-ranks or discards inconsistent passages; no retriever or generator retraining. Also introduces the Time Attention Ratio (TAR) diagnostic.",
+ "retriever": "MPNet (top-5) with FAISS; compared with BM25, Contriever, BGE",
+ "generator": "GPT-3.5; temporal parser SLMs LLaMA-2-7B, Mistral-7B, OpenChat-3.5, TinyLLaMA-1.1B (GPT-4 reference)",
+ "knowledge_source": "document collection of TempFuzz-QA",
+ "llm_or_encoder": "MPNet retriever; 7B SLM parser; GPT-3.5 generator",
+ "datasets": [
+  {
+   "name": "TempFuzz-QA",
+   "details": "benchmark of fuzzified temporal queries (explicit vs fuzzified versions)"
+  },
+  {
+   "name": "SpaceFuzz-QA",
+   "details": "1,000 spatially fuzzified query-document pairs"
+  }
+ ],
+ "metrics": [
+  "Hit Rate",
+  "Recall",
+  "MRR",
+  "Time Attention Ratio",
+  "latency"
+ ],
+ "baselines": [
+  "BM25",
+  "MPNet",
+  "Contriever",
+  "BGE"
+ ],
+ "key_results": [
+  "Hit Rate improves by 15.7% over standard RAG on TempFuzz-QA and TAR rises by 27.7% on average.",
+  "Fuzzified-query HR 0.7765 (LLaMA2-7B parser) vs 0.6712 for MPNet and 0.7426 for BGE.",
+  "Mistral-7B parser reaches MRR 0.5402 vs 0.5483 for GPT-4 at much lower latency (2.84 vs 11.14 s per query).",
+  "On SpaceFuzz-QA, HR 0.7834 vs 0.7253 (MPNet)."
+ ],
+ "strengths": [
+  "Plug-and-play, training-free and model-agnostic; works on top of unmodified retrievers.",
+  "Analyses performance by fuzziness type and query type."
+ ],
+ "limitations": [
+  {
+   "text": "Spatial-fuzziness evaluation is only a preliminary demonstration.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Generalized dating expressions (broad or seasonal) remain hardest; small parsers such as TinyLLaMA-1.1B lose MRR (0.4702).",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Evaluation centres on retrieval metrics on a self-built benchmark; end-to-end answer quality is not the main reported outcome.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "",
+ "notes": "Adds 1-3 s latency per query depending on the parser.",
+ "quality": {
+  "q1": "Y",
+  "q2": "P",
+  "q3": "P",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "chen2026defuzzrag",
+ "cid": "C00079",
+ "corpus_id": "P0277",
+ "title": "DeFuzzRAG: Handling Fuzzy Time Expressions for Temporal Robustness in Retrieval-Augmented Generation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40276",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/chen2026defuzzrag.txt"
+}

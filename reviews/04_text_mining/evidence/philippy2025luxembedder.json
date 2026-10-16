@@ -1,0 +1,64 @@
+{
+ "key": "philippy2025luxembedder",
+ "source_id": "C00005",
+ "title": "LuxEmbedder: A Cross-Lingual Approach to Enhanced Luxembourgish Sentence Embeddings",
+ "venue": "COLING 2025",
+ "year": 2025,
+ "doi": "",
+ "read_from": "arXiv copy (2412.03331v2) of the COLING 2025 paper",
+ "evidence_level": "full-text",
+ "category": "multilingual",
+ "subcategory": "low-resource language adaptation of a cross-lingual sentence encoder",
+ "task": "Sentence embeddings for Luxembourgish (cross-lingual transfer, bitext mining, zero-shot classification, paraphrase detection)",
+ "problem": "Sentence embedding models depend on parallel data that is scarce for low-resource languages such as Luxembourgish, and benchmarks for these languages are missing.",
+ "architecture": "LaBSE fine-tuned on newly mined human-written parallel sentences (LuxAlign: news articles aligned with text-embedding-3-small, sentences extracted with LaBSE); new ParaLux paraphrase-detection benchmark with GPT-4o-generated, human-corrected adversarial negatives; cross-lingual alignment analysed with CKA on Flores-200.",
+ "llm_or_encoder": "LaBSE (encoder); GPT-4o only for benchmark construction",
+ "datasets": [
+  {
+   "name": "LuxAlign",
+   "details": "25 996 LB-EN and 86 293 LB-FR parallel samples"
+  },
+  {
+   "name": "ParaLux",
+   "details": "312 paraphrase samples with adversarial negatives"
+  },
+  {
+   "name": "Flores-200",
+   "details": "used to measure cross-lingual alignment with CKA"
+  }
+ ],
+ "metrics": [
+  "accuracy (all four tasks)",
+  "CKA alignment"
+ ],
+ "baselines": [
+  "Cohere embed-multilingual v3 (light and full)",
+  "OpenAI text-embedding-3-small/large",
+  "mBERT",
+  "LuxemBERT",
+  "LASER",
+  "LaBSE"
+ ],
+ "key_results": [
+  "LuxEmbedder accuracy: CL transfer 83.39, bitext mining 70.24, zero-shot classification 65.59, ParaLux 52.24 vs LaBSE 80.88 / 70.11 / 43.24 / 38.14.",
+  "Only OpenAI text-embedding-3-large is better on cross-lingual transfer (86.25)."
+ ],
+ "strengths": [
+  "Shows that a small, high-quality parallel set improves a low-resource language.",
+  "Including a low-resource language in parallel training improves alignment of other low-resource languages more than high-resource pairs."
+ ],
+ "limitations": [
+  {
+   "text": "No comparison against general-purpose generative LLMs, which may outperform it on some tasks.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Parallel data is limited to the news domain.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/fredxlpy/LuxEmbedder",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/philippy2025luxembedder.txt"
+}

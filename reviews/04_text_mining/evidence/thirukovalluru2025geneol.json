@@ -1,0 +1,64 @@
+{
+ "key": "thirukovalluru2025geneol",
+ "source_id": "C00022",
+ "title": "GenEOL: Harnessing the Generative Power of LLMs for Training-Free Sentence Embeddings",
+ "venue": "Findings of NAACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-naacl.122",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-embedding",
+ "subcategory": "training-free: aggregate embeddings of LLM-generated meaning-preserving transformations",
+ "task": "Training-free sentence embeddings (STS, MTEB clustering/reranking/pair classification/classification)",
+ "problem": "Training-free LLM embedding methods only optimise prompts and ignore the generative abilities of LLMs.",
+ "architecture": "A generator LLM produces m diverse meaning-preserving transformations of a sentence (e.g. paraphrase, compression); an embedder LLM embeds each with an EOL-style prompt and the embeddings are averaged.",
+ "llm_or_encoder": "Embedders Mistral0.1-7B, Llama2-7B, Llama3-8B; generators Mistral0.1-I-7B and ChatGPT",
+ "datasets": [
+  {
+   "name": "STS12-16 / STSB / Sick-R",
+   "details": "Spearman"
+  },
+  {
+   "name": "MTEB",
+   "details": "10 tasks in 4 categories"
+  }
+ ],
+ "metrics": [
+  "Spearman correlation",
+  "MTEB task metrics"
+ ],
+ "baselines": [
+  "Token Avg.",
+  "Echo",
+  "PromptEOL",
+  "PCoTEOL",
+  "KEEOL",
+  "MetaEOL",
+  "LLM2Vec (unsupervised)"
+ ],
+ "key_results": [
+  "Mistral0.1-7B embedder with 32 transformations: STS average 79.99 vs 76.09 for MetaEOL.",
+  "Average gain of 2.85 points over prior training-free methods across LLMs on STS."
+ ],
+ "compare": [
+  {
+   "benchmark": "STS avg (7)",
+   "setting": "Mistral-7B, training-free",
+   "value": "79.99"
+  }
+ ],
+ "strengths": [
+  "Works with black-box generators.",
+  "Stabilises representation quality across LLM layers and is robust to prompt perturbations."
+ ],
+ "limitations": [
+  {
+   "text": "Cost of generating and embedding multiple transformations per sentence.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/raghavlite/GenEOL",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/thirukovalluru2025geneol.txt"
+}

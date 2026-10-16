@@ -1,0 +1,1 @@
+retrieval[- ]?augment|\bRAG\b|GraphRAG|retrieval[- ]enhanced|augmented language model|retrieval[- ]based (generation|language model)|retrieve[- ]and[- ]generate|retrieve[- ]then[- ]read|dense passage retrieval|open[- ]domain question answering|knowledge[- ]intensive|\bretriever|search[- ]augmented|search agent|agentic search|deep research

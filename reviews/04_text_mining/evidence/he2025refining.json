@@ -1,0 +1,69 @@
+{
+ "key": "he2025refining",
+ "source_id": "C00019",
+ "title": "Refining Sentence Embedding Model through Ranking Sentences Generation with Large Language Models",
+ "venue": "Findings of ACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-acl.553",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-embedding",
+ "subcategory": "LLM-synthesised ranking data with directional control for post-training sentence encoders",
+ "task": "Sentence embeddings (STS, transfer, reranking)",
+ "problem": "LLM-generated sentence pairs ignore ranking information needed for fine-grained semantic distinctions; naive prompting yields ambiguous rankings.",
+ "architecture": "Directionally controlled decoding: the next sentence's sampling combines the latent generation directions of the two previous sentences, producing ranking sentences with progressively increasing divergence; post-training of existing models (SynCSE, MultiCSR) with a loss that mixes ranking and semantic-similarity information (weight omega).",
+ "llm_or_encoder": "LLM generator; BERT/RoBERTa encoders",
+ "datasets": [
+  {
+   "name": "STS12-16 / STS-B / SICK-R",
+   "details": "Spearman"
+  },
+  {
+   "name": "reranking tasks",
+   "details": "MTEB-style reranking"
+  }
+ ],
+ "metrics": [
+  "Spearman correlation"
+ ],
+ "baselines": [
+  "SimCSE",
+  "DiffCSE",
+  "PromptBERT",
+  "PCL",
+  "DebCSE",
+  "InfoCSE",
+  "RankCSE",
+  "SynCSE",
+  "MultiCSR"
+ ],
+ "key_results": [
+  "BERT-base: MultiCSR-r averages 81.33 and SynCSE-r 81.17 on seven STS tasks vs 80.61 and 80.13 before refinement.",
+  "BERT-large: MultiCSR-r 82.47 vs 82.15."
+ ],
+ "compare": [
+  {
+   "benchmark": "STS avg (7)",
+   "setting": "BERT-base",
+   "value": "81.33"
+  }
+ ],
+ "strengths": [
+  "Shows the value of ranking information in synthetic data.",
+  "Modest generation cost; ablations of each generation/post-training choice."
+ ],
+ "limitations": [
+  {
+   "text": "Selection and refinement of synthesised data are not addressed.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Depends on the hyperparameter omega; an adaptive scheme is future work.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/he2025refining.txt"
+}

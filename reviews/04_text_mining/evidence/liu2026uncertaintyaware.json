@@ -1,0 +1,56 @@
+{
+ "key": "liu2026uncertaintyaware",
+ "source_id": "C00011",
+ "title": "Uncertainty-Aware Contrastive Sentence Embedding With Local Context Representation for Text Classification",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1927",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "universal-embedding",
+ "subcategory": "task adaptation of frozen LLM embedders with probabilistic (Gaussian) sentence embeddings",
+ "task": "Text classification with task-adapted sentence embeddings (MTEB classification)",
+ "problem": "Deterministic sentence embeddings ignore local context dependencies and semantic ambiguity, which hurts downstream classification.",
+ "architecture": "Frozen LLM embedder token matrix -> uncertainty-aware TextCNN (kernels 3/4/5) that outputs a mean vector and a variance (reparameterisation); uncertainty-aware loss plus label-wise contrastive loss (LCL); mean vector used at inference.",
+ "llm_or_encoder": "Qwen3-Embedding-0.6B, F2LLM-0.6B, embeddinggemma-300m (frozen)",
+ "datasets": [
+  {
+   "name": "MTEB (English, v2) classification",
+   "details": "eight tasks: Amazon, Banking77, IMDb, MTOP domain, MASSIVE intent/scenario, Toxic, Tweet sentiment"
+  }
+ ],
+ "metrics": [
+  "accuracy"
+ ],
+ "baselines": [
+  "text-embedding-3-large",
+  "Gemini Embedding",
+  "Seed1.5-Embedding",
+  "LGAI-Embedding-Preview",
+  "Qwen3-Embedding 0.6B/4B/8B",
+  "F2LLM-0.6B",
+  "embeddinggemma-300m"
+ ],
+ "key_results": [
+  "Average accuracy over eight tasks: 92.05 (Qwen3-Embedding-0.6B + method), 92.20 (F2LLM-0.6B), 92.22 (embeddinggemma-300m) vs 90.47, 88.10, 90.31 for the reproduced baselines.",
+  "Leaderboard scores of larger models are lower, e.g. Qwen3-Embedding-8B 90.43 and Gemini Embedding 90.05."
+ ],
+ "strengths": [
+  "Lightweight head on frozen embedders lets small models beat larger ones on classification.",
+  "Ablations isolate uncertainty and label-wise contrastive modules."
+ ],
+ "limitations": [
+  {
+   "text": "Only English; languages with different tokenisation (e.g. Chinese, Japanese) not studied.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Supervised, task-specific adaptation: the embeddings are tuned per classification task rather than general-purpose.",
+   "source": "reviewer-observed"
+  }
+ ],
+ "code": "https://github.com/stickDONTdip/Uncertainty-Aware-Contrastive-Sentence-Embedding",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/liu2026uncertaintyaware.txt"
+}

@@ -1,0 +1,91 @@
+{
+ "key": "zheng2026graphaugmented",
+ "source_id": "C00013",
+ "title": "Graph-augmented and Over-smoothing-resistant Contrastive Clustering for Short Text",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i41.40810",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "category": "clustering-deep",
+ "subcategory": "graph-augmented contrastive short-text clustering",
+ "task": "Unsupervised short text clustering",
+ "problem": "Augmented samples in contrastive clustering add noise and deep encoders over-smooth fine-grained semantics of short texts.",
+ "architecture": "GOCC: SBERT embeddings; sentence-level and cluster-level graphs encoded by GCNs to build graph-augmented views; contrastive learning with intermediate-layer PLM representations as negatives (over-smoothing resistance); target-distribution-driven clustering loss; k-means on final embeddings.",
+ "llm_or_encoder": "SBERT / distilBERT (no LLM)",
+ "datasets": [
+  {
+   "name": "AgNews",
+   "details": "balanced news"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "mildly imbalanced web snippets"
+  },
+  {
+   "name": "GoogleNews-TS / GoogleNews-T / GoogleNews-S",
+   "details": "severely imbalanced news"
+  },
+  {
+   "name": "Tweet",
+   "details": "severely imbalanced tweets"
+  }
+ ],
+ "metrics": [
+  "ACC",
+  "NMI"
+ ],
+ "baselines": [
+  "BOW",
+  "TF-IDF",
+  "STCC",
+  "Self-Train",
+  "SCCL",
+  "ProPos",
+  "RSTC"
+ ],
+ "key_results": [
+  "Full GOCC: AgNews ACC 87.68 / NMI 66.12, SearchSnippets 85.27 / 70.73, Tweet 81.84 / 90.35.",
+  "Adding the sentence-level graph view improves SearchSnippets accuracy by 7.62% over the variant without graph augmentation."
+ ],
+ "compare": [
+  {
+   "benchmark": "AgNews",
+   "metric": "ACC/NMI",
+   "value": "87.68 / 66.12"
+  },
+  {
+   "benchmark": "SearchSnippets",
+   "metric": "ACC/NMI",
+   "value": "85.27 / 70.73"
+  },
+  {
+   "benchmark": "GoogleNews-TS",
+   "metric": "ACC/NMI",
+   "value": "87.63 / 93.77"
+  },
+  {
+   "benchmark": "Tweet",
+   "metric": "ACC/NMI",
+   "value": "81.84 / 90.35"
+  }
+ ],
+ "strengths": [
+  "Explicitly targets over-smoothing with intermediate-layer negatives.",
+  "Ablations for each module and view."
+ ],
+ "limitations": [
+  {
+   "text": "Requires the number of clusters K (k-means initialisation of cluster centres).",
+   "source": "reviewer-observed"
+  },
+  {
+   "text": "Sensitive to temperature and loss-weight hyperparameters (sensitivity analysis shows degradation away from chosen values).",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/zjzone/GOCC",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/zheng2026graphaugmented.txt"
+}

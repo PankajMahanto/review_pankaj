@@ -1,0 +1,82 @@
+{
+ "key": "bang2026feedback",
+ "category": "evaluation",
+ "subcategory": "feedback adaptation of deployed RAG (correction lag, post-feedback performance) + inference-time feedback memory",
+ "task": "Open-domain QA under user/expert corrective feedback",
+ "problem": "RAG systems are evaluated statically although deployed systems are corrected by feedback; existing protocols do not measure how fast and how well corrections propagate to related queries.",
+ "architecture": "Defines two evaluation axes (correction lag = wall-clock time until updated behaviour; post-feedback performance on semantically related queries). PatchRAG stores feedback in a non-parametric memory and retrieves it with dual intent-context retrieval at inference time, conditioning generation on stored feedback without retraining.",
+ "retriever": "bge-m3 dense retriever (shared space for user intents and evidence contexts)",
+ "generator": "Llama-3 8B",
+ "knowledge_source": "Wikipedia corpus of each dataset plus a feedback memory (~150K synthetic instances for TriviaQA)",
+ "llm_or_encoder": "Llama-3 8B generator; bge-m3 retriever",
+ "datasets": [
+  {
+   "name": "Natural Questions (NQ)",
+   "details": "EM reported"
+  },
+  {
+   "name": "TriviaQA",
+   "details": "EM reported"
+  },
+  {
+   "name": "HotpotQA",
+   "details": "F1 reported"
+  }
+ ],
+ "metrics": [
+  "Exact Match",
+  "F1",
+  "correction lag (seconds)",
+  "post-feedback performance"
+ ],
+ "baselines": [
+  "Standard RAG",
+  "Self-RAG",
+  "Auto-RAG",
+  "ChatQA-1.5",
+  "Golden-only fine-tuning",
+  "RAFT"
+ ],
+ "key_results": [
+  "After feedback at step t, PatchRAG averages 62.3 over NQ/TriviaQA/HotpotQA vs 57.3 for RAFT and 56.1 for Golden-only.",
+  "NQ EM after feedback 49.8 (PatchRAG) vs 41.9 (RAFT); without feedback, Standard RAG averages 42.1 and Self-RAG 34.7.",
+  "Training-based updates show a trade-off between correction lag and post-feedback F1, which the inference-time method avoids."
+ ],
+ "strengths": [
+  "Introduces a deployment-relevant evaluation dimension (how quickly corrections take effect) missing from accuracy-only RAG evaluation.",
+  "All systems share the same generator and retriever for a fair comparison."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluated in a controlled setting; real-world feedback can be heterogeneous, noisy or interactive.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Accumulated, unresolved or conflicting feedback may require consolidation mechanisms that are not addressed.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Stored feedback may contain sensitive information, raising privacy concerns.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "notes": "Feedback memory is populated with synthetic instances.",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "bang2026feedback",
+ "cid": "C00209",
+ "corpus_id": "P0530",
+ "title": "Feedback Adaptation for Retrieval-Augmented Generation",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1419",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/bang2026feedback.txt"
+}

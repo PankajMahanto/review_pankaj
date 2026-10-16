@@ -1,0 +1,76 @@
+{
+ "key": "chen2026pathrag",
+ "category": "graph",
+ "subcategory": "graph-based RAG with flow-based pruning of relational paths and path-based prompting",
+ "task": "Query-focused, open-ended question answering over large text collections",
+ "problem": "Graph-based RAG (GraphRAG, LightRAG) retrieves redundant rather than insufficient information and places it in prompts as a flat list, which hurts answer quality.",
+ "architecture": "PathRAG: an indexing graph is built as in GraphRAG; node retrieval matches LLM-extracted query keywords to nodes by embedding similarity; a distance-aware flow-based pruning algorithm (resource propagation with decay alpha) extracts key relational paths between retrieved nodes; paths are converted to text and ordered in a path-based prompt for the LLM.",
+ "retriever": "text-embedding-3-small keyword-to-node matching + flow-based path pruning (N = 40, K = 15)",
+ "generator": "GPT-4o-mini (also GPT-4o and DeepSeek-V3)",
+ "knowledge_source": "entity-relation indexing graph built from the text corpus",
+ "llm_or_encoder": "GPT-4o-mini; text-embedding-3-small",
+ "datasets": [
+  {
+   "name": "UltraDomain",
+   "details": "Agriculture, CS, Legal, History, Biology, Mix subsets"
+  },
+  {
+   "name": "SQuALITY",
+   "details": "long-document QA"
+  },
+  {
+   "name": "SummScreen",
+   "details": "TV transcript summarisation"
+  }
+ ],
+ "metrics": [
+  "LLM-judged win rate (comprehensiveness, diversity, logicality, relevance, coherence)",
+  "token cost"
+ ],
+ "baselines": [
+  "NaiveRAG",
+  "HyDE",
+  "G-retriever",
+  "HippoRAG",
+  "GraphRAG",
+  "LightRAG"
+ ],
+ "key_results": [
+  "Average win rates of 59.93% against GraphRAG and 57.09% against LightRAG across six datasets.",
+  "Average win rate of 62.52% in comprehensiveness and 65.37% in diversity against all baselines.",
+  "Uses 14,438 tokens per query vs 16,728 for LightRAG (13.69% fewer); the light version PathRAG-lt uses 9,968."
+ ],
+ "strengths": [
+  "Shows that pruning redundant graph context and ordering it as paths improves answers while reducing tokens.",
+  "Robustness checks under graph sparsity and with three different base/evaluator LLMs; ten trials averaged."
+ ],
+ "limitations": [
+  {
+   "text": "No ground-truth answers: evaluation relies on LLM-judged pairwise win rates.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Indexing graph construction is inherited from GraphRAG and its cost is not reduced; the authors plan to optimise it and to collect more human-annotated data.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/BUPT-GAMMA/PathRAG",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "chen2026pathrag",
+ "cid": "C00004",
+ "corpus_id": "P0115",
+ "title": "PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40268",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/chen2026pathrag.txt"
+}

@@ -1,0 +1,1345 @@
+[
+ {
+  "title_seed": "Distributed Representations of Words and Phrases and their Compositionality",
+  "doi": "10.48550/arxiv.1310.4546",
+  "arxiv_id": "1310.4546",
+  "venue": "Advances in Neural Information Processing Systems 26 (NeurIPS 2013)",
+  "landing_url": "https://proceedings.neurips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html",
+  "title": "Distributed Representations of Words and Phrases and their Compositionality",
+  "authors": [
+   "Tomas Mikolov",
+   "Ilya Sutskever",
+   "Kai Chen",
+   "Greg Corrado",
+   "Jeffrey Dean"
+  ],
+  "year": 2013,
+  "abstract": "The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. An inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of \"Canada\" and \"Air\" cannot be easily combined to obtain \"Air Canada\". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible."
+ },
+ {
+  "title_seed": "GloVe: Global Vectors for Word Representation",
+  "doi": "10.3115/v1/d14-1162",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "landing_url": "",
+  "title": "Glove: Global Vectors for Word Representation",
+  "authors": [
+   "Jeffrey Pennington",
+   "Richard Socher",
+   "Christopher Manning"
+  ],
+  "year": 2014
+ },
+ {
+  "title_seed": "Enriching Word Vectors with Subword Information",
+  "doi": "10.1162/tacl_a_00051",
+  "arxiv_id": "1607.04606",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "landing_url": "",
+  "title": "Enriching Word Vectors with Subword Information",
+  "authors": [
+   "Piotr Bojanowski",
+   "Edouard Grave",
+   "Armand Joulin",
+   "Tomas Mikolov"
+  ],
+  "year": 2017,
+  "abstract": "Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character n-grams. A vector representation is associated to each character n-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks."
+ },
+ {
+  "title_seed": "Distributed Representations of Sentences and Documents",
+  "doi": "10.48550/arxiv.1405.4053",
+  "arxiv_id": "1405.4053",
+  "venue": "Proceedings of the 31st International Conference on Machine Learning (ICML 2014), PMLR 32",
+  "landing_url": "https://proceedings.mlr.press/v32/le14.html",
+  "title": "Distributed Representations of Sentences and Documents",
+  "authors": [
+   "Quoc V. Le",
+   "Tomas Mikolov"
+  ],
+  "year": 2014,
+  "abstract": "Many machine learning algorithms require the input to be represented as a fixed-length feature vector. When it comes to texts, one of the most common fixed-length features is bag-of-words. Despite their popularity, bag-of-words features have two major weaknesses: they lose the ordering of the words and they also ignore semantics of the words. For example, \"powerful,\" \"strong\" and \"Paris\" are equally distant. In this paper, we propose Paragraph Vector, an unsupervised algorithm that learns fixed-length feature representations from variable-length pieces of texts, such as sentences, paragraphs, and documents. Our algorithm represents each document by a dense vector which is trained to predict words in the document. Its construction gives our algorithm the potential to overcome the weaknesses of bag-of-words models. Empirical results show that Paragraph Vectors outperform bag-of-words models as well as other techniques for text representations. Finally, we achieve new state-of-the-art results on several text classification and sentiment analysis tasks."
+ },
+ {
+  "title_seed": "Skip-Thought Vectors",
+  "doi": "10.48550/arxiv.1506.06726",
+  "arxiv_id": "1506.06726",
+  "venue": "Advances in Neural Information Processing Systems 28 (NeurIPS 2015)",
+  "landing_url": "https://proceedings.neurips.cc/paper/2015/hash/f442d33fa06832082290ad8544a8da27-Abstract.html",
+  "title": "Skip-Thought Vectors",
+  "authors": [
+   "Ryan Kiros",
+   "Yukun Zhu",
+   "Ruslan Salakhutdinov",
+   "Richard S. Zemel",
+   "Antonio Torralba",
+   "Raquel Urtasun",
+   "Sanja Fidler"
+  ],
+  "year": 2015,
+  "abstract": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations. We next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets. The end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice. We will make our encoder publicly available."
+ },
+ {
+  "title_seed": "Supervised Learning of Universal Sentence Representations from Natural Language Inference Data",
+  "doi": "10.18653/v1/d17-1070",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2017 Conference on Empirical Methods in Natural\n          Language Processing",
+  "landing_url": "",
+  "title": "Supervised Learning of Universal Sentence Representations from Natural Language Inference Data",
+  "authors": [
+   "Alexis Conneau",
+   "Douwe Kiela",
+   "Holger Schwenk",
+   "Loïc Barrault",
+   "Antoine Bordes"
+  ],
+  "year": 2017
+ },
+ {
+  "title_seed": "Universal Sentence Encoder for English",
+  "doi": "10.18653/v1/d18-2029",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+  "landing_url": "",
+  "title": "Universal Sentence Encoder for English",
+  "authors": [
+   "Daniel Cer",
+   "Yinfei Yang",
+   "Sheng-yi Kong",
+   "Nan Hua",
+   "Nicole Limtiaco",
+   "Rhomni St. John",
+   "Noah Constant",
+   "Mario Guajardo-Cespedes",
+   "Steve Yuan",
+   "Chris Tar",
+   "Brian Strope",
+   "Ray Kurzweil"
+  ],
+  "year": 2018
+ },
+ {
+  "title_seed": "Deep Contextualized Word Representations",
+  "doi": "10.18653/v1/n18-1202",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2018 Conference of the North American Chapter of\n          the Association for Computational Linguistics: Human Language\n          Technologies, Volume 1 (Long Papers)",
+  "landing_url": "",
+  "title": "Deep Contextualized Word Representations",
+  "authors": [
+   "Matthew Peters",
+   "Mark Neumann",
+   "Mohit Iyyer",
+   "Matt Gardner",
+   "Christopher Clark",
+   "Kenton Lee",
+   "Luke Zettlemoyer"
+  ],
+  "year": 2018
+ },
+ {
+  "title_seed": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "doi": "10.18653/v1/n19-1423",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+  "landing_url": "",
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "authors": [
+   "Jacob Devlin",
+   "Ming-Wei Chang",
+   "Kenton Lee",
+   "Kristina Toutanova"
+  ],
+  "year": 2019
+ },
+ {
+  "title_seed": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+  "doi": "10.18653/v1/d19-1410",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "landing_url": "",
+  "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+  "authors": [
+   "Nils Reimers",
+   "Iryna Gurevych"
+  ],
+  "year": 2019
+ },
+ {
+  "title_seed": "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation",
+  "doi": "10.18653/v1/2020.emnlp-main.365",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "landing_url": "",
+  "title": "Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation",
+  "authors": [
+   "Nils Reimers",
+   "Iryna Gurevych"
+  ],
+  "year": 2020
+ },
+ {
+  "title_seed": "On the Sentence Embeddings from Pre-trained Language Models",
+  "doi": "10.18653/v1/2020.emnlp-main.733",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "landing_url": "",
+  "title": "On the Sentence Embeddings from Pre-trained Language Models",
+  "authors": [
+   "Bohan Li",
+   "Hao Zhou",
+   "Junxian He",
+   "Mingxuan Wang",
+   "Yiming Yang",
+   "Lei Li"
+  ],
+  "year": 2020
+ },
+ {
+  "title_seed": "Whitening Sentence Representations for Better Semantics and Faster Retrieval",
+  "doi": "10.48550/arxiv.2103.15316",
+  "arxiv_id": "2103.15316",
+  "venue": "",
+  "landing_url": "",
+  "title": "Whitening Sentence Representations for Better Semantics and Faster Retrieval",
+  "authors": [
+   "Jianlin Su",
+   "Jiarun Cao",
+   "Weijie Liu",
+   "Yangyiwen Ou"
+  ],
+  "year": 2021,
+  "abstract": "Pre-training models such as BERT have achieved great success in many natural language processing tasks. However, how to obtain better sentence representation through these pre-training models is still worthy to exploit. Previous work has shown that the anisotropy problem is an critical bottleneck for BERT-based sentence representation which hinders the model to fully utilize the underlying semantic features. Therefore, some attempts of boosting the isotropy of sentence distribution, such as flow-based model, have been applied to sentence representations and achieved some improvement. In this paper, we find that the whitening operation in traditional machine learning can similarly enhance the isotropy of sentence representations and achieve competitive results. Furthermore, the whitening technique is also capable of reducing the dimensionality of the sentence representation. Our experimental results show that it can not only achieve promising performance but also significantly reduce the storage cost and accelerate the model retrieval speed."
+ },
+ {
+  "title_seed": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+  "doi": "10.18653/v1/2021.emnlp-main.552",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+  "authors": [
+   "Tianyu Gao",
+   "Xingcheng Yao",
+   "Danqi Chen"
+  ],
+  "year": 2021
+ },
+ {
+  "title_seed": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+  "doi": "10.18653/v1/2021.acl-long.393",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "ConSERT: A Contrastive Framework for Self-Supervised Sentence Representation Transfer",
+  "authors": [
+   "Yuanmeng Yan",
+   "Rumei Li",
+   "Sirui Wang",
+   "Fuzheng Zhang",
+   "Wei Wu",
+   "Weiran Xu"
+  ],
+  "year": 2021
+ },
+ {
+  "title_seed": "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings",
+  "doi": "10.18653/v1/2022.naacl-main.311",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+  "landing_url": "",
+  "title": "DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings",
+  "authors": [
+   "Yung-Sung Chuang",
+   "Rumen Dangovski",
+   "Hongyin Luo",
+   "Yang Zhang",
+   "Shiyu Chang",
+   "Marin Soljacic",
+   "Shang-Wen Li",
+   "Scott Yih",
+   "Yoon Kim",
+   "James Glass"
+  ],
+  "year": 2022
+ },
+ {
+  "title_seed": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+  "doi": "10.18653/v1/2022.emnlp-main.603",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "PromptBERT: Improving BERT Sentence Embeddings with Prompts",
+  "authors": [
+   "Ting Jiang",
+   "Jian Jiao",
+   "Shaohan Huang",
+   "Zihan Zhang",
+   "Deqing Wang",
+   "Fuzhen Zhuang",
+   "Furu Wei",
+   "Haizhen Huang",
+   "Denvy Deng",
+   "Qi Zhang"
+  ],
+  "year": 2022
+ },
+ {
+  "title_seed": "Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models",
+  "doi": "10.18653/v1/2022.findings-acl.146",
+  "arxiv_id": "",
+  "venue": "Findings of the Association for Computational Linguistics: ACL 2022",
+  "landing_url": "",
+  "title": "Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models",
+  "authors": [
+   "Jianmo Ni",
+   "Gustavo Hernandez Abrego",
+   "Noah Constant",
+   "Ji Ma",
+   "Keith Hall",
+   "Daniel Cer",
+   "Yinfei Yang"
+  ],
+  "year": 2022
+ },
+ {
+  "title_seed": "Language-agnostic BERT Sentence Embedding",
+  "doi": "10.18653/v1/2022.acl-long.62",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Language-agnostic BERT Sentence Embedding",
+  "authors": [
+   "Fangxiaoyu Feng",
+   "Yinfei Yang",
+   "Daniel Cer",
+   "Naveen Arivazhagan",
+   "Wei Wang"
+  ],
+  "year": 2022
+ },
+ {
+  "title_seed": "Text and Code Embeddings by Contrastive Pre-Training",
+  "doi": "10.48550/arxiv.2201.10005",
+  "arxiv_id": "2201.10005",
+  "venue": "",
+  "landing_url": "",
+  "title": "Text and Code Embeddings by Contrastive Pre-Training",
+  "authors": [
+   "Arvind Neelakantan",
+   "Tao Xu",
+   "Raul Puri",
+   "Alec Radford",
+   "Jesse Michael Han",
+   "Jerry Tworek",
+   "Qiming Yuan",
+   "Nikolas Tezak",
+   "Jong Wook Kim",
+   "Chris Hallacy",
+   "Johannes Heidecke",
+   "Pranav Shyam"
+  ],
+  "year": 2022,
+  "abstract": "Text embeddings are useful features in many applications such as semantic search and computing text similarity. Previous work typically trains models customized for different use cases, varying in dataset choice, training objective and model architecture. In this work, we show that contrastive pre-training on unsupervised data at scale leads to high quality vector representations of text and code. The same unsupervised text embeddings that achieve new state-of-the-art results in linear-probe classification also display impressive semantic search capabilities and sometimes even perform competitively with fine-tuned models. On linear-probe classification accuracy averaging over 7 tasks, our best unsupervised model achieves a relative improvement of 4% and 1.8% over previous best unsupervised and supervised text embedding models respectively. The same text embeddings when evaluated on large-scale semantic search attains a relative improvement of 23.4%, 14.7%, and 10.6% over previous best unsupervised methods on MSMARCO, Natural Questions and TriviaQA benchmarks, respectively. Similarly to text embeddings, we train code embedding models on (text, code) pairs, obtaining a 20.8% relative improvement over prior best work on code search."
+ },
+ {
+  "title_seed": "Matryoshka Representation Learning",
+  "doi": "10.48550/arxiv.2205.13147",
+  "arxiv_id": "2205.13147",
+  "venue": "Advances in Neural Information Processing Systems 35 (NeurIPS 2022)",
+  "landing_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/c32319f4868da7613d78af9993100e42-Abstract-Conference.html",
+  "title": "Matryoshka Representation Learning",
+  "authors": [
+   "Aditya Kusupati",
+   "Gantavya Bhatt",
+   "Aniket Rege",
+   "Matthew Wallingford",
+   "Aditya Sinha",
+   "Vivek Ramanujan",
+   "William Howard-Snyder",
+   "Kaifeng Chen",
+   "Sham Kakade",
+   "Prateek Jain",
+   "Ali Farhadi"
+  ],
+  "year": 2022,
+  "abstract": "Learned representations are a central component in modern ML systems, serving a multitude of downstream tasks. When training such representations, it is often the case that computational and statistical constraints for each downstream task are unknown. In this context rigid, fixed capacity representations can be either over or under-accommodating to the task at hand. This leads us to ask: can we design a flexible representation that can adapt to multiple downstream tasks with varying computational resources? Our main contribution is Matryoshka Representation Learning (MRL) which encodes information at different granularities and allows a single embedding to adapt to the computational constraints of downstream tasks. MRL minimally modifies existing representation learning pipelines and imposes no additional cost during inference and deployment. MRL learns coarse-to-fine representations that are at least as accurate and rich as independently trained low-dimensional representations. The flexibility within the learned Matryoshka Representations offer: (a) up to 14x smaller embedding size for ImageNet-1K classification at the same level of accuracy; (b) up to 14x real-world speed-ups for large-scale retrieval on ImageNet-1K and 4K; and (c) up to 2% accuracy improvements for long-tail few-shot classification, all while being as robust as the original representations. Finally, we show that MRL extends seamlessly to web-scale datasets (ImageNet, JFT) across various modalities -- vision (ViT, ResNet), vision + language (ALIGN) and language (BERT). MRL code and pretrained models are open-sourced at https://github.com/RAIVNLab/MRL."
+ },
+ {
+  "title_seed": "MTEB: Massive Text Embedding Benchmark",
+  "doi": "10.18653/v1/2023.eacl-main.148",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
+  "landing_url": "",
+  "title": "MTEB: Massive Text Embedding Benchmark",
+  "authors": [
+   "Niklas Muennighoff",
+   "Nouamane Tazi",
+   "Loic Magne",
+   "Nils Reimers"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "Text Embeddings by Weakly-Supervised Contrastive Pre-training",
+  "doi": "10.48550/arxiv.2212.03533",
+  "arxiv_id": "2212.03533",
+  "venue": "",
+  "landing_url": "",
+  "title": "Text Embeddings by Weakly-Supervised Contrastive Pre-training",
+  "authors": [
+   "Liang Wang",
+   "Nan Yang",
+   "Xiaolong Huang",
+   "Binxing Jiao",
+   "Linjun Yang",
+   "Daxin Jiang",
+   "Rangan Majumder",
+   "Furu Wei"
+  ],
+  "year": 2022,
+  "abstract": "This paper presents E5, a family of state-of-the-art text embeddings that transfer well to a wide range of tasks. The model is trained in a contrastive manner with weak supervision signals from our curated large-scale text pair dataset (called CCPairs). E5 can be readily used as a general-purpose embedding model for any tasks requiring a single-vector representation of texts such as retrieval, clustering, and classification, achieving strong performance in both zero-shot and fine-tuned settings. We conduct extensive evaluations on 56 datasets from the BEIR and MTEB benchmarks. For zero-shot settings, E5 is the first model that outperforms the strong BM25 baseline on the BEIR retrieval benchmark without using any labeled data. When fine-tuned, E5 obtains the best results on the MTEB benchmark, beating existing embedding models with 40x more parameters."
+ },
+ {
+  "title_seed": "Towards General Text Embeddings with Multi-stage Contrastive Learning",
+  "doi": "10.48550/arxiv.2308.03281",
+  "arxiv_id": "2308.03281",
+  "venue": "",
+  "landing_url": "",
+  "title": "Towards General Text Embeddings with Multi-stage Contrastive Learning",
+  "authors": [
+   "Zehan Li",
+   "Xin Zhang",
+   "Yanzhao Zhang",
+   "Dingkun Long",
+   "Pengjun Xie",
+   "Meishan Zhang"
+  ],
+  "year": 2023,
+  "abstract": "We present GTE, a general-purpose text embedding model trained with multi-stage contrastive learning. In line with recent advancements in unifying various NLP tasks into a single format, we train a unified text embedding model by employing contrastive learning over a diverse mixture of datasets from multiple sources. By significantly increasing the number of training data during both unsupervised pre-training and supervised fine-tuning stages, we achieve substantial performance gains over existing embedding models. Notably, even with a relatively modest parameter count of 110M, GTE$_\\text{base}$ outperforms the black-box embedding API provided by OpenAI and even surpasses 10x larger text embedding models on the massive text embedding benchmark. Furthermore, without additional fine-tuning on each programming language individually, our model outperforms previous best code retrievers of similar size by treating code as text. In summary, our model achieves impressive results by effectively harnessing multi-stage contrastive learning, offering a powerful and efficient text embedding model with broad applicability across various NLP and code-related tasks."
+ },
+ {
+  "title_seed": "One Embedder, Any Task: Instruction-Finetuned Text Embeddings",
+  "doi": "10.18653/v1/2023.findings-acl.71",
+  "arxiv_id": "",
+  "venue": "Findings of the Association for Computational Linguistics: ACL 2023",
+  "landing_url": "",
+  "title": "One Embedder, Any Task: Instruction-Finetuned Text Embeddings",
+  "authors": [
+   "Hongjin Su",
+   "Weijia Shi",
+   "Jungo Kasai",
+   "Yizhong Wang",
+   "Yushi Hu",
+   "Mari Ostendorf",
+   "Wen-tau Yih",
+   "Noah A. Smith",
+   "Luke Zettlemoyer",
+   "Tao Yu"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "SGPT: GPT Sentence Embeddings for Semantic Search",
+  "doi": "10.48550/arxiv.2202.08904",
+  "arxiv_id": "2202.08904",
+  "venue": "",
+  "landing_url": "",
+  "title": "SGPT: GPT Sentence Embeddings for Semantic Search",
+  "authors": [
+   "Niklas Muennighoff"
+  ],
+  "year": 2022,
+  "abstract": "Decoder transformers have continued increasing in scale reaching hundreds of billions of parameters. Due to their scale the same decoder sets state-of-the-art results on various language tasks via prompting or fine-tuning. Yet, these large foundation models remain unusable for the related fields of semantic search and sentence embeddings. This prevents possibly new state-of-the-art results and forces organizations to train and maintain separate models. To this end, we propose SGPT to use decoders for sentence embeddings and semantic search via prompting or fine-tuning. At 5.8 billion parameters SGPT improves on the previously best sentence embeddings by a margin of 7% and outperforms a concurrent method with 175 billion parameters as measured on the BEIR search benchmark. Code, models and result files are freely available at https://github.com/Muennighoff/sgpt."
+ },
+ {
+  "title_seed": "SentEval: An Evaluation Toolkit for Universal Sentence Representations",
+  "doi": "",
+  "arxiv_id": "",
+  "venue": "Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)",
+  "landing_url": "https://aclanthology.org/L18-1269/",
+  "year": 2018,
+  "title": "SentEval: An Evaluation Toolkit for Universal Sentence Representations"
+ },
+ {
+  "title_seed": "SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation",
+  "doi": "10.18653/v1/s17-2001",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 11th International Workshop on Semantic Evaluation\n          (SemEval-2017)",
+  "landing_url": "",
+  "title": "SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual Focused Evaluation",
+  "authors": [
+   "Daniel Cer",
+   "Mona Diab",
+   "Eneko Agirre",
+   "Inigo Lopez-Gazpio",
+   "Lucia Specia"
+  ],
+  "year": 2017
+ },
+ {
+  "title_seed": "A SICK cure for the evaluation of compositional distributional semantic models",
+  "doi": "",
+  "arxiv_id": "",
+  "venue": "Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC 2014)",
+  "landing_url": "https://aclanthology.org/L14-1314/",
+  "year": 2014,
+  "title": "A SICK cure for the evaluation of compositional distributional semantic models"
+ },
+ {
+  "title_seed": "BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+  "doi": "10.48550/arxiv.2104.08663",
+  "arxiv_id": "2104.08663",
+  "venue": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks 1 (NeurIPS 2021)",
+  "landing_url": "https://openreview.net/forum?id=wCu6T5xFjeJ",
+  "title": "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models",
+  "authors": [
+   "Nandan Thakur",
+   "Nils Reimers",
+   "Andreas Rücklé",
+   "Abhishek Srivastava",
+   "Iryna Gurevych"
+  ],
+  "year": 2021,
+  "abstract": "Existing neural information retrieval (IR) models have often been studied in homogeneous and narrow settings, which has considerably limited insights into their out-of-distribution (OOD) generalization capabilities. To address this, and to facilitate researchers to broadly evaluate the effectiveness of their models, we introduce Benchmarking-IR (BEIR), a robust and heterogeneous evaluation benchmark for information retrieval. We leverage a careful selection of 18 publicly available datasets from diverse text retrieval tasks and domains and evaluate 10 state-of-the-art retrieval systems including lexical, sparse, dense, late-interaction and re-ranking architectures on the BEIR benchmark. Our results show BM25 is a robust baseline and re-ranking and late-interaction-based models on average achieve the best zero-shot performances, however, at high computational costs. In contrast, dense and sparse-retrieval models are computationally more efficient but often underperform other approaches, highlighting the considerable room for improvement in their generalization capabilities. We hope this framework allows us to better evaluate and understand existing retrieval systems, and contributes to accelerating progress towards better robust and generalizable systems in the future. BEIR is publicly available at https://github.com/UKPLab/beir."
+ },
+ {
+  "title_seed": "Unsupervised Deep Embedding for Clustering Analysis",
+  "doi": "10.48550/arxiv.1511.06335",
+  "arxiv_id": "1511.06335",
+  "venue": "Proceedings of the 33rd International Conference on Machine Learning (ICML 2016), PMLR 48",
+  "landing_url": "https://proceedings.mlr.press/v48/xieb16.html",
+  "title": "Unsupervised Deep Embedding for Clustering Analysis",
+  "authors": [
+   "Junyuan Xie",
+   "Ross Girshick",
+   "Ali Farhadi"
+  ],
+  "year": 2016,
+  "abstract": "Clustering is central to many data-driven application domains and has been studied extensively in terms of distance functions and grouping algorithms. Relatively little work has focused on learning representations for clustering. In this paper, we propose Deep Embedded Clustering (DEC), a method that simultaneously learns feature representations and cluster assignments using deep neural networks. DEC learns a mapping from the data space to a lower-dimensional feature space in which it iteratively optimizes a clustering objective. Our experimental evaluations on image and text corpora show significant improvement over state-of-the-art methods."
+ },
+ {
+  "title_seed": "Improved Deep Embedded Clustering with Local Structure Preservation",
+  "doi": "10.24963/ijcai.2017/243",
+  "arxiv_id": "",
+  "venue": "Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence",
+  "landing_url": "",
+  "title": "Improved Deep Embedded Clustering with Local Structure Preservation",
+  "authors": [
+   "Xifeng Guo",
+   "Long Gao",
+   "Xinwang Liu",
+   "Jianping Yin"
+  ],
+  "year": 2017,
+  "abstract": "Deep clustering learns deep feature representations that favor clustering task using neural networks. Some pioneering work proposes to simultaneously learn embedded features and perform clustering by explicitly defining a clustering oriented loss. Though promising performance has been demonstrated in various applications, we observe that a vital ingredient has been overlooked by these work that the defined clustering loss may corrupt feature space, which leads to non-representative meaningless features and this in turn hurts clustering performance. To address this issue, in this paper, we propose the Improved Deep Embedded Clustering (IDEC) algorithm to take care of data structure preservation. Specifically, we manipulate feature space to scatter data points using a clustering loss as guidance. To constrain the manipulation and maintain the local structure of data generating distribution, an under-complete autoencoder is applied. By integrating the clustering loss and autoencoder's reconstruction loss, IDEC can jointly optimize cluster labels assignment and learn features that are suitable for clustering with local structure preservation. The resultant optimization problem can be effectively solved by mini-batch stochastic gradient descent and backpropagation. Experiments on image and text datasets empirically validate the importance of local structure preservation and the effectiveness of our algorithm."
+ },
+ {
+  "title_seed": "Self-Taught convolutional neural networks for short text clustering",
+  "doi": "10.1016/j.neunet.2016.12.008",
+  "arxiv_id": "1701.00185",
+  "venue": "Neural Networks",
+  "landing_url": "",
+  "title": "Self-Taught convolutional neural networks for short text clustering",
+  "authors": [
+   "Jiaming Xu",
+   "Bo Xu",
+   "Peng Wang",
+   "Suncong Zheng",
+   "Guanhua Tian",
+   "Jun Zhao",
+   "Bo Xu"
+  ],
+  "year": 2017,
+  "abstract": "Short text clustering is a challenging problem due to its sparseness of text representation. Here we propose a flexible Self-Taught Convolutional neural network framework for Short Text Clustering (dubbed STC^2), which can flexibly and successfully incorporate more useful semantic features and learn non-biased deep text representation in an unsupervised manner. In our framework, the original raw text features are firstly embedded into compact binary codes by using one existing unsupervised dimensionality reduction methods. Then, word embeddings are explored and fed into convolutional neural networks to learn deep feature representations, meanwhile the output units are used to fit the pre-trained binary codes in the training process. Finally, we get the optimal clusters by employing K-means to cluster the learned representations. Extensive experimental results demonstrate that the proposed framework is effective, flexible and outperform several popular clustering methods when tested on three public short text datasets."
+ },
+ {
+  "title_seed": "Supporting Clustering with Contrastive Learning",
+  "doi": "10.18653/v1/2021.naacl-main.427",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+  "landing_url": "",
+  "title": "Supporting Clustering with Contrastive Learning",
+  "authors": [
+   "Dejiao Zhang",
+   "Feng Nan",
+   "Xiaokai Wei",
+   "Shang-Wen Li",
+   "Henghui Zhu",
+   "Kathleen McKeown",
+   "Ramesh Nallapati",
+   "Andrew O. Arnold",
+   "Bing Xiang"
+  ],
+  "year": 2021
+ },
+ {
+  "title_seed": "A Dirichlet multinomial mixture model-based approach for short text clustering",
+  "doi": "10.1145/2623330.2623715",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining",
+  "landing_url": "",
+  "title": "A dirichlet multinomial mixture model-based approach for short text clustering",
+  "authors": [
+   "Jianhua Yin",
+   "Jianyong Wang"
+  ],
+  "year": 2014
+ },
+ {
+  "title_seed": "Discovering New Intents with Deep Aligned Clustering",
+  "doi": "10.1609/aaai.v35i16.17689",
+  "arxiv_id": "",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "landing_url": "",
+  "title": "Discovering New Intents with Deep Aligned Clustering",
+  "authors": [
+   "Hanlei Zhang",
+   "Hua Xu",
+   "Ting-En Lin",
+   "Rui Lyu"
+  ],
+  "year": 2021,
+  "abstract": "Discovering new intents is a crucial task in dialogue systems. Most existing methods are limited in transferring the prior knowledge from known intents to new intents. These methods also have difficulties in providing high-quality supervised signals to learn clustering-friendly features for grouping unlabeled intents. In this work, we propose an effective method (Deep Aligned Clustering) to discover new intents with the aid of limited known intent data. Firstly, we leverage a few labeled known intent samples as prior knowledge to pre-train the model. Then, we perform k-means to produce cluster assignments as pseudo-labels. Moreover, we propose an alignment strategy to tackle the label inconsistency problem during clustering assignments. Finally, we learn the intent representations under the supervision of the aligned pseudo-labels. With an unknown number of new intents, we predict the number of intent categories by eliminating low-confidence intent-wise clusters. Extensive experiments on two benchmark datasets show that our method is more robust and achieves substantial improvements over the state-of-the-art methods."
+ },
+ {
+  "title_seed": "New Intent Discovery with Pre-training and Contrastive Learning",
+  "doi": "10.18653/v1/2022.acl-long.21",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "New Intent Discovery with Pre-training and Contrastive Learning",
+  "authors": [
+   "Yuwei Zhang",
+   "Haode Zhang",
+   "Li-Ming Zhan",
+   "Xiao-Ming Wu",
+   "Albert Lam"
+  ],
+  "year": 2022
+ },
+ {
+  "title_seed": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings",
+  "doi": "10.18653/v1/d19-1006",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "landing_url": "",
+  "title": "How Contextual are Contextualized Word Representations? Comparing the Geometry of BERT, ELMo, and GPT-2 Embeddings",
+  "authors": [
+   "Kawin Ethayarajh"
+  ],
+  "year": 2019
+ },
+ {
+  "title_seed": "Improving Text Embeddings with Large Language Models",
+  "doi": "10.18653/v1/2024.acl-long.642",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Improving Text Embeddings with Large Language Models",
+  "authors": [
+   "Liang Wang",
+   "Nan Yang",
+   "Xiaolong Huang",
+   "Linjun Yang",
+   "Rangan Majumder",
+   "Furu Wei"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders",
+  "doi": "10.48550/arxiv.2404.05961",
+  "arxiv_id": "2404.05961",
+  "venue": "First Conference on Language Modeling (COLM 2024)",
+  "landing_url": "https://openreview.net/forum?id=IW1PR7vEBf",
+  "title": "LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders",
+  "authors": [
+   "Parishad BehnamGhader",
+   "Vaibhav Adlakha",
+   "Marius Mosbach",
+   "Dzmitry Bahdanau",
+   "Nicolas Chapados",
+   "Siva Reddy"
+  ],
+  "year": 2024,
+  "abstract": "Large decoder-only language models (LLMs) are the state-of-the-art models on most of today's NLP tasks and benchmarks. Yet, the community is only slowly adopting these models for text embedding tasks, which require rich contextualized representations. In this work, we introduce LLM2Vec, a simple unsupervised approach that can transform any decoder-only LLM into a strong text encoder. LLM2Vec consists of three simple steps: 1) enabling bidirectional attention, 2) masked next token prediction, and 3) unsupervised contrastive learning. We demonstrate the effectiveness of LLM2Vec by applying it to 4 popular LLMs ranging from 1.3B to 8B parameters and evaluate the transformed models on English word- and sequence-level tasks. We outperform encoder-only models by a large margin on word-level tasks and reach a new unsupervised state-of-the-art performance on the Massive Text Embeddings Benchmark (MTEB). Moreover, when combining LLM2Vec with supervised contrastive learning, we achieve state-of-the-art performance on MTEB among models that train only on publicly available data (as of May 24, 2024). Our strong empirical results and extensive analysis demonstrate that LLMs can be effectively transformed into universal text encoders in a parameter-efficient manner without the need for expensive adaptation or synthetic GPT-4 generated data."
+ },
+ {
+  "title_seed": "Repetition Improves Language Model Embeddings",
+  "doi": "10.48550/arxiv.2402.15449",
+  "arxiv_id": "2402.15449",
+  "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+  "landing_url": "https://openreview.net/forum?id=Ahlrf2HGJR",
+  "title": "Repetition Improves Language Model Embeddings",
+  "authors": [
+   "Jacob Mitchell Springer",
+   "Suhas Kotha",
+   "Daniel Fried",
+   "Graham Neubig",
+   "Aditi Raghunathan"
+  ],
+  "year": 2025,
+  "abstract": "Bidirectional models are considered essential for strong text embeddings. Recent approaches to adapt autoregressive language models (LMs) into strong text embedding models have largely had the requirement to modify the LM architecture to be bidirectional. We challenge this premise by introducing \"echo embeddings\" which converts autoregressive LMs into high quality text embedding models without changing the architecture or requiring fine-tuning. By repeating the input and extracting embeddings from the repeated tokens -- which have access to all original tokens -- echo embeddings improve over classical LM embeddings by over 5% in zero-shot settings. Our zero-shot embeddings nearly match those obtained by bidirectionally-converted LMs that undergo additional masked-language modeling training. Echo embeddings are also compatible with supervised fine-tuning, matching or outperforming bidirectionally-converted LMs in an apples-to-apples comparison, even with an identical compute budget during training and inference. Overall, repetition is a simple and effective strategy to circumvent the need for bidirectional attention in embedding models, paving the way towards a unified architecture for all NLP tasks."
+ },
+ {
+  "title_seed": "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+  "doi": "10.48550/arxiv.2405.17428",
+  "arxiv_id": "2405.17428",
+  "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+  "landing_url": "https://openreview.net/forum?id=lgsyLSsDRe",
+  "title": "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+  "authors": [
+   "Chankyu Lee",
+   "Rajarshi Roy",
+   "Mengyao Xu",
+   "Jonathan Raiman",
+   "Mohammad Shoeybi",
+   "Bryan Catanzaro",
+   "Wei Ping"
+  ],
+  "year": 2025,
+  "abstract": "Decoder-only LLM-based embedding models are beginning to outperform BERT or T5-based embedding models in general-purpose text embedding tasks, including dense vector-based retrieval. In this work, we introduce NV-Embed, incorporating architectural designs, training procedures, and curated datasets to significantly enhance the performance of LLM as a versatile embedding model, while maintaining its simplicity and reproducibility. For model architecture, we propose a latent attention layer to obtain pooled embeddings, which consistently improves retrieval and downstream task accuracy compared to mean pooling or using the last &lt;EOS&gt; token embedding from LLMs. To enhance representation learning, we remove the causal attention mask of LLMs during contrastive training. For training algorithm, we introduce a two-stage contrastive instruction-tuning method. It first applies contrastive training with instructions on retrieval datasets, utilizing in-batch negatives and curated hard negative examples. At stage-2, it blends various non-retrieval into instruction tuning, which not only enhances non-retrieval task accuracy but also improves retrieval performance. For training data, we utilize the hard-negative mining, synthetic data generation and existing public available datasets to boost the performance of embedding model. By combining these techniques, our NV-Embed-v1 and NV-Embed-v2 models obtained the No.1 position on the MTEB leaderboard (as of May 24 and August 30, 2024, respectively) across 56 tasks, demonstrating the sustained effectiveness of the proposed methods over time. It also achieved the highest scores in the Long Doc section and the second-highest scores in the QA section of the AIR Benchmark, which covers a range of out-of-domain information retrieval topics beyond those in MTEB. We further provide the analysis of model compression techniques for generalist embedding models."
+ },
+ {
+  "title_seed": "Generative Representational Instruction Tuning",
+  "doi": "10.48550/arxiv.2402.09906",
+  "arxiv_id": "2402.09906",
+  "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+  "landing_url": "https://openreview.net/forum?id=BC4lIvfSzv",
+  "title": "Generative Representational Instruction Tuning",
+  "authors": [
+   "Niklas Muennighoff",
+   "Hongjin Su",
+   "Liang Wang",
+   "Nan Yang",
+   "Furu Wei",
+   "Tao Yu",
+   "Amanpreet Singh",
+   "Douwe Kiela"
+  ],
+  "year": 2025,
+  "abstract": "All text-based language problems can be reduced to either generation or embedding. Current models only perform well at one or the other. We introduce generative representational instruction tuning (GRIT) whereby a large language model is trained to handle both generative and embedding tasks by distinguishing between them through instructions. Compared to other open models, our resulting GritLM 7B sets a new state of the art on the Massive Text Embedding Benchmark (MTEB) and outperforms all models up to its size on a range of generative tasks. By scaling up further, GritLM 8x7B outperforms all open generative language models that we tried while still being among the best embedding models. Notably, we find that GRIT matches training on only generative or embedding data, thus we can unify both at no performance loss. Among other benefits, the unification via GRIT speeds up Retrieval-Augmented Generation (RAG) by &gt; 60% for long documents, by no longer requiring separate retrieval and generation models. Models, code, etc. are freely available at https://github.com/ContextualAI/gritlm."
+ },
+ {
+  "title_seed": "Scaling Sentence Embeddings with Large Language Models",
+  "doi": "10.18653/v1/2024.findings-emnlp.181",
+  "arxiv_id": "",
+  "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+  "landing_url": "",
+  "title": "Scaling Sentence Embeddings with Large Language Models",
+  "authors": [
+   "Ting Jiang",
+   "Shaohan Huang",
+   "Zhongzhi Luan",
+   "Deqing Wang",
+   "Fuzhen Zhuang"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "Meta-Task Prompting Elicits Embeddings from Large Language Models",
+  "doi": "10.18653/v1/2024.acl-long.546",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Meta-Task Prompting Elicits Embeddings from Large Language Models",
+  "authors": [
+   "Yibin Lei",
+   "Di Wu",
+   "Tianyi Zhou",
+   "Tao Shen",
+   "Yu Cao",
+   "Chongyang Tao",
+   "Andrew Yates"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "BeLLM: Backward Dependency Enhanced Large Language Model for Sentence Embeddings",
+  "doi": "10.18653/v1/2024.naacl-long.45",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "BeLLM: Backward Dependency Enhanced Large Language Model for Sentence Embeddings",
+  "authors": [
+   "Xianming Li",
+   "Jing Li"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "AoE: Angle-optimized Embeddings for Semantic Textual Similarity",
+  "doi": "10.18653/v1/2024.acl-long.101",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "AoE: Angle-optimized Embeddings for Semantic Textual Similarity",
+  "authors": [
+   "Xianming Li",
+   "Jing Li"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+  "doi": "10.48550/arxiv.2410.10814",
+  "arxiv_id": "2410.10814",
+  "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+  "landing_url": "https://openreview.net/forum?id=eFGQ97z5Cd",
+  "title": "Your Mixture-of-Experts LLM Is Secretly an Embedding Model For Free",
+  "authors": [
+   "Ziyue Li",
+   "Tianyi Zhou"
+  ],
+  "year": 2025,
+  "abstract": "While large language models (LLMs) excel on generation tasks, their decoder-only architecture often limits their potential as embedding models if no further representation finetuning is applied. Does this contradict their claim of generalists? To answer the question, we take a closer look at Mixture-of-Experts (MoE) LLMs. Our study shows that the expert routers in MoE LLMs can serve as an off-the-shelf embedding model with promising performance on a diverse class of embedding-focused tasks, without requiring any finetuning. Moreover, our extensive analysis shows that the MoE routing weights (RW) is complementary to the hidden state (HS) of LLMs, a widely-used embedding. Compared to HS, we find that RW is more robust to the choice of prompts and focuses on high-level semantics. Motivated by the analysis, we propose MoEE combining RW and HS, which achieves better performance than using either separately. Our exploration of their combination and prompting strategy shed several novel insights, e.g., a weighted sum of RW and HS similarities outperforms the similarity on their concatenation. Our experiments are conducted on 6 embedding tasks with 20 datasets from the Massive Text Embedding Benchmark (MTEB). The results demonstrate the significant improvement brought by MoEE to LLM-based embedding without further finetuning."
+ },
+ {
+  "title_seed": "Contrastive Learning of Sentence Embeddings from Scratch",
+  "doi": "10.18653/v1/2023.emnlp-main.238",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "Contrastive Learning of Sentence Embeddings from Scratch",
+  "authors": [
+   "Junlei Zhang",
+   "Zhenzhong Lan",
+   "Junxian He"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "Improving Contrastive Learning of Sentence Embeddings from AI Feedback",
+  "doi": "10.18653/v1/2023.findings-acl.707",
+  "arxiv_id": "",
+  "venue": "Findings of the Association for Computational Linguistics: ACL 2023",
+  "landing_url": "",
+  "title": "Improving Contrastive Learning of Sentence Embeddings from AI Feedback",
+  "authors": [
+   "Qinyuan Cheng",
+   "Xiaogui Yang",
+   "Tianxiang Sun",
+   "Linyang Li",
+   "Xipeng Qiu"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "RankCSE: Unsupervised Sentence Representations Learning via Learning to Rank",
+  "doi": "10.18653/v1/2023.acl-long.771",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "RankCSE: Unsupervised Sentence Representations Learning via Learning to Rank",
+  "authors": [
+   "Jiduan Liu",
+   "Jiahao Liu",
+   "Qifan Wang",
+   "Jingang Wang",
+   "Wei Wu",
+   "Yunsen Xian",
+   "Dongyan Zhao",
+   "Kai Chen",
+   "Rui Yan"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "C-Pack: Packed Resources For General Chinese Embeddings",
+  "doi": "10.1145/3626772.3657878",
+  "arxiv_id": "2309.07597",
+  "venue": "Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "landing_url": "",
+  "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+  "authors": [
+   "Shitao Xiao",
+   "Zheng Liu",
+   "Peitian Zhang",
+   "Niklas Muennighoff",
+   "Defu Lian",
+   "Jian-Yun Nie"
+  ],
+  "year": 2024,
+  "abstract": "We introduce C-Pack, a package of resources that significantly advance the field of general Chinese embeddings. C-Pack includes three critical resources. 1) C-MTEB is a comprehensive benchmark for Chinese text embeddings covering 6 tasks and 35 datasets. 2) C-MTP is a massive text embedding dataset curated from labeled and unlabeled Chinese corpora for training embedding models. 3) C-TEM is a family of embedding models covering multiple sizes. Our models outperform all prior Chinese text embeddings on C-MTEB by up to +10% upon the time of the release. We also integrate and optimize the entire suite of training methods for C-TEM. Along with our resources on general Chinese embedding, we release our data and models for English text embeddings. The English models achieve state-of-the-art performance on MTEB benchmark; meanwhile, our released English data is 2 times larger than the Chinese data. All these resources are made publicly available at https://github.com/FlagOpen/FlagEmbedding."
+ },
+ {
+  "title_seed": "M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation",
+  "doi": "10.18653/v1/2024.findings-acl.137",
+  "arxiv_id": "",
+  "venue": "Findings of the Association for Computational Linguistics ACL 2024",
+  "landing_url": "",
+  "title": "M3-Embedding: Multi-Linguality, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation",
+  "authors": [
+   "Jianlyu Chen",
+   "Shitao Xiao",
+   "Peitian Zhang",
+   "Kun Luo",
+   "Defu Lian",
+   "Zheng Liu"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "Multilingual E5 Text Embeddings: A Technical Report",
+  "doi": "10.48550/arxiv.2402.05672",
+  "arxiv_id": "2402.05672",
+  "venue": "",
+  "landing_url": "",
+  "title": "Multilingual E5 Text Embeddings: A Technical Report",
+  "authors": [
+   "Liang Wang",
+   "Nan Yang",
+   "Xiaolong Huang",
+   "Linjun Yang",
+   "Rangan Majumder",
+   "Furu Wei"
+  ],
+  "year": 2024,
+  "abstract": "This technical report presents the training methodology and evaluation results of the open-source multilingual E5 text embedding models, released in mid-2023. Three embedding models of different sizes (small / base / large) are provided, offering a balance between the inference efficiency and embedding quality. The training procedure adheres to the English E5 model recipe, involving contrastive pre-training on 1 billion multilingual text pairs, followed by fine-tuning on a combination of labeled datasets. Additionally, we introduce a new instruction-tuned embedding model, whose performance is on par with state-of-the-art, English-only models of similar sizes. Information regarding the model release can be found at https://github.com/microsoft/unilm/tree/master/e5 ."
+ },
+ {
+  "title_seed": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+  "doi": "10.48550/arxiv.2402.01613",
+  "arxiv_id": "2402.01613",
+  "venue": "",
+  "landing_url": "",
+  "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+  "authors": [
+   "Zach Nussbaum",
+   "John X. Morris",
+   "Brandon Duderstadt",
+   "Andriy Mulyar"
+  ],
+  "year": 2024,
+  "abstract": "This technical report describes the training of nomic-embed-text-v1, the first fully reproducible, open-source, open-weights, open-data, 8192 context length English text embedding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an Apache 2.0 license. In contrast with other open-source models, we release the full curated training data and code that allows for full replication of nomic-embed-text-v1. You can find code and data to replicate the model at https://github.com/nomic-ai/contrastors."
+ },
+ {
+  "title_seed": "Jina Embeddings 2: 8192-Token General-Purpose Text Embeddings for Long Documents",
+  "doi": "10.48550/arxiv.2310.19923",
+  "arxiv_id": "2310.19923",
+  "venue": "",
+  "landing_url": "",
+  "title": "Jina Embeddings 2: 8192-Token General-Purpose Text Embeddings for Long Documents",
+  "authors": [
+   "Michael Günther",
+   "Jackmin Ong",
+   "Isabelle Mohr",
+   "Alaeddine Abdessalem",
+   "Tanguy Abel",
+   "Mohammad Kalim Akram",
+   "Susana Guzman",
+   "Georgios Mastrapas",
+   "Saba Sturua",
+   "Bo Wang",
+   "Maximilian Werk",
+   "Nan Wang"
+  ],
+  "year": 2023,
+  "abstract": "Text embedding models have emerged as powerful tools for transforming sentences into fixed-sized feature vectors that encapsulate semantic information. While these models are essential for tasks like information retrieval, semantic clustering, and text re-ranking, most existing open-source models, especially those built on architectures like BERT, struggle to represent lengthy documents and often resort to truncation. One common approach to mitigate this challenge involves splitting documents into smaller paragraphs for embedding. However, this strategy results in a much larger set of vectors, consequently leading to increased memory consumption and computationally intensive vector searches with elevated latency. To address these challenges, we introduce Jina Embeddings 2, an open-source text embedding model capable of accommodating up to 8192 tokens. This model is designed to transcend the conventional 512-token limit and adeptly process long documents. Jina Embeddings 2 not only achieves state-of-the-art performance on a range of embedding-related tasks in the MTEB benchmark but also matches the performance of OpenAI's proprietary ada-002 model. Additionally, our experiments indicate that an extended context can enhance performance in tasks such as NarrativeQA."
+ },
+ {
+  "title_seed": "Arctic-Embed: Scalable, Efficient, and Accurate Text Embedding Models",
+  "doi": "10.48550/arxiv.2405.05374",
+  "arxiv_id": "2405.05374",
+  "venue": "",
+  "landing_url": "",
+  "title": "Arctic-Embed: Scalable, Efficient, and Accurate Text Embedding Models",
+  "authors": [
+   "Luke Merrick",
+   "Danmei Xu",
+   "Gaurav Nuti",
+   "Daniel Campos"
+  ],
+  "year": 2024,
+  "abstract": "This report describes the training dataset creation and recipe behind the family of \\texttt{arctic-embed} text embedding models (a set of five models ranging from 22 to 334 million parameters with weights open-sourced under an Apache-2 license). At the time of their release, each model achieved state-of-the-art retrieval accuracy for models of their size on the MTEB Retrieval leaderboard, with the largest model, arctic-embed-l outperforming closed source embedding models such as Cohere's embed-v3 and Open AI's text-embed-3-large. In addition to the details of our training recipe, we have provided several informative ablation studies, which we believe are the cause of our model performance."
+ },
+ {
+  "title_seed": "Gecko: Versatile Text Embeddings Distilled from Large Language Models",
+  "doi": "10.48550/arxiv.2403.20327",
+  "arxiv_id": "2403.20327",
+  "venue": "",
+  "landing_url": "",
+  "title": "Gecko: Versatile Text Embeddings Distilled from Large Language Models",
+  "authors": [
+   "Jinhyuk Lee",
+   "Zhuyun Dai",
+   "Xiaoqi Ren",
+   "Blair Chen",
+   "Daniel Cer",
+   "Jeremy R. Cole",
+   "Kai Hui",
+   "Michael Boratko",
+   "Rajvi Kapadia",
+   "Wen Ding",
+   "Yi Luan",
+   "Sai Meher Karthik Duddu"
+  ],
+  "year": 2024,
+  "abstract": "We present Gecko, a compact and versatile text embedding model. Gecko achieves strong retrieval performance by leveraging a key idea: distilling knowledge from large language models (LLMs) into a retriever. Our two-step distillation process begins with generating diverse, synthetic paired data using an LLM. Next, we further refine the data quality by retrieving a set of candidate passages for each query, and relabeling the positive and hard negative passages using the same LLM. The effectiveness of our approach is demonstrated by the compactness of the Gecko. On the Massive Text Embedding Benchmark (MTEB), Gecko with 256 embedding dimensions outperforms all existing entries with 768 embedding size. Gecko with 768 embedding dimensions achieves an average score of 66.31, competing with 7x larger models and 5x higher dimensional embeddings."
+ },
+ {
+  "title_seed": "Gemini Embedding: Generalizable Embeddings from Gemini",
+  "doi": "10.48550/arxiv.2503.07891",
+  "arxiv_id": "2503.07891",
+  "venue": "",
+  "landing_url": "",
+  "title": "Gemini Embedding: Generalizable Embeddings from Gemini",
+  "authors": [
+   "Jinhyuk Lee",
+   "Feiyang Chen",
+   "Sahil Dua",
+   "Daniel Cer",
+   "Madhuri Shanbhogue",
+   "Iftekhar Naim",
+   "Gustavo Hernández Ábrego",
+   "Zhe Li",
+   "Kaifeng Chen",
+   "Henrique Schechter Vera",
+   "Xiaoqi Ren",
+   "Shanfeng Zhang"
+  ],
+  "year": 2025,
+  "abstract": "In this report, we introduce Gemini Embedding, a state-of-the-art embedding model leveraging the power of Gemini, Google's most capable large language model. Capitalizing on Gemini's inherent multilingual and code understanding capabilities, Gemini Embedding produces highly generalizable embeddings for text spanning numerous languages and textual modalities. The representations generated by Gemini Embedding can be precomputed and applied to a variety of downstream tasks including classification, similarity, clustering, ranking, and retrieval. Evaluated on the Massive Multilingual Text Embedding Benchmark (MMTEB), which includes over one hundred tasks across 250+ languages, Gemini Embedding substantially outperforms prior state-of-the-art models, demonstrating considerable improvements in embedding quality. Achieving state-of-the-art performance across MMTEB's multilingual, English, and code benchmarks, our unified model demonstrates strong capabilities across a broad selection of tasks and surpasses specialized domain-specific models."
+ },
+ {
+  "title_seed": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models",
+  "doi": "10.48550/arxiv.2506.05176",
+  "arxiv_id": "2506.05176",
+  "venue": "",
+  "landing_url": "",
+  "title": "Qwen3 Embedding: Advancing Text Embedding and Reranking Through Foundation Models",
+  "authors": [
+   "Yanzhao Zhang",
+   "Mingxin Li",
+   "Dingkun Long",
+   "Xin Zhang",
+   "Huan Lin",
+   "Baosong Yang",
+   "Pengjun Xie",
+   "An Yang",
+   "Dayiheng Liu",
+   "Junyang Lin",
+   "Fei Huang",
+   "Jingren Zhou"
+  ],
+  "year": 2025,
+  "abstract": "In this work, we introduce the Qwen3 Embedding series, a significant advancement over its predecessor, the GTE-Qwen series, in text embedding and reranking capabilities, built upon the Qwen3 foundation models. Leveraging the Qwen3 LLMs' robust capabilities in multilingual text understanding and generation, our innovative multi-stage training pipeline combines large-scale unsupervised pre-training with supervised fine-tuning on high-quality datasets. Effective model merging strategies further ensure the robustness and adaptability of the Qwen3 Embedding series. During the training process, the Qwen3 LLMs serve not only as backbone models but also play a crucial role in synthesizing high-quality, rich, and diverse training data across multiple domains and languages, thus enhancing the training pipeline. The Qwen3 Embedding series offers a spectrum of model sizes (0.6B, 4B, 8B) for both embedding and reranking tasks, addressing diverse deployment scenarios where users can optimize for either efficiency or effectiveness. Empirical evaluations demonstrate that the Qwen3 Embedding series achieves state-of-the-art results across diverse benchmarks. Notably, it excels on the multilingual evaluation benchmark MTEB for text embedding, as well as in various retrieval tasks, including code retrieval, cross-lingual retrieval and multilingual retrieval. To facilitate reproducibility and promote community-driven research and development, the Qwen3 Embedding models are publicly available under the Apache 2.0 license."
+ },
+ {
+  "title_seed": "KaLM-Embedding: Superior Training Data Brings A Stronger Embedding Model",
+  "doi": "10.48550/arxiv.2501.01028",
+  "arxiv_id": "2501.01028",
+  "venue": "",
+  "landing_url": "",
+  "title": "KaLM-Embedding: Superior Training Data Brings A Stronger Embedding Model",
+  "authors": [
+   "Xinshuo Hu",
+   "Zifei Shan",
+   "Xinping Zhao",
+   "Zetian Sun",
+   "Zhenyu Liu",
+   "Dongfang Li",
+   "Shaolin Ye",
+   "Xinyuan Wei",
+   "Qian Chen",
+   "Baotian Hu",
+   "Haofen Wang",
+   "Jun Yu"
+  ],
+  "year": 2025,
+  "abstract": "As retrieval-augmented generation prevails in large language models, embedding models are becoming increasingly crucial. Despite the growing number of general embedding models, prior work often overlooks the critical role of training data quality. In this work, we introduce KaLM-Embedding, a general multilingual embedding model that leverages a large quantity of cleaner, more diverse, and domain-specific training data. Our model has been trained with key techniques proven to enhance performance: (1) persona-based synthetic data to create diversified examples distilled from LLMs, (2) ranking consistency filtering to remove less informative samples, and (3) semi-homogeneous task batch sampling to improve training efficacy. Departing from traditional BERT-like architectures, we adopt Qwen2-0.5B as the pre-trained model, facilitating the adaptation of auto-regressive language models for general embedding tasks. Extensive evaluations of the MTEB benchmark across multiple languages show that our model outperforms others of comparable size, setting a new standard for multilingual embedding models with &lt;1B parameters."
+ },
+ {
+  "title_seed": "Making Text Embedders Few-Shot Learners",
+  "doi": "10.48550/arxiv.2409.15700",
+  "arxiv_id": "2409.15700",
+  "venue": "The Thirteenth International Conference on Learning Representations (ICLR 2025)",
+  "landing_url": "",
+  "title": "Making Text Embedders Few-Shot Learners",
+  "authors": [
+   "Chaofan Li",
+   "MingHao Qin",
+   "Shitao Xiao",
+   "Jianlyu Chen",
+   "Kun Luo",
+   "Yingxia Shao",
+   "Defu Lian",
+   "Zheng Liu"
+  ],
+  "year": 2025,
+  "abstract": "Large language models (LLMs) with decoder-only architectures demonstrate remarkable in-context learning (ICL) capabilities. This feature enables them to effectively handle both familiar and novel tasks by utilizing examples provided within their input context. Recognizing the potential of this capability, we propose leveraging the ICL feature in LLMs to enhance the process of text embedding generation. To this end, we introduce a novel model bge-en-icl, which employs few-shot examples to produce high-quality text embeddings. Our approach integrates task-related examples directly into the query side, resulting in significant improvements across various tasks. Additionally, we have investigated how to effectively utilize LLMs as embedding models, including various attention mechanisms, pooling methods, etc. Our findings suggest that retaining the original framework often yields the best results, underscoring that simplicity is best. Experimental results on the MTEB and AIR-Bench benchmarks demonstrate that our approach sets new state-of-the-art (SOTA) performance. Our model, code and dataset are freely available at https://github.com/FlagOpen/FlagEmbedding ."
+ },
+ {
+  "title_seed": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference",
+  "doi": "10.18653/v1/2025.acl-long.127",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference",
+  "authors": [
+   "Benjamin Warner",
+   "Antoine Chaffin",
+   "Benjamin Clavié",
+   "Orion Weller",
+   "Oskar Hallström",
+   "Said Taghadouini",
+   "Alexis Gallagher",
+   "Raja Biswas",
+   "Faisal Ladhak",
+   "Tom Aarsen",
+   "Griffin Thomas Adams",
+   "Jeremy Howard"
+  ],
+  "year": 2025
+ },
+ {
+  "title_seed": "ClusterLLM: Large Language Models as a Guide for Text Clustering",
+  "doi": "10.18653/v1/2023.emnlp-main.858",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "ClusterLLM: Large Language Models as a Guide for Text Clustering",
+  "authors": [
+   "Yuwei Zhang",
+   "Zihan Wang",
+   "Jingbo Shang"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "Large Language Models Enable Few-Shot Clustering",
+  "doi": "10.1162/tacl_a_00648",
+  "arxiv_id": "",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "landing_url": "",
+  "title": "Large Language Models Enable Few-Shot Clustering",
+  "authors": [
+   "Vijay Viswanathan",
+   "Kiril Gashteovski",
+   "Kiril Gashteovski",
+   "Carolin Lawrence",
+   "Tongshuang Wu",
+   "Graham Neubig"
+  ],
+  "year": 2024,
+  "abstract": "Abstract   Unlike traditional unsupervised clustering, semi-supervised clustering allows users to provide meaningful structure to the data, which helps the clustering algorithm to match the user’s intent. Existing approaches to semi-supervised clustering require a significant amount of feedback from an expert to improve the clusters. In this paper, we ask whether a large language model (LLM) can amplify an expert’s guidance to enable query-efficient, few-shot semi-supervised text clustering. We show that LLMs are surprisingly effective at improving clustering. We explore three stages where LLMs can be incorporated into clustering: before clustering (improving input features), during clustering (by providing constraints to the clusterer), and after clustering (using LLMs post-correction). We find that incorporating LLMs in the first two stages routinely provides significant improvements in cluster quality, and that LLMs enable a user to make trade-offs between cost and accuracy to produce desired clusters. We release our code and LLM prompts for the public to use.1"
+ },
+ {
+  "title_seed": "Goal-Driven Explainable Clustering via Language Descriptions",
+  "doi": "10.18653/v1/2023.emnlp-main.657",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "Goal-Driven Explainable Clustering via Language Descriptions",
+  "authors": [
+   "Zihan Wang",
+   "Jingbo Shang",
+   "Ruiqi Zhong"
+  ],
+  "year": 2023
+ },
+ {
+  "title_seed": "TnT-LLM: Text Mining at Scale with Large Language Models",
+  "doi": "10.1145/3637528.3671647",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+  "landing_url": "",
+  "title": "TnT-LLM: Text Mining at Scale with Large Language Models",
+  "authors": [
+   "Mengting Wan",
+   "Tara Safavi",
+   "Sujay Kumar Jauhar",
+   "Yujin Kim",
+   "Scott Counts",
+   "Jennifer Neville",
+   "Siddharth Suri",
+   "Chirag Shah",
+   "Ryen W. White",
+   "Longqi Yang",
+   "Reid Andersen",
+   "Georg Buscher"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "A Comprehensive Survey of Sentence Representations: From the BERT Epoch to the ChatGPT Era and Beyond",
+  "doi": "10.18653/v1/2024.eacl-long.104",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "A Comprehensive Survey of Sentence Representations: From the BERT Epoch to the CHATGPT Era and Beyond",
+  "authors": [
+   "Abhinav Ramesh Kashyap",
+   "Thanh-Tung Nguyen",
+   "Viktor Schlegel",
+   "Stefan Winkler",
+   "See-Kiong Ng",
+   "Soujanya Poria"
+  ],
+  "year": 2024
+ },
+ {
+  "title_seed": "When Text Embedding Meets Large Language Model: A Comprehensive Survey",
+  "doi": "10.48550/arxiv.2412.09165",
+  "arxiv_id": "2412.09165",
+  "venue": "",
+  "landing_url": "",
+  "title": "When Text Embedding Meets Large Language Model: A Comprehensive Survey",
+  "authors": [
+   "Zhijie Nie",
+   "Zhangchi Feng",
+   "Mingxin Li",
+   "Cunwang Zhang",
+   "Yanzhao Zhang",
+   "Dingkun Long",
+   "Richong Zhang"
+  ],
+  "year": 2024,
+  "abstract": "Text embedding has become a foundational technology in natural language processing (NLP) during the deep learning era, driving advancements across a wide array of downstream tasks. While many natural language understanding challenges can now be modeled using generative paradigms and leverage the robust generative and comprehension capabilities of large language models (LLMs), numerous practical applications - such as semantic matching, clustering, and information retrieval - continue to rely on text embeddings for their efficiency and effectiveness. Therefore, integrating LLMs with text embeddings has become a major research focus in recent years. In this survey, we categorize the interplay between LLMs and text embeddings into three overarching themes: (1) LLM-augmented text embedding, enhancing traditional embedding methods with LLMs; (2) LLMs as text embedders, adapting their innate capabilities for high-quality embedding; and (3) Text embedding understanding with LLMs, leveraging LLMs to analyze and interpret embeddings. By organizing recent works based on interaction patterns rather than specific downstream applications, we offer a novel and systematic overview of contributions from various research and application domains in the era of LLMs. Furthermore, we highlight the unresolved challenges that persisted in the pre-LLM era with pre-trained language models (PLMs) and explore the emerging obstacles brought forth by LLMs. Building on this analysis, we outline prospective directions for the evolution of text embedding, addressing both theoretical and practical opportunities in the rapidly advancing landscape of NLP."
+ },
+ {
+  "title_seed": "Recent advances in universal text embeddings: A Comprehensive Review of Top-Performing Methods on the MTEB Benchmark",
+  "doi": "10.48550/arxiv.2406.01607",
+  "arxiv_id": "2406.01607",
+  "venue": "",
+  "landing_url": "",
+  "title": "Recent advances in text embedding: A Comprehensive Review of Top-Performing Methods on the MTEB Benchmark",
+  "authors": [
+   "Hongliu Cao"
+  ],
+  "year": 2024,
+  "abstract": "Text embedding methods have become increasingly popular in both industrial and academic fields due to their critical role in a variety of natural language processing tasks. The significance of universal text embeddings has been further highlighted with the rise of Large Language Models (LLMs) applications such as Retrieval-Augmented Systems (RAGs). While previous models have attempted to be general-purpose, they often struggle to generalize across tasks and domains. However, recent advancements in training data quantity, quality and diversity; synthetic data generation from LLMs as well as using LLMs as backbones encourage great improvements in pursuing universal text embeddings. In this paper, we provide an overview of the recent advances in universal text embedding models with a focus on the top performing text embeddings on Massive Text Embedding Benchmark (MTEB). Through detailed comparison and analysis, we highlight the key contributions and limitations in this area, and propose potentially inspiring future research directions."
+ },
+ {
+  "title_seed": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+  "doi": "10.48550/arxiv.2412.12591",
+  "arxiv_id": "2412.12591",
+  "venue": "",
+  "landing_url": "",
+  "title": "LLMs are Also Effective Embedding Models: An In-depth Overview",
+  "authors": [
+   "Chongyang Tao",
+   "Tao Shen",
+   "Shen Gao",
+   "Junshuo Zhang",
+   "Zhen Li",
+   "Kai Hua",
+   "Wenpeng Hu",
+   "Zhengwei Tao",
+   "Shuai Ma"
+  ],
+  "year": 2024,
+  "abstract": "Large language models (LLMs) have revolutionized natural language processing by achieving state-of-the-art performance across various tasks. Recently, their effectiveness as embedding models has gained attention, marking a paradigm shift from traditional encoder-only models like ELMo and BERT to decoder-only, large-scale LLMs such as GPT, LLaMA, and Mistral. This survey provides an in-depth overview of this transition, beginning with foundational techniques before the LLM era, followed by LLM-based embedding models through two main strategies to derive embeddings from LLMs. 1) Direct prompting: We mainly discuss the prompt designs and the underlying rationale for deriving competitive embeddings. 2) Data-centric tuning: We cover extensive aspects that affect tuning an embedding model, including model architecture, training objectives, data constructions, etc. Upon the above, we also cover advanced methods for producing embeddings from longer texts, multilingual, code, cross-modal data, as well as reasoning-aware and other domain-specific scenarios. Furthermore, we discuss factors affecting choices of embedding models, such as performance/efficiency comparisons, dense vs sparse embeddings, pooling strategies, and scaling law. Lastly, the survey highlights the limitations and challenges in adapting LLMs for embeddings, including cross-task embedding quality, trade-offs between efficiency and accuracy, low-resource, long-context, data bias, robustness, etc. This survey serves as a valuable resource for researchers and practitioners by synthesizing current advancements, highlighting key challenges, and offering a comprehensive framework for future work aimed at enhancing the effectiveness and efficiency of LLMs as embedding models."
+ },
+ {
+  "title_seed": "Evolution of Semantic Similarity - A Survey",
+  "doi": "10.1145/3440755",
+  "arxiv_id": "",
+  "venue": "ACM Computing Surveys",
+  "landing_url": "",
+  "title": "Evolution of Semantic Similarity—A Survey",
+  "authors": [
+   "Dhivya Chandrasekaran",
+   "Vijay Mago"
+  ],
+  "year": 2021,
+  "abstract": "Estimating the semantic similarity between text data is one of the challenging and open research problems in the field of Natural Language Processing (NLP). The versatility of natural language makes it difficult to define rule-based methods for determining semantic similarity measures. To address this issue, various semantic similarity methods have been proposed over the years. This survey article traces the evolution of such methods beginning from traditional NLP techniques such as kernel-based methods to the most recent research work on transformer-based models, categorizing them based on their underlying principles as knowledge-based, corpus-based, deep neural network–based methods, and hybrid methods. Discussing the strengths and weaknesses of each method, this survey provides a comprehensive view of existing systems in place for new researchers to experiment and develop innovative ideas to address the issue of semantic similarity."
+ },
+ {
+  "title_seed": "Crafting Interpretable Embeddings by Asking LLMs Questions",
+  "doi": "10.48550/arxiv.2405.16714",
+  "arxiv_id": "2405.16714",
+  "venue": "Advances in Neural Information Processing Systems 37 (NeurIPS 2024)",
+  "landing_url": "",
+  "title": "Crafting Interpretable Embeddings by Asking LLMs Questions",
+  "authors": [
+   "Vinamra Benara",
+   "Chandan Singh",
+   "John X. Morris",
+   "Richard Antonello",
+   "Ion Stoica",
+   "Alexander G. Huth",
+   "Jianfeng Gao"
+  ],
+  "year": 2024,
+  "abstract": "Large language models (LLMs) have rapidly improved text embeddings for a growing array of natural-language processing tasks. However, their opaqueness and proliferation into scientific domains such as neuroscience have created a growing need for interpretability. Here, we ask whether we can obtain interpretable embeddings through LLM prompting. We introduce question-answering embeddings (QA-Emb), embeddings where each feature represents an answer to a yes/no question asked to an LLM. Training QA-Emb reduces to selecting a set of underlying questions rather than learning model weights. We use QA-Emb to flexibly generate interpretable models for predicting fMRI voxel responses to language stimuli. QA-Emb significantly outperforms an established interpretable baseline, and does so while requiring very few questions. This paves the way towards building flexible feature spaces that can concretize and evaluate our understanding of semantic brain representations. We additionally find that QA-Emb can be effectively approximated with an efficient model, and we explore broader applications in simple NLP tasks."
+ },
+ {
+  "title_seed": "SPECTER: Document-level Representation Learning using Citation-informed Transformers",
+  "doi": "10.18653/v1/2020.acl-main.207",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+  "landing_url": "",
+  "title": "SPECTER: Document-level Representation Learning using Citation-informed Transformers",
+  "authors": [
+   "Arman Cohan",
+   "Sergey Feldman",
+   "Iz Beltagy",
+   "Doug Downey",
+   "Daniel Weld"
+  ],
+  "year": 2020
+ },
+ {
+  "title_seed": "Little Giants: Synthesizing High-Quality Embedding Data at Scale",
+  "doi": "10.18653/v1/2025.naacl-long.64",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Little Giants: Synthesizing High-Quality Embedding Data at Scale",
+  "authors": [
+   "Haonan Chen",
+   "Liang Wang",
+   "Nan Yang",
+   "Yutao Zhu",
+   "Ziliang Zhao",
+   "Furu Wei",
+   "Zhicheng Dou"
+  ],
+  "year": 2025
+ },
+ {
+  "title_seed": "Length-Induced Embedding Collapse in PLM-based Models",
+  "doi": "10.18653/v1/2025.acl-long.1396",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Length-Induced Embedding Collapse in PLM-based Models",
+  "authors": [
+   "Yuqi Zhou",
+   "Sunhao Dai",
+   "Zhanshuo Cao",
+   "Xiao Zhang",
+   "Jun Xu"
+  ],
+  "year": 2025
+ },
+ {
+  "title_seed": "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings",
+  "doi": "10.18653/v1/2025.acl-long.124",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+  "landing_url": "",
+  "title": "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings",
+  "authors": [
+   "Hans William Alexander Hanley",
+   "Zakir Durumeric"
+  ],
+  "year": 2025
+ },
+ {
+  "title_seed": "Matryoshka-Adaptor: Unsupervised and Supervised Tuning for Smaller Embedding Dimensions",
+  "doi": "10.18653/v1/2024.emnlp-main.576",
+  "arxiv_id": "",
+  "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+  "landing_url": "",
+  "title": "Matryoshka-Adaptor: Unsupervised and Supervised Tuning for Smaller Embedding Dimensions",
+  "authors": [
+   "Jinsung Yoon",
+   "Rajarishi Sinha",
+   "Sercan O Arik",
+   "Tomas Pfister"
+  ],
+  "year": 2024
+ }
+]

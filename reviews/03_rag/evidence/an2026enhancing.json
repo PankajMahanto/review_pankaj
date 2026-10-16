@@ -1,0 +1,88 @@
+{
+ "key": "an2026enhancing",
+ "category": "multimodal",
+ "subcategory": "knowledge-conflict mitigation inside retrieval-augmented LVLMs (training-free)",
+ "task": "Knowledge-based visual question answering with multimodal RAG",
+ "problem": "Retrieved contextual knowledge is often not aligned with an LVLM's parametric knowledge; even with ground-truth context LLaVA keeps relying on parametric memory, producing knowledge conflicts and unreliable answers.",
+ "architecture": "KCM: plug-and-play modification of the LVLM with (i) attention adjustment that up-weights 'contextual' heads (heads attending more to context than to image tokens), (ii) pruning of knowledge-centric neurons that encode coarse parametric knowledge, (iii) context-enhanced logits injected into the final prediction, and (iv) entropy-based weighting of contextual vs parametric logits.",
+ "retriever": "CLIP-ViT-L/14-336 vision encoder; top-1 retrieved item appended as context",
+ "generator": "LLaVA-1.5 (7B), InstructBLIP (7B), Shikra (7B), MiniGPT-4 (7B)",
+ "knowledge_source": "Wikipedia dump with associated images (InfoSeek knowledge base)",
+ "llm_or_encoder": "LVLMs LLaVA-1.5/InstructBLIP/Shikra/MiniGPT-4 (7B); CLIP retriever",
+ "datasets": [
+  {
+   "name": "InfoSeek",
+   "details": "entity-centric multi-choice VQA; also free-form Human and Validation splits"
+  },
+  {
+   "name": "ViQuAE",
+   "details": "multi-choice knowledge VQA"
+  },
+  {
+   "name": "OK-VQA",
+   "details": "commonsense knowledge VQA"
+  },
+  {
+   "name": "AOK-VQA",
+   "details": "commonsense knowledge VQA"
+  },
+  {
+   "name": "Encyclopedic VQA (E-VQA)",
+   "details": "encyclopedic VQA"
+  }
+ ],
+ "metrics": [
+  "VQA accuracy",
+  "Memorization Ratio (MR)",
+  "Context Ratio (CR)"
+ ],
+ "baselines": [
+  "Regular decoding",
+  "Contrastive Decoding (CD)",
+  "CAD",
+  "AdaCAD",
+  "Entropy-based decoding",
+  "COIECD",
+  "VCD",
+  "AGLA"
+ ],
+ "key_results": [
+  "LLaVA-1.5: InfoSeek accuracy 58.67 vs 51.97 (regular) and 53.87 (VCD, best baseline); ViQuAE 57.80 vs 53.32 (regular).",
+  "LLaVA-1.5 on OK-VQA 60.90 vs 46.17 (regular) and 57.80 (VCD); E-VQA 29.95 vs 29.24 (Entropy decoding).",
+  "Average improvement of 6.4% over regular decoding on the multi-choice datasets across four LVLMs.",
+  "With ground-truth context, accuracy rises from 65.5 to 71.2 and memorization ratio drops from 46.9 to 39.7."
+ ],
+ "strengths": [
+  "Training-free and plug-and-play; consistent gains on four different LVLMs and seven datasets.",
+  "Diagnoses the conflict with memorization/context ratios before proposing a fix; ablation of each of the four components."
+ ],
+ "limitations": [
+  {
+   "text": "Requires white-box access to attention heads, neurons and logits, so it cannot be applied to API-only LVLMs.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Only the top-1 retrieved item is used and all LVLMs are 7B models; gains on E-VQA over the best baseline are small (29.95 vs 29.24).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/Lackel/KCM",
+ "notes": "Results averaged over three runs with standard deviations.",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "an2026enhancing",
+ "cid": "C00208",
+ "corpus_id": "P0529",
+ "title": "Enhancing Retrieval-Augmented Large Vision Language Models via Knowledge Conflict Mitigation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i4.37216",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/an2026enhancing.txt"
+}

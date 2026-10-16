@@ -1,0 +1,55 @@
+{
+ "key": "zhang2026learning",
+ "source_id": "C00016",
+ "title": "Learning to Compress: Unlocking the Potential of Large Language Models for Text Representation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i34.40075",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "category": "llm-embedding",
+ "subcategory": "context-compression pretext task for unsupervised LLM adaptation, then contrastive learning",
+ "task": "General-purpose text embeddings from decoder LLMs (clustering, retrieval, STS, classification, reranking)",
+ "problem": "Causal LLMs are optimised for next-token prediction and token-level pretext tasks (e.g. MNTP in LLM2Vec) are suboptimal for holistic text representations.",
+ "architecture": "LLM2Comp: compression pre-training in which the LLM produces memory tokens that replace the context for downstream prediction (best objective: KL-based context-token knowledge distillation), followed by unsupervised (dropout) and supervised contrastive learning.",
+ "llm_or_encoder": "Llama-2-7B (chat)",
+ "datasets": [
+  {
+   "name": "MTEB (subset)",
+   "details": "Biorxiv/Medrxiv/TwentyNewsgroups clustering, SciFact/NFCorpus/ArguAna retrieval, STS17/SICK-R/STSB, Banking77/Emotion classification, reranking"
+  }
+ ],
+ "metrics": [
+  "MTEB task metrics, average"
+ ],
+ "baselines": [
+  "LLM2Vec",
+  "Llama2Vec",
+  "RepLLaMA",
+  "Instructor",
+  "ULLME",
+  "BGE-ICL"
+ ],
+ "key_results": [
+  "After supervised contrastive learning, LLM2CompKL averages 66.78 with 0.36M training samples vs 66.11 for LLM2Vec with 1.16M samples.",
+  "Clustering: TwentyNewsgroups 55.11 vs 51.04 for LLM2Vec."
+ ],
+ "strengths": [
+  "Sample-efficient adaptation of LLMs to embeddings.",
+  "Analysis of effective dimensionality and dimensional collapse."
+ ],
+ "limitations": [
+  {
+   "text": "Retrieval performance declines when contrastive learning continues beyond about 200 steps.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Comparisons with models using other backbones/data are only indicative.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/longtaizi13579/LLM2Comp",
+ "public_data": true,
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/zhang2026learning.txt"
+}

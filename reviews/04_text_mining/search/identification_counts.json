@@ -1,0 +1,10 @@
+{
+ "corpus": 304,
+ "acl_anthology": 983,
+ "crossref": 4808,
+ "arxiv": 1181,
+ "snowball": 78,
+ "identified_total": 7354,
+ "after_dedup": 5767,
+ "duplicates_removed": 1587
+}

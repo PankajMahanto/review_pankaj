@@ -1,0 +1,81 @@
+{
+ "key": "chen2026you",
+ "category": "adaptive",
+ "subcategory": "inference-time logic structures (query DAG) instead of pre-built graphs",
+ "task": "Multi-hop question answering",
+ "problem": "GraphRAG methods require costly corpus-to-graph construction (token cost, update latency), and a pre-built graph may not match the logical structure each query needs.",
+ "architecture": "LogicRAG: decomposes the query into subproblems, builds a directed acyclic graph of their logical dependencies, linearises it by topological sort, retrieves for subproblems in order, and applies graph pruning (fewer redundant retrievals) and context pruning (filter irrelevant context).",
+ "retriever": "all-MiniLM-L6-v2 dense retrieval, top-3",
+ "generator": "GPT-4o-mini",
+ "knowledge_source": "passage corpora built from supporting and distractor passages of the selected questions",
+ "llm_or_encoder": "GPT-4o-mini; all-MiniLM-L6-v2",
+ "datasets": [
+  {
+   "name": "MuSiQue",
+   "details": "1,000 validation questions, 11,656 passages"
+  },
+  {
+   "name": "2WikiMultiHopQA",
+   "details": "1,000 validation questions, 6,119 passages"
+  },
+  {
+   "name": "HotpotQA",
+   "details": "1,000 validation questions, 9,221 passages"
+  }
+ ],
+ "metrics": [
+  "string-based accuracy",
+  "LLM-based accuracy",
+  "latency",
+  "tokens per query"
+ ],
+ "baselines": [
+  "zero-shot LLMs",
+  "vanilla RAG (top-1/3/5)",
+  "KGP",
+  "RAPTOR",
+  "G-retriever",
+  "GraphRAG",
+  "LightRAG",
+  "HippoRAG",
+  "HippoRAG2"
+ ],
+ "key_results": [
+  "2WikiMQA string accuracy 64.7%, +14.7 points over HippoRAG2; LLM-based accuracy 62.5%.",
+  "MuSiQue 30.4% string accuracy vs 27.0% for HippoRAG2.",
+  "Query time 9.83 s and 1777.9 tokens on 2WikiMQA vs 35.14 s and 5730.6 tokens for LightRAG, with no offline graph construction."
+ ],
+ "strengths": [
+  "Removes the offline graph-building cost while outperforming graph-based RAG baselines.",
+  "Same embedding model and LLM for all methods; per-question-type analysis."
+ ],
+ "limitations": [
+  {
+   "text": "The LLM sometimes becomes prematurely confident on long complex queries and answers from partial information (fewer retrieval rounds on harder questions).",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Evaluated on 1,000-question subsets with a single generator (GPT-4o-mini).",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/chensyCN/LogicRAG",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "P",
+  "q5": "Y"
+ },
+ "source_id": "chen2026you",
+ "cid": "C00021",
+ "corpus_id": "P0159",
+ "title": "You Don't Need Pre-Built Graphs for RAG: Retrieval Augmented Generation with Adaptive Reasoning Structures",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40278",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/chen2026you.txt"
+}

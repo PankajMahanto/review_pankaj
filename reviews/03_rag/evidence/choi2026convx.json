@@ -1,0 +1,92 @@
+{
+ "key": "choi2026convx",
+ "category": "context",
+ "subcategory": "embedding-based context compression reusing retriever index embeddings (memory slots)",
+ "task": "Open-domain question answering with compressed retrieved context",
+ "problem": "Retrieved passages lengthen prompts and raise generator latency; embedding compressors either need a large ad-hoc compressor LLM (ICAE, PISCO) or collapse a passage to one projected vector (xRAG), losing lexical detail.",
+ "architecture": "ConvX: a lightweight converter splits each indexed retriever embedding into M chunks and maps them, via a three-layer network with self-attention over slots, into a fixed number of memory slots in the LLM embedding space; slots are pretrained with vocabulary reconstruction, then the LLM is fine-tuned (LoRA, self-distillation) to answer from the slots; the converter is frozen so only it must be retrained for a new retriever.",
+ "retriever": "SPLADE-v3 retrieval; passages re-encoded with the SFR retriever whose embeddings are converted",
+ "generator": "Mistral-7B-Instruct-v0.2 with LoRA",
+ "knowledge_source": "Wikipedia-KILT passages (2.5M for converter pretraining)",
+ "llm_or_encoder": "Mistral-7B-Instruct-v0.2; SFR embedding retriever",
+ "datasets": [
+  {
+   "name": "NQ",
+   "details": "evaluation"
+  },
+  {
+   "name": "TriviaQA",
+   "details": "evaluation"
+  },
+  {
+   "name": "HotpotQA",
+   "details": "evaluation"
+  },
+  {
+   "name": "ASQA",
+   "details": "evaluation"
+  },
+  {
+   "name": "PopQA",
+   "details": "evaluation"
+  },
+  {
+   "name": "MultiQA",
+   "details": "fine-tuning mixture of QA benchmarks"
+  }
+ ],
+ "metrics": [
+  "span exact match (spanEM)",
+  "inference efficiency"
+ ],
+ "baselines": [
+  "AutoCompressor",
+  "ICAE",
+  "xRAG",
+  "PCC-lite",
+  "PISCO",
+  "uncompressed RAG",
+  "LLM without context"
+ ],
+ "key_results": [
+  "Average spanEM 0.508 at 16x compression and 0.505 at 128x vs 0.436 for xRAG (256x) and 0.542 for PISCO (16x); uncompressed RAG 0.589, no-context LLM 0.410.",
+  "Several compression baselines (AutoCompressor 0.329, ICAE 0.342) fall below the no-context lower bound."
+ ],
+ "strengths": [
+  "Avoids double encoding by reusing index embeddings; competitive with an LLM-based compressor at much lower cost.",
+  "Releases passage collection, retrieved-passage dataset and checkpoint."
+ ],
+ "limitations": [
+  {
+   "text": "Not all memory slots carry informative vocabulary, leaving redundancy in the representation.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Evaluated only with the SFR retriever index; generalisation across retrievers is untested.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Still below PISCO and uncompressed RAG in average accuracy.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/NLPlab-skku/ConvX",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "Y"
+ },
+ "source_id": "choi2026convx",
+ "cid": "C00070",
+ "corpus_id": "P0256",
+ "title": "ConvX: A Lightweight Converter to Bridge Indexed Dense Representations and Large Language Models for Retrieval-Augmented Generation",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.1823",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/choi2026convx.txt"
+}

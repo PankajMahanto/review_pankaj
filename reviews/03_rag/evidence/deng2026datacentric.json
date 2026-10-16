@@ -1,0 +1,55 @@
+{
+ "key": "deng2026datacentric",
+ "category": "survey",
+ "subcategory": "data-centric survey of agentic RAG",
+ "task": "Survey of datasets, benchmarks and data curation for agentic RAG",
+ "problem": "Agentic RAG needs hard tasks requiring planning, retrieval and multiple reasoning decisions plus rich interactive trajectories; such data are scarce, costly to annotate and error-prone when synthesised.",
+ "architecture": "Organises agentic RAG around a data lifecycle - data collecting, preprocessing and task formulation, task construction (generate-verify-filter/refine), data for evaluation, and data enhancement for SFT and RL - and catalogues training datasets and benchmarks for QA, web and software-engineering domains.",
+ "retriever": "not applicable (survey)",
+ "generator": "not applicable (survey)",
+ "knowledge_source": "not applicable (survey)",
+ "llm_or_encoder": "not applicable",
+ "datasets": [],
+ "metrics": [
+  "correctness",
+  "efficiency (tool calls, steps, tokens)",
+  "safety"
+ ],
+ "baselines": [],
+ "key_results": [
+  "Contrasts traditional and agentic RAG along the data lifecycle: static corpora vs interactive data, single-step vs decomposable hard tasks, correctness-only vs multi-axis evaluation, CoT vs thought-action trajectories and process rewards.",
+  "Groups difficulty-enhancement methods into complexity, uncertainty and expertise, and notes that classic single-hop QA datasets such as NQ and TriviaQA are near saturation."
+ ],
+ "strengths": [
+  "First survey focusing on data curation for agentic RAG; useful catalogue of benchmarks and training data by domain."
+ ],
+ "limitations": [
+  {
+   "text": "Covers text-based data only, not multimodal data pipelines.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Conceptual; no large-scale quantitative benchmarking or unified evaluation across datasets.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "",
+ "notes": "Project page: github.com/fatty-belly/Awesome-AgenticRAG-Data.",
+ "quality": {
+  "q1": "Y",
+  "q2": "NA",
+  "q3": "NA",
+  "q4": "NA",
+  "q5": "P"
+ },
+ "source_id": "deng2026datacentric",
+ "cid": "C00003",
+ "corpus_id": "P0111",
+ "title": "Data-Centric Perspectives on Agentic Retrieval-Augmented Generation: A Survey",
+ "venue": "Findings of ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-acl.78",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/deng2026datacentric.txt"
+}

@@ -1,0 +1,74 @@
+{
+ "C00007": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0122"
+ },
+ "C00009": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0136"
+ },
+ "C00010": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0141"
+ },
+ "C00012": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0144"
+ },
+ "C00015": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0150"
+ },
+ "C00043": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0205"
+ },
+ "C00044": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0207"
+ },
+ "C00053": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0225"
+ },
+ "C00077": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "retrieval/ranking only on reading the abstract: evaluated on retrieval benchmarks, no generator",
+  "id": "P0275"
+ },
+ "C00134": {
+  "decision": "exclude",
+  "code": "EC1",
+  "note": "retrieval of n-gram drafts for speculative decoding; no external knowledge grounding",
+  "id": "P0376"
+ },
+ "C00161": {
+  "decision": "exclude",
+  "code": "EC1",
+  "note": "retrieval-augmented graph attention classifier; no language generation",
+  "id": "P0445"
+ },
+ "C00247": {
+  "decision": "exclude",
+  "code": "EC2",
+  "note": "knowledge-base QA retriever training; no generator (abstract)",
+  "id": "P0626"
+ }
+}

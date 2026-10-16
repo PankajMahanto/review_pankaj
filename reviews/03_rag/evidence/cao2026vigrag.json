@@ -1,0 +1,76 @@
+{
+ "key": "cao2026vigrag",
+ "category": "multimodal",
+ "subcategory": "video RAG over a probabilistic temporal knowledge graph",
+ "task": "Long-context and multi-video question answering",
+ "problem": "Existing RAG methods fail to jointly encode multimodal and long-range temporal information and use static text matching that cannot align queries with the right video segments.",
+ "architecture": "ViG-RAG: videos split into 30-second segments, captioned by a VLM and transcribed by ASR; a probabilistic temporal knowledge graph of quintuples (head, relation, tail, time, plausibility) is built; semantic-temporal dual-level retrieval with a training-free Gaussian-mixture filter that picks high-confidence segments, LLM-guided query-aware re-ranking, and a VLM that generates the answer from anchors, context and selected frames.",
+ "retriever": "text-embedding-3-small over entities/passages + ImageBind multimodal embeddings, GMM-based adaptive top-K",
+ "generator": "GPT-4o-mini orchestration; MiniCPM-V; plug-in for Video-LLaVA, LLaVA-NeXT-Video, LongVA, Long-LLaVA, Qwen2-VL, LLaVA-Video",
+ "knowledge_source": "video transcripts, captions and frames organised in a temporal knowledge graph",
+ "llm_or_encoder": "GPT-4o-mini; MiniCPM-V; Distil-Whisper; ImageBind",
+ "datasets": [
+  {
+   "name": "LongerVideos",
+   "details": "more than twenty video sets (lecture, documentary, entertainment)"
+  },
+  {
+   "name": "Video-MME",
+   "details": "clips from 11 seconds to nearly an hour"
+  },
+  {
+   "name": "LongVideoBench",
+   "details": "6,678 multiple-choice questions across 17 topical areas"
+  }
+ ],
+ "metrics": [
+  "LLM-judged win rate (GPT-4o-mini)",
+  "5-point quantitative score",
+  "accuracy"
+ ],
+ "baselines": [
+  "NaiveRAG",
+  "GraphRAG (local/global)",
+  "LightRAG",
+  "VideoRAG",
+  "base VLMs"
+ ],
+ "key_results": [
+  "LongerVideos overall win rate 41.77% vs 35.81% for VideoRAG and 22.42% for GraphRAG-local in three-way judging.",
+  "Video-MME overall: LLaVA-NeXT-Video improves from 43.0 to 54.2 (+11.2) and Qwen2-VL-72B from 64.9 to 72.4 when ViG-RAG is plugged in.",
+  "LLaVA-Video-72B with ViG-RAG reaches 74.4 overall, adding about 2.1K text tokens per example."
+ ],
+ "strengths": [
+  "Model-agnostic plug-in that improves six open-source VLMs of 7B and 72B size.",
+  "Joint temporal and semantic indexing with adaptive (threshold-free) evidence selection."
+ ],
+ "limitations": [
+  {
+   "text": "Main comparison relies on LLM-as-judge win rates (GPT-4o-mini), which can be biased.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Pipeline depends on several large models (VLM captioning, ASR, GPT-4o-mini), increasing indexing cost; no cost analysis in the excerpted results.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/AI-Researcher-Team/ViG-RAG",
+ "notes": "Five independent judging trials with randomised answer order.",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "cao2026vigrag",
+ "cid": "C00175",
+ "corpus_id": "P0478",
+ "title": "ViG-RAG: Video-aware Graph Retrieval-Augmented Generation via Temporal and Semantic Hybrid Reasoning",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i1.36963",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/cao2026vigrag.txt"
+}

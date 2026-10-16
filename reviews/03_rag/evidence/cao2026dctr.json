@@ -1,0 +1,76 @@
+{
+ "key": "cao2026dctr",
+ "category": "graph",
+ "subcategory": "KG-RAG subgraph retrieval trained with graph-theoretic pseudo-labels",
+ "task": "Multi-hop knowledge-graph question answering (KGQA) with LLM generation",
+ "problem": "Subgraph retrieval for KG-RAG relies on heuristic shortest paths or multi-hop traversal, giving incomplete, semantically drifting subgraphs that ignore how the LLM uses fine-grained structure.",
+ "architecture": "DCTR: (1) DCFGR builds compact and complete pseudo-label subgraphs via maximum-flow retrieval and a dual-flux path extractor (MaxMin-InfoPath lower bound + MaxDensity-InfoPath upper bound); (2) DSRS converts the discrete pseudo-labels into a differentiable surrogate so the retriever's ranking is trained to highlight salient triples; retrieved subgraph is passed to an LLM for answering.",
+ "retriever": "trainable triple retriever initialised with GTE embeddings",
+ "generator": "Llama3.1-8B/70B-Instruct",
+ "knowledge_source": "Freebase knowledge graph",
+ "llm_or_encoder": "GTE encoder; Llama3.1-8B/70B-Instruct",
+ "datasets": [
+  {
+   "name": "WebQSP",
+   "details": "cleaned 'sub' variant, Freebase"
+  },
+  {
+   "name": "CWQ",
+   "details": "cleaned 'sub' variant, Freebase"
+  }
+ ],
+ "metrics": [
+  "path triple recall",
+  "GPT-4o triple recall",
+  "answer entity recall",
+  "retrieval time",
+  "QA accuracy metrics (Hits/F1)"
+ ],
+ "baselines": [
+  "cosine similarity",
+  "RoG",
+  "G-Retriever",
+  "GNN-RAG",
+  "SubgraphRAG",
+  "SR+NSM",
+  "Retrieve-Rewrite-Answer"
+ ],
+ "key_results": [
+  "WebQSP retrieval: path recall 0.890, GPT-4o triple recall 0.866, answer recall 0.956 vs 0.857/0.815/0.923 for SubgraphRAG.",
+  "CWQ retrieval: 0.829/0.839/0.928 vs 0.801/0.807/0.914 for SubgraphRAG, at similar retrieval time (12 s).",
+  "Relative improvement in GPT-4o triple recall over SubgraphRAG of 5.1% on WebQSP and 3.2% on CWQ."
+ ],
+ "strengths": [
+  "Principled pseudo-label construction with theoretical motivation; cross-dataset transfer (CWQ to WebQSP and back) is reported.",
+  "Averaged over five seeds; ablations for both retrieval and generation stages."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluated only on two Freebase KGQA benchmarks.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Pseudo-labels require answer entities at training time (inference is answer-free).",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "N"
+ },
+ "source_id": "cao2026dctr",
+ "cid": "C00051",
+ "corpus_id": "P0217",
+ "title": "DCTR: Dual-Constraint Subgraph Optimization for Knowledge Graph-based Retrieval-Augmented Generation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40265",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "fulltext/txt/cao2026dctr.txt"
+}

@@ -1,0 +1,78 @@
+{
+ "key": "chen2026lir3ag",
+ "category": "context",
+ "subcategory": "evidence restructuring into reasoning chains to transfer reasoning-model strategies to non-reasoning LLMs",
+ "task": "Multi-hop question answering with RAG",
+ "problem": "Reasoning LLMs improve multi-hop RAG but at high token and latency cost; their benefit comes from implicit strategies (context-grounded vs knowledge-reconciled reasoning) that non-reasoning models lack.",
+ "architecture": "LiR3AG: after an empirical study of Qwen3 'think' traces, a lightweight framework re-ranks and restructures retrieved evidence into coherent reasoning chains (intermediate components on GPT-4o-mini) so that a non-reasoning 8B generator can follow the transferred strategy.",
+ "retriever": "standard dense retrieval of top-k passages",
+ "generator": "Qwen3-8B (no-think); Qwen3-14B/32B baselines; GPT-4o-mini for intermediate modules",
+ "knowledge_source": "corpora of the multi-hop QA benchmarks",
+ "llm_or_encoder": "Qwen3 family; GPT-4o-mini",
+ "datasets": [
+  {
+   "name": "HotpotQA",
+   "details": "multi-hop QA"
+  },
+  {
+   "name": "2WikiMultihopQA",
+   "details": "multi-hop QA"
+  },
+  {
+   "name": "MultiHop-RAG",
+   "details": "multi-hop RAG benchmark"
+  },
+  {
+   "name": "MuSiQue",
+   "details": "multi-hop QA"
+  }
+ ],
+ "metrics": [
+  "Exact Match",
+  "F1",
+  "output tokens",
+  "inference time"
+ ],
+ "baselines": [
+  "Direct output (Qwen3 8B/14B/32B, think and no-think)",
+  "Vanilla RAG (same backbones)"
+ ],
+ "key_results": [
+  "Qwen3-8B no-think with LiR3AG: HotpotQA F1 0.521 vs 0.501 for Vanilla RAG with Qwen3-32B think; MuSiQue F1 0.464 vs 0.410.",
+  "Reduces output tokens by 98% on average and inference time by 58.6% relative to reasoning models.",
+  "F1 of the 8B non-reasoning model improves by 6.2% to 22.5% across datasets."
+ ],
+ "strengths": [
+  "Empirical characterisation of how reasoning models use retrieved vs internal knowledge in RAG.",
+  "Large efficiency gains with a small generator."
+ ],
+ "limitations": [
+  {
+   "text": "Compared only with Direct Output and Vanilla RAG, not with more complex RAG methods.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Intermediate modules use GPT-4o-mini, so the cost of these calls partly offsets the savings on the generator.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "P",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "chen2026lir3ag",
+ "cid": "C00116",
+ "corpus_id": "P0351",
+ "title": "LiR3AG: A Lightweight Rerank Reasoning Strategy Framework for Retrieval-Augmented Generation",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i36.40270",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/chen2026lir3ag.txt"
+}

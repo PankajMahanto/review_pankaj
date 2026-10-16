@@ -1,0 +1,82 @@
+{
+ "key": "du2026optimizing",
+ "category": "retrieval",
+ "subcategory": "utility-oriented selection of user-history records via contextual bandits (personalisation RAG)",
+ "task": "Retrieval-augmented LLM personalisation (classification, regression and generation tasks)",
+ "problem": "Personalisation RAG selects user records by semantic relevance, but relevance is an unreliable proxy for utility; record utilities are non-additive, so greedy top-k selection can introduce redundancy or conflicts.",
+ "architecture": "PURPLE: a user-records encoder with token-level cross-attention to the query and a Transformer modelling inter-record dependencies outputs propensity scores; a Plackett-Luce model turns them into a distribution over ordered profiles; trained end-to-end with policy gradient using the frozen LLM's log-likelihood of the reference response as reward; at inference, top-K records are passed to the LLM (reranking a heuristic candidate pool).",
+ "retriever": "BM25/Contriever candidate pool re-ranked by the learned PURPLE policy",
+ "generator": "frozen Phi-4-Mini-Instruct, Llama-3-8B-Instruct, Llama-3-70B-Instruct",
+ "knowledge_source": "each user's history records",
+ "llm_or_encoder": "Phi-4-Mini / Llama-3-8B / Llama-3-70B (frozen)",
+ "datasets": [
+  {
+   "name": "LaMP",
+   "details": "Citation, Movie, Rating, News, Scholar, Tweet tasks"
+  },
+  {
+   "name": "LongLaMP",
+   "details": "long-form personalised generation tasks (appendix)"
+  }
+ ],
+ "metrics": [
+  "accuracy",
+  "F1",
+  "MAE",
+  "RMSE",
+  "ROUGE-1",
+  "ROUGE-L",
+  "METEOR",
+  "throughput"
+ ],
+ "baselines": [
+  "BM25",
+  "Contriever",
+  "IC-RALM",
+  "REPLUG",
+  "RankGPT (Llama-3-8B, GPT-5-nano)",
+  "ICR"
+ ],
+ "key_results": [
+  "With Llama-3-8B, LaMP Movie accuracy 49.6 vs 48.0 (ICR) and 47.2 (Contriever); Rating MAE 0.307 vs 0.312 (ICR).",
+  "With Phi-4-Mini, Citation accuracy 66.0 vs 64.6 for Contriever; Movie accuracy 38.6 vs 37.4 for REPLUG.",
+  "Removing inter-record dependency modelling causes the largest ablation drop (Citation accuracy 61.3 vs 66.2)."
+ ],
+ "strengths": [
+  "Directly optimises retrieval for downstream generation utility with an order-sensitive list model.",
+  "Consistent gains across three LLM sizes and nine tasks with three seeds; more efficient than LLM rerankers."
+ ],
+ "limitations": [
+  {
+   "text": "Requires reference personalised responses to compute the reward; real deployments mostly have implicit or noisy feedback.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Trained separately per task; transfer to unseen tasks or domains is not evaluated.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Absolute gains over the strongest baselines are often small (about 1 point).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "",
+ "notes": "",
+ "quality": {
+  "q1": "Y",
+  "q2": "Y",
+  "q3": "Y",
+  "q4": "Y",
+  "q5": "P"
+ },
+ "source_id": "du2026optimizing",
+ "cid": "C00143",
+ "corpus_id": "P0402",
+ "title": "Optimizing User Profiles via Contextual Bandits for Retrieval-Augmented LLM Personalization",
+ "venue": "ACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.acl-long.1467",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "fulltext_txt": "/home/user/review_pankaj/reviews/03_rag/fulltext/txt/du2026optimizing.txt"
+}
