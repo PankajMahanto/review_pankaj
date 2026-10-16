@@ -1,0 +1,71 @@
+{
+ "key": "nagda2025tethering",
+ "source_id": "P0024",
+ "title": "Tethering Broken Themes: Aligning Neural Topic Models with Labels and Authors",
+ "venue": "Findings of NAACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-naacl.44",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "neural",
+ "subcategory": "supervised / aligned VAE topic model with label and author metadata",
+ "task": "Aligning neural topics with document labels and authorship",
+ "problem": "NTM topics often do not match human intent (labels may be merged or split), and author information is not used in NTMs.",
+ "architecture": "FANToM, a plug-in for VAE-based NTMs: an expert-aligned Dirichlet prior built from a topic-label vector restricts each document's topics to its labels (expert alignment loss between posterior and prior; labels from experts or an LLM); a separate author decoder learns a multinomial over authors from the topic vector; both can be combined.",
+ "llm_or_encoder": "Optional LLM as label assigner when expert labels are missing",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "labelled news groups"
+  },
+  {
+   "name": "AGN",
+   "details": "AG News"
+  },
+  {
+   "name": "DB-14",
+   "details": "DBpedia-14"
+  },
+  {
+   "name": "arxiv",
+   "details": "arXiv abstracts with author names (only dataset with authors)"
+  }
+ ],
+ "metrics": [
+  "Topic Quality TQ = C_V (WikiText-103 reference) x TD",
+  "Purity",
+  "NMI",
+  "two-tailed t-test"
+ ],
+ "baselines": [
+  "Labeled LDA",
+  "Author-Topic Model",
+  "SCHOLAR",
+  "TAM",
+  "DVAE",
+  "ETM",
+  "CTM",
+  "ECRTM"
+ ],
+ "key_results": [
+  "FANToM on ECRTM, 20NG: Purity 0.710 and NMI 0.681 vs 0.628 and 0.617 for ECRTM alone.",
+  "FANToM on ECRTM, AGN: Purity 0.918 and NMI 0.873 vs 0.826 and 0.809."
+ ],
+ "strengths": [
+  "Works on top of any VAE-based topic model.",
+  "Learns author-topic distributions in NTMs, enabling author interest and similarity analysis."
+ ],
+ "limitations": [
+  {
+   "text": "Needs labels and author metadata; LLM-based labelling adds compute cost and suffers from context-length truncation and limited multilingual small LLMs.",
+   "source": "author-stated"
+  },
+  {
+   "text": "May fail when an author suddenly writes on an unrelated topic.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/mayanknagda/fantom",
+ "notes": "Supervised (label-informed) setting, not fully unsupervised.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0024.txt"
+}

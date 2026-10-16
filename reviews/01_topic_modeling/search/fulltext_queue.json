@@ -1850,7 +1850,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.researchsquare.com/article/rs-8241675/latest.pdf"
  },
  {
   "key": "nguyen2025glocom",
@@ -3435,7 +3436,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://osf.io/3nad9/download"
  },
  {
   "key": "du2024mining",
@@ -3567,7 +3569,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.ijcai.org/proceedings/2024/0710.pdf"
  },
  {
   "key": "aftar2024robert2vectm",
@@ -3867,7 +3870,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10150353/pdf/10462_2023_Article_10471.pdf"
  },
  {
   "key": "niu2023citation",
@@ -3929,7 +3933,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://researchonline.jcu.edu.au/79249/1/79249.pdf"
  },
  {
   "key": "ennajari2023combining",
@@ -4655,7 +4660,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://hal.science/hal-03942487v1/document"
  },
  {
   "key": "terragni2023role",
@@ -5164,7 +5170,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0266325&type=printable"
  },
  {
   "key": "ke2022svd",
@@ -5464,7 +5471,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://ojs.aaai.org/index.php/ICWSM/article/download/14817/14667"
  },
  {
   "key": "zhao2021topic",
@@ -5611,14 +5619,15 @@
   "year": 2020,
   "venue": "Proceedings of The Web Conference 2020",
   "doi": "10.1145/3366423.3380278",
-  "arxiv_id": "",
+  "arxiv_id": "1908.07162",
   "acl_url": "",
   "corpus_id": "",
   "category": "embedding-clustering",
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://arxiv.org/pdf/1908.07162"
  },
  {
   "key": "wang2020federated",
@@ -5924,7 +5933,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.frontiersin.org/articles/10.3389/frai.2020.00042/pdf"
  },
  {
   "key": "peinelt2020tbert",
@@ -6094,14 +6104,15 @@
   "year": 2019,
   "venue": "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
   "doi": "10.18653/v1/p19-1240",
-  "arxiv_id": "",
+  "arxiv_id": "1906.03889",
   "acl_url": "",
   "corpus_id": "",
   "category": "application",
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.aclweb.org/anthology/P19-1240.pdf"
  },
  {
   "key": "ding2018coherenceaware",
@@ -6251,14 +6262,15 @@
   "year": 2018,
   "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
   "doi": "10.18653/v1/d18-1351",
-  "arxiv_id": "",
+  "arxiv_id": "1809.03664",
   "acl_url": "",
   "corpus_id": "",
   "category": "application",
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.aclweb.org/anthology/D18-1351.pdf"
  },
  {
   "key": "narayan2018don",
@@ -6279,7 +6291,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.aclweb.org/anthology/D18-1206.pdf"
  },
  {
   "key": "kherwa2018topic",
@@ -6299,7 +6312,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "http://eudl.eu/pdf/10.4108/eai.13-7-2018.159623"
  },
  {
   "key": "korencic2018documentbased",
@@ -6343,7 +6357,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.ijcai.org/proceedings/2017/0588.pdf"
  },
  {
   "key": "bicalho2017general",
@@ -6600,7 +6615,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "http://hdl.handle.net/10197/6482"
  },
  {
   "key": "roder2015exploring",
@@ -6808,7 +6824,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "http://www.svcl.ucsd.edu/publications/journal/2013/pami_LDA/PAMI-LDA2013.pdf"
  },
  {
   "key": "roller2013multimodal",
@@ -7540,7 +7557,7 @@
   "year": 2018,
   "venue": "ACL 2018",
   "doi": "10.18653/v1/p18-1189",
-  "arxiv_id": "",
+  "arxiv_id": "1705.09296",
   "acl_url": "",
   "pdf_url": "",
   "landing_url": "",
@@ -7549,7 +7566,8 @@
   "source": "citation searching",
   "sources": [
    "citation searching"
-  ]
+  ],
+  "oa_pdf": "https://www.aclweb.org/anthology/P18-1189.pdf"
  },
  {
   "key": "zhang2018whai",
@@ -8064,7 +8082,8 @@
   "source": "database search",
   "sources": [
    "crossref"
-  ]
+  ],
+  "oa_pdf": "https://www.mdpi.com/2079-9292/13/16/3212/pdf?version=1723623284"
  },
  {
   "key": "demarcos2025llmbased",

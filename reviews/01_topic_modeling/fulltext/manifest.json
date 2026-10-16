@@ -1,0 +1,2509 @@
+{
+ "majidi2026dual": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "bagale2026longitudinal": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/006_A_Longitudinal_Analysis_of_Public_Discourse_on_AI_Ethics_in_Education__2607.12295v1.pdf",
+  "arxiv_id": "2607.12295"
+ },
+ "almeida2026manifoldaware": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2609.29630",
+  "arxiv_id": "2609.29630"
+ },
+ "xiong2026disentangled": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "nguyen2026framework": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "khanh2026framework": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "khanh2026multiobjective": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "couto2026study": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "yoon2026adaptive": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "tiwari2026advanced": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/001_Advanced_Topic_Modeling_Techniques_for_Categorizing_Software_Vulnerabi__2607.03887v1.pdf",
+  "arxiv_id": "2607.03887"
+ },
+ "lamirel2026bagofwords": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "nguyen2026coherence": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-eacl.187.pdf",
+  "arxiv_id": ""
+ },
+ "joh2026top": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2609.09575",
+  "arxiv_id": "2609.09575"
+ },
+ "hong2026characterizing": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/004_Characterizing_the_Temporal_Emotional_and_Social_Patterns_of_Adolescen__2607.04566v1.pdf",
+  "arxiv_id": "2607.04566"
+ },
+ "singaravadivelan2026cobwebtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.1753.pdf",
+  "arxiv_id": "2604.14489"
+ },
+ "james2026continual": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.eacl-long.312.pdf",
+  "arxiv_id": "2508.15612"
+ },
+ "liu2026dvidtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.1318.pdf",
+  "arxiv_id": ""
+ },
+ "li2026dynamic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2608.23284",
+  "arxiv_id": "2608.23284"
+ },
+ "mekaoui2026efficient": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.lrec-1.595.pdf",
+  "arxiv_id": "2511.04248"
+ },
+ "he2026emerging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "sun2026enhancing": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "noor2026evaluation": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/008_Evaluation_and_Explainability_of_Unsupervised_Scholarly_Collaboration__2607.04529v2.pdf",
+  "arxiv_id": "2607.04529"
+ },
+ "guo2026extracting": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "ghadafi2026finfluencers": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/010_Finfluencers_on_TikTok_A_Longitudinal_Analysis_of_Content_Engagement_a__2607.05203v1.pdf",
+  "arxiv_id": "2607.05203"
+ },
+ "wang2026gentlemen": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/017_From_Gentlemen_to_Frontiermen_Masculine_Formations_in_English_Language__2607.03323v1.pdf",
+  "arxiv_id": "2607.03323"
+ },
+ "nikbakht2026fuzzy": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "phat2026gloctm": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2601.11872",
+  "arxiv_id": "2601.11872"
+ },
+ "nguyen2026global": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "onan2026graphcyclecltm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "onan2026hicospantm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "min2026hypergraph": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "li2026improving": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2602.17907",
+  "arxiv_id": "2602.17907"
+ },
+ "zhu2026improving": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "hassan2026insights": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/007_Insights_from_GitHub_Community_on_the_Matter_Standard_Developer_Perspe__2607.01494v1.pdf",
+  "arxiv_id": "2607.01494"
+ },
+ "xuan2026llmxtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.acl-long.170.pdf",
+  "arxiv_id": "2605.03299"
+ },
+ "abusaleh2026mmtm": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2605.29765",
+  "arxiv_id": "2605.29765"
+ },
+ "guo2026mswntm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "smetana2026mapping": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2510.16152",
+  "arxiv_id": "2510.16152"
+ },
+ "zheng2026model": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.tacl-1.99.pdf",
+  "arxiv_id": "2507.23220"
+ },
+ "guo2026multimodal": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "zhuang2026ngtm": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2507.13133",
+  "arxiv_id": "2507.13133"
+ },
+ "guo2026neural": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "sevinc2026nonnegative": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/137_Non_negative_matrix_factorization_using_the_textit_R_package_textsf_nn__2607.20084v1.pdf",
+  "arxiv_id": "2607.20084"
+ },
+ "rubinfeld2026ontological": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.bionlp-1.27.pdf",
+  "arxiv_id": ""
+ },
+ "douglas2026prism": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2604.03180",
+  "arxiv_id": "2604.03180"
+ },
+ "austern2026poissonprocess": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.17809",
+  "arxiv_id": "2503.17809"
+ },
+ "zhao2026prioritizing": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "duan2026rethinking": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "france2026synthetic": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/014_Synthetic_Consumer_Insight_Generation_with_Large_Language_Models__2607.05761v1.pdf",
+  "arxiv_id": "2607.05761"
+ },
+ "zuchna2026textonomy": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.icnlsp-1.3.pdf",
+  "arxiv_id": ""
+ },
+ "wang2026topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "liu2026topicguided": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "raffel2026topicmerge": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2610.19323",
+  "arxiv_id": "2610.19323"
+ },
+ "xu2026modern": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.findings-acl.326.pdf",
+  "arxiv_id": ""
+ },
+ "chen2026understanding": {
+  "source": "corpus-copy",
+  "version": "open-access-copy",
+  "url": "https://vbn.aau.dk/ws/files/841550451/3774905.3794645.pdf",
+  "arxiv_id": ""
+ },
+ "saed2026understanding": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "/home/user/review_pankaj/pdf/003_Understanding_Developer_Pain_Points_in_Federated_Learning_Insights_fro__2607.19621v1.pdf",
+  "arxiv_id": "2607.19621"
+ },
+ "prouteau2026numbers": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2026.lrec-1.474.pdf",
+  "arxiv_id": "2603.01945"
+ },
+ "pereira2025current": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "nguyen2025framework": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "zhang2025novel": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "xie2025comparison": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2309.06160",
+  "arxiv_id": "2309.06160"
+ },
+ "hankar2025comprehensive": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "zhang2025short": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "zheng2025topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "yang2025advanced": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhang2025enhanced": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "ranaweera2025bertdetect": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.18043",
+  "arxiv_id": "2503.18043"
+ },
+ "tang2025bridging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "ma2025cast": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.386.pdf",
+  "arxiv_id": "2410.15136"
+ },
+ "abaskohi2025cemtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.590.pdf",
+  "arxiv_id": "2509.11465"
+ },
+ "ebrahimi2025constrained": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.1802.pdf",
+  "arxiv_id": "2505.16493"
+ },
+ "ennajari2025correlated": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "liu2025cycling": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "wang2025distributed": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "breuer2025elda": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2506.07747",
+  "arxiv_id": "2506.07747"
+ },
+ "liu2025efficient": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "yang2025enhancing": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "viegas2025exploiting": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.cl-3.5.pdf",
+  "arxiv_id": ""
+ },
+ "song2025external": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "azecka2025factor": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2504.18914",
+  "arxiv_id": "2504.18914"
+ },
+ "wang2025finegrained": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zve2025outliers": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2509.22030",
+  "arxiv_id": "2509.22030"
+ },
+ "li2025fuzzy": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "nguyen2025glocom": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.51.pdf",
+  "arxiv_id": "2412.00525"
+ },
+ "vuong2025hicot": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.715.pdf",
+  "arxiv_id": ""
+ },
+ "lu2025incorporating": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "lim2025interpreting": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.coling-main.720.pdf",
+  "arxiv_id": ""
+ },
+ "yang2025llm": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2406.09008",
+  "arxiv_id": "2406.09008"
+ },
+ "liu2025llmguided": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.902.pdf",
+  "arxiv_id": ""
+ },
+ "li2025large": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.375.pdf",
+  "arxiv_id": ""
+ },
+ "hernandezcamero2025leveraging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wang2025mit": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "celikten2025medcongtm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "granese2025merging": {
+  "source": "corpus-copy",
+  "version": "open-access-copy",
+  "url": "https://arxiv.org/pdf/2504.07711",
+  "arxiv_id": "2504.07711"
+ },
+ "wang2025mining": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "wang2025mininga": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "steffen2025more": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2410.08642",
+  "arxiv_id": "2410.08642"
+ },
+ "le2025multisurrogateobjective": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.9.pdf",
+  "arxiv_id": ""
+ },
+ "s2025multiview": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "liu2025neural": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.emnlp-main.670.pdf",
+  "arxiv_id": ""
+ },
+ "yang2025neural": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.70.pdf",
+  "arxiv_id": "2411.08534"
+ },
+ "detmer2025new": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "nguyen2025outofvocabulary": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "zhang2025personalized": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "reuter2025probabilistic": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2403.03737",
+  "arxiv_id": "2403.03737"
+ },
+ "seo2025protoxtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.1107.pdf",
+  "arxiv_id": ""
+ },
+ "wei2025provable": {
+  "source": "corpus-copy",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2411.12600",
+  "arxiv_id": "2411.12600"
+ },
+ "hoyle2025proxann": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.772.pdf",
+  "arxiv_id": "2507.00828"
+ },
+ "hill2025recommending": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2501.06581",
+  "arxiv_id": "2501.06581"
+ },
+ "schroeder2025reliability": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.134.pdf",
+  "arxiv_id": "2410.23186"
+ },
+ "adhya2025s2wtm": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.1131.pdf",
+  "arxiv_id": "2507.12451"
+ },
+ "prostmaier2025seeded": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.02741",
+  "arxiv_id": "2503.02741"
+ },
+ "xu2025selfsupervised": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2502.09944",
+  "arxiv_id": "2502.09944"
+ },
+ "eichin2025semantic": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.964.pdf",
+  "arxiv_id": "2410.21054"
+ },
+ "nguyen2025sharpnessaware": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.naacl-long.231.pdf",
+  "arxiv_id": ""
+ },
+ "girrbach2025sparse": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2511.16309",
+  "arxiv_id": "2511.16309"
+ },
+ "zhou2025sparse": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "tsurumaki2025study": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2404.08295",
+  "arxiv_id": "2404.08295"
+ },
+ "nguyen2025subdocument": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "chen2025supervised": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.tacl-1.12.pdf",
+  "arxiv_id": ""
+ },
+ "nagda2025tethering": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-naacl.44.pdf",
+  "arxiv_id": "2410.18140"
+ },
+ "fujita2025topiclear": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2512.06694",
+  "arxiv_id": "2512.06694"
+ },
+ "nguyen2025topicot": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "vu2025topic": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-acl.398.pdf",
+  "arxiv_id": ""
+ },
+ "celikten2025topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "calvobartolome2025topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "akash2025understanding": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.acl-long.298.pdf",
+  "arxiv_id": "2506.07453"
+ },
+ "nguyen2025xtra": {
+  "source": "corpus-copy",
+  "version": "published",
+  "url": "https://aclanthology.org/2025.findings-emnlp.298.pdf",
+  "arxiv_id": "2510.02788"
+ },
+ "ojo2024topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "tang2024labels": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wang2024bridging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "fang2024cwtm": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.382.pdf",
+  "arxiv_id": "2305.09329"
+ },
+ "lin2024combating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-acl.817.pdf",
+  "arxiv_id": ""
+ },
+ "rahimi2024contextualized": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-eacl.123.pdf",
+  "arxiv_id": "2305.14587"
+ },
+ "wu2024continuous": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.345.pdf",
+  "arxiv_id": ""
+ },
+ "ye2024dynamic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2312.14180",
+  "arxiv_id": "2312.14180"
+ },
+ "tran2024enhancing": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.530.pdf",
+  "arxiv_id": "2405.04713"
+ },
+ "akash2024enhancing": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.917.pdf",
+  "arxiv_id": "2410.03071"
+ },
+ "karakkaparambiljames2024evaluating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.acl-long.11.pdf",
+  "arxiv_id": "2309.08627"
+ },
+ "adhya2024evaluating": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2503.18167",
+  "arxiv_id": "2503.18167"
+ },
+ "masson2024evaluating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.578.pdf",
+  "arxiv_id": ""
+ },
+ "wu2024fastopic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2405.17978",
+  "arxiv_id": "2405.17978"
+ },
+ "tu2024fetlm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "kumar2024foto": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.653.pdf",
+  "arxiv_id": ""
+ },
+ "adhya2024ginopic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.naacl-long.342.pdf",
+  "arxiv_id": "2404.02115"
+ },
+ "luo2024graph": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2307.02078",
+  "arxiv_id": "2307.02078"
+ },
+ "lin2024hierarchical": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.712.pdf",
+  "arxiv_id": ""
+ },
+ "li2024improving": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.eacl-long.51.pdf",
+  "arxiv_id": "2401.16348"
+ },
+ "ecker2024labeling": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.875.pdf",
+  "arxiv_id": ""
+ },
+ "mu2024large": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.887.pdf",
+  "arxiv_id": "2403.16248"
+ },
+ "biaas2024leveraging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "benz2024mapping": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "du2024mining": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "gonzalezpizarro2024neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.lrec-main.1064.pdf",
+  "arxiv_id": "2403.17308"
+ },
+ "pham2024neuromax": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.457.pdf",
+  "arxiv_id": "2409.19749"
+ },
+ "wu2024affinity": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/29895/31564",
+  "arxiv_id": "2401.14113"
+ },
+ "koo2024platforminvariant": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.650.pdf",
+  "arxiv_id": ""
+ },
+ "nagda2024putting": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "aftar2024robert2vectm": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.534.pdf",
+  "arxiv_id": ""
+ },
+ "kang2024see": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "lu2024selfsupervised": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2408.15050",
+  "arxiv_id": "2408.15050"
+ },
+ "cha2024sentencelda": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.eacl-long.31.pdf",
+  "arxiv_id": ""
+ },
+ "che2024tagging": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "jiang2024topic": {
+  "source": "arxiv-title-search",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2112.06166",
+  "arxiv_id": "2112.06166"
+ },
+ "nguyen2024topic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2402.07577",
+  "arxiv_id": "2402.07577"
+ },
+ "angelov2024topic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.790.pdf",
+  "arxiv_id": ""
+ },
+ "pham2024topicgpt": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.naacl-long.164.pdf",
+  "arxiv_id": "2311.01449"
+ },
+ "liu2024unsupervised": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.findings-emnlp.440.pdf",
+  "arxiv_id": ""
+ },
+ "wu2023survey": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2401.15351",
+  "arxiv_id": "2401.15351"
+ },
+ "fang2023usercentered": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.eacl-main.37.pdf",
+  "arxiv_id": "2304.01774"
+ },
+ "wu2023novel": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "laureate2023systematic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "niu2023citation": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "li2023classspecific": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "rashid2023coherent": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "ennajari2023combining": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "xu2023contextguided": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "sun2023convntm": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26595/26367",
+  "arxiv_id": ""
+ },
+ "xu2023detime": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-emnlp.606.pdf",
+  "arxiv_id": "2310.15296"
+ },
+ "wang2023deep": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2102.12998",
+  "arxiv_id": "2102.12998"
+ },
+ "joshi2023deepsumm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "yu2023discovering": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "lim2023disentangling": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.emnlp-main.534.pdf",
+  "arxiv_id": ""
+ },
+ "li2023diversityaware": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.acl-short.145.pdf",
+  "arxiv_id": "2305.16199"
+ },
+ "adhya2023neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.eacl-main.162.pdf",
+  "arxiv_id": "2303.15973"
+ },
+ "miyamoto2023dynamic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.366.pdf",
+  "arxiv_id": ""
+ },
+ "wu2023effective": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2306.04217",
+  "arxiv_id": "2306.04217"
+ },
+ "lin2023enhancing": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.845.pdf",
+  "arxiv_id": ""
+ },
+ "poumay2023evaluating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.ranlp-1.91.pdf",
+  "arxiv_id": ""
+ },
+ "yoshida2023gaussian": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2002.10855",
+  "arxiv_id": "2002.10855"
+ },
+ "zhu2023generative": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "poumay2023htmot": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.ranlp-1.92.pdf",
+  "arxiv_id": "2112.03104"
+ },
+ "wang2023hierarchical": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "shahid2023hyhtm": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.742.pdf",
+  "arxiv_id": "2305.09258"
+ },
+ "zhang2023hyperbolic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wang2023identifying": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "adhya2023improving": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2303.15350",
+  "arxiv_id": "2303.15350"
+ },
+ "wu2023infoctm": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26612/26384",
+  "arxiv_id": "2304.03544"
+ },
+ "wu2023information": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.acl-long.823.pdf",
+  "arxiv_id": "2305.11719"
+ },
+ "lim2023largescale": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.acl-long.776.pdf",
+  "arxiv_id": ""
+ },
+ "cvejoski2023neural": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/26496/26268",
+  "arxiv_id": "2301.10988"
+ },
+ "liu2023neural": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wang2023neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.616.pdf",
+  "arxiv_id": ""
+ },
+ "chen2023nonlinear": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.acl-long.578.pdf",
+  "arxiv_id": ""
+ },
+ "costello2023reinforcement": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.265.pdf",
+  "arxiv_id": "2305.04843"
+ },
+ "stammbach2023revisiting": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.emnlp-main.581.pdf",
+  "arxiv_id": "2305.12152"
+ },
+ "eshima2023scaleinvariant": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.745.pdf",
+  "arxiv_id": ""
+ },
+ "tran2023sparse": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2310.06730",
+  "arxiv_id": "2310.06730"
+ },
+ "liang2023graph": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "terragni2023role": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "abdelrazek2023topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "shuai2023topicenhanced": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhou2023topicbert": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "loureiro2023topics": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2301.02458",
+  "arxiv_id": "2301.02458"
+ },
+ "han2023unified": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.eacl-main.132.pdf",
+  "arxiv_id": ""
+ },
+ "zhang2023rhdp": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "xu2023vontss": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2023.findings-acl.271.pdf",
+  "arxiv_id": "2307.01226"
+ },
+ "linh2022graph": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2003.06112",
+  "arxiv_id": "2003.06112"
+ },
+ "srivastava2022topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "hoyle2022neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2022.findings-emnlp.390.pdf",
+  "arxiv_id": "2210.16162"
+ },
+ "feng2022context": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2008.04545",
+  "arxiv_id": "2008.04545"
+ },
+ "xu2022hyperminer": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2210.10625",
+  "arxiv_id": "2210.10625"
+ },
+ "zhang2022neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2022.naacl-main.285.pdf",
+  "arxiv_id": "2204.09874"
+ },
+ "harandizadeh2022keyword": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2112.03101",
+  "arxiv_id": "2112.03101"
+ },
+ "zhang2022metacomplementing": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wu2022mitigating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2022.emnlp-main.176.pdf",
+  "arxiv_id": "2211.12878"
+ },
+ "zhang2022pretraining": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2022.acl-long.413.pdf",
+  "arxiv_id": ""
+ },
+ "qiang2022short": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1904.07695",
+  "arxiv_id": "1904.07695"
+ },
+ "murshed2022short": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "churchill2022evolution": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "meng2022topic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2202.04582",
+  "arxiv_id": "2202.04582"
+ },
+ "rudiger2022topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "ke2022svd": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1704.07016",
+  "arxiv_id": "1704.07016"
+ },
+ "ozyurt2021new": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "li2021adaptive": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "doan2021benchmarking": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.findings-acl.382.pdf",
+  "arxiv_id": ""
+ },
+ "nguyen2021contrastive": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2110.12764",
+  "arxiv_id": "2110.12764"
+ },
+ "bianchi2021crosslingual": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.eacl-main.143.pdf",
+  "arxiv_id": "2004.07737"
+ },
+ "pang2021fast": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "li2021heterogeneous": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "hoyle2021automated": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2107.02173",
+  "arxiv_id": "2107.02173"
+ },
+ "bianchi2021pretraining": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.acl-short.96.pdf",
+  "arxiv_id": "2004.03974"
+ },
+ "rieger2021rollinglda": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.findings-emnlp.201.pdf",
+  "arxiv_id": ""
+ },
+ "doogan2021topic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.naacl-main.300.pdf",
+  "arxiv_id": ""
+ },
+ "chauhan2021topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "alvarezmelis2021topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "aaai-ojs:no-url",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhao2021topic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2103.00498",
+  "arxiv_id": "2103.00498"
+ },
+ "chen2021treestructured": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.acl-long.182.pdf",
+  "arxiv_id": ""
+ },
+ "vayansky2020review": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "shi2020userbased": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "viegas2020cluhtm": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.acl-main.724.pdf",
+  "arxiv_id": ""
+ },
+ "zhang2020combine": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "meng2020discriminative": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "wang2020federated": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/6096/5952",
+  "arxiv_id": ""
+ },
+ "gao2020generation": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "yang2020graph": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "hoyle2020improving": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.emnlp-main.137.pdf",
+  "arxiv_id": "2010.02377"
+ },
+ "huang2020improving": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhao2020neural": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2008.13537",
+  "arxiv_id": "2008.13537"
+ },
+ "wang2020neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.acl-main.32.pdf",
+  "arxiv_id": "2004.12331"
+ },
+ "hu2020neural": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.emnlp-main.725.pdf",
+  "arxiv_id": "2009.13971"
+ },
+ "xue2020public": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2005.08817",
+  "arxiv_id": "2005.08817"
+ },
+ "wu2020short": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.emnlp-main.138.pdf",
+  "arxiv_id": ""
+ },
+ "sia2020tired": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.emnlp-main.135.pdf",
+  "arxiv_id": "2004.14914"
+ },
+ "dieng2020topic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.tacl-1.29.pdf",
+  "arxiv_id": "1907.04907"
+ },
+ "isonuma2020treestructured": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.acl-main.73.pdf",
+  "arxiv_id": ""
+ },
+ "albalawi2020topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "peinelt2020tbert": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2020.acl-main.630.pdf",
+  "arxiv_id": ""
+ },
+ "chen2019nonparametric": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "li2019dirichlet": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/4787/4665",
+  "arxiv_id": ""
+ },
+ "gupta2019document": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/4616/4494",
+  "arxiv_id": "1809.06709"
+ },
+ "jiang2019federated": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "liu2019neural": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "nan2019topic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/P19-1640.pdf",
+  "arxiv_id": "1907.12374"
+ },
+ "wang2019topicaware": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "acl-anthology:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "ding2018coherenceaware": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D18-1096.pdf",
+  "arxiv_id": "1809.02687"
+ },
+ "li2018filtering": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhu2018graphbtm": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D18-1495.pdf",
+  "arxiv_id": ""
+ },
+ "gao2018incorporating": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "shi2018shorttext": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "belford2018stability": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1702.07186",
+  "arxiv_id": "1702.07186"
+ },
+ "zeng2018topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "acl-anthology:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "narayan2018don": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "acl-anthology:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "kherwa2018topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "korencic2018documentbased": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "xun2017correlated": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "bicalho2017general": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "gallagher2017anchored": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/Q17-1037.pdf",
+  "arxiv_id": "1611.10277"
+ },
+ "schofield2017pulling": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/E17-2069.pdf",
+  "arxiv_id": ""
+ },
+ "pavlinek2017text": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zheng2016deep": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1409.3970",
+  "arxiv_id": "1409.3970"
+ },
+ "airoldi2016improving": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "batmanghelich2016nonparametric": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/P16-2087.pdf",
+  "arxiv_id": "1604.00126"
+ },
+ "bhadury2016scaling": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1602.06049",
+  "arxiv_id": "1602.06049"
+ },
+ "li2016topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "schofield2016comparing": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/Q16-1021.pdf",
+  "arxiv_id": ""
+ },
+ "cao2015novel": {
+  "source": "aaai-ojs",
+  "version": "published",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/9499/9358",
+  "arxiv_id": ""
+ },
+ "ocallaghan2015analysis": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "roder2015exploring": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "nguyen2015improving": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/Q15-1022.pdf",
+  "arxiv_id": "1810.06306"
+ },
+ "das2015gaussian": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/P15-1077.pdf",
+  "arxiv_id": ""
+ },
+ "xie2015incorporating": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/N15-1074.pdf",
+  "arxiv_id": ""
+ },
+ "zuo2015word": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1412.5404",
+  "arxiv_id": "1412.5404"
+ },
+ "cheng2014btm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "lau2014machine": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/E14-1056.pdf",
+  "arxiv_id": ""
+ },
+ "yau2014clustering": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "yan2013biterm": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "rasiwasia2013latent": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "roller2013multimodal": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D13-1115.pdf",
+  "arxiv_id": ""
+ },
+ "hu2011interactive": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/P11-1026.pdf",
+  "arxiv_id": ""
+ },
+ "mimno2011optimizing": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D11-1024.pdf",
+  "arxiv_id": ""
+ },
+ "lau2011automatic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/P11-1154.pdf",
+  "arxiv_id": ""
+ },
+ "rosenzvi2010learning": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "putthividhy2010topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "newman2010automatic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/N10-1012.pdf",
+  "arxiv_id": ""
+ },
+ "wallach2009evaluation": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "andrzejewski2009incorporating": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "ramage2009labeled": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D09-1026.pdf",
+  "arxiv_id": ""
+ },
+ "mimno2009polylingual": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/D09-1092.pdf",
+  "arxiv_id": ""
+ },
+ "titov2008modeling": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/0801.1063",
+  "arxiv_id": "0801.1063"
+ },
+ "alsumait2008online": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "mei2008topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "teh2007collapsed": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "blei2007correlated": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/0708.3601",
+  "arxiv_id": "0708.3601"
+ },
+ "blei2006dynamic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "deerwester1990indexing": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "hofmann1999probabilistic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "lee1999learning": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ },
+ "blei2003latent": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf",
+  "arxiv_id": ""
+ },
+ "griffiths2004finding": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "teh2006hierarchical": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "blei2007supervised": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://papers.nips.cc/paper_files/paper/2007/file/d56b9fc4b0f1be8871f5e1c40c0067e7-Paper.pdf",
+  "arxiv_id": ""
+ },
+ "chang2009reading": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://papers.nips.cc/paper_files/paper/2009/file/f92586a25bb3145facd64ab20fd554ff-Paper.pdf",
+  "arxiv_id": ""
+ },
+ "hoffman2010online": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://papers.nips.cc/paper_files/paper/2010/file/71f6278d140af599e06ad9bf1ba03cb0-Paper.pdf",
+  "arxiv_id": ""
+ },
+ "blei2010nested": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/0710.0845",
+  "arxiv_id": "0710.0845"
+ },
+ "yin2014dirichlet": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "quan2015short": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://www.ijcai.org/Proceedings/15/Papers/321.pdf",
+  "arxiv_id": ""
+ },
+ "zuo2016topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "miao2016neural": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://proceedings.mlr.press/v48/miao16.pdf",
+  "arxiv_id": "1511.06038"
+ },
+ "srivastava2017autoencoding": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1703.01488",
+  "arxiv_id": "1703.01488"
+ },
+ "miao2017discovering": {
+  "source": "publisher-oa",
+  "version": "published",
+  "url": "https://proceedings.mlr.press/v70/miao17a/miao17a.pdf",
+  "arxiv_id": "1706.00359"
+ },
+ "card2018neural": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "acl-anthology:HTTPError",
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "zhang2018whai": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1803.01328",
+  "arxiv_id": "1803.01328"
+ },
+ "gerlach2018network": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1708.01677",
+  "arxiv_id": "1708.01677"
+ },
+ "dieng2019dynamic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/1907.05545",
+  "arxiv_id": "1907.05545"
+ },
+ "angelov2020top2vec": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2008.09470",
+  "arxiv_id": "2008.09470"
+ },
+ "grootendorst2022bertopic": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2203.05794",
+  "arxiv_id": "2203.05794"
+ },
+ "terragni2021octis": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2021.eacl-demos.31.pdf",
+  "arxiv_id": ""
+ },
+ "wang2023prompting": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2312.09693",
+  "arxiv_id": "2312.09693"
+ },
+ "doi2024topic": {
+  "source": "acl-anthology",
+  "version": "published",
+  "url": "https://aclanthology.org/2024.acl-srw.3.pdf",
+  "arxiv_id": ""
+ },
+ "akash2023let": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2310.15420",
+  "arxiv_id": "2310.15420"
+ },
+ "mu2024addressing": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2405.00611",
+  "arxiv_id": "2405.00611"
+ },
+ "doi2024comprehensive": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2406.00697",
+  "arxiv_id": "2406.00697"
+ },
+ "tan2025bridging": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2502.07352",
+  "arxiv_id": "2502.07352"
+ },
+ "hong2025semanticaugmented": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2507.08498",
+  "arxiv_id": "2507.08498"
+ },
+ "lieb2025creating": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2504.17445",
+  "arxiv_id": "2504.17445"
+ },
+ "kapoor2024qualitative": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2409.15626",
+  "arxiv_id": "2409.15626"
+ },
+ "james2026lexical": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2608.13835",
+  "arxiv_id": "2608.13835"
+ },
+ "xu2025llm": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2510.03174",
+  "arxiv_id": "2510.03174"
+ },
+ "wanna2024topictag": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2407.19616",
+  "arxiv_id": "2407.19616"
+ },
+ "zheng2023revisiting": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2312.02331",
+  "arxiv_id": "2312.02331"
+ },
+ "chang2026large": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2403.17706",
+  "arxiv_id": "2403.17706"
+ },
+ "wang2026humancentric": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2604.12663",
+  "arxiv_id": "2604.12663"
+ },
+ "boissier2026large": {
+  "source": "arxiv",
+  "version": "arxiv-preprint",
+  "url": "https://arxiv.org/pdf/2602.01933",
+  "arxiv_id": "2602.01933"
+ },
+ "qiu2024topic": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "demarcos2025llmbased": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "yang2025contextdriven": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:HTTPError"
+  ]
+ },
+ "yan2025information": {
+  "source": "",
+  "version": "not-retrieved",
+  "url": "",
+  "tried": [
+   "arxiv-title-search:no-match"
+  ]
+ }
+}

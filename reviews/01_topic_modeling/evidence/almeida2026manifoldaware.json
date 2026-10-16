@@ -1,0 +1,73 @@
+{
+ "key": "almeida2026manifoldaware",
+ "source_id": "almeida2026manifoldaware",
+ "title": "A Manifold-Aware Topic Modeling Approach via Rank-Based Prototypes",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint 2609.29630",
+ "evidence_level": "full-text (preprint)",
+ "category": "embedding-clustering",
+ "subcategory": "training-free, rank-based exemplar (prototype) topic model",
+ "task": "Topic discovery with exactly K topics anchored to real corpus documents",
+ "problem": "Neural topic models produce latent representations not grounded in texts, while clustering pipelines rely on absolute distances distorted by hubness and anisotropy in high-dimensional embedding spaces.",
+ "architecture": "MARETopic: SBERT document embeddings are projected with UMAP; ranked nearest-neighbour lists encode ordinal neighbourhood structure; a greedy algorithm selects exactly K exemplar documents whose neighbourhoods cover the corpus, scored either by a query-performance predictor plus rank correlation (Corr variant) or by a rank-based diffusion matrix (Diff variant); topic words via c-TF-IDF followed by an inter-topic Maximal Marginal Relevance step.",
+ "llm_or_encoder": "all-MiniLM-L6-v2 SBERT",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "18,846 documents, 20 categories, vocabulary 5,000"
+  },
+  {
+   "name": "NYT",
+   "details": "9,172 articles, 12 sections, vocabulary 10,000"
+  },
+  {
+   "name": "Web of Science",
+   "details": "11,967 scientific abstracts, 7 disciplines, 80/20 split"
+  }
+ ],
+ "metrics": [
+  "C_V",
+  "NPMI",
+  "Topic Diversity",
+  "Purity",
+  "NMI",
+  "wall-clock time"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "ETM",
+  "ECRTM",
+  "FASTopic",
+  "BERTopic",
+  "Top2Vec"
+ ],
+ "key_results": [
+  "20NG, K = 50: C_V 0.6818, Purity 0.6227, NMI 0.5419 (Corr variant) vs 0.6649, 0.5812, 0.5265 for Top2Vec.",
+  "NYT: Purity 0.7084 vs 0.6583 for FASTopic (+5.0 pp); every generative neural model has non-positive NPMI on at least two corpora."
+ ],
+ "strengths": [
+  "Training-free (no gradient updates) and each topic is anchored to an inspectable real document.",
+  "Rank-based neighbourhoods are robust to hubness and anisotropy of embedding spaces.",
+  "Inter-topic MMR raises diversity above BERTopic (0.85-0.88 vs 0.77-0.80)."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluated on three English corpora of moderate size (9K-19K documents); very large corpora would need an approximate index.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic diversity remains below generative models such as FASTopic.",
+   "source": "author-stated"
+  },
+  {
+   "text": "On Web of Science, Top2Vec reaches higher Purity and NMI; no downstream or intrusion-based evaluation.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/thcastilho/maretopic",
+ "notes": "Three runs, K = 50 (K = 100 in appendix); CPU-only runtime comparison.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/almeida2026manifoldaware.txt"
+}

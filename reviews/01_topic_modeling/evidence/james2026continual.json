@@ -1,0 +1,81 @@
+{
+ "key": "james2026continual",
+ "source_id": "james2026continual",
+ "title": "Continual Neural Topic Model",
+ "venue": "EACL 2026 (long)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.eacl-long.312",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "dynamic",
+ "subcategory": "continual (lifelong) neural topic model",
+ "task": "Learning topic models over successive time steps without forgetting earlier topics",
+ "problem": "Dynamic topic models need the whole corpus in advance, while online topic models lack long-term memory.",
+ "architecture": "CoNTM builds on the Dirichlet VAE: each time slice has local topics derived from a continuously updated global topic set (local topics = g(global topics, local offsets)); the global prior carries topic dependencies from the previous step so new data can be learned online without forgetting.",
+ "llm_or_encoder": "none (BoW Dirichlet VAE)",
+ "datasets": [
+  {
+   "name": "New York Times",
+   "details": "articles 1987-2007"
+  },
+  {
+   "name": "UN",
+   "details": "general-debate statements 1970-2020"
+  },
+  {
+   "name": "NIPS",
+   "details": "all NIPS papers 1987-2019"
+  },
+  {
+   "name": "NASA",
+   "details": "around 14,000 tweets from @NASA, 2018-2022"
+  },
+  {
+   "name": "arXiv",
+   "details": "16,000 titles and abstracts, 2012-2024"
+  },
+  {
+   "name": "DBLP",
+   "details": "168,000 articles (titles and abstracts), 2000-2020"
+  }
+ ],
+ "metrics": [
+  "NPMI coherence with a temporal reference corpus",
+  "topic diversity (1 - topic redundancy)",
+  "normalised topic quality TQ",
+  "Temporal Topic Smoothness (TTS)",
+  "predictive perplexity on future time slices"
+ ],
+ "baselines": [
+  "DETM",
+  "Dynamic LDA",
+  "Dynamic BERTopic",
+  "DNLDA",
+  "CFDTM"
+ ],
+ "key_results": [
+  "Best average rank on topic quality (1.6) across six datasets with 50 topics; e.g. NYT TQ .173 vs .135 (DETM) and .117 (CFDTM).",
+  "On the Tweets dataset its TQ is negative (-.006) while Dynamic BERTopic reaches .096."
+ ],
+ "strengths": [
+  "Learns from a data stream without requiring all data up front.",
+  "Few extra parameters compared with models that explicitly model each transition."
+ ],
+ "limitations": [
+  {
+   "text": "Needs large amounts of data; may struggle with sparse data or rapidly evolving topics (e.g. social media).",
+   "source": "author-stated"
+  },
+  {
+   "text": "Assumes a fixed number of topics and does not model topic birth or death.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Coherence metrics may not capture semantic shifts over time.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Results averaged over three runs.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/james2026continual.txt"
+}

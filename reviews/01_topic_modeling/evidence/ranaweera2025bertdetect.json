@@ -1,0 +1,53 @@
+{
+ "key": "ranaweera2025bertdetect",
+ "source_id": "P0014",
+ "title": "BERTDetect: A Neural Topic Modelling Approach for Android Malware Detection",
+ "venue": "ACM Web Conference 2025 (companion)",
+ "year": 2025,
+ "doi": "10.1145/3701716.3717501",
+ "read_from": "arXiv preprint (published version: ACM WWW 2025 companion)",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "security: topic clusters of app descriptions for malware outlier detection",
+ "task": "Unsupervised Android malware detection from app descriptions and API usage",
+ "problem": "Prior description-based detectors (LDA + k-means, CHABADA) do not capture the semantics of app descriptions, which limits outlier detection.",
+ "architecture": "BERTopic (BERT embeddings -> UMAP -> HDBSCAN -> class-based TF-IDF) clusters benign app descriptions into functionality topics; apps are assigned by topic affinity; one One-Class SVM per topic is trained on sensitive API calls; new apps are flagged as malware when their API use is an outlier for their topic.",
+ "llm_or_encoder": "BERT sentence embeddings (via BERTopic); baseline G-CATA uses OpenAI ada embeddings",
+ "datasets": [
+  {
+   "name": "AndroCatSet",
+   "details": "5,000 benign Google Play apps in 50 categories plus 448 malicious apps with retrieved descriptions; train 4000 benign, validation and test 724 apps each"
+  }
+ ],
+ "metrics": [
+  "TN/FP/FN/TP rates",
+  "F1",
+  "NPMI and C_V topic coherence"
+ ],
+ "baselines": [
+  "LDA (MALLET)",
+  "CHABADA",
+  "G-CATA"
+ ],
+ "key_results": [
+  "F1 0.54 vs 0.49 for G-CATA (about 10% relative gain); TP rate 50.89% vs 42.86%.",
+  "About 70% of BERTopic topics have NPMI above 0.2, compared with about 40% for LDA and 0% for CHABADA."
+ ],
+ "strengths": [
+  "Shows that higher topic coherence translates into better downstream detection.",
+  "Lightweight: uses app metadata rather than code or runtime analysis."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluated on a single dataset (AndroCatSet); few datasets contain both APKs and descriptions.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Metadata-based signals are weaker than code-level or runtime analysis and are meant to complement them.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Short paper.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0014.txt"
+}

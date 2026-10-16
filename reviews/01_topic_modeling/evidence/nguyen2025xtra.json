@@ -1,0 +1,70 @@
+{
+ "key": "nguyen2025xtra",
+ "source_id": "P0017",
+ "title": "XTRA: Cross-Lingual Topic Modeling with Topic and Representation Alignments",
+ "venue": "Findings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.298",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "cross-lingual",
+ "subcategory": "neural cross-lingual topic model with contrastive alignment",
+ "task": "Discovering aligned topics across two languages",
+ "problem": "Cross-lingual topic models improve diversity but struggle with coherence and consistent cross-lingual alignment; dictionary-based alignment suffers from low lexical coverage and topic repetition.",
+ "architecture": "Shared encoder fed by language-specific MLP projections of BoW inputs; InfoNCE loss aligns document-topic vectors with multilingual PLM embeddings; topic-distribution clustering contrastive alignment uses clusters of multilingual document embeddings as positives/negatives; topic-word distributions are projected into the same semantic space for topic alignment.",
+ "llm_or_encoder": "Multilingual embeddings (Chen et al., 2024); LLM-based ratings used for evaluation",
+ "datasets": [
+  {
+   "name": "EC News",
+   "details": "English and Chinese news, six categories"
+  },
+  {
+   "name": "Amazon Review",
+   "details": "English and Chinese reviews, binary rating label"
+  },
+  {
+   "name": "Rakuten Amazon",
+   "details": "Japanese Rakuten and English Amazon reviews, binary label"
+  }
+ ],
+ "metrics": [
+  "CNPMI (cross-lingual NPMI, top-15 words)",
+  "Topic Uniqueness (TU)",
+  "Topic Quality TQ = max(0, CNPMI) x TU",
+  "intra- and cross-lingual SVM classification accuracy",
+  "LLM-based coherence and alignment ratings"
+ ],
+ "baselines": [
+  "MCTA",
+  "MTAnchor",
+  "NMTM",
+  "InfoCTM",
+  "u-SVD",
+  "SVD-LR"
+ ],
+ "key_results": [
+  "EC News: TU 0.993 and TQ 0.075 vs 0.830 and 0.069 for u-SVD; CNPMI 0.076 vs 0.083 for u-SVD.",
+  "Amazon Review: CNPMI 0.055, TU 0.980, TQ 0.054; Rakuten Amazon: CNPMI 0.035, TU 0.975, TQ 0.034."
+ ],
+ "strengths": [
+  "Produces document-topic posteriors usable for downstream classification, unlike clustering refinements (u-SVD, SVD-LR).",
+  "Does not need parallel data or translations for alignment."
+ ],
+ "limitations": [
+  {
+   "text": "Needs a predefined number of topics and clusters.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Relies on pre-trained multilingual embeddings and offline clustering, limiting real-time or dynamic use.",
+   "source": "author-stated"
+  },
+  {
+   "text": "CNPMI on EC News is below the u-SVD baseline.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/tienphat140205/XTRA",
+ "notes": "Older baseline numbers taken from Wu et al. (2023a) as reported in the paper.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0017.txt"
+}

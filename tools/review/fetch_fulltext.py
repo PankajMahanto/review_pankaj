@@ -72,7 +72,10 @@ def candidates(rec):
     if acl:
         yield "acl-anthology", "published", acl.rstrip("/") + (".pdf" if not acl.endswith(".pdf") else "")
     if (rec.get("doi") or "").startswith("10.18653/"):
-        yield "acl-anthology", "published", "https://aclanthology.org/" + rec["doi"].split("/v1/")[-1] + ".pdf"
+        aid = rec["doi"].split("/v1/")[-1]
+        if re.fullmatch(r"[a-z]\d\d-\d{4}", aid):  # old-style IDs are upper-case (P18-1189)
+            aid = aid.upper()
+        yield "acl-anthology", "published", "https://aclanthology.org/" + aid + ".pdf"
     if "aaai" in (rec.get("venue") or "").lower() or (rec.get("doi") or "").startswith("10.1609/aaai"):
         yield "aaai-ojs", "published", "AAAI"
     for u in (rec.get("pdf_url"), rec.get("landing_url")):

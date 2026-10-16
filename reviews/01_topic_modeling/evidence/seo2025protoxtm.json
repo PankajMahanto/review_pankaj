@@ -1,0 +1,71 @@
+{
+ "key": "seo2025protoxtm",
+ "source_id": "P0020",
+ "title": "ProtoXTM: Cross-Lingual Topic Modeling with Document-Level Prototype-based Contrastive Learning",
+ "venue": "Findings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.1107",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "cross-lingual",
+ "subcategory": "cross-lingual NTM with document-level prototype contrastive learning",
+ "task": "Discovering aligned, interpretable topics in bilingual (English-Chinese) corpora",
+ "problem": "Word-level dictionary alignment causes topic mismatch (translation pairs that are not topically coherent) and degrades intra-lingual topic interpretability.",
+ "architecture": "Stage 1: a monolingual CTM per language gives pseudo cluster labels (argmax topic). Stage 2: retrieval-based positive sampling translates each topic's top words with an M2M NMT model (out-of-vocabulary words replaced by FastText neighbours) and retrieves target-language positives with BM25. Stage 3: document-level prototype-based contrastive learning on topic-cluster prototypes in a shared latent space, with one decoder per language.",
+ "llm_or_encoder": "CTM (contextualised embeddings); M2M neural machine translation; FastText; BM25",
+ "datasets": [
+  {
+   "name": "ECNews",
+   "details": "English-Chinese news"
+  },
+  {
+   "name": "Amazon Review",
+   "details": "English-Chinese reviews"
+  }
+ ],
+ "metrics": [
+  "CNPMI",
+  "NPMI per language",
+  "C_V per language",
+  "Purity",
+  "NMI"
+ ],
+ "baselines": [
+  "NMTM",
+  "InfoCTM",
+  "ProdLDA",
+  "ETM",
+  "ZeroshotTM",
+  "BERTopic",
+  "ECRTM"
+ ],
+ "key_results": [
+  "ECNews, 10 topics: CNPMI 0.0717 vs 0.0370 for InfoCTM; Amazon Review: CNPMI 0.0564 vs 0.0455 for NMTM.",
+  "CNPMI improves by up to 93.8% over cross-lingual baselines; ECNews Purity 0.6204 vs 0.5832 for NMTM."
+ ],
+ "strengths": [
+  "Protects intra-lingual interpretability by pre-training monolingual models before alignment.",
+  "Positive sampling without data augmentation; prototype-level contrast is cheaper than instance-level contrast."
+ ],
+ "limitations": [
+  {
+   "text": "Sensitivity to the choice of machine-translation model is not investigated.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Evaluated only on English-Chinese; truly low-resource languages remain open.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Many hyper-parameters need empirical tuning; the number of topics is unresolved.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Evaluated with small topic numbers (10 and 20).",
+   "source": "reviewer observation from reported setup"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Mean of five runs; implemented with TopMost.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0020.txt"
+}

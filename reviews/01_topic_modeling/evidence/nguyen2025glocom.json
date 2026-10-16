@@ -1,0 +1,71 @@
+{
+ "key": "nguyen2025glocom",
+ "source_id": "P0019",
+ "title": "GloCOM: A Short Text Neural Topic Model via Global Clustering Context",
+ "venue": "NAACL 2025 (long)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.naacl-long.51",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "short-text",
+ "subcategory": "neural short-text topic model with PLM-based cluster aggregation",
+ "task": "Short-text topic modelling (topics and per-document topic proportions)",
+ "problem": "Short texts suffer from data sparsity (few word co-occurrences) and label sparsity (incomplete reconstruction targets); existing aggregation is slow, low quality, or loses per-document proportions.",
+ "architecture": "Short texts are clustered with PLM sentence embeddings; texts in a cluster are concatenated into a global document; a VAE-based NTM infers a global topic distribution per cluster and a local distribution per text (global distribution plus learnable noise); each text's reconstruction target is augmented with its global document; topics are built from word and topic embeddings with ECR regularisation.",
+ "llm_or_encoder": "all-MiniLM-L6-v2 (default) for clustering; other embedding models compared",
+ "datasets": [
+  {
+   "name": "GoogleNews",
+   "details": "over 11,000 article titles, 152 topics"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "over 12,000 web search snippets, 8 domains"
+  },
+  {
+   "name": "StackOverflow",
+   "details": "20,000 question titles, 20 tags"
+  },
+  {
+   "name": "Biomedical",
+   "details": "nearly 20,000 articles, 20 groups"
+  }
+ ],
+ "metrics": [
+  "C_V (top-15, Wikipedia reference via Palmetto)",
+  "Topic Diversity",
+  "Purity",
+  "NMI"
+ ],
+ "baselines": [
+  "ProdLDA",
+  "ETM",
+  "ECRTM",
+  "FASTopic",
+  "NQTM",
+  "TSCTM",
+  "kNNTM"
+ ],
+ "key_results": [
+  "GoogleNews, K = 50: C_V 0.475, TD 0.999, Purity 0.586, NMI 0.817 vs 0.441, 0.987, 0.396, 0.615 for ECRTM.",
+  "SearchSnippets, K = 50: Purity 0.806 and NMI 0.502 vs 0.711 and 0.419 for ECRTM."
+ ],
+ "strengths": [
+  "Keeps individual document-topic proportions while benefiting from aggregation.",
+  "Far cheaper than neighbour-based augmentation (kNNTM).",
+  "Global-context augmentation of the reconstruction target addresses label sparsity directly."
+ ],
+ "limitations": [
+  {
+   "text": "The number of clusters used to build global documents must be chosen in advance.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Reliance on PLM clustering makes dynamic or real-time use difficult.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/qducnguyen/GloCOM",
+ "notes": "K = 50 and 100; kNNTM re-implemented by the authors.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0019.txt"
+}

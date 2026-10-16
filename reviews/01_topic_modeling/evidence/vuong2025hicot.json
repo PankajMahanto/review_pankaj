@@ -1,0 +1,77 @@
+{
+ "key": "vuong2025hicot",
+ "source_id": "P0023",
+ "title": "HiCOT: Improving Neural Topic Models via Optimal Transport and Contrastive Learning",
+ "venue": "Findings of ACL 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-acl.715",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "neural",
+ "subcategory": "embedding-based NTM with optimal transport and hierarchical-clustering contrastive learning",
+ "task": "Topic modelling on long and short text collections",
+ "problem": "NTMs show weak document-topic alignment, high inference cost when large PLMs are used, and limited modelling of topic-topic structure.",
+ "architecture": "Doc2Vec document embeddings are projected by an MLP into the topic-embedding space and aligned with topic embeddings by entropic optimal transport; a second OT term aligns topic proportions with document semantic relationships; hierarchical agglomerative clustering groups topic embeddings, and triplet contrastive losses act on words within topics and between topics of a cluster.",
+ "llm_or_encoder": "Doc2Vec (default, lightweight); all-MiniLM-L6-v2 also tested",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "long documents"
+  },
+  {
+   "name": "AGNews",
+   "details": "news from over 2000 sources"
+  },
+  {
+   "name": "IMDB",
+   "details": "movie reviews"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "over 12,000 web snippets, 8 domains"
+  },
+  {
+   "name": "GoogleNews",
+   "details": "more than 10000 titles, 152 topics"
+  }
+ ],
+ "metrics": [
+  "C_V (top-15, Wikipedia reference)",
+  "TD (top-15)",
+  "Purity",
+  "NMI",
+  "inference time"
+ ],
+ "baselines": [
+  "ETM",
+  "NTM+CL",
+  "ECRTM",
+  "FASTopic",
+  "NeuroMax"
+ ],
+ "key_results": [
+  "20NG, K = 50: C_V 0.451, Purity 0.626, NMI 0.583 vs 0.435, 0.623, 0.570 for NeuroMax.",
+  "GoogleNews, K = 100: Purity 0.763 and NMI 0.864 vs 0.664 and 0.834 for NeuroMax."
+ ],
+ "strengths": [
+  "Outperforms PLM-based models while using lightweight Doc2Vec embeddings, giving faster inference than FASTopic.",
+  "Contrastive loss choice (triplet, InfoNCE, Circle) has little effect, indicating robustness."
+ ],
+ "limitations": [
+  {
+   "text": "The interval for re-clustering topics must be tuned; too long slows convergence.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Choice of positive and negative samples for contrastive learning remains open.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic diversity is not always best (20NG, K = 50: TD 0.852 vs 0.980 for FASTopic).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Several baseline numbers are copied from earlier papers (marked in the paper).",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0023.txt"
+}

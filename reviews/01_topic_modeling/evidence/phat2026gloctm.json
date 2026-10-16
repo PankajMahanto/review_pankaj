@@ -1,0 +1,71 @@
+{
+ "key": "phat2026gloctm",
+ "source_id": "P0029",
+ "title": "GloCTM: Cross-Lingual Topic Modeling via a Global Context Space",
+ "venue": "AAAI 2026",
+ "year": 2026,
+ "doi": "10.1609/aaai.v40i39.40549",
+ "read_from": "AAAI OJS published PDF",
+ "evidence_level": "full-text",
+ "category": "cross-lingual",
+ "subcategory": "dual-pathway cross-lingual NTM with a global context space",
+ "task": "Cross-lingual topic modelling for bilingual corpora",
+ "problem": "Existing cross-lingual models learn topics in disjoint language spaces and rely on dictionaries, giving loosely connected topic spaces and ignoring multilingual pretrained semantics.",
+ "architecture": "Polyglot augmentation enriches each BoW with intra- and cross-lingual word neighbours found with multilingual embeddings, giving a global BoW over the joint vocabulary; a global encoder and language-specific local encoders infer topic proportions, kept consistent by a KL loss; a global topic-word matrix built from both language pathways synchronises topics; a Centered Kernel Alignment loss aligns topic proportions with multilingual PLM embeddings.",
+ "llm_or_encoder": "Multilingual word embeddings and multilingual PLM embeddings; LLM ratings for evaluation",
+ "datasets": [
+  {
+   "name": "EC News",
+   "details": "English-Chinese news"
+  },
+  {
+   "name": "Amazon Review",
+   "details": "English-Chinese reviews"
+  },
+  {
+   "name": "Rakuten Amazon",
+   "details": "Japanese-English reviews"
+  }
+ ],
+ "metrics": [
+  "CNPMI (top-15)",
+  "Topic Uniqueness (TU)",
+  "TQ = max(CNPMI, 0) x TU",
+  "intra- and cross-lingual SVM classification",
+  "LLM-based alignment ratings"
+ ],
+ "baselines": [
+  "MCTA",
+  "MTAnchor",
+  "NMTM",
+  "InfoCTM",
+  "u-SVD",
+  "SVD-LR",
+  "XTRA"
+ ],
+ "key_results": [
+  "Rakuten Amazon: CNPMI 0.040 and TQ 0.037 vs 0.033 (InfoCTM) and 0.027 (XTRA).",
+  "Amazon Review: TQ 0.056 vs 0.050 for XTRA; EC News: TQ 0.070, tied with XTRA."
+ ],
+ "strengths": [
+  "Builds cross-lingual alignment into the input, encoder and decoder rather than relying only on auxiliary losses.",
+  "Clear gains in cross-lingual (train in one language, test in another) classification."
+ ],
+ "limitations": [
+  {
+   "text": "Topic uniqueness is below XTRA on Amazon Review (0.958 vs 0.976) and Rakuten Amazon (0.925 vs 0.971).",
+   "source": "reviewer observation from reported table"
+  },
+  {
+   "text": "On EC News, CNPMI (0.071) is below the clustering baselines u-SVD (0.082) and SVD-LR (0.083).",
+   "source": "reviewer observation from reported table"
+  },
+  {
+   "text": "No limitations section; evaluated only on two language pairs.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/tienphat140205/GloCTM",
+ "notes": "Means of five seeds.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0029.txt"
+}

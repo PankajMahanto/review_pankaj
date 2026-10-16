@@ -1,0 +1,65 @@
+{
+ "key": "joh2026top",
+ "source_id": "joh2026top",
+ "title": "Beyond Top Words: MonoTM for Topic Modeling with Interpretable Monosemantic Features",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "sparse-autoencoder (SAE) feature topic model",
+ "task": "Interpretable topic modelling with semantic units richer than single words",
+ "problem": "Top-ranked words give a limited description of topics; it is unclear how interpretability of SAE features relates to topic-inference quality.",
+ "architecture": "Documents are embedded with llama-embed-nemotron-8b (4096-d); top-K sparse autoencoders are trained per corpus; an LLM Interpreter proposes natural-language labels for SAE features and an LLM Predictor validates them; MonoTM first estimates document-topic mixtures with LDA over the full SAE bag-of-features (activation magnitudes as token weights) and then, with mixtures fixed, learns topic descriptors over validated, corpus-grounded features.",
+ "llm_or_encoder": "NVIDIA llama-embed-nemotron-8b embeddings; Gemma-3 (12B, 27B) as Interpreter/Predictor",
+ "datasets": [
+  {
+   "name": "20 Newsgroups",
+   "details": "scikit-learn version, 20 categories"
+  },
+  {
+   "name": "Web of Science",
+   "details": "WOS-46985 abstracts, 7 categories"
+  },
+  {
+   "name": "Reuters",
+   "details": "Reuters-21578 ModApte split, labels with at least 30 occurrences, 47 topics, multi-label"
+  }
+ ],
+ "metrics": [
+  "Micro-F1 and Macro-F1 of document-topic mixtures against gold labels",
+  "feature interpretability score (Interpreter-Predictor protocol)"
+ ],
+ "baselines": [
+  "BoW-LDA",
+  "CombinedTM",
+  "ZeroShotTM",
+  "other neural topic models producing document-topic mixtures"
+ ],
+ "key_results": [
+  "On 20 Newsgroups with N = 0.5, raising SAE sparsity K from 8 to 32 lowers the fraction of features with interpretability score >= 0.80 from 35.2% to 13.8% while Micro/Macro F1 rises from 0.56/0.52 to 0.66/0.63, showing a tension between interpretability and mixture quality.",
+  "On Reuters, BoW-LDA has the highest Micro-F1 but BoF+LDA has the best Macro-F1, i.e. SAE features help minority topics."
+ ],
+ "strengths": [
+  "Decouples mixture estimation from interpretation, so each uses the SAE configuration best suited to it.",
+  "Topic descriptors are validated natural-language features grounded in the corpus, aimed at social-science and digital-humanities use."
+ ],
+ "limitations": [
+  {
+   "text": "Excluded low-validation features may still encode important corpus-specific cues.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Interpretability scores depend on the Interpreter/Predictor LLMs, prompts and decoding settings.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Many LLM calls make the method computationally expensive and slow for iterative workflows.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/Una-J/MonoTM",
+ "notes": "Evaluation against gold categories rather than coherence metrics.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/joh2026top.txt"
+}

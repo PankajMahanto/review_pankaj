@@ -1,0 +1,55 @@
+{
+ "key": "bagale2026longitudinal",
+ "source_id": "bagale2026longitudinal",
+ "title": "A Longitudinal Analysis of Public Discourse on AI Ethics in Education Using Twitter Data",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "computational social science: BERTopic + sentiment over time",
+ "task": "Longitudinal analysis of themes and sentiment in tweets on AI ethics in education",
+ "problem": "Need an empirical, time-aware account of public discourse on AI ethics in education, especially around the release of ChatGPT.",
+ "architecture": "BERTopic with all-MiniLM-L6-v2 embeddings, UMAP and HDBSCAN, with KeyBERT, MMR and LLaMA-based generative topic labels; outliers reassigned and topics reduced to 16; a SetFit classifier (all-mpnet-base-v2 backbone) labels tweet sentiment; monthly sentiment peaks detected and linked to real-world events.",
+ "llm_or_encoder": "all-MiniLM-L6-v2 (topics); all-mpnet-base-v2 SetFit (sentiment); LLaMA for topic labels",
+ "datasets": [
+  {
+   "name": "Twitter",
+   "details": "14201 English tweets from U.S. users, January 2019 - November 2024"
+  }
+ ],
+ "metrics": [
+  "sentiment classifier accuracy and F1",
+  "proportion of positive/negative tweets",
+  "qualitative topic analysis"
+ ],
+ "baselines": [
+  "none (descriptive study)"
+ ],
+ "key_results": [
+  "Initial BERTopic run yielded 57 topics with 6520 (46%) outliers; topics were reduced to 16 after outlier handling.",
+  "81.65% of tweets classified positive and 18.35% negative; the SetFit classifier reached 89% accuracy on an 18-tweet validation set."
+ ],
+ "strengths": [
+  "Five-year time window covering the pre- and post-ChatGPT period.",
+  "Combines topic modelling with event-anchored sentiment peaks."
+ ],
+ "limitations": [
+  {
+   "text": "Twitter-only data from a technically literate user base; engagement-driven ranking may over-represent emotional posts.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Peak detection is sensitive to parameter choices and peak annotation is subjective.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Very high outlier rate (46%) in the initial BERTopic run, and no quantitative topic-quality metric is reported.",
+   "source": "reviewer observation from reported results"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Application study from the author-curated corpus.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/bagale2026longitudinal.txt"
+}

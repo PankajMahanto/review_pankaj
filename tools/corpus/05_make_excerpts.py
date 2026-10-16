@@ -79,8 +79,11 @@ def make(pid, rec):
         i = find_heading(lines, names, start=(next_i or 0) if tag != "CONCLUSION" else 0)
         if i is None:
             continue
-        chunk = " ".join(lines[i: i + 400])
-        parts.append(f"## {tag} [{lines[i][:60]}]\n" + words(chunk, n))
+        chunk = words(" ".join(lines[i: i + 400]), n)
+        probe = re.sub(r"\s+", " ", chunk[len(lines[i]):][:250]).strip()
+        if probe and probe in re.sub(r"\s+", " ", "\n".join(parts)):
+            continue  # same text already included under another heading
+        parts.append(f"## {tag} [{lines[i][:60]}]\n" + chunk)
 
     # table captions with surrounding numbers
     caps = re.findall(r"(Table \d+[:.][^\n]{0,200})", text)

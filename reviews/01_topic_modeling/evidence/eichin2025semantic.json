@@ -1,0 +1,84 @@
+{
+ "key": "eichin2025semantic",
+ "source_id": "P0031",
+ "title": "Semantic Component Analysis: Introducing Multi-Topic Distributions to Clustering-Based Topic Modeling",
+ "venue": "Findings of EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.964",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "embedding-clustering",
+ "subcategory": "clustering-based topic model with iterative linear decomposition (multi-topic per document)",
+ "task": "Scalable multi-topic modelling of large, noisy short-text collections",
+ "problem": "BERTopic assigns one topic per document and leaves many documents as noise; LLM-based topic models are too expensive for large data.",
+ "architecture": "SCA: embed texts, reduce with UMAP (cosine, 5 dimensions) and cluster with HDBSCAN as in BERTopic; then a decomposition step turns cluster centroids into unit vectors (semantic components), removes them from the embeddings and repeats on the residuals; components with high token overlap are merged; each document can load on several components.",
+ "llm_or_encoder": "Sentence embedding model (any); TopicGPT baselines with GPT-3.5 (copied) and Llama-3.2 1B/8B",
+ "datasets": [
+  {
+   "name": "Trump",
+   "details": "all tweets by Donald Trump until December 2024 (60K samples)"
+  },
+  {
+   "name": "Hausa",
+   "details": "512K tweets in Hausa (low-resource language)"
+  },
+  {
+   "name": "Chinese News",
+   "details": "1.5M Chinese tweets from news outlets, collected and released by the authors"
+  },
+  {
+   "name": "Bills",
+   "details": "32K samples with ground-truth labels"
+  }
+ ],
+ "metrics": [
+  "number of topics",
+  "noise rate",
+  "NPMI",
+  "C_V",
+  "topic diversity",
+  "Purity (P1)",
+  "ARI",
+  "NMI",
+  "MTEB (representation faithfulness)"
+ ],
+ "baselines": [
+  "BERTopic",
+  "LDA",
+  "TopicGPT"
+ ],
+ "key_results": [
+  "Topics found: 182 vs 55 (Trump), 331 vs 102 (Hausa), 594 vs 212 (Chinese News) for BERTopic, with noise rate close to 0 vs 0.275, 0.574 and 0.429.",
+  "Bills: P1 0.42, ARI 0.18, NMI 0.38; TopicGPT with Llama-3.2-8B gets 0.16, 0.00, 0.09, while the GPT-3.5 numbers copied from TopicGPT are 0.57, 0.42, 0.52."
+ ],
+ "strengths": [
+  "Multiple topics per document with almost no unassigned documents.",
+  "Scales to 1.5M short texts and works in English, Hausa and Chinese.",
+  "Outperforms TopicGPT at a similar compute budget."
+ ],
+ "limitations": [
+  {
+   "text": "Modular pipeline can propagate errors (e.g. poor clusters lead to poor topics).",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic quality depends on the embedding model, a problem for low-resource languages and domains.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Linear decomposition cannot capture non-linear multi-dimensional components.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Generic, over-predicted clusters and interpretability of topic representations remain to be addressed.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic diversity is lower than BERTopic (e.g. 0.703 vs 0.947 on Trump).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/mainlp/semantic_components",
+ "notes": "Released a 1.5M-tweet Chinese news dataset.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0031.txt"
+}

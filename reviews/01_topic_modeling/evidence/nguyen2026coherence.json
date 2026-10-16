@@ -1,0 +1,91 @@
+{
+ "key": "nguyen2026coherence",
+ "source_id": "P0018",
+ "title": "Beyond Coherence: Improving Temporal Consistency and Interpretability in Dynamic Topic Models",
+ "venue": "Findings of EACL 2026",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.findings-eacl.187",
+ "read_from": "ACL Anthology published PDF",
+ "evidence_level": "full-text",
+ "category": "dynamic",
+ "subcategory": "LLM-augmented neural dynamic topic model with optimal transport",
+ "task": "Dynamic topic modelling of timestamped corpora",
+ "problem": "Dynamic NTM encoders ignore PLM semantics, temporal links are rigid one-to-one chains (no splits/merges), and top-word interpretability is shallow.",
+ "architecture": "L-DNTM: variational dynamic NTM with (i) multi-objective distillation (InfoNCE between topic proportions and PLM embeddings plus a CKA structural loss), (ii) entropic optimal transport aligning the full set of topics between adjacent time slices, and (iii) LLM-guided refinement of topic-word distributions through a KL loss; OT and LLM terms start after warm-up.",
+ "llm_or_encoder": "Pretrained language model embeddings for distillation; an LLM for topic-word refinement",
+ "datasets": [
+  {
+   "name": "NeurIPS",
+   "details": "papers 1987-2017"
+  },
+  {
+   "name": "ACL",
+   "details": "ACL Anthology articles 1973-2006"
+  },
+  {
+   "name": "UN",
+   "details": "UN meeting statements 1970-2015"
+  },
+  {
+   "name": "NYT",
+   "details": "news 2012-2022, 12 categories, shorter documents"
+  },
+  {
+   "name": "WHO",
+   "details": "weekly WHO articles, January-May 2020, shorter documents"
+  }
+ ],
+ "metrics": [
+  "Topic Coherence C_V",
+  "Topic Diversity",
+  "Topic Quality TQ = TC x TD",
+  "Temporal Topic Coherence (TTC)",
+  "Temporal Topic Smoothness (TTS)",
+  "Temporal Topic Quality (TTQ)",
+  "Dynamic Topic Quality (DTQ)",
+  "downstream classification and clustering"
+ ],
+ "baselines": [
+  "DTM",
+  "NDTM",
+  "NDTM-b",
+  "DETM",
+  "BERTopic",
+  "DSNTM",
+  "CFDTM"
+ ],
+ "key_results": [
+  "DTQ on NeurIPS 0.359 vs 0.317 for BERTopic; on NYT 0.422 vs 0.349 for CFDTM.",
+  "Static topic coherence C_V 0.594 (NeurIPS), 0.554 (ACL) and 0.629 (NYT) with diversity 0.841, 0.853 and 0.862.",
+  "On WHO, BERTopic is best across metrics (DTQ 0.275 vs 0.260 for L-DNTM)."
+ ],
+ "strengths": [
+  "Handles topic splits and merges through set-level OT alignment instead of one-to-one chains.",
+  "Improves coherence and diversity together; results averaged over five runs with significance tests."
+ ],
+ "limitations": [
+  {
+   "text": "PLM distillation adds bias and computational overhead.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Optimal transport is costly for many topics or long time horizons.",
+   "source": "author-stated"
+  },
+  {
+   "text": "LLM refinement needs repeated prompting, which limits scalability and may propagate errors.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Experiments are restricted to English corpora.",
+   "source": "author-stated"
+  },
+  {
+   "text": "In the ablation, the variant without the LLM component has higher TQ and TTC than the full model on NeurIPS and NYT.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "K = 50 topics; five runs; preprocessing with TopMost.",
+ "fulltext_txt": "/home/user/review_pankaj/corpus_2025_2026/fulltext_txt/P0018.txt"
+}

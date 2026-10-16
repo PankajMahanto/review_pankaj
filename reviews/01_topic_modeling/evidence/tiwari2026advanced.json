@@ -1,0 +1,47 @@
+{
+ "key": "tiwari2026advanced",
+ "source_id": "tiwari2026advanced",
+ "title": "Advanced Topic Modeling Techniques for Categorizing Software Vulnerabilities",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "read_from": "arXiv preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "cybersecurity: comparison of embedding-based and LLM topic models",
+ "task": "Categorising software-vulnerability threat descriptions",
+ "problem": "Large volumes of unstructured vulnerability descriptions are hard to analyse and prioritise manually.",
+ "architecture": "Comparative pipeline: four BERTopic configurations (UMAP+HDBSCAN, PCA+HDBSCAN, UMAP+DBSCAN, and SentenceTransformer + stacked RoBERTa/GloVe embeddings), CombinedTM (all-mpnet-base-v2 + BoW, 20 topics), Top2Vec, Llama2 with BERTopic for topic labelling, and Mixtral 8x7B prompted to assign five topics per document.",
+ "llm_or_encoder": "all-mpnet-base-v2, RoBERTa, GloVe, Llama2, Mixtral 8x7B",
+ "datasets": [
+  {
+   "name": "Cisco Labs",
+   "details": "69,909 entries, 39 columns; 'Threat' text feature used"
+  }
+ ],
+ "metrics": [
+  "qualitative inspection (topic similarity heatmaps, hierarchical clustering, word clouds)"
+ ],
+ "baselines": [
+  "comparison among the listed topic models"
+ ],
+ "key_results": [
+  "No quantitative coherence or clustering scores are reported; results are presented as similarity matrices, dendrograms and keyword lists."
+ ],
+ "strengths": [
+  "Side-by-side use of clustering-based, neural and LLM-based topic modelling on a large industrial security dataset."
+ ],
+ "limitations": [
+  {
+   "text": "Comparison is qualitative only; claims of improved coherence are not supported by reported metric values.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Future work needed for real-time processing and multilingual data.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Application study from the author-curated corpus.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/tiwari2026advanced.txt"
+}

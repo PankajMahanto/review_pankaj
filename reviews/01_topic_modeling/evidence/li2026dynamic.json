@@ -1,0 +1,64 @@
+{
+ "key": "li2026dynamic",
+ "source_id": "li2026dynamic",
+ "title": "Dynamic Topic Modeling for Cross-Corpus Temporal Analysis",
+ "venue": "CIKM 2026",
+ "year": 2026,
+ "doi": "10.1145/3799682.3841048",
+ "read_from": "arXiv preprint (states CIKM '26 and DOI on first page)",
+ "evidence_level": "full-text (preprint)",
+ "category": "dynamic",
+ "subcategory": "cross-corpus dynamic embedded topic model with shared backbone",
+ "task": "Comparing topic trajectories over time across several corpora",
+ "problem": "Topics learned independently per corpus and aligned post hoc do not keep stable correspondence across corpora and time.",
+ "architecture": "A D-ETM shared backbone is trained on the merged multi-corpus collection; then, with the backbone frozen, corpus-specific residual offsets to topic embeddings are learned (with anchor and smoothness regularisers), keeping one shared topic index across corpora.",
+ "llm_or_encoder": "none (D-ETM word and topic embeddings)",
+ "datasets": [
+  {
+   "name": "COHA",
+   "details": "Magazine and News genres, downsampled (rho = 0.3); 40,501 chunks"
+  },
+  {
+   "name": "Harvard Business Review",
+   "details": "41,648 chunks"
+  },
+  {
+   "name": "International Labour Review",
+   "details": "40,605 chunks"
+  }
+ ],
+ "metrics": [
+  "held-out perplexity",
+  "NPMI-based coherence, topic diversity, TQ",
+  "same-index trajectory JSD",
+  "trajectory margin",
+  "trajectory Retrieval@1",
+  "Hungarian-matched trajectory JSD"
+ ],
+ "baselines": [
+  "independent D-ETM per corpus (own or merged vocabulary)",
+  "shared backbone without adaptation",
+  "full fine-tuning from the backbone"
+ ],
+ "key_results": [
+  "Trajectory Retrieval@1 97.5% with residual adaptation vs 17.9% with full fine-tuning; same-index trajectory JSD 0.169 vs 0.586.",
+  "Held-out perplexity on HBR 2,396.78 (residual adaptation) vs 2,479.74 (independent) and 2,127.39 (full fine-tuning)."
+ ],
+ "strengths": [
+  "Builds cross-corpus alignment into training instead of post-hoc matching.",
+  "Covers 97 years (1922-2019) in 20 five-year bins."
+ ],
+ "limitations": [
+  {
+   "text": "Full fine-tuning gives better perplexity and topic quality; on COHA residual adaptation has worse perplexity than independent models.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Human assessment of interpretability and other corpus combinations are left for future work.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/TomlandHilarious/cross-corpus-dynamic-",
+ "notes": "K = 20; code URL is truncated in the PDF text.",
+ "fulltext_txt": "reviews/01_topic_modeling/fulltext/txt/li2026dynamic.txt"
+}
