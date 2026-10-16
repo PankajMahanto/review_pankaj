@@ -1,0 +1,52 @@
+{
+ "key": "hong2025semanticaugmented",
+ "source_id": "hong2025semanticaugmented",
+ "title": "Semantic-Augmented Latent Topic Modeling with LLM-in-the-Loop",
+ "venue": "arXiv preprint",
+ "year": 2025,
+ "doi": "",
+ "arxiv_id": "2507.08498",
+ "read_from": "arXiv preprint 2507.08498v1",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "LLM-guided initialisation and post-correction of LDA",
+ "task": "Testing LLM help at LDA initialisation and topic post-correction",
+ "problem": "LDA has semantically uninformed initialisation and topics with unrelated words; replacing LDA with LLMs has its own problems.",
+ "architecture": "Few-shot Qwen2-7B-Instruct clusters documents to initialise Gibbs sampling (compared with random and K-Means initialisation); in post-correction the LLM removes semantically unrelated words from topic word lists.",
+ "llm_or_encoder": "Qwen2-7B-Instruct",
+ "datasets": [
+  {
+   "name": "Chinese news articles",
+   "details": "10,000 articles"
+  }
+ ],
+ "metrics": [
+  "perplexity",
+  "topic coherence (reported as NPMI)"
+ ],
+ "baselines": [
+  "random initialisation",
+  "K-Means initialisation"
+ ],
+ "key_results": [
+  "LLM initialisation gives the lowest perplexity at pass 0 (7853.6795 vs 8158.6628 random, eta None) but is worse after 20 passes (328.9051 vs 309.3647).",
+  "LLM post-correction improves topic coherence by 5.86%."
+ ],
+ "strengths": [
+  "Reports a negative result: LLM-based initialisation does not help LDA convergence.",
+  "Simple post-correction step usable with any topic list."
+ ],
+ "limitations": [
+  {
+   "text": "Single Chinese dataset, one LLM, two metrics; short paper.",
+   "source": "reviewer observation"
+  },
+  {
+   "text": "Reported coherence values (from -17.8463 to -3.2723) lie outside the [-1, 1] range of NPMI, so the metric actually used is unclear.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/hong2025semanticaugmented.txt"
+}

@@ -1,0 +1,75 @@
+{
+ "key": "nguyen2025sharpnessaware",
+ "source_id": "nguyen2025sharpnessaware",
+ "title": "Sharpness-Aware Minimization for Topic Models with High-Quality Document Representations",
+ "venue": "Proceedings of NAACL-HLT 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.naacl-long.231",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "optimisation (sharpness-aware minimisation)",
+ "task": "Improving generalisation of neural topic models through flatter minima",
+ "problem": "Neural topic models optimise complex objectives (likelihood plus regularisers) with standard optimisers, ignoring loss-landscape sharpness.",
+ "architecture": "DREAM optimiser: Friendly-SAM updates for inference-network parameters; the sharpness neighbourhood radius is set from the optimal-transport distance between document-topic distributions and document-cluster proportions obtained by clustering PLM embeddings (stella_en_400M_v5, UMAP, HDBSCAN); applied to ETM, ECRTM, NeuroMax and FASTopic.",
+ "llm_or_encoder": "stella_en_400M_v5 (for document clusters)",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "20 News Groups"
+  },
+  {
+   "name": "AGNews",
+   "details": "news from over 2,000 sources"
+  },
+  {
+   "name": "YahooAnswers",
+   "details": "questions and answers"
+  },
+  {
+   "name": "SearchSnippets",
+   "details": "over 12,000 web search snippets, 8 domains"
+  },
+  {
+   "name": "GoogleNews",
+   "details": "titles of over 10,000 news articles, 152 clusters"
+  }
+ ],
+ "metrics": [
+  "Cv15 (Wikipedia reference)",
+  "TD15",
+  "Purity",
+  "NMI"
+ ],
+ "baselines": [
+  "ETM",
+  "ECRTM",
+  "NeuroMax",
+  "FASTopic",
+  "F-SAM",
+  "Top2Vec",
+  "BERTopic"
+ ],
+ "key_results": [
+  "YahooAnswers K = 50: FASTopic Purity 0.589 to 0.641 and NMI 0.353 to 0.391 with DREAM.",
+  "GoogleNews K = 100: ECRTM Purity 0.342 to 0.653 and NMI 0.491 to 0.776 with DREAM.",
+  "TD often drops (e.g. ECRTM 20NG K = 50: 0.964 to 0.855)."
+ ],
+ "strengths": [
+  "Optimiser-level improvement that plugs into several NTMs; largest gains on short, noisy texts.",
+  "Ablation separates F-SAM from the OT-based radius."
+ ],
+ "limitations": [
+  {
+   "text": "Depends on the quality of the pre-trained clustering, which limits use in continuous/streaming settings.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic diversity is lower than the original models in many settings.",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Baseline numbers for standard datasets taken from Pham et al. (NeuroMax).",
+ "fulltext_txt": "fulltext/txt/nguyen2025sharpnessaware.txt"
+}

@@ -1,0 +1,49 @@
+{
+ "key": "steffen2025more",
+ "source_id": "steffen2025more",
+ "title": "More than Memes: A Multimodal Topic Modeling Approach to Conspiracy Theories on Telegram",
+ "venue": "Proceedings of the International AAAI Conference on Web and Social Media (ICWSM 2025)",
+ "year": 2025,
+ "doi": "10.1609/icwsm.v19i1.35904",
+ "read_from": "arXiv preprint 2410.08642 (published version: ICWSM 2025)",
+ "evidence_level": "full-text (preprint)",
+ "category": "multimodal",
+ "subcategory": "text, image and text-image BERTopic comparison",
+ "task": "Comparing unimodal and multimodal topic models on conspiracy-theory content",
+ "problem": "Research on conspiracy content is mostly text-based and lacks ways to compare topic models across modalities.",
+ "architecture": "BERTopic with paraphrase-multilingual-MiniLM-L12-v2 for text and clip-ViT-B-32 for images and averaged text-image embeddings; UMAP + HDBSCAN defaults; image topics represented through vit-gpt2 captions; min topic size 10/20/50 compared; topic symmetry and intersection analysis across modalities; LLM-based topic annotation.",
+ "llm_or_encoder": "paraphrase-multilingual-MiniLM-L12-v2; CLIP ViT-B-32; vit-gpt2 image captioning; a generative LLM for annotation",
+ "datasets": [
+  {
+   "name": "German-language Telegram channels",
+   "details": "40,110 messages from 571 channels (October 2023) after deduplication; text 36,717, image 34,850, multimodal 31,982 subcorpora; November 2024 data for transfer"
+  }
+ ],
+ "metrics": [
+  "number of topics",
+  "outlier share",
+  "manual topic quality",
+  "symmetry ratio",
+  "Cohen's kappa"
+ ],
+ "baselines": [
+  "text-only vs image-only vs multimodal BERTopic"
+ ],
+ "key_results": [
+  "With min topic size 20: 167 text topics (41.4% outliers), 157 image topics (35.3%), 146 multimodal topics (35.7%).",
+  "Israel-Gaza dominates in October 2023: 36.2% of text, 12.9% of image and 16.7% of multimodal messages; symmetry lowest between text and image models."
+ ],
+ "strengths": [
+  "Shows image and multimodal topics capture content missed by text-only models (e.g. screenshots, protest images).",
+  "Checks temporal transfer with a second data period."
+ ],
+ "limitations": [
+  {
+   "text": "CLIP is not tuned for noisy user content; no standard evaluation metrics for BERTopic, so quality judgements are subjective; period selection may bias topics.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/steffen2025more.txt"
+}

@@ -1,0 +1,76 @@
+{
+ "key": "prostmaier2025seeded",
+ "source_id": "prostmaier2025seeded",
+ "title": "Seeded Poisson Factorization: leveraging domain knowledge to fit topic models",
+ "venue": "Knowledge-Based Systems",
+ "year": 2025,
+ "doi": "10.1016/j.knosys.2025.114116",
+ "read_from": "arXiv preprint 2503.02741v2 (published version: Knowledge-Based Systems)",
+ "evidence_level": "full-text (preprint)",
+ "category": "probabilistic",
+ "subcategory": "seeded Poisson factorisation",
+ "task": "Guided topic modelling and seed-based text classification",
+ "problem": "Unsupervised topic models do not align with predefined concepts; guided alternatives (KeyATM, SeededLDA) are slow.",
+ "architecture": "Poisson factorisation with Gamma priors whose topic-term rates are raised a priori for seed words of each topic (seeded plus unseeded intensity); variational inference with stochastic gradient optimisation; documents classified by a Naive Bayes classifier on inferred topic intensities.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Amazon customer feedback",
+   "details": "six product categories (e.g. Toys 8 092, Health 6 938, Grocery 2 471 reviews)"
+  },
+  {
+   "name": "Banking77",
+   "details": "10 003 documents, 77 topics"
+  },
+  {
+   "name": "20NG",
+   "details": "18 267 documents, 20 topics"
+  },
+  {
+   "name": "Ledgar",
+   "details": "60 000 clauses, 100 topics"
+  },
+  {
+   "name": "DBPedia",
+   "details": "559 975 documents, 14 topics"
+  }
+ ],
+ "metrics": [
+  "accuracy",
+  "precision",
+  "recall",
+  "F1",
+  "NPMI",
+  "UMass",
+  "CV",
+  "diversity",
+  "run time"
+ ],
+ "baselines": [
+  "Poisson factorisation (PF)",
+  "KeyATM",
+  "SeededLDA"
+ ],
+ "key_results": [
+  "Amazon, 30k documents: accuracy 0.73 in 1:07 min vs KeyATM 0.73 in 5:27 and SeededLDA 0.65 in 3:35.",
+  "Amazon, 1k documents: accuracy 0.63 vs KeyATM 0.29 and SeededLDA 0.58.",
+  "Benchmarks: accuracy 0.60-0.84 vs 0.02-0.39 for unseeded PF; PF sometimes has higher NPMI/UMass (e.g. Banking NPMI 0.12 vs 0.03)."
+ ],
+ "strengths": [
+  "Fast, scalable guided model that stays robust to imperfect seed words.",
+  "Explicit run-time and corpus-size comparisons with guided LDA variants."
+ ],
+ "limitations": [
+  {
+   "text": "Seeding trades some coherence/diversity for classification alignment.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Evaluation focuses on classification; no comparison with neural or embedding topic models.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/BPro2410/Seeded-Poisson-Factorization",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/prostmaier2025seeded.txt"
+}

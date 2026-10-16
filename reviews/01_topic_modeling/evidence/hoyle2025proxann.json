@@ -1,0 +1,59 @@
+{
+ "key": "hoyle2025proxann",
+ "source_id": "hoyle2025proxann",
+ "title": "ProxAnn: Use-Oriented Evaluations of Topic Models and Document Clustering",
+ "venue": "Proceedings of ACL 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.772",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "use-oriented human protocol and LLM proxy annotator",
+ "task": "Evaluating topic models and clustering the way practitioners use them (content analysis)",
+ "problem": "Automated metrics align poorly with human preferences, while label-based evaluations need expert labels and do not scale.",
+ "architecture": "Protocol mirroring qualitative content analysis: annotators (or an LLM proxy) see 7 exemplar documents and 15 keywords of a topic, write a category label (Label step), rate the fit of 7 further documents on a 1-5 scale (Fit step) and rank them (Rank step); agreement with model document-topic estimates measured; LLM proxies validated with the alternative annotator test.",
+ "llm_or_encoder": "GPT-4o-mini, Llama-3.1-8B, Llama-3.3-70B, Qwen-2.5-72B, Qwen-3-8B and Qwen-3-32B as proxy annotators",
+ "datasets": [
+  {
+   "name": "Wiki",
+   "details": "about 14,000 Wikipedia 'good' articles (15,000-term vocabulary version)"
+  },
+  {
+   "name": "Bills",
+   "details": "about 32,000 legislative summaries, 110th-114th U.S. Congresses"
+  }
+ ],
+ "metrics": [
+  "Krippendorff's alpha",
+  "Kendall's tau between human and model/LLM judgements",
+  "advantage probability (alternative annotator test)",
+  "NDCG"
+ ],
+ "baselines": [
+  "MALLET LDA",
+  "CTM",
+  "BERTopic (evaluated models, 50 topics)"
+ ],
+ "key_results": [
+  "Human ratings rank MALLET LDA above CTM and CTM above BERTopic; some BERTopic topics have negative correlations with human judgements.",
+  "Largest LLM proxies reach Kendall tau of about 0.5 or more with humans; advantage probabilities above 0.5 for strong models (e.g. Qwen-3-32B 0.67-0.74).",
+  "Label-derived clusters give alpha >= 0.8, supporting the protocol itself."
+ ],
+ "strengths": [
+  "Largest human study of its kind with a protocol tied to real use; data and a package released.",
+  "Shows a classical LDA is at least as useful as newer models for content analysis."
+ ],
+ "limitations": [
+  {
+   "text": "The LLM proxy stands in for one annotator and does not model disagreement; LLMs cost more than classic metrics.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Crowdworkers rather than domain experts; English only; LLM-generated topic models (TopicGPT, LLooM) not evaluated.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/ahoho/proxann",
+ "notes": "Eight of fifty topics per model and dataset were annotated.",
+ "fulltext_txt": "fulltext/txt/hoyle2025proxann.txt"
+}

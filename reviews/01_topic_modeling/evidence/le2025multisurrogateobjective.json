@@ -1,0 +1,63 @@
+{
+ "key": "le2025multisurrogateobjective",
+ "source_id": "le2025multisurrogateobjective",
+ "title": "Multi-Surrogate-Objective Optimization for Neural Topic Models",
+ "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.findings-emnlp.9",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "training objective balancing (multi-objective optimisation)",
+ "task": "Balancing several loss terms when training neural topic models",
+ "problem": "NTM losses (reconstruction, KL, regularisers) differ by orders of magnitude; fixed weights need costly tuning and naive multi-objective optimisation (MOO) can hurt.",
+ "architecture": "MSOO: each loss is replaced by a surrogate L_i + lambda_i * (sum of all losses), fed to a gradient-based MOO algorithm (FairGrad or MGDA); static (constant lambda) and adaptive (lambda from relative descent rates) variants; applied to ECRTM and NeuroMax.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "20NG",
+   "details": "20 labels"
+  },
+  {
+   "name": "YahooAnswers",
+   "details": "question titles, contents and answers"
+  },
+  {
+   "name": "AGNews",
+   "details": "news from over 2,000 sources"
+  }
+ ],
+ "metrics": [
+  "Cv15",
+  "TD15",
+  "NMI",
+  "Purity"
+ ],
+ "baselines": [
+  "ECRTM",
+  "NeuroMax",
+  "ECRTM/NeuroMax with plain MOO (FairGrad, MGDA)"
+ ],
+ "key_results": [
+  "ECRTM on AGNews: Purity 0.802 baseline, 0.772 with plain FairGrad MOO, 0.834 with MSOO-Adaptive.",
+  "NeuroMax on 20NG: Purity 0.623 baseline vs 0.645 with MSOO-Static.",
+  "lambda between 0.4 and 0.8 works best; very small lambda collapses NMI (0.021 at lambda = 0.001)."
+ ],
+ "strengths": [
+  "Shows that direct MOO can underperform the baseline and gives a simple fix.",
+  "Model-agnostic, tested on two strong NTMs and three datasets."
+ ],
+ "limitations": [
+  {
+   "text": "Higher computational cost and longer training; surrogate is a simple linear combination.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Gains are small on some metrics and TD sometimes drops (e.g. ECRTM 20NG TD15 0.964 to 0.901 with MSOO-S).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/le2025multisurrogateobjective.txt"
+}

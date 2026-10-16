@@ -1,0 +1,50 @@
+{
+ "key": "hill2025recommending",
+ "source_id": "hill2025recommending",
+ "title": "Recommending the right academic programs: an interest mining approach using BERTopic",
+ "venue": "Data Mining and Knowledge Discovery",
+ "year": 2025,
+ "doi": "10.1007/s10618-024-01087-y",
+ "read_from": "arXiv preprint 2501.06581 (published version: Data Mining and Knowledge Discovery)",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "education / recommender system",
+ "task": "Recommending university programs from interest topics mined from course descriptions",
+ "problem": "Matching personal interests to programs is hard given large, complex course catalogues; existing recommenders rely on student records.",
+ "architecture": "BERTopic over course descriptions (sentence-transformer embeddings, dimensionality reduction, clustering, keyword topics); students select interest topics; programs ranked by statistical backtracking through a program-course 'knowledge map' (bi-modal network linking courses to programs).",
+ "llm_or_encoder": "Sentence-Transformers models available in BERTopic (all-MiniLM-L6-v2; paraphrase-multilingual-MiniLM-L12-v2)",
+ "datasets": [
+  {
+   "name": "Course descriptions (case study)",
+   "details": "post-secondary institution with 80 programs and over 5,000 courses"
+  }
+ ],
+ "metrics": [
+  "user survey (65 students)",
+  "program coverage",
+  "personalization score",
+  "average similarity"
+ ],
+ "baselines": [],
+ "key_results": [
+  "Over 98% of surveyed users said recommendations matched their interests; about 94% would use the tool again.",
+  "Configuration reaching 98% program coverage with personalization score 0.77."
+ ],
+ "strengths": [
+  "Uses only public course data, no confidential student information.",
+  "Evaluated with real users and fairness-oriented coverage analysis."
+ ],
+ "limitations": [
+  {
+   "text": "Depends on well-written, accurate course descriptions; one institution.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No comparison with other topic models or recommenders; topic quality not measured with coherence or diversity.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/hill2025recommending.txt"
+}

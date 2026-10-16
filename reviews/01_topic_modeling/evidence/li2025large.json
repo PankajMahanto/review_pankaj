@@ -1,0 +1,63 @@
+{
+ "key": "li2025large",
+ "source_id": "li2025large",
+ "title": "Large Language Models Struggle to Describe the Haystack without Human Help: A Social Science-Inspired Evaluation of Topic Models",
+ "venue": "Proceedings of ACL 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.375",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "user study of LDA vs LLM topic tools for data exploration",
+ "task": "Measuring what users learn from topic models and LLM-based tools",
+ "problem": "LLM-based topic tools are replacing probabilistic models for content analysis without evidence that they help users understand a corpus.",
+ "architecture": "Pre-test/post-test user study (120 Prolific users, 15 per condition and dataset) comparing LDA, TopicGPT (GPT-4, Mistral-7B, LLaMA-2-70B variants), LLooM and BASS (Bot-Assisted Semantic Search: LLM-suggested topics refined by users with active learning); clustering metrics, automatic answer metrics and Bradley-Terry preferences.",
+ "llm_or_encoder": "GPT-4, Mistral-7B-Instruct, LLaMA-2-70B",
+ "datasets": [
+  {
+   "name": "Bills",
+   "details": "U.S. congressional bill summaries"
+  },
+  {
+   "name": "Sci-Fi",
+   "details": "documents generated from predefined question-answer pairs"
+  }
+ ],
+ "metrics": [
+  "Purity",
+  "ARI",
+  "NMI",
+  "pre/post-test answer quality",
+  "Bradley-Terry preference"
+ ],
+ "baselines": [
+  "LDA",
+  "TopicGPT",
+  "TopicMistral",
+  "TopicLLaMA",
+  "LLooM",
+  "BASS"
+ ],
+ "key_results": [
+  "Bills: BASS ARI 0.45 and NMI 0.54 vs LDA 0.27 and 0.47 and TopicGPT 0.23 and 0.42.",
+  "Sci-Fi: TopicGPT finds only 4 topics with NMI 0.18 vs LDA 0.56 and BASS 0.69.",
+  "Users approved BASS-suggested topics 93% of the time on Bills vs 62% on Sci-Fi."
+ ],
+ "strengths": [
+  "Measures knowledge gained by real users rather than topic-word metrics.",
+  "Shows unsupervised LLM topics are overly generic on domain-specific data."
+ ],
+ "limitations": [
+  {
+   "text": "User studies are hard to scale; BASS needs considerable human effort and has no clear stopping criterion.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Two datasets, one of them synthetic; 15 users per condition.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Datasets released on Hugging Face (zli12321/Bills).",
+ "fulltext_txt": "fulltext/txt/li2025large.txt"
+}

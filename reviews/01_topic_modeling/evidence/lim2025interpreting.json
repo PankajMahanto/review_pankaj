@@ -1,0 +1,68 @@
+{
+ "key": "lim2025interpreting",
+ "source_id": "lim2025interpreting",
+ "title": "Interpreting Topic Models in Byte-Pair Encoding Space",
+ "venue": "Proceedings of the 31st International Conference on Computational Linguistics (COLING 2025)",
+ "year": 2025,
+ "doi": "",
+ "acl_url": "https://aclanthology.org/2025.coling-main.720/",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "topic models over subword (BPE) vocabularies",
+ "task": "Recovering and evaluating word-level topics from BPE token distributions",
+ "problem": "Topics learned over BPE tokens contain word fragments, so word-based coherence measures cannot be applied.",
+ "architecture": "Model-agnostic, training-free recovery: valid words are ranked from a topic-token distribution using aggregation of their tokens' probabilities (sum, mean, geometric mean, harmonic mean) and heuristics extending harmonic mean (RPS, RST); recovered topics evaluated with NPMI and topic uniqueness, compared with topics trained on original vocabularies; user study.",
+ "llm_or_encoder": "LLaMA BPE tokenizer (no LLM inference)",
+ "datasets": [
+  {
+   "name": "arXiv",
+   "details": "2.31M documents (science)"
+  },
+  {
+   "name": "UN",
+   "details": "320K documents (geopolitics)"
+  },
+  {
+   "name": "Yahoo",
+   "details": "880K documents (news)"
+  },
+  {
+   "name": "Yelp",
+   "details": "658K reviews"
+  }
+ ],
+ "metrics": [
+  "NPMI (Wikipedia reference)",
+  "topic uniqueness (TU)",
+  "topic duplication (MMD, OD)",
+  "user study"
+ ],
+ "baselines": [
+  "LDA",
+  "DMR",
+  "ProdLDA",
+  "CombinedTM (topic models trained on BPE vs original vocabularies)"
+ ],
+ "key_results": [
+  "User study (10 participants): 82.6% of responses judged recovered BPE topics coherent vs 91.3% for topics from the original vocabulary.",
+  "Recovered topics are similar to original-vocabulary topics (duplication no worse than between different model classes); harmonic mean and RST recommended."
+ ],
+ "strengths": [
+  "Opens topic modelling directly on LLM tokenisations (smaller vocabularies, less preprocessing).",
+  "Large corpora and four model families."
+ ],
+ "limitations": [
+  {
+   "text": "Only LLaMA's BPE tokenizer tested; results may depend on the tokenizer.",
+   "source": "author-stated"
+  },
+  {
+   "text": "On small OCTIS corpora neural models (ProdLDA, CTM) collapse to a few topics in BPE space.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/lim2025interpreting.txt"
+}

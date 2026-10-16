@@ -1,0 +1,89 @@
+{
+ "key": "girrbach2025sparse",
+ "source_id": "girrbach2025sparse",
+ "title": "Sparse Autoencoders are Topic Models",
+ "venue": "Proceedings of the 43rd International Conference on Machine Learning (ICML 2026), PMLR 306",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2511.16309",
+ "read_from": "arXiv preprint 2511.16309v2 (published version: ICML 2026, PMLR 306)",
+ "evidence_level": "full-text (preprint)",
+ "category": "neural",
+ "subcategory": "sparse autoencoders as embedding-space topic models",
+ "task": "Topic modelling over text and image embeddings",
+ "problem": "The role of sparse autoencoders (SAEs) on embeddings is debated; topic models usually reconstruct bag-of-words and do not transfer across modalities.",
+ "architecture": "Continuous topic model (an LDA analogue in embedding space) under which the SAE objective with L1 penalty is the MAP estimator. SAE-TM: (1) pretrain an SAE on large text or image embedding corpora to obtain topic atoms; (2) learn a word-emission matrix for the atoms on the downstream data; (3) cluster atom embeddings with k-means and merge atoms into any number of topics without retraining.",
+ "llm_or_encoder": "GRANITE-R2 text embeddings; ViT-B-16-SigLIP image embeddings; InternVL3.5-14B captions; Phi-4 as LLM judge",
+ "datasets": [
+  {
+   "name": "News-20K",
+   "details": "18,846 documents"
+  },
+  {
+   "name": "IMDB",
+   "details": "50,000 reviews"
+  },
+  {
+   "name": "Yelp",
+   "details": "50,000 reviews"
+  },
+  {
+   "name": "DailyMail",
+   "details": "219,507 articles"
+  },
+  {
+   "name": "Twitter",
+   "details": "1,183,728 filtered tweets"
+  },
+  {
+   "name": "CIFAR100",
+   "details": "50,000 images"
+  },
+  {
+   "name": "Food101",
+   "details": "75,750 images"
+  },
+  {
+   "name": "SUN397",
+   "details": "108,618 images"
+  }
+ ],
+ "metrics": [
+  "LLM intruder detection accuracy (CI)",
+  "LLM topic rating (CR, 0-100)",
+  "word-mover-distance diversity (D)",
+  "unique-word diversity"
+ ],
+ "baselines": [
+  "AVITM",
+  "CombinedTM",
+  "DecTM",
+  "DVAE",
+  "ETM",
+  "FASTopic",
+  "NSTM",
+  "TSCTM"
+ ],
+ "key_results": [
+  "Text, 50 topics (averaged over five datasets): CI 54.31 and CR 77.25 vs best baseline 44.61 and 70.24.",
+  "At 500 topics SAE-TM keeps CR 71.22 while TSCTM drops to 17.67.",
+  "Diversity is second to TSCTM (e.g. D 3.67 vs 3.87 at 50 topics)."
+ ],
+ "strengths": [
+  "Formal link between SAEs and topic models; one pretrained SAE serves many datasets and any topic count.",
+  "Works across text and images; used to compare image datasets and trace themes in woodblock prints."
+ ],
+ "limitations": [
+  {
+   "text": "SAE feature interpretation and use of activation strengths can still be improved.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Coherence is judged by an LLM (Phi-4) rather than by humans or co-occurrence measures.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper (repository named ExplainableML/SAE-TM)",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/girrbach2025sparse.txt"
+}

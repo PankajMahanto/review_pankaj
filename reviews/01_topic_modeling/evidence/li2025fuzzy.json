@@ -1,0 +1,63 @@
+{
+ "key": "li2025fuzzy",
+ "source_id": "li2025fuzzy",
+ "title": "Fuzzy Topic Modeling with Learnable Thresholds for Aspect Personalized Video Recommendation",
+ "venue": "Research Square preprint (posted 12 December 2025)",
+ "year": 2025,
+ "doi": "10.21203/rs.3.rs-8241675/v1",
+ "read_from": "Research Square preprint",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "recommender systems / fuzzy LDA",
+ "task": "Aspect-level personalised movie/video recommendation",
+ "problem": "Fixed rating thresholds ignore personal rating habits, and discrete ratings miss preference intensity.",
+ "architecture": "DynaFuzz-DLDA: LDA over user comments with an aspect-term association graph corpus (tags linked to comment keywords); improved association-rule sampling for imbalance; fuzzy LDA (FLDA) on probabilised ratings for user-interest features; MLP that learns a per-user recommendation threshold.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "ml-25m",
+   "details": "162,541 users, 62,432 movies (MovieLens)"
+  },
+  {
+   "name": "ml-20m",
+   "details": "138,493 users, 27,278 movies, 20,000,263 ratings"
+  },
+  {
+   "name": "ml-latest",
+   "details": "283,228 users, 58,098 movies"
+  }
+ ],
+ "metrics": [
+  "F1",
+  "accuracy",
+  "recall@10",
+  "RMSE"
+ ],
+ "baselines": [
+  "user- and item-based collaborative filtering",
+  "CA-MCGRS",
+  "TextCNN",
+  "DLDA",
+  "VAEARM"
+ ],
+ "key_results": [
+  "Cold start: F1 0.9420 / 0.7899 / 0.7959 on ml-25m / ml-20m / ml-latest; TextCNN is slightly higher on ml-25m (0.9439).",
+  "Average cold-start scores reported as 0.8426 (F1), 0.7647 (accuracy) and 1.0359 (RMSE)."
+ ],
+ "strengths": [
+  "Combines topic modelling with fuzzy ratings and learned thresholds for personalisation."
+ ],
+ "limitations": [
+  {
+   "text": "Not peer reviewed at the time of reading; VAEARM obtains much lower RMSE (e.g. 0.3268 vs 0.6230 on ml-25m).",
+   "source": "reviewer observation from reported table"
+  },
+  {
+   "text": "No topic-quality evaluation; topic modelling is one component of a recommender.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "https://github.com/TeLiNB/KAIS",
+ "notes": "Bibliographic metadata listed Knowledge and Information Systems; the read copy is the Research Square preprint, so it is cited as a preprint.",
+ "fulltext_txt": "fulltext/txt/li2025fuzzy.txt"
+}

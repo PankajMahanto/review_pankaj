@@ -1,0 +1,64 @@
+{
+ "key": "ma2025cast",
+ "source_id": "ma2025cast",
+ "title": "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+ "venue": "Proceedings of NAACL-HLT 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.naacl-long.386",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "neural",
+ "subcategory": "contextualised embedding clustering (Top2Vec extension)",
+ "task": "Selecting better topic words in embedding-clustering topic models",
+ "problem": "Top2Vec-style models embed candidate topic words without context (a contextualisation gap) and often select functional words.",
+ "architecture": "Document embeddings, UMAP and HDBSCAN as in Top2Vec; each candidate word embedding is the average of its contextualised embeddings across the corpus; words with low self-similarity across contexts (functional words) are filtered with a threshold (0.4); topic words are those nearest each cluster centroid.",
+ "llm_or_encoder": "all-MiniLM-L6-v2, all-mpnet-base-v2",
+ "datasets": [
+  {
+   "name": "20NewsGroups",
+   "details": "OCTIS preprocessed version"
+  },
+  {
+   "name": "BBC News",
+   "details": "OCTIS preprocessed version"
+  },
+  {
+   "name": "Elon Musk",
+   "details": "13,998 tweets"
+  }
+ ],
+ "metrics": [
+  "NPMI (TC)",
+  "TD",
+  "LLM-TC",
+  "LLM-TD"
+ ],
+ "baselines": [
+  "LDA",
+  "TopClus",
+  "BERTopic",
+  "Top2Vec"
+ ],
+ "key_results": [
+  "20NewsGroups: CAST-MPNET TC 0.18 and LLM-TC 3.88 vs BERTopic-MPNET 0.11 and 3.2, Top2Vec-MiniLM 0.1 and 3.59.",
+  "TopClus has the highest TD on all datasets (1 on 20NewsGroups and BBC News).",
+  "Functional words such as 'inform' (self-similarity 0.218) and 'implement' (0.26) are removed at threshold 0.4."
+ ],
+ "strengths": [
+  "Two simple add-on modules usable with other embedding-based topic models.",
+  "Handles noisy, non-preprocessed text and shows NPMI can reward stop-word topics."
+ ],
+ "limitations": [
+  {
+   "text": "Relies on pretrained embeddings that may carry biases; higher computation for contextualised word embeddings on large datasets.",
+   "source": "author-stated"
+  },
+  {
+   "text": "On Elon Musk tweets CAST has lower TD than BERTopic (0.62-0.73 vs 0.93-0.96).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/yananma1029/CAST",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/ma2025cast.txt"
+}

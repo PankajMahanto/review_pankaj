@@ -1,0 +1,59 @@
+{
+ "key": "granese2025merging",
+ "source_id": "granese2025merging",
+ "title": "Merging Embedded Topics with Optimal Transport for Online Topic Modeling on Data Streams",
+ "venue": "Machine Learning and Knowledge Discovery in Databases (ECML PKDD 2025), LNCS",
+ "year": 2025,
+ "doi": "10.1007/978-3-032-06109-6_17",
+ "read_from": "arXiv preprint 2504.07711v2 (published version: ECML PKDD 2025)",
+ "evidence_level": "full-text (preprint)",
+ "category": "dynamic",
+ "subcategory": "online topic modelling with optimal transport",
+ "task": "Topic modelling on text streams with change-point detection",
+ "problem": "Online topic models either cannot store streams (online LDA) or do not truly merge topic representations across batches (MergeBERT).",
+ "architecture": "StreamETM: an ETM is trained per batch with topic embeddings initialised from the previous step; topics of consecutive models are merged with unbalanced optimal transport (cosine cost, KL marginal relaxation), new topics are added when unmatched; online change-point detection on topic proportions.",
+ "llm_or_encoder": "fixed GloVe (glove-wiki-gigaword-300) word embeddings",
+ "datasets": [
+  {
+   "name": "20kNewsGroup",
+   "details": "5 of 20 topics; 15 draws of about 5k documents split into 500-document batches (about 10 time steps), Custom and Dynamic settings"
+  },
+  {
+   "name": "simulated datasets",
+   "details": "50 datasets for merging/discovery accuracy"
+  }
+ ],
+ "metrics": [
+  "merging accuracy",
+  "discovery accuracy",
+  "TC",
+  "TD",
+  "harmonic mean H(TC,TD)",
+  "ROC of change-point detection"
+ ],
+ "baselines": [
+  "MergeBERT",
+  "OnlineBERT"
+ ],
+ "key_results": [
+  "UOT with cosine cost: merging accuracy 0.79, discovery accuracy 0.93 (harmonic mean 0.85) vs cosine-distance matching 0.84 / 0.72 (0.77).",
+  "Custom setting t0-t3: StreamETM TC 0.59-0.65 vs MergeBERT 0.43-0.52 and OnlineBERT 0.41-0.45."
+ ],
+ "strengths": [
+  "Actually merges topic representations over time and flags change points for analysts.",
+  "Code released."
+ ],
+ "limitations": [
+  {
+   "text": "Vocabulary is fixed (no extension over time) and the number of topics is not selected on the fly.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Evaluation uses re-sampled 20 Newsgroups subsets (the same document may appear in several datasets) rather than a real stream.",
+   "source": "reported in paper"
+  }
+ ],
+ "code": "https://github.com/fgranese/StreamETM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/granese2025merging.txt"
+}

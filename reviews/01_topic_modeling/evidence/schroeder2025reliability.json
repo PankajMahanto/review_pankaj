@@ -1,0 +1,57 @@
+{
+ "key": "schroeder2025reliability",
+ "source_id": "schroeder2025reliability",
+ "title": "Reliability of Topic Modeling",
+ "venue": "Proceedings of NAACL-HLT 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.naacl-long.134",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "reliability / stability measurement",
+ "task": "Quantifying reliability of topic models across random replications",
+ "problem": "The de facto reliability check (share of topics matched across runs at cosine > 0.7) ignores document-topic variation and has no statistical grounding.",
+ "architecture": "Applies measurement-theory reliability coefficients to replicated topic models: Cronbach's alpha, maximal reliability and McDonald's omega (via factor analysis of each topic's document distribution across replications), including a multivariate omega; compared with the standard topic-matching practice.",
+ "llm_or_encoder": "none",
+ "datasets": [
+  {
+   "name": "Trivial synthetic data",
+   "details": "10 replications"
+  },
+  {
+   "name": "Nontrivial synthetic data",
+   "details": "100 replications"
+  },
+  {
+   "name": "CFPB",
+   "details": "5,223 consumer complaints about cryptocurrency companies"
+  }
+ ],
+ "metrics": [
+  "Cronbach's alpha",
+  "maximal reliability",
+  "McDonald's omega",
+  "logistic-regression accuracy downstream"
+ ],
+ "baselines": [
+  "standard practice (Maier et al. topic matching)",
+  "LDA and STM (models tested)"
+ ],
+ "key_results": [
+  "On trivial synthetic data the standard practice reports perfect reliability while alpha, maximal reliability and omega reveal the variation.",
+  "CFPB with LDA: multivariate omega 0.92283 (20 topics), 0.82235 (50), 0.74957 (100); downstream accuracy ranges 0.67-0.81 across replications at 20 topics."
+ ],
+ "strengths": [
+  "Grounds topic-model reliability in established psychometric theory; code released.",
+  "Shows downstream conclusions vary with model reliability."
+ ],
+ "limitations": [
+  {
+   "text": "Existing reliability measures assume linear errors; only LDA (and STM) studied; comparison against a single baseline method.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "https://github.com/kaylaschroeder/reliability",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/schroeder2025reliability.txt"
+}

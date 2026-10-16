@@ -1,0 +1,71 @@
+{
+ "key": "liu2025llmguided",
+ "source_id": "liu2025llmguided",
+ "title": "LLM-Guided Semantic-Aware Clustering for Topic Modeling",
+ "venue": "Proceedings of ACL 2025 (long papers)",
+ "year": 2025,
+ "doi": "10.18653/v1/2025.acl-long.902",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "llm-based",
+ "subcategory": "LLM candidate topics + clustering + topic prediction network",
+ "task": "Topic discovery with open-source LLMs and consistent granularity",
+ "problem": "Prompt-and-merge LLM topic models need GPT-4-level instruction following, produce topics of uneven granularity and ignore document-level semantics when merging.",
+ "architecture": "LiSA: LLM generates a candidate topic word (with description) per document; documents and candidate topic words are both clustered; LLM-guided assignment maps documents to topics and checks low-confidence points; a topic prediction network (MLP 256-256-K over Sentence-BERT features) is trained with a collaborative enhancement strategy to align topic-level and document-level spaces.",
+ "llm_or_encoder": "Llama-3-8B-Instruct, Mistral-7B-Instruct-v0.2; Sentence-BERT",
+ "datasets": [
+  {
+   "name": "Bills",
+   "details": "32,661 bill summaries; 21 high-level and 114 low-level labels"
+  },
+  {
+   "name": "Wiki",
+   "details": "14,290 articles; 15 high-level and 279 low-level labels"
+  },
+  {
+   "name": "Twitter",
+   "details": "11,171 tweets; 6 labels"
+  }
+ ],
+ "metrics": [
+  "P1",
+  "ARI",
+  "NMI",
+  "MI",
+  "CV",
+  "TD",
+  "expert evaluation of missing/redundant/broad/narrow topics"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "CTM",
+  "BERTopic",
+  "PromptTopic",
+  "EDTM",
+  "TopicGPT (GPT-4)",
+  "FASTopic"
+ ],
+ "key_results": [
+  "Bills (K = 21): P1 0.58, ARI 0.43, NMI 0.51 (Mistral) vs TopicGPT 0.57, 0.40, 0.49.",
+  "Wiki: ARI 0.66 vs TopicGPT 0.60; Twitter: ARI 0.64 (K = 10) vs FASTopic 0.30.",
+  "Topic quality: CV 0.70 on Bills vs 0.58 for CTM; experts found 23% undetected topics vs 33% for PromptTopic."
+ ],
+ "strengths": [
+  "Matches or beats GPT-4-based TopicGPT using 7-8B open models.",
+  "Uses document-level semantics to fix coarse LLM topic words."
+ ],
+ "limitations": [
+  {
+   "text": "Documents are truncated to fit the LLM context; not evaluated on non-English data.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Hard assignment of one topic per document at evaluation; TD below FASTopic (e.g. Twitter 0.91 vs 1.00).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/ljh986/LiSA",
+ "notes": "TopicGPT and EDTM numbers copied from their papers.",
+ "fulltext_txt": "fulltext/txt/liu2025llmguided.txt"
+}
