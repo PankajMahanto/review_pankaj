@@ -1,0 +1,55 @@
+{
+ "key": "hong2026characterizing",
+ "source_id": "hong2026characterizing",
+ "title": "Characterizing the Temporal, Emotional, and Social Patterns of Adolescent Substance Use Discussions on Reddit",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2607.04566",
+ "read_from": "arXiv preprint 2607.04566",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "health / social media",
+ "task": "Thematic analysis of adolescent substance-use posts combined with temporal and emotion analysis",
+ "problem": "Surveys under-report adolescent substance use; keyword and lexicon methods miss informal, emotionally nuanced adolescent language.",
+ "architecture": "Hour-by-day temporal heatmaps; TF-IDF + LinearSVC for 3-class sentiment and 7-class emotion; BERTopic with all-MiniLM-L6-v2 sentence embeddings, topics labelled manually from keywords and representative posts.",
+ "llm_or_encoder": "all-MiniLM-L6-v2 (Sentence-Transformers)",
+ "datasets": [
+  {
+   "name": "r/teenager",
+   "details": "31,724 substance-related Reddit posts, 2018-2023"
+  }
+ ],
+ "metrics": [
+  "topic share (% of posts)",
+  "sentiment and emotion distribution",
+  "posting volume by hour and weekday"
+ ],
+ "baselines": [],
+ "key_results": [
+  "Sentiment: 47.5% positive, 46.5% negative, 6.0% neutral posts; sadness and fear dominate emotions.",
+  "Largest BERTopic topics: Teen Relationship 11.23%, Marijuana Use 10.28%, Alcohol Issues 6.59%, Teen Vaping 5.99%.",
+  "Posting peaks at weekends and between about 9 PM and 2 AM."
+ ],
+ "strengths": [
+  "Joins topic modelling with time-of-day and emotion signals on one corpus.",
+  "Uses contextual embeddings suited to short, informal posts."
+ ],
+ "limitations": [
+  {
+   "text": "Reddit users are not representative of all adolescents; posts are self-expression, not verified behaviour.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Classifiers may misread sarcasm and slang; topic modelling cannot establish causal relations.",
+   "source": "author-stated"
+  },
+  {
+   "text": "No topic coherence/diversity score or comparison with another topic model is reported; several topic labels do not match their listed keywords (e.g. 'Marijuana Use' with keywords 'Girl, friend').",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Limitations section calls the classifiers transformer-based, while the method section describes TF-IDF + LinearSVC.",
+ "fulltext_txt": "fulltext/txt/hong2026characterizing.txt"
+}

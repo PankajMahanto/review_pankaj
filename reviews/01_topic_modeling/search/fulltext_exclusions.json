@@ -1,0 +1,7 @@
+[
+ {
+  "key": "sevinc2026nonnegative",
+  "code": "FT1",
+  "reason": "R-package NMF benchmark on 26 non-text UCI/Kaggle tables; no text or topic-modelling use (read in full)."
+ }
+]

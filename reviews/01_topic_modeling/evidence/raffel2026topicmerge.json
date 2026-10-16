@@ -1,0 +1,71 @@
+{
+ "key": "raffel2026topicmerge",
+ "source_id": "raffel2026topicmerge",
+ "title": "TopicMerge: A Divide and Conquer Approach to Topic Modeling",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2610.19323",
+ "read_from": "arXiv preprint 2610.19323v1",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "over-clustering + LLM-arbitrated hierarchical merging",
+ "task": "Scalable LLM-assisted topic discovery",
+ "problem": "Document-level LLM topic models are accurate but need one prompt per document; embedding clustering is cheap but weaker on clustering metrics.",
+ "architecture": "Gemini clustering embeddings (256-d) reduced with PaCMAP to 64-d; agglomerative clustering (cosine, complete linkage) over-segments into 80 micro-clusters; LLM labels each cluster from 32 samples; an LLM arbiter decides candidate merges using local and global context clusters on a reciprocal-nearest-neighbour graph, then relabels merged clusters hierarchically (DSPy prompts).",
+ "llm_or_encoder": "Gemini 2.5 Flash Lite and Gemini 3.1 Flash Lite (temperature 0); Gemini embeddings",
+ "datasets": [
+  {
+   "name": "Bills",
+   "details": "U.S. bill summaries, 110th-114th Congresses, 21 labels (paper states 8,024 summaries)"
+  },
+  {
+   "name": "Wiki",
+   "details": "Wikipedia articles, 15 labels (paper states 15,242 articles)"
+  }
+ ],
+ "metrics": [
+  "P1",
+  "ARI",
+  "NMI",
+  "number of LLM prompts"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "CTM",
+  "FASTopic",
+  "EDTM",
+  "BERTopic",
+  "PromptTopic",
+  "TopicGPT",
+  "LiSA"
+ ],
+ "key_results": [
+  "Wiki: ARI 0.71 and NMI 0.74 (3.1 Flash Lite) vs LiSA 0.66/0.71 and TopicGPT 0.60/0.70; P1 0.73 vs 0.74 for TopicGPT and LiSA.",
+  "Bills: P1 0.57, ARI 0.42, NMI 0.53 (2.5 Flash Lite) vs LiSA 0.57/0.40/0.51.",
+  "645 (Bills) and 562 (Wiki) LLM prompts vs at least 8,024 and 15,242 for document-level methods.",
+  "Removing context clusters lowers Wiki ARI from 0.71 to 0.63."
+ ],
+ "strengths": [
+  "Uses the LLM only at cluster level, reducing prompts by over 92%.",
+  "Ablations show the value of context clusters and of starting from fine, pure clusters."
+ ],
+ "limitations": [
+  {
+   "text": "Depends on initial embedding quality (harder for very short texts); closed-source LLM raises contamination, stochasticity and reproducibility concerns.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Dataset sizes given for Bills (8,024) and Wiki (15,242) appear swapped relative to the common test splits used by other papers (Wiki test 8,024, Bills test 15,242).",
+   "source": "reviewer observation (cross-check with zuchna2026textonomy)"
+  },
+  {
+   "text": "Wiki P1 is not the best (0.73 vs 0.74).",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/pnnl/TopicMerge",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/raffel2026topicmerge.txt"
+}

@@ -1,0 +1,68 @@
+{
+ "key": "rubinfeld2026ontological",
+ "source_id": "rubinfeld2026ontological",
+ "title": "Ontological Validation of Biomedical Topic Models: SNOMED CT Hierarchy Distance as an Automated Evaluation Metric",
+ "venue": "BioNLP 2026 (ACL workshop)",
+ "year": 2026,
+ "doi": "10.18653/v1/2026.bionlp-1.27",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "evaluation",
+ "subcategory": "knowledge-grounded topic evaluation",
+ "task": "Post hoc clinical-plausibility diagnostic for biomedical topic models",
+ "problem": "Word co-occurrence coherence (UMass, Cv) encodes no clinical knowledge and cannot flag topics that merge clinically unrelated entities.",
+ "architecture": "Curated clinical concepts (about 50-75 per specialty) mapped to SNOMED CT; per-topic mean Wu-Palmer distance (via lowest common ancestor) between concepts in the same topic, compared with a cross-topic baseline using Cohen's d and Mann-Whitney tests; two-stage UMLS-CUI stopword filter (frequency, then semantic type).",
+ "llm_or_encoder": "BERTopic arms with mxbai, PubMedBERT, BioLORD, SapBERT, ensemble, cui2vec, Snomed2Vec and other embeddings",
+ "datasets": [
+  {
+   "name": "Vascular surgery corpus",
+   "details": "47,318 articles from 8 journals; single-journal JVS subset 14,290 articles"
+  },
+  {
+   "name": "Craniofacial surgery corpus",
+   "details": "27,493 articles"
+  }
+ ],
+ "metrics": [
+  "SNOMED CT Wu-Palmer distance",
+  "Cohen's d",
+  "Mann-Whitney p",
+  "Spearman rho",
+  "Cv",
+  "silhouette",
+  "outlier rate"
+ ],
+ "baselines": [
+  "LDA",
+  "NMF",
+  "Top2Vec",
+  "BERTopic with eight embedding strategies"
+ ],
+ "key_results": [
+  "Craniofacial: BERTopic within-topic distance 0.343 vs cross-topic 0.768 (Cohen's d +0.159); LDA, NMF and Top2Vec give negative d (-0.043, -0.046, -0.050).",
+  "Vascular: recommended PubMedBERT+BioLORD ensemble gives 37 topics, Cv 0.792, 18.3% outliers.",
+  "Embedding cosine vs SNOMED similarity: |rho| < 0.08 across 10 model-corpus combinations.",
+  "Flags clinically mixed topics such as AAA repair with deep vein thrombosis (d = 0.600)."
+ ],
+ "strengths": [
+  "Adds domain-ontology validity to topic evaluation, which coherence misses.",
+  "Automated after one-time concept curation; tested on two corpora, eight embeddings and four model families."
+ ],
+ "limitations": [
+  {
+   "text": "Threshold d > 0.5 is heuristic and specialty-sensitive; topics with fewer than two mapped concepts cannot be scored.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Keyword mapping covers 78.8% (vascular) and 61.0% (craniofacial) of articles; only surgical specialties tested.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Clinician check was one joint discussion by three surgeons without blinding or rubric, so it cannot establish validity.",
+   "source": "author-stated"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Also reports that HDBSCAN min_cluster_size affected clinical validity more than embedding choice.",
+ "fulltext_txt": "fulltext/txt/rubinfeld2026ontological.txt"
+}

@@ -1,0 +1,62 @@
+{
+ "key": "douglas2026prism",
+ "source_id": "douglas2026prism",
+ "title": "PRISM: LLM-Guided Semantic Clustering for High-Precision Topics",
+ "venue": "The ACM Web Conference (WWW) 2026",
+ "year": 2026,
+ "doi": "10.1145/3774904.3792944",
+ "read_from": "arXiv preprint 2604.03180 (published version: WWW 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "llm-based",
+ "subcategory": "LLM-distilled embeddings + clustering",
+ "task": "Fine-grained (narrow-domain) topic discovery",
+ "problem": "Embedding-based topic models lack local precision to separate closely related narratives within one domain; calling LLMs at inference time is costly.",
+ "architecture": "Teacher-student distillation: an LLM labels sampled text pairs (binary 'same thing?' judgements in a range-bound similarity window, or teacher-embedding similarities); all-mpnet-base-v2 is fine-tuned with CoSENT loss; thresholded community-detection clustering (items may stay unassigned), threshold tuned on LLM-labelled validation pairs.",
+ "llm_or_encoder": "Teachers: gpt-5-2025-08-07 (comparisons), text-embedding-3-large (embeddings); student all-mpnet-base-v2",
+ "datasets": [
+  {
+   "name": "HumAID",
+   "details": "disaster tweets from 19 events; train 28,802 / test 8,157 after processing"
+  },
+  {
+   "name": "LIAR",
+   "details": "12.8K political statements; train 10,240 / test 2,551"
+  },
+  {
+   "name": "IMDB",
+   "details": "50K movie reviews; train 25,000 / test 10,000"
+  }
+ ],
+ "metrics": [
+  "AUC on teacher-labelled pairs",
+  "cluster purity Pareto curve",
+  "AUPC (area under the purity Pareto curve)"
+ ],
+ "baselines": [
+  "BERTopic",
+  "Top2Vec (Doc2Vec and mpnet)",
+  "clustering on text-embedding-3-large"
+ ],
+ "key_results": [
+  "AUPC with Emb.&RB fine-tuning: HU .807, IM .966 vs Top2Vec (mpnet) .717 and .913 and teacher-embedding clustering .786 and .957.",
+  "On LIAR all methods are close (PRISM .638-.641 vs teacher-embedding clustering .639).",
+  "Each LLM-labelled training set costs about $0.20 (comparison) or $0.05 (embedding)."
+ ],
+ "strengths": [
+  "Cheap: a small number of LLM queries, then a locally deployable encoder.",
+  "Allows unassigned items, avoiding forced low-quality topic assignments."
+ ],
+ "limitations": [
+  {
+   "text": "Evaluated with label purity only; topic coherence/diversity are deliberately not used.",
+   "source": "reported in paper"
+  },
+  {
+   "text": "Gains on LIAR are within about 0.005 AUPC of baselines.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/connordouglas10/PRISM",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/douglas2026prism.txt"
+}

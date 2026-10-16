@@ -1,0 +1,61 @@
+{
+ "key": "austern2026poissonprocess",
+ "source_id": "austern2026poissonprocess",
+ "title": "Poisson-Process Topic Model for Integrating Knowledge from Pre-trained Language Models",
+ "venue": "Journal of the American Statistical Association",
+ "year": 2026,
+ "doi": "10.1080/01621459.2026.2712002",
+ "read_from": "arXiv preprint 2503.17809v2 (published version: JASA 2026)",
+ "evidence_level": "full-text (preprint)",
+ "category": "probabilistic",
+ "subcategory": "embedding-space topic model with statistical guarantees",
+ "task": "Topic estimation from contextual word embeddings",
+ "problem": "Count-based topic models ignore word context; embedding-based neural models lack theoretical guarantees and require bespoke architectures.",
+ "architecture": "PPTM: each document is a sequence of contextual word embeddings modelled as a Poisson point process whose intensity is a convex combination of K topic densities. TRACE estimator: UMAP reduction, net-rounding (k-means hyperwords forming a Voronoi partition), any count-based topic model as plug-in (default Topic-SCORE with SPA vertex hunting), then kernel smoothing back to continuous topic densities.",
+ "llm_or_encoder": "BERT contextual word embeddings (flair library); LLM treated as a black box, no fine-tuning",
+ "datasets": [
+  {
+   "name": "Associated Press",
+   "details": "2246 news articles, 2106 kept after removing articles under 50 words"
+  },
+  {
+   "name": "MADStat",
+   "details": "abstracts of 83,331 statistics papers (36 journals, 1975-2015); 50,837 after removing abstracts under 38 words"
+  }
+ ],
+ "metrics": [
+  "TC (topic coherence)",
+  "Embedded TC",
+  "TD (topic diversity)",
+  "Embedded TD",
+  "document clustering accuracy",
+  "convergence rate and minimax lower bound (theory)"
+ ],
+ "baselines": [
+  "ECRTM",
+  "FASTopic",
+  "Topic-SCORE and other count-based models (simulations)"
+ ],
+ "key_results": [
+  "Theory: rate of convergence for beta-Holder topic densities that matches the minimax lower bound when beta <= 1.",
+  "TRACE has the best TC in most settings (e.g. AP, K = 5: 0.528 vs ECRTM 0.477 and FASTopic 0.411); FASTopic is best on plain TD, TRACE on Embedded TD.",
+  "MADStat clustering accuracy: journal 0.275 vs 0.256 (ECRTM) and 0.254 (FASTopic); author pairs 0.617 vs 0.589 and 0.600."
+ ],
+ "strengths": [
+  "Model-agnostic: any classical topic model can be plugged in without changes.",
+  "Gives context-dependent topic relevance for each word occurrence (e.g. 'bond' in finance vs other contexts) with a formal guarantee."
+ ],
+ "limitations": [
+  {
+   "text": "Contextual embeddings greatly increase computation, especially for long documents; hyperword binning loses information and M must be tuned (bias-variance trade-off).",
+   "source": "author-stated"
+  },
+  {
+   "text": "Real-data evaluation uses two corpora and two neural baselines; ECRTM has higher TC on AP at K = 50.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "Authors suggest sentence-level 'hyper-sentences' as future work.",
+ "fulltext_txt": "fulltext/txt/austern2026poissonprocess.txt"
+}

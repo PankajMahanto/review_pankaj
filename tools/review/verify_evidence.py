@@ -43,6 +43,8 @@ def main():
         flat = re.sub(r"-\n", "", full)
         flat_n = norm(flat)
         flat_nums = set(numbers(flat.replace("−", "-")))
+        # PDF extraction sometimes writes "83, 331" for "83,331"
+        flat_nums |= set(numbers(re.sub(r"(\d), (\d{3})(?!\d)", r"\1,\2", flat)))
         problems = []
         for res in ev.get("key_results", []):
             for v in numbers(res):

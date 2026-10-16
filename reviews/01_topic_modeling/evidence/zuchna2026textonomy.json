@@ -1,0 +1,69 @@
+{
+ "key": "zuchna2026textonomy",
+ "source_id": "zuchna2026textonomy",
+ "title": "Textonomy: A TnT-LLM-Based Approach for Interpretable Topic Modeling at Scale",
+ "venue": "Proceedings of the 9th International Conference on Natural Language and Speech Processing (ICNLSP 2026)",
+ "year": 2026,
+ "doi": "",
+ "read_from": "ACL Anthology PDF",
+ "evidence_level": "full-text (published)",
+ "category": "llm-based",
+ "subcategory": "LLM taxonomy generation + distilled classifier",
+ "task": "Goal-driven, scalable topic assignment",
+ "problem": "Interpretability-scalability-accessibility trilemma: LDA/BERTopic need interpretation; per-document LLM methods such as TopicGPT are slow, costly and often closed-source.",
+ "architecture": "Implementation of TnT-LLM: Phase 1 an LLM summarises a small document sample and iteratively builds a taxonomy guided by the analyst's goal; Phase 2 an LLM pseudo-labels a training subset and a lightweight classifier is trained for large-scale assignment.",
+ "llm_or_encoder": "o3-mini (taxonomy) and GPT-4o-mini (summaries, labels); open-source variant Mistral-Large-Instruct-2411",
+ "datasets": [
+  {
+   "name": "WikiText-103",
+   "details": "22,314 Wikipedia articles, 15 labels; train 14,290 / test 8,024"
+  },
+  {
+   "name": "US Congressional Bills",
+   "details": "32,661 bill summaries, 21 labels; train 17,419 / test 15,242"
+  }
+ ],
+ "metrics": [
+  "P1 (harmonic mean of purity and inverse purity)",
+  "ARI",
+  "NMI",
+  "CNPMI",
+  "CV",
+  "pairwise Jaccard diversity",
+  "proportion of unique words",
+  "outlier ratio",
+  "LLM usefulness score",
+  "run time and cost"
+ ],
+ "baselines": [
+  "LDA (Gensim)",
+  "BERTopic",
+  "TopicGPT (published scores)"
+ ],
+ "key_results": [
+  "Wiki: Textonomy average P1 0.73, ARI 0.68, NMI 0.66 vs TopicGPT 0.73/0.58/0.71 and BERTopic 0.46/0.12/0.37.",
+  "Bills: open-source variant best run P1 0.56, ARI 0.39 vs TopicGPT 0.57/0.42 (default); proprietary average 0.47/0.31.",
+  "About 6.8 minutes and about $0.93 per Wiki run vs an estimated 450 minutes and $155 for TopicGPT."
+ ],
+ "strengths": [
+  "Cuts LLM cost by over 99% while keeping alignment close to TopicGPT.",
+  "Stable across reruns, prompts and training samples (ARI about 0.71-0.79 against the default run); open-source variant provided."
+ ],
+ "limitations": [
+  {
+   "text": "Possible memorisation of Wikipedia by LLMs; alignment metrics assume one topic per document and depend on k, which differed across methods without a matched-k analysis.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Relies on LLM APIs (cost, model changes, non-determinism).",
+   "source": "author-stated"
+  },
+  {
+   "text": "On Bills, TopicGPT remains better on all three alignment metrics.",
+   "source": "reviewer observation from reported table"
+  }
+ ],
+ "code": "https://github.com/nzuchna/textonomy",
+ "notes": "Uses the Wiki and Bills versions prepared by Pham et al. (TopicGPT).",
+ "fulltext_txt": "fulltext/txt/zuchna2026textonomy.txt"
+}

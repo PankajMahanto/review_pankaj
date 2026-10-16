@@ -1,0 +1,52 @@
+{
+ "key": "france2026synthetic",
+ "source_id": "france2026synthetic",
+ "title": "Synthetic Consumer Insight Generation with Large Language Models",
+ "venue": "arXiv preprint",
+ "year": 2026,
+ "doi": "",
+ "arxiv_id": "2607.05761",
+ "read_from": "arXiv preprint 2607.05761",
+ "evidence_level": "full-text (preprint)",
+ "category": "application",
+ "subcategory": "marketing / synthetic data validation with STM",
+ "task": "Comparing LLM-generated and human projective-technique responses (tourism city perceptions)",
+ "problem": "Whether LLM 'silicon samples' can replace costly human data for projective techniques that need associations and creative interpretation.",
+ "architecture": "LLM responses generated for 5 cities x 3 projective tasks x 6 LLMs x 5 temperatures x 5 prompting strategies; compared with human responses using lexical, diversity and concentration metrics, regression models, and structural topic models (R stm, city as prevalence covariate; K chosen by held-out likelihood, exclusivity, semantic coherence and residuals).",
+ "llm_or_encoder": "ChatGPT 3.5, ChatGPT 4.1, ChatGPT 5.1, Gemini 2.5 Flash, Grok 4.1, Mistral Medium 3.1",
+ "datasets": [
+  {
+   "name": "Human projective responses (five U.S. tourism cities)",
+   "details": "r = 173 human responses per city and setting (student sample), cities Las Vegas, Los Angeles, Nashville, New Orleans and New York City"
+  }
+ ],
+ "metrics": [
+  "word count, vocabulary size, lexical diversity, Shannon entropy, hapax rate, Simpson concentration, Yule's K",
+  "STM held-out likelihood, exclusivity, semantic coherence, residuals"
+ ],
+ "baselines": [
+  "human responses"
+ ],
+ "key_results": [
+  "A 9-topic STM was selected for human word associations (highest held-out likelihood, local maxima of exclusivity and coherence).",
+  "LLM topics (Gemini 2.5, extended prompt with probabilities, T = 1.8) show high concordance with human topics but emphasise different themes (e.g. Nashville hot chicken).",
+  "LLM lexical diversity comes largely from compound adjectives rather than more diverse topics."
+ ],
+ "strengths": [
+  "Uses topic models as a validation tool for synthetic text, not only as a discovery tool.",
+  "Large factorial design over models, prompts and temperatures."
+ ],
+ "limitations": [
+  {
+   "text": "Only short-answer projective tasks (word association, sentence completion); human sample from one university; no personas or demographic targeting.",
+   "source": "author-stated"
+  },
+  {
+   "text": "Topic comparison between human and LLM responses is qualitative (no topic-alignment score) and limited to the word-association task.",
+   "source": "reviewer observation"
+  }
+ ],
+ "code": "not found in paper",
+ "notes": "",
+ "fulltext_txt": "fulltext/txt/france2026synthetic.txt"
+}

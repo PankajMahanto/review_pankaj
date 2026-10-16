@@ -55,7 +55,15 @@ def arxiv_title_search(title):
     clean = re.sub(r"[^A-Za-z0-9 ]", " ", title)
     words = [w for w in clean.split() if len(w) > 3][:8]
     for q in (f'ti:"{clean}"', " AND ".join(f"ti:{w}" for w in words)):
-        xml, _ = get("https://export.arxiv.org/api/query?search_query=" + urllib.parse.quote(q) + "&max_results=8", 120)
+        url = "https://export.arxiv.org/api/query?search_query=" + urllib.parse.quote(q) + "&max_results=8"
+        for wait in (0, 10, 30, 60):  # the arXiv API rate-limits bursts; back off and retry
+            time.sleep(wait)
+            try:
+                xml, _ = get(url, 120)
+                break
+            except Exception:
+                if wait == 60:
+                    raise
         for m in re.finditer(r"<entry>.*?<id>http://arxiv.org/abs/([^<]+)</id>.*?<title>(.*?)</title>",
                              xml.decode("utf-8", "ignore"), re.S):
             if fuzz.ratio(norm(m.group(2)), norm(title)) >= 92:
@@ -86,6 +94,10 @@ def candidates(rec):
             yield "publisher-oa", "published", u
     if rec.get("oa_pdf"):
         yield "oa-link", "open-access-copy", rec["oa_pdf"]
+    for u in rec.get("oa_pdfs") or []:
+        yield "unpaywall", "open-access-copy", u
+    for u in rec.get("author_pdfs") or []:
+        yield "author-copy", "author-hosted-copy", u
     if rec.get("arxiv_id"):
         yield "arxiv", "arxiv-preprint", f"https://arxiv.org/pdf/{rec['arxiv_id']}"
     yield "arxiv-title-search", "arxiv-preprint", "SEARCH"
@@ -141,6 +153,9 @@ def main():
     queue = json.load(open(rdir / "search" / "fulltext_queue.json"))
     todo = [r for r in queue if manifest.get(r["key"], {}).get("version") in (None, "not-retrieved")
             and not (pdf_dir / f"{r['key']}.pdf").exists()]
+    if "--only" in sys.argv:
+        only = set(sys.argv[sys.argv.index("--only") + 1].split(","))
+        todo = [r for r in todo if r["key"] in only]
     print(f"{len(todo)} to fetch of {len(queue)}", flush=True)
     with ThreadPoolExecutor(max_workers=workers) as ex:
         for key, info in ex.map(fetch, [(r, pdf_dir) for r in todo]):
