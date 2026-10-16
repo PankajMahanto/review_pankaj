@@ -1,0 +1,5546 @@
+[
+ {
+  "id": "P0001",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0002",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0003",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0004",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0005",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0006",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0007",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0008",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0009",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0010",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0011",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0012",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0013",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0014",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0015",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0016",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0017",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0018",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0019",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0020",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0021",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0022",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0023",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0024",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0025",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0026",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0027",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0028",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0029",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0030",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0031",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0032",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0033",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0034",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0035",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0036",
+  "decision": "include",
+  "group": "topic-evaluation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0037",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0038",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0039",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0040",
+  "decision": "include",
+  "group": "related-surveys",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0041",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0042",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0043",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0044",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0045",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0046",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0047",
+  "decision": "include",
+  "group": "related-surveys",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0048",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0049",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0050",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0051",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0052",
+  "decision": "include",
+  "group": "topic-evaluation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0053",
+  "decision": "include",
+  "group": "related-surveys",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0054",
+  "decision": "include",
+  "group": "topic-evaluation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0055",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0056",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0057",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0058",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0059",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0060",
+  "decision": "include",
+  "group": "topic-evaluation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0061",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0062",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0063",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0064",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0065",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0066",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0067",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0068",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0069",
+  "decision": "include",
+  "group": "topic-evaluation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0070",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0071",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0072",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0073",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0074",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0075",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0076",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0077",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0078",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0079",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0080",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0081",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0082",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0083",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0084",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0085",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0086",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0087",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0088",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0089",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0090",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0091",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0092",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0093",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0094",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0095",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0096",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0097",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0098",
+  "decision": "include",
+  "group": "multimodal-semantic",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0099",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0100",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0101",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0102",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0103",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0104",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0105",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0106",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0107",
+  "decision": "include",
+  "group": "related-surveys",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0108",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0109",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0110",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0111",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0112",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0113",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0114",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0115",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0116",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0117",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0118",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0119",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0120",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0121",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0122",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0123",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0124",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0125",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0126",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0127",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0128",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0129",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0130",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0131",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0132",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0133",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0134",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0135",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0136",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0137",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0138",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0139",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0140",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0141",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0142",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0143",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0144",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0145",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0146",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0147",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0148",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0149",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0150",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0151",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0152",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0153",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0154",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0155",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0156",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0157",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0158",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0159",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0160",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0161",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0162",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0163",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0164",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0165",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0166",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0167",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0168",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0169",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0170",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0171",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0172",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0173",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0174",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0175",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0176",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0177",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0178",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0179",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0180",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0181",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0182",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0183",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0184",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0185",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0186",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0187",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0188",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0189",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0190",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0191",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0192",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0193",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0194",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0195",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0196",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0197",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0198",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0199",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0200",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0201",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0202",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0203",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0204",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0205",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0206",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0207",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0208",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0209",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0210",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0211",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0212",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0213",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0214",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0215",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC5"
+ },
+ {
+  "id": "P0216",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0217",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0218",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0219",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0220",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0221",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0222",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0223",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0224",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0225",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0226",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0227",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0228",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0229",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0230",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0231",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0232",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0233",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0234",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0235",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0236",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0237",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0238",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0239",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0240",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0241",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0242",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0243",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0244",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0245",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0246",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0247",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0248",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0249",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0250",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0251",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0252",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0253",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0254",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0255",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0256",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0257",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0258",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0259",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0260",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0261",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0262",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0263",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0264",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0265",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0266",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0267",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0268",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0269",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0270",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0271",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0272",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0273",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0274",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0275",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0276",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0277",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0278",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0279",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0280",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0281",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0282",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0283",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0284",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0285",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0286",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0287",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0288",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0289",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0290",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0291",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0292",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0293",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0294",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0295",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0296",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0297",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0298",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0299",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0300",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0301",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0302",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0303",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0304",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0305",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0306",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0307",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0308",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0309",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0310",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0311",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0312",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0313",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0314",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0315",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0316",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0317",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0318",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0319",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0320",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0321",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0322",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0323",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0324",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0325",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0326",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0327",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0328",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0329",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0330",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0331",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0332",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0333",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0334",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0335",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0336",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0337",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0338",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0339",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0340",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0341",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0342",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0343",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0344",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0345",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0346",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0347",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0348",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0349",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0350",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0351",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0352",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0353",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0354",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0355",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0356",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0357",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0358",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0359",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0360",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0361",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0362",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0363",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0364",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0365",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0366",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0367",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0368",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0369",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0370",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0371",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0372",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0373",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0374",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0375",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0376",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0377",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0378",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0379",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0380",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0381",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0382",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0383",
+  "decision": "include",
+  "group": "multimodal-semantic",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0384",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0385",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0386",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0387",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0388",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0389",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0390",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0391",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0392",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0393",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0394",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0395",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0396",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0397",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0398",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0399",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0400",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0401",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0402",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0403",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0404",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0405",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0406",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0407",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0408",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0409",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0410",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0411",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0412",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0413",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0414",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0415",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0416",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0417",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0418",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0419",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0420",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0421",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0422",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0423",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0424",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0425",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0426",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0427",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0428",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0429",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0430",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0431",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0432",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0433",
+  "decision": "include",
+  "group": "multimodal-semantic",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0434",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0435",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0436",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0437",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0438",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0439",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0440",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0441",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0442",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0443",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0444",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0445",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0446",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0447",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0448",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0449",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0450",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0451",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0452",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0453",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0454",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0455",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0456",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0457",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0458",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0459",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0460",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0461",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0462",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0463",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0464",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0465",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0466",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0467",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0468",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0469",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0470",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0471",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0472",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0473",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0474",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0475",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0476",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0477",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0478",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0479",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0480",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0481",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0482",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC5"
+ },
+ {
+  "id": "P0483",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0484",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0485",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0486",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0487",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0488",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0489",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0490",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0491",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0492",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0493",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0494",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0495",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0496",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0497",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0498",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0499",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0500",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0501",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0502",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0503",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0504",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0505",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0506",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0507",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0508",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0509",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0510",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0511",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0512",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0513",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0514",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0515",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0516",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0517",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0518",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0519",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0520",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0521",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0522",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0523",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0524",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0525",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0526",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0527",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0528",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0529",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0530",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0531",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0532",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0533",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0534",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0535",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0536",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0537",
+  "decision": "include",
+  "group": "multimodal-semantic",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0538",
+  "decision": "include",
+  "group": "multimodal-semantic",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0539",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0540",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0541",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0542",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0543",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0544",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0545",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0546",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0547",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0548",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0549",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0550",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0551",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0552",
+  "decision": "include",
+  "group": "related-surveys",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0553",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0554",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0555",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0556",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0557",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0558",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0559",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0560",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0561",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0562",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0563",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0564",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0565",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0566",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0567",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0568",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0569",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0570",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0571",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0572",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0573",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0574",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0575",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0576",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0577",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0578",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0579",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0580",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0581",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0582",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0583",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0584",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0585",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0586",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC5"
+ },
+ {
+  "id": "P0587",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0588",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0589",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0590",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0591",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0592",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0593",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0594",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0595",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0596",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0597",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0598",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0599",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0600",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0601",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0602",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0603",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0604",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0605",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0606",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0607",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0608",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0609",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0610",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0611",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0612",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0613",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0614",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0615",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0616",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0617",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0618",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0619",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0620",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0621",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0622",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0623",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0624",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0625",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC6"
+ },
+ {
+  "id": "P0626",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0627",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0628",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0629",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0630",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0631",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0632",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0633",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0634",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0635",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0636",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0637",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0638",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0639",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0640",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0641",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0642",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0643",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0644",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0645",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0646",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0647",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC6"
+ },
+ {
+  "id": "P0648",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0649",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0650",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0651",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0652",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0653",
+  "decision": "include",
+  "group": "keyphrase-concept",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0654",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0655",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0656",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0657",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0658",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0659",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0660",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0661",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0662",
+  "decision": "include",
+  "group": "text-clustering",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0663",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0664",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0665",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0666",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0667",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0668",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0669",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0670",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0671",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0672",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0673",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0674",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0675",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC6"
+ },
+ {
+  "id": "P0676",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0677",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0678",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0679",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0680",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0681",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0682",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0683",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0684",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0685",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0686",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0687",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0688",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0689",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0690",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0691",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0692",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0693",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0694",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0695",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0696",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0697",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0698",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0699",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0700",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0701",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0702",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0703",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0704",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0705",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0706",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0707",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0708",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0709",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0710",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0711",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0712",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0713",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0714",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0715",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0716",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0717",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0718",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0719",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0720",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0721",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0722",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0723",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0724",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0725",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0726",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0727",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0728",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0729",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0730",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0731",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0732",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0733",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0734",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0735",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0736",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0737",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0738",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0739",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0740",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0741",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0742",
+  "decision": "include",
+  "group": "applications",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0743",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0744",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0745",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0746",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0747",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0748",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0749",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0750",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0751",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0752",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0753",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0754",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0755",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0756",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0757",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0758",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0759",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0760",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0761",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0762",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0763",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0764",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0765",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC2"
+ },
+ {
+  "id": "P0766",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0767",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0768",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0769",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0770",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0771",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0772",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0773",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0774",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0775",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0776",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0777",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0778",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0779",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0780",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0781",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0782",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0783",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0784",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0785",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0786",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0787",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0788",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0789",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0790",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0791",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0792",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0793",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0794",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0795",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0796",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0797",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0798",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0799",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0800",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0801",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0802",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0803",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0804",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0805",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0806",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0807",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0808",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0809",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0810",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0811",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0812",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0813",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0814",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0815",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0816",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0817",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0818",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0819",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0820",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0821",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0822",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0823",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0824",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0825",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0826",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0827",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0828",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0829",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0830",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0831",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0832",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0833",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0834",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0835",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0836",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0837",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0838",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0839",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0840",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0841",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0842",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0843",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0844",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0845",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0846",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0847",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0848",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0849",
+  "decision": "include",
+  "group": "text-representation",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0850",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0851",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0852",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0853",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0854",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0855",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0856",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0857",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0858",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0859",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0860",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0861",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0862",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0863",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0864",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0865",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0866",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0867",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0868",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0869",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0870",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0871",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0872",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0873",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0874",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0875",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0876",
+  "decision": "include",
+  "group": "topic-models",
+  "exclusion_code": ""
+ },
+ {
+  "id": "P0877",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0878",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0879",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0880",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0881",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0882",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0883",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0884",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0885",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0886",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0887",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0888",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0889",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0890",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0891",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0892",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0893",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0894",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0895",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0896",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0897",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0898",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0899",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0900",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0901",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0902",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0903",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0904",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0905",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0906",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0907",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC3"
+ },
+ {
+  "id": "P0908",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0909",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0910",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0911",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0912",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0913",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0914",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0915",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0916",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0917",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0918",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0919",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0920",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0921",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC4"
+ },
+ {
+  "id": "P0922",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0923",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ },
+ {
+  "id": "P0924",
+  "decision": "exclude",
+  "group": "",
+  "exclusion_code": "EC1"
+ }
+]

@@ -1,0 +1,17 @@
+# full texts and excerpts are copyrighted: re-create them locally with the fetch scripts
+**/fulltext/pdf/
+**/fulltext/txt/
+**/fulltext_pdf/
+**/fulltext_txt/
+**/excerpts/
+**/cache/
+__pycache__/
+*.aux
+*.log
+*.out
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.spl
+sources/
